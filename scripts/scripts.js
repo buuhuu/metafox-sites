@@ -15,40 +15,6 @@ import {
 const LCP_BLOCKS = []; // add your LCP blocks to the list
 
 /**
- * Moves all the attributes from a given elmenet to another given element.
- * @param {Element} from the element to copy attributes from
- * @param {Element} to the element to copy attributes to
- */
-export function moveAttributes(from, to, attributes) {
-  if (!attributes) {
-    // eslint-disable-next-line no-param-reassign
-    attributes = [...from.attributes].map(({ nodeName }) => nodeName);
-  }
-  attributes.forEach((attr) => {
-    const value = from.getAttribute(attr);
-    if (value) {
-      to.setAttribute(attr, value);
-      from.removeAttribute(attr);
-    }
-  });
-}
-
-/**
- * Move instrumentation attributes from a given element to another given element.
- * @param {Element} from the element to copy attributes from
- * @param {Element} to the element to copy attributes to
- */
-export function moveInstrumentation(from, to) {
-  moveAttributes(
-    from,
-    to,
-    [...from.attributes]
-      .map(({ nodeName }) => nodeName)
-      .filter((attr) => attr.startsWith('data-aue-') || attr.startsWith('data-richtext-')),
-  );
-}
-
-/**
  * load fonts.css and set a session storage flag
  */
 async function loadFonts() {
@@ -144,10 +110,21 @@ function loadDelayed() {
   // load anything that can be postponed to the latest here
 }
 
+function launchVariables() {
+  if (window.adobeDataLayer) {
+    if (window.location.hostname.startsWith('main') || window.location.pathname.endsWith('ancestor')) {
+      window.adobeDataLayer.push({ event: 'aem page loaded', foo: 'bar', key: 'value' });
+    } else {
+      window.adobeDataLayer.push({ event: 'Configurator Start', foo: 'bar', key: 'value' });
+    }
+  }
+}
+
 async function loadPage() {
   await loadEager(document);
   await loadLazy(document);
   loadDelayed();
+  launchVariables();
 }
 
 loadPage();

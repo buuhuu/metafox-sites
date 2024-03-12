@@ -2,12 +2,20 @@
   {
     "id": "main",
     "components": [
-      "section"
+      "section",
+      "BMW UI Comps"
     ]
   },
   {
     "id": "columns",
     "components": []
+  },
+  {
+    "id": "BMW UI Comps",
+    "components": [
+      "text-image",
+      "section"
+    ]
   },
   {
     "id": "column",
@@ -27,7 +35,10 @@
       "title",
       "hero",
       "cards",
-      "columns"
+      "columns",
+      "text-image",
+      "text-image-vertical",
+      "BMW-Iframe"
     ]
   },
   {
