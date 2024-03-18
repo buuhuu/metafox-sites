@@ -1,8 +1,6 @@
 {
   "mappings": [
-    "/content/bmw-pilot/:/",
-    "/content/bmw-pilot/index/price-info.json:/price-list.json",
-    "/content/bmw-pilot/index/core-comp-test-page:/component-test-page"
+    "/content/metafox/:/"
   ],
-  "includes": ["/content/bmw-pilot/"]
+  "includes": ["/content/metafox/"]
 }
