@@ -1,3 +1,2 @@
 mappings:
- - /content/bmw-pilot/:/
- - /content/bmw-pilot/index/price-info.json:/price-list.json
+ - /content/metafox/:/
