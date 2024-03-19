@@ -168,7 +168,7 @@
         "valueType": "string",
         "name": "image",
         "label": "Image",
-        "value": ["/content/dam/metafox/placeholder_image.png"],
+        "value": "",
         "multi": false
       },
       {
