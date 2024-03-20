@@ -1,7 +1,8 @@
 export function generateTextImageDOM(props) {
   // Extract properties, always same order as in model, empty string if not set
-  const [pictureContainer, textarea, imagePosition] = props;
+  const [pictureContainer, textarea, imagePosition, showMeta, metaText] = props;
   const picture = pictureContainer.querySelector('picture');
+  const showMetaText = ${showMeta ? showMeta.innerHTML : false};
 
   // Build DOM
   const textImageDOM = document.createRange().createContextualFragment(`
@@ -10,6 +11,9 @@ export function generateTextImageDOM(props) {
         <div class='foreground'>
           <div class='text'>
             <div class='textarea'>${textarea.innerHTML}</div>
+            <div class='display:${showMetaText ? 'block' : 'none'}'>
+                <p>${metaText.innerHTML}</p>
+            </div>
           </div>
           <div class='spacer'>
           </div>
