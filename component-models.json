@@ -194,6 +194,8 @@
         "valueType": "string",
         "name": "image",
         "label": "Image",
+        "placeholder": "/content/dam/metafox/placeholder_image.png",
+        "description": "Image path from AEM DAM - only choose from the dedicated asset folder", 
         "multi": false
       },
       {
@@ -201,6 +203,7 @@
         "valueType": "string",
         "name": "imageAlt",
         "label": "Alt text",
+        "description": "Image alt text - highly recommended for SEO", 
         "value": ""
       },
       {
@@ -208,6 +211,8 @@
         "name": "text",
         "value": "",
         "label": "Text",
+        "description": "Optionaö text for the text image component",
+        "placeholder": "Please provide some text of your choice here!",
         "valueType": "string"
       },
       {
