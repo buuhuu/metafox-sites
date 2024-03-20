@@ -194,7 +194,7 @@
         "valueType": "string",
         "name": "image",
         "label": "Image",
-        "placeholder": "/content/dam/metafox/placeholder_image.png",
+        "value": {"/content/dam/metafox/placeholder_image.png"},
         "description": "Image path from AEM DAM - only choose from the dedicated asset folder", 
         "multi": false
       },
@@ -209,7 +209,7 @@
       {
         "component": "text-area",
         "name": "text",
-        "value": "",
+        "value": "Kindly edit the content here !",
         "label": "Text",
         "description": "Optionaö text for the text image component",
         "placeholder": "Please provide some text of your choice here!",
