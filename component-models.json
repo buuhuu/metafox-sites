@@ -194,7 +194,9 @@
         "valueType": "string",
         "name": "image",
         "label": "Image",
-        "value": {"/content/dam/metafox/placeholder_image.png"},
+        "value": [
+          {"/content/dam/metafox/placeholder_image.png"}
+        ],
         "description": "Image path from AEM DAM - only choose from the dedicated asset folder", 
         "multi": false
       },
