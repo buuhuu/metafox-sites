@@ -234,22 +234,24 @@
         ]
       },
       {
-        "id": "conditionally-revealed-component",
-        "fields": [
-          {
-            "component": "boolean",
-            "label": "Do you need to display meta text ?",
-            "name": "reveal",
-            "valueType": "boolean"
-          },
-          {
-            "component": "text-input",
-            "label": "Meta text",
-            "name": "meta-text",
-            "valueType": "string",
-            "condition": { "===": [{"var" : "reveal"}, true] }
-          }
-        ]
+        "component": "boolean",
+        "label": "Do you need to display meta text ?",
+        "name": "reveal",
+        "valueType": "boolean"
+      },
+      {
+        "component": "text-input",
+        "label": "Meta text",
+        "name": "meta-text",
+        "valueType": "string",
+        "condition": {
+          "===": [
+            {
+              "var": "reveal"
+            },
+            true
+          ]
+        }
       }
     ]
   },
