@@ -10,11 +10,11 @@ export function generateTextImageDOM(props) {
   // Build DOM
   const textImageDOM = document.createRange().createContextualFragment(`
     <div style="height: 350px; background-color: khaki;">
-        <div class='background' style='float:${imagePosition.innerHTML}'>${picture ? picture.outerHTML : ''}</div>
+        <div class='background' style='float:${imagePosition.innerHTML.indexOf('right') > -1 ? 'right' : 'left'}'>${picture ? picture.outerHTML : ''}</div>
         <div class='foreground'>
           <div class='text'>
             <div class='textarea'>${textarea.innerHTML}</div>
-            <div style='display:${showMeta.innerHTML === true ? 'block' : 'none'}'>
+            <div style='display:${showMeta.innerHTML.indexOf('true') > -1 ? 'block' : 'none'}'>
                 <p>${metaText.innerHTML}</p>
             </div>
           </div>
