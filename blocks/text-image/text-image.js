@@ -3,7 +3,7 @@ export function generateTextImageDOM(props) {
   const [pictureContainer, altText, textarea, imagePosition, showMeta, metaText] = props;
   const picture = pictureContainer.querySelector('picture');
   const image = picture.querySelector('image');
-  if(Boolean(image) && Boolean(altText)){
+  if (Boolean(image) && Boolean(altText)) {
     image.alt = altText;
   }
 
