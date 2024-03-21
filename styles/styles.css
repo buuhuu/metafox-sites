@@ -1,3 +1,5 @@
+/* stylelint-disable property-no-vendor-prefix */
+
 /*
  * Copyright 2020 Adobe. All rights reserved.
  * This file is licensed to you under the Apache License, Version 2.0 (the "License");
@@ -20,6 +22,7 @@
   --text-color: black;
 
   /* fonts */
+
   /* --body-font-family: roboto, roboto-fallback;
   --heading-font-family: var(--body-font-family);
   --fixed-font-family: bmwTypeNextWeb,Arial,Helvetica,Roboto,sans-serif; */
@@ -104,6 +107,10 @@ main pre {
 }
 
 /* links */
+a,b,strong {
+  font-weight: 700;
+}
+
 a:any-link {
   color: var(--text-color);
   text-decoration: none;
@@ -135,6 +142,30 @@ a.button:any-link, button {
   border-radius: 5px;
 }
 
+button,input{
+  overflow:visible
+}
+
+button,select{
+  text-transform:none
+}
+
+button,[type="button"],[type="reset"],[type="submit"]{
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{
+  border-style:none;
+  padding:0
+}
+
+button,input,optgroup,select,textarea{
+  font-family:inherit;
+  font-size:100%;
+  line-height:1.15;
+  margin:0
+}
+
 a.button:hover, a.button:focus, button:hover, button:focus  {
   background-color: var(--link-hover-color);
   cursor: pointer;
@@ -152,7 +183,7 @@ a.button.secondary, button.secondary {
 }
 
 a.button.secondary:hover {
-  border: 2px solid currentColor;
+  border: 2px solid currentcolor;
 }
 
 main img {
@@ -177,13 +208,14 @@ main .section {
   padding: 64px 16px;
 }
 
-/* mobile 
+/* mobile */
 @media (width >= 600px) {
   main .section {
     padding: 64px 32px;
   }
 }
-/* desktop 
+
+/* desktop */
 @media (width >= 769px) {
   .section > div {
     max-width: 1200px;
@@ -197,56 +229,10 @@ main .section.highlight {
   background-color: var(--light-color);
 }
 
-/* Media query for phones */
-@media only screen and (max-width: 767px) {
-  main .section {
-    padding: 64px 32px;
-  }
-}
-
-/* Media query for iPad */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  
-}
-
-/* Media query for all desktop */
-@media only screen and (min-width: 1025px) {
-  
-  .section > div {
-    max-width: 1200px;
-    margin: auto;
-  }
-}
-
-a,b,strong {
-  font-weight: 700
-}
-
-
-
-button,input,optgroup,select,textarea{
-  font-family:inherit;
-  font-size:100%;
-  line-height:1.15;
-  margin:0
-}
-button,input{
-  overflow:visible
-}
-button,select{
-  text-transform:none
-}
-button,[type="button"],[type="reset"],[type="submit"]{
-  -webkit-appearance: button;
-}
-button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{
-  border-style:none;
-  padding:0
-}
-
 fieldset{
   padding:.35em .75em .625em
 }
+
 legend{
   box-sizing:border-box;
   color:inherit;
@@ -255,26 +241,33 @@ legend{
   padding:0;
   white-space:normal;
 }
+
 progress{
   vertical-align:baseline
 }
+
 textarea{
   overflow:auto
 }
+
 [type="checkbox"],[type="radio"]{
   box-sizing:border-box;
   padding:0
 }
+
 [type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{
   height:auto
 }
+
 [type="search"]{
   -webkit-appearance: textfield;
   outline-offset:-2px
 }
+
 [type="search"]::-webkit-search-decoration{
   -webkit-appearance: none;
 }
+
 ::-webkit-file-upload-button{
   -webkit-appearance:button;
   font:inherit
