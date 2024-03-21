@@ -2,8 +2,10 @@ export function generateTextImageDOM(props) {
   // Extract properties, always same order as in model, empty string if not set
   const [pictureContainer, textarea, imagePosition, showMeta, metaText] = props;
   const picture = pictureContainer.querySelector('picture');
-  const showMetaText = ${showMeta ? showMeta.innerHTML : false};
-
+  let showMetaText = false;
+  if (showMeta) {
+    showMetaText = showMeta.innerHTML;
+  }
   // Build DOM
   const textImageDOM = document.createRange().createContextualFragment(`
     <div style="height: 350px; background-color: gray;">

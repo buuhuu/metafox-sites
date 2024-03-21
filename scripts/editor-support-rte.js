@@ -1,4 +1,3 @@
-@ -1,71 +0,0 @@
 /* eslint-disable no-cond-assign */
 /* eslint-disable import/prefer-default-export */
 
