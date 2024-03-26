@@ -25,7 +25,8 @@
 
   /* --body-font-family: roboto, roboto-fallback;
   --heading-font-family: var(--body-font-family);
-  --fixed-font-family: bmwTypeNextWeb,Arial,Helvetica,Roboto,sans-serif; */
+  */
+  --fixed-font-family: bmwtypenextweb,arial,helvetica,roboto,sans-serif;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -66,7 +67,7 @@ header {
 
 h1, h2, h3,
 h4, h5, h6 {
-  font-family: bmwTypeNextWeb, Arial, Helvetica, Roboto, sans-serif;
+  font-family: var(--fixed-font-family);
   font-weight: 300;
   line-height: 1.25;
   margin-top: 1em;
@@ -123,7 +124,7 @@ a:hover {
 
 /* buttons */
 a.button:any-link, button {
-  font-family: bmwTypeNextWeb, Arial, Helvetica, Roboto, sans-serif;
+  font-family: var(--fixed-font-family);
   display: inline-block;
   box-sizing: border-box;
   text-decoration: none;

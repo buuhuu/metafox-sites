@@ -1,7 +1,7 @@
 
 @font-face {
   font-display: swap;
-  font-family: bmwTypeNextWeb;
+  font-family: bmwtypenextweb;
   font-weight: bold;
   src: url(
     "../fonts/BMWTypeNext-Light.woff2") format("woff2"),url(
@@ -10,14 +10,14 @@
 
 @font-face {
   font-display: swap;
-  font-family: bmwTypeNextWeb;
+  font-family: bmwtypenextweb;
   font-weight: 400;
   src: url("../fonts/BMWTypeNext-Regular.woff") format("woff")
 }
 
 @font-face {
   font-display: swap;
-  font-family: bmwTypeNextWeb;
+  font-family: bmwtypenextweb;
   font-weight: 700;
   src: url("../fonts/BMWTypeNext-Bold.woff2") format("woff2"),url("../fonts/BMWTypeNext-Bold.woff") format("woff")
 }
@@ -38,7 +38,7 @@
 
 @font-face {
   font-display: swap;
-  font-family: bmwTypeNextWeb;
+  font-family: bmwtypenextweb;
   font-weight: 300;
   src: url("../fonts/BMWTypeNextLightLatinExtended.woff2") format("woff2"),url("../fonts/BMWTypeNextLightLatinExtended.woff") format("woff");
   unicode-range: u+0100-017f,u+0180-024f
@@ -46,7 +46,7 @@
 
 @font-face {
   font-display: swap;
-  font-family: bmwTypeNextWeb;
+  font-family: bmwtypenextweb;
   font-weight: 400;
   src: url("../fonts/BMWTypeNextRegularLatinExtended.woff2") format("woff2"),url("../fonts/BMWTypeNextRegularLatinExtended.woff") format("woff");
   unicode-range: u+0100-017f,u+0180-024f
@@ -54,7 +54,7 @@
 
 @font-face {
   font-display: swap;
-  font-family: bmwTypeNextWeb;
+  font-family: bmwtypenextweb;
   font-weight: 700;
   src: url("../fonts/BMWTypeNextBoldLatinExtended.woff2") format("woff2"),url("../fonts/BMWTypeNextBoldLatinExtended.woff") format("woff");
   unicode-range: u+0100-017f,u+0180-024f
@@ -62,7 +62,7 @@
 
 @font-face {
   font-display: swap;
-  font-family: bmwTypeNextWeb;
+  font-family: bmwtypenextweb;
   font-weight: 300;
   src: url("../fonts/BMWTypeNextLightGreek.woff2") format("woff2"),url("../fonts/BMWTypeNextLightGreek.woff") format("woff");
   unicode-range: u+0370-03ff
@@ -70,7 +70,7 @@
 
 @font-face {
   font-display: swap;
-  font-family: bmwTypeNextWeb;
+  font-family: bmwtypenextweb;
   font-weight: 400;
   src: url("../fonts/BMWTypeNextRegularGreek.woff2") format("woff2"),url("../fonts/BMWTypeNextRegularGreek.woff") format("woff");
   unicode-range: u+0370-03ff
@@ -78,7 +78,7 @@
 
 @font-face {
   font-display: swap;
-  font-family: bmwTypeNextWeb;
+  font-family: bmwtypenextweb;
   font-weight: 700;
   src: url("../fonts/BMWTypeNextBoldGreek.woff2") format("woff2"),url("../fonts/BMWTypeNextBoldGreek.woff") format("woff");
   unicode-range: u+0370-03ff
@@ -86,7 +86,7 @@
 
 @font-face {
   font-display: swap;
-  font-family: bmwTypeNextWeb;
+  font-family: bmwtypenextweb;
   font-weight: 300;
   src: url("../fonts/BMWTypeNextLightCyrillic.woff2") format("woff2"),url("../fonts/BMWTypeNextLightCyrillic.woff") format("woff");
   unicode-range: u+04??
@@ -94,7 +94,7 @@
 
 @font-face {
   font-display: swap;
-  font-family: bmwTypeNextWeb;
+  font-family: bmwtypenextweb;
   font-weight: 400;
   src: url("../fonts/BMWTypeNextRegularCyrillic.woff2") format("woff2"),url("../fonts/BMWTypeNextRegularCyrillic.woff") format("woff");
   unicode-range: u+04??
@@ -102,7 +102,7 @@
 
 @font-face {
   font-display: swap;
-  font-family: bmwTypeNextWeb;
+  font-family: bmwtypenextweb;
   font-weight: 700;
   src: url("../fonts/BMWTypeNextBoldCyrillic.woff2") format("woff2"),url("../fonts/BMWTypeNextBoldCyrillic.woff") format("woff");
   unicode-range: u+04??
@@ -110,7 +110,7 @@
 
 @font-face {
   font-display: swap;
-  font-family: bmwTypeNextWeb;
+  font-family: bmwtypenextweb;
   font-weight: 300;
   src: url("../fonts/BMWTypeWebLightAllArabic.woff2") format("woff2"),url("../fonts/BMWTypeWebLightAllArabic.woff") format("woff");
   unicode-range: u+06??,u+fb50-fdff,u+fe70-feff
@@ -118,7 +118,7 @@
 
 @font-face {
   font-display: swap;
-  font-family: bmwTypeNextWeb;
+  font-family: bmwtypenextweb;
   font-weight: 700;
   src: url("../fonts/BMWTypeWebBoldAllArabic.woff2") format("woff2"),url("../fonts/BMWTypeWebBoldAllArabic.woff") format("woff");
   unicode-range: u+06??,u+fb50-fdff,u+fe70-feff
@@ -126,7 +126,7 @@
 
 @font-face {
   font-display: swap;
-  font-family: bmwTypeNextWeb;
+  font-family: bmwtypenextweb;
   font-weight: 300;
   src: url("../fonts/BMWTypeWebLightAllThai.woff2") format("woff2"),url("../fonts/BMWTypeWebLightAllThai.woff") format("woff");
   unicode-range: u+0e00-0e7f,u+e000-f8ff
@@ -134,7 +134,7 @@
 
 @font-face {
   font-display: swap;
-  font-family: bmwTypeNextWeb;
+  font-family: bmwtypenextweb;
   font-weight: 700;
   src: url("../fonts/BMWTypeWebBoldAllThai.woff2") format("woff2"),url("../fonts/BMWTypeWebBoldAllThai.woff") format("woff");
   unicode-range: u+0e00-0e7f,u+e000-f8ff
@@ -142,7 +142,7 @@
 
 @font-face {
   font-display: swap;
-  font-family: bmwTypeNextWeb;
+  font-family: bmwtypenextweb;
   font-weight: 300;
   src: url("../fonts/BMWTypeWebLightAllVietnamese.woff2") format("woff2"),url("../fonts/BMWTypeWebLightAllVietnamese.woff") format("woff");
   unicode-range: u+1e??
@@ -150,7 +150,7 @@
 
 @font-face {
   font-display: swap;
-  font-family: bmwTypeNextWeb;
+  font-family: bmwtypenextweb;
   font-weight: 700;
   src: url("../fonts/BMWTypeWebBoldAllVietnamese.woff2") format("woff2"),url("../fonts/BMWTypeWebBoldAllVietnamese.woff") format("woff");
   unicode-range: u+1e??
@@ -158,7 +158,7 @@
 
 @font-face {
   font-display: swap;
-  font-family: bmwTypeNextWeb;
+  font-family: bmwtypenextweb;
   font-weight: 300;
   src: url("../fonts/BMWTypeNextLightKr.woff2") format("woff2"),url("../fonts/BMWTypeNextLightKr.woff") format("woff");
   unicode-range: u+ac00-d7a3
@@ -166,7 +166,7 @@
 
 @font-face {
   font-display: swap;
-  font-family: bmwTypeNextWeb;
+  font-family: bmwtypenextweb;
   font-weight: 500;
   src: url("../fonts/BMWTypeNextRegularKr.woff2") format("woff2"),url("../fonts/BMWTypeNextRegularKr.woff") format("woff");
   unicode-range: u+ac00-d7a3
@@ -174,7 +174,7 @@
 
 @font-face {
   font-display: swap;
-  font-family: bmwTypeNextWeb;
+  font-family: bmwtypenextweb;
   font-weight: 700;
   src: url("../fonts/BMWTypeNextBoldKr.woff2") format("woff2"),url("../fonts/BMWTypeNextBoldKr.woff") format("woff");
   unicode-range: u+ac00-d7a3
@@ -182,7 +182,7 @@
 
 @font-face {
   font-display: swap;
-  font-family: bmwTypeNextWeb;
+  font-family: bmwtypenextweb;
   font-weight: 300;
   src: url("../fonts/BMWTypeNextProHebrew-Light.woff2") format("woff2"),url("../fonts/BMWTypeNextProHebrew-Light.woff") format("woff");
   unicode-range: "u+0590-U+05ff,u+fb1d-u+fb4f"
@@ -190,7 +190,7 @@
 
 @font-face {
   font-display: swap;
-  font-family: bmwTypeNextWeb;
+  font-family: bmwtypenextweb;
   font-weight: 500;
   src: url("../fonts/BMWTypeNextProHebrew-Regular.woff2") format("woff2"),url("../fonts/BMWTypeNextProHebrew-Regular.woff") format("woff");
   unicode-range: "u+0590-u+05ff,u+fb1d-u+fb4f"
@@ -198,7 +198,7 @@
 
 @font-face {
   font-display: swap;
-  font-family: bmwTypeNextWeb;
+  font-family: bmwtypenextweb;
   font-weight: 700;
   src: url("../fonts/BMWTypeNextProHebrew-Bold.woff2") format("woff2"),url("../fonts/BMWTypeNextProHebrew-Bold.woff") format("woff");
   unicode-range: "u+0590-u+05ff,u+fb1d-u+fb4f"
@@ -225,20 +225,18 @@
 :root {
   --letter-spacing-eyebrow1: .175rem;
   --letter-spacing-eyebrow2: .125rem;
-  --letter-spacing-eyebrow3: .125rem
 }
 
 [lang="ar"],[lang^="ar-"] {
   --letter-spacing-eyebrow1: 0;
   --letter-spacing-eyebrow2: 0;
-  --letter-spacing-eyebrow3: 0
 }
 
 body,html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #262626;
-  font-family: bmwTypeNextWeb, Arial, Helvetica, Roboto, sans-serif;;
+  font-family: var(--fixed-font-family);
   font-size: 1pc;
   font-weight: 300;
   line-height: 1.5rem;
