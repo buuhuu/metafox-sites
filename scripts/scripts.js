@@ -154,6 +154,22 @@ function launchVariables() {
   }
 }
 
+export function launcSL() {
+  requirejs.config({
+  waitSeconds: 30,
+  baseUrl: "https://www.bmw.rs/etc.clientlibs/ds2-webcomponents/clientlibs/clientlib/js",
+  paths: {
+      StockcarAem: "https://www.bmw.rs/etc/clientlibs/bmwkit/stockcar.aem.min.js",
+      vue: "https://www.bmw.rs/etc.clientlibs/ds2-webcomponents/clientlibs/clientlib/js/vendor/vue.min.prod4.20240308113754.min.js",
+      "vue-router": "https://www.bmw.rs/etc.clientlibs/ds2-webcomponents/clientlibs/clientlib/js/vendor/vue-router.min.prod4.20240308113754.min.js"
+  }
+});
+
+  requirejs(['StockcarAem'], (Stockcar) => {
+    console.log(Stockcar);
+  });
+}
+
 async function loadPage() {
   await loadEager(document);
   await loadLazy(document);

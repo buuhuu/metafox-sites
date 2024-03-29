@@ -1,1 +1,4 @@
 helix-importer-ui
+scripts/scripts.js
+blocks/stock-locator/stock-locator.js
+blocks/stock-locator/stockcar.aem.min.js
