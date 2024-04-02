@@ -306,24 +306,9 @@
         "component": "text-input",
         "valueType": "string",
         "name": "iFrameUrl",
-        "label": "url",
+        "label": "IFrame URL",
         "value": ""
-      },
-      {
-        "component": "text-input",
-        "name": "iframeHeight",
-        "value": "",
-        "label": "iframeHeight",
-        "valueType": "string"
-      },
-      {
-        "component": "text-input",
-        "name": "iframeWidth",
-        "value": "",
-        "label": "iframeWidth",
-        "valueType": "string"
       }
-      
     ]
   }
 ]
