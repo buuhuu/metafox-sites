@@ -42,6 +42,24 @@
     ]
   },
   {
+    "id": "text",
+    "rte": {
+      "format": ["bold", "italic"],
+      "alignment": ["left","center","right"],
+      "indentation": [],
+      "sr_script": ["superscript", "subscript"],
+      "list": ["bullist", "numlist"],
+      "insert": ["link"],
+      "advanced": ["blockquote"],
+      "extensions": [],
+      "editor": ["removeformat"],
+      "selector": ["h1", "h2", "h3", "p"],
+      "disclaimer": {
+        "fontSize": "smallest"
+      }
+    }
+  },
+  {
     "id": "cards",
     "components": [
       "card"
