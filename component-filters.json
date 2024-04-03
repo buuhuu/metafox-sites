@@ -3,7 +3,8 @@
     "id": "main",
     "components": [
       "section",
-      "BMW UI Comps"
+      "bmw_main_section",
+      "footer_section"
     ]
   },
   {
@@ -11,10 +12,18 @@
     "components": []
   },
   {
-    "id": "BMW UI Comps",
+    "id": "bmw_main_section",
     "components": [
       "text-image",
       "section"
+    ]
+  },
+  {
+    "id": "footer_section",
+    "components": [
+      "footer-text",
+      "text",
+      "columns"
     ]
   },
   {
@@ -23,7 +32,8 @@
       "text",
       "image",
       "button",
-      "title"
+      "title",
+      "footer-text"
     ]
   },
   {
@@ -40,24 +50,6 @@
       "text-image-vertical",
       "BMW-Iframe"
     ]
-  },
-  {
-    "id": "text",
-    "rte": {
-      "format": ["bold", "italic"],
-      "alignment": ["left","center","right"],
-      "indentation": [],
-      "sr_script": ["superscript", "subscript"],
-      "list": ["bullist", "numlist"],
-      "insert": ["link"],
-      "advanced": ["blockquote"],
-      "extensions": [],
-      "editor": ["removeformat"],
-      "selector": ["h1", "h2", "h3", "p"],
-      "disclaimer": {
-        "fontSize": "smallest"
-      }
-    }
   },
   {
     "id": "cards",
