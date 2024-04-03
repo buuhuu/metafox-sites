@@ -4,7 +4,7 @@
     "components": [
       "section",
       "bmw_main_section",
-      "footer_section"
+      "footer-section"
     ]
   },
   {
@@ -19,7 +19,7 @@
     ]
   },
   {
-    "id": "footer_section",
+    "id": "footer-section",
     "components": [
       "footer-text",
       "text",
@@ -48,7 +48,8 @@
       "columns",
       "text-image",
       "text-image-vertical",
-      "BMW-Iframe"
+      "BMW-Iframe",
+      "footer-text"
     ]
   },
   {
