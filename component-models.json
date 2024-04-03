@@ -325,5 +325,80 @@
       }
       
     ]
+  },
+  {
+    "id": "footer-section",
+    "fields": [
+      {
+        "id": "link_count",
+        "fields": [
+          {
+            "component": "number",
+            "valueType": "number",
+            "name": "link_count",
+            "label": "No of Links",
+            "description": "This is a number field.",
+            "required": true,
+            "placeholder": null,
+            "validation": {
+              "numberMin": 1,
+              "numberMax": 10,
+              "customErrorMsg": "Please enter a no. between 1 & 10 (both inclusive) only"
+            }
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "order_direction",
+        "filter": "order_direction",
+        "value": "",
+        "label": "Direction",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Horizontal",
+            "value": "horizontal"
+          },
+          {
+            "name": "Vertical",
+            "value": "vertical"
+          }
+        ]
+      },
+      {
+        "component": "text-input",
+        "name": "style",
+        "value": "",
+        "label": "Style",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "footer-text",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image / Icon",
+        "multi": false
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "label",
+        "label": "Display text",
+        "value": ""
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "link",
+        "label": "Anchor link",
+        "value": ""
+      }
+    ]
   }
 ]
