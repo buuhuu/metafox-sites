@@ -1,6 +1,7 @@
 {
   "mappings": [
-    "/content/metafox/:/"
+    "/content/metafox/:/",
+    "/content/metafox/index/component-test/"
 ],
   "includes": ["/content/metafox/"]
 }

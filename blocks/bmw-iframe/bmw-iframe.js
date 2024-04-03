@@ -5,13 +5,22 @@ export function generateIFrameDOM(props) {
   // Build DOM
   const iFrameDOM = document.createRange().createContextualFragment(`
     <div>
-    <iframe src="${iFrameUrl.textContent}" style="border:1px solid black;">
+    <iframe src="${iFrameUrl.textContent}" style="border:1px solid black;" id="bmwIframe">
     </iframe>
     
     </div>
   `);
   return iFrameDOM;
 }
+
+// window.onload = function() {
+//   var iframe = document.getElementById('bmwIframe');
+//   var loadingOverlay = document.querySelector('.loading-overlay');
+
+//   iframe.onload = function() {
+//     loadingOverlay.style.display = 'none';
+//   };
+// };
 
 export default function decorate(block) {
   // get the first and only cell from each row
