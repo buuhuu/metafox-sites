@@ -1,13 +1,14 @@
 export function generateFooterTextDom(props) {
   // Extract properties, always same order as in model, empty string if not set
-  const [text, link] = props;
+  const [image, text, link] = props;
+  console.log('link', link.textContent);
 
   // Build DOM
   const footerTextDom = document.createRange().createContextualFragment(`
           <div class='footer-list-container'>
             <div class='footer-list'>
                 <ul  class='list-item'>
-                    <li class='list-link'><a href=${link.innerHTML}>${text.innerHTML}</a></li>
+                    <li class='list-link'><a href=${link.textContent}>${text.textContent}</a></li>
                 </ul>
             </div>
           </div>
