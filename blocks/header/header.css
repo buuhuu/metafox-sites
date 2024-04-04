@@ -238,6 +238,36 @@ header nav .nav-sections ul > li > ul > li {
     margin: 0;
     font-size: var(--body-font-size-xs);
   }
+  
+  header nav .nav-sections .default-content-wrapper {
+    display: flex;
+  }
+  
+  header nav .nav-sections .default-content-wrapper .button-container a.button {
+    color:  var(--light-border-color);
+    background-color: transparent;
+    padding: 30px 10px;
+    margin: 0;
+  }
+  
+  header nav .nav-sections .default-content-wrapper .button-container a.button:hover {
+    border-bottom: .25rem solid var(--light-link-hover-color);
+    color: var( --light-text-color);
+    border-top: .25rem solid transparent;
+    border-radius: 0;
+    padding: 30px 10px;
+    margin: 0;
+  }
+
+  header nav .nav-sections .default-content-wrapper .button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul {
+   align-items: center;
+  }
 
   header nav .nav-sections .default-content-wrapper > ul > li {
     flex: 0 1 auto;
