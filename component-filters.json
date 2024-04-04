@@ -49,8 +49,22 @@
       "text-image",
       "text-image-vertical",
       "BMW-Iframe",
-      "footer-text"
+      "footer-text",
+      "BMW-logo"
     ]
+  },
+  {
+    "id": "text",
+    "rte": {
+      "format": ["bold"],
+      "alignment": [],
+      "indentation": [],
+      "sr_script": ["superscript", "subscript"],
+      "list": ["bullist", "numlist"],
+      "insert": ["link"],
+      "advanced": [],
+      "extensions": []
+    }
   },
   {
     "id": "cards",

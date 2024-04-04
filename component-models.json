@@ -383,14 +383,42 @@
         "valueType": "string",
         "name": "image",
         "label": "Image / Icon",
-        "multi": false
+        "multi": true
       },
       {
         "component": "text-input",
         "valueType": "string",
         "name": "label",
         "label": "Display text",
-        "value": ""
+        "value": "",
+        "multi": true
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "link",
+        "label": "Anchor link",
+        "value": "",
+        "multi": true
+      }
+    ]
+  },
+  {
+    "id": "BMW-logo",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "fileReference",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "alt",
+        "value": "Default alt",
+        "label": "Alt Text"
       },
       {
         "component": "text-input",
