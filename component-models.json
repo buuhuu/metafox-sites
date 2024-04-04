@@ -400,5 +400,31 @@
         "value": ""
       }
     ]
+  },
+  {
+    "id": "BMW-logo",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "fileReference",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "alt",
+        "value": "Default alt",
+        "label": "Alt Text"
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "link",
+        "label": "Anchor link",
+        "value": ""
+      }
+    ]
   }
 ]
