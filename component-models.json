@@ -48,7 +48,7 @@
     "id": "Horizontal-Link-Text",
     "fields": [
       {
-        "component": "text",
+        "component": "richtext",
         "valueType": "string",
         "name": "horizontal-link-text",
         "value": "",
@@ -60,7 +60,7 @@
     "id": "Vertical-Link-Text",
     "fields": [
       {
-        "component": "text",
+        "component": "richtext",
         "valueType": "string",
         "name": "vertical-link-text",
         "value": "",
