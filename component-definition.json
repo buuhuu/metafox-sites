@@ -204,25 +204,31 @@
           }
         },
         {
-          "title": "Horizontal Link Text",
+          "title": "Horizontal-Link-Text",
           "id": "Horizontal-Link-Text",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/text/v1/text",
-                "template": {}
+                "template": {
+                  "name": "Horizontal-Link-Text",
+                  "model": "Horizontal-Link-Text"
+                }
               }
             }
           }
         },
         {
-          "title": "Vertical Link Text",
+          "title": "Vertical-Link-Text",
           "id": "Vertical-Link-Text",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/text/v1/text",
-                "template": {}
+                "template": {
+                  "name": "Vertical-Link-Text",
+                  "model": "Vertical-Link-Text"
+                }
               }
             }
           }
