@@ -33,7 +33,9 @@
       "image",
       "button",
       "title",
-      "footer-text"
+      "footer-text",
+      "Vertical-Link-Text",
+      "Horizontal-Link-Text"
     ]
   },
   {
@@ -49,20 +51,38 @@
       "text-image",
       "text-image-vertical",
       "BMW-Iframe",
-      "footer-text"
+      "footer-text",
+      "BMW-logo",
+      "Horizontal-Link-Text",
+      "Vertical-Link-Text"
     ]
   },
   {
-    "id": "text",
+    "id": "Horizontal-Link-Text",
     "rte": {
       "format": ["bold"],
       "alignment": [],
       "indentation": [],
-      "sr_script": ["superscript", "subscript"],
-      "list": ["bullist", "numlist"],
+      "sr_script": [],
+      "list": ["bullist"],
       "insert": ["link"],
       "advanced": [],
-      "extensions": []
+      "extensions": [],
+      "selector": ["p"]
+    }
+  },
+  {
+    "id": "Vertical-Link-Text",
+    "rte": {
+      "format": ["bold"],
+      "alignment": [],
+      "indentation": [],
+      "sr_script": [],
+      "list": ["bullist"],
+      "insert": ["link"],
+      "advanced": [],
+      "extensions": [],
+      "selector": ["p"]
     }
   },
   {
