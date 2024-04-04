@@ -58,34 +58,6 @@
     ]
   },
   {
-    "id": "Horizontal-Link-Text",
-    "rte": {
-      "format": ["bold"],
-      "alignment": [],
-      "indentation": [],
-      "sr_script": [],
-      "list": ["bullist"],
-      "insert": ["link"],
-      "advanced": [],
-      "extensions": [],
-      "selector": ["p"]
-    }
-  },
-  {
-    "id": "Vertical-Link-Text",
-    "rte": {
-      "format": ["bold"],
-      "alignment": [],
-      "indentation": [],
-      "sr_script": [],
-      "list": ["bullist"],
-      "insert": ["link"],
-      "advanced": [],
-      "extensions": [],
-      "selector": ["p"]
-    }
-  },
-  {
     "id": "cards",
     "components": [
       "card"
