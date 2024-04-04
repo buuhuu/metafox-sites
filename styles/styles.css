@@ -220,13 +220,7 @@ main .section {
   
 }
 
-/* desktop */
-@media (width >= 769px) {
-  .section > div {
-    max-width: 1200px;
-    margin: auto;
-  }
-}
+
 
 /* section metadata */
 main .section.light,
