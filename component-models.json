@@ -45,6 +45,30 @@
     ]
   },
   {
+    "id": "Horizontal-Link-Text",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "horizontal-link-text",
+        "value": "",
+        "label": "Horizontal Link Text"
+      }
+    ]
+  },
+  {
+    "id": "Vertical-Link-Text",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "vertical-link-text",
+        "value": "",
+        "label": "Vertical Link Text"
+      }
+    ]
+  },
+  {
     "id": "image",
     "fields": [
       {
