@@ -20,6 +20,9 @@
   --light-color: #eee;
   --dark-color: #ccc;
   --text-color: black;
+  --light-border-color: #666;
+  --light-text-color: #262626;
+  --light-link-hover-color: #1c69d4;
 
   /* fonts */
 
@@ -214,15 +217,10 @@ main .section {
   main .section {
     padding: 64px 32px;
   }
+  
 }
 
-/* desktop */
-@media (width >= 769px) {
-  .section > div {
-    max-width: 1200px;
-    margin: auto;
-  }
-}
+
 
 /* section metadata */
 main .section.light,
