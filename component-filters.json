@@ -33,7 +33,9 @@
       "image",
       "button",
       "title",
-      "footer-text"
+      "footer-text",
+      "Vertical-Link-Text",
+      "Horizontal-Link-Text"
     ]
   },
   {
