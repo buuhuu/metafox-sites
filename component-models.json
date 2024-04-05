@@ -373,22 +373,15 @@
         ]
       },
       {
-        "component": "select",
-        "name": "order_direction",
-        "filter": "order_direction",
-        "value": "",
-        "label": "Direction",
+        "component": "radio-group",
+        "label": "Background Color",
+        "name": "radio",
         "valueType": "string",
         "options": [
-          {
-            "name": "Horizontal",
-            "value": "horizontal"
-          },
-          {
-            "name": "Vertical",
-            "value": "vertical"
-          }
-        ]
+          { "name": "White", "value": "white" },
+          { "name": "Grey", "value": "grey" }
+        ],
+        "defaultValue": "white"
       },
       {
         "component": "text-input",
