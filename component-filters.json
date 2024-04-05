@@ -23,12 +23,22 @@
     "components": [
       "footer-text",
       "text",
-      "columns"
+      "columns",
+      "BMW-Text"
     ]
   },
   {
     "id": "column",
-    "components": ["text", "image", "button", "title", "footer-text", "vertical-link-text", "horizontal-link-text"]
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title",
+      "footer-text",
+      "vertical-link-text",
+      "horizontal-link-text",
+      "BMW-Text"
+    ]
   },
   {
     "id": "section",
@@ -46,21 +56,22 @@
       "footer-text",
       "BMW-logo",
       "horizontal-link-text",
-      "vertical-link-text"
+      "vertical-link-text",
+      "BMW-Text"
     ]
   },
   {
-    "id": "horizontal-link-text",
+    "id": "BMW-Text",
     "rte": {
-      "format": ["bold"],
-      "alignment": [],
+      "format": ["bold", "italic"],
+      "alignment": ["left","centre","right"],
       "indentation": [],
-      "sr_script": [],
-      "list": ["bullist"],
+      "sr_script": ["superscript", "subscript"],
+      "list": ["bullist", "numlist"],
       "insert": ["link"],
-      "advanced": [],
+      "advanced": ["blockquote"],
       "extensions": [],
-      "selector": ["p"]
+      "editor": ["removeformat"]
     }
   },
   {
@@ -74,7 +85,21 @@
       "insert": ["link"],
       "advanced": [],
       "extensions": [],
-      "selector": ["p"]
+      "editor": []
+    }
+  },
+  {
+    "id": "horizontal-link-text",
+    "rte": {
+      "format": ["bold"],
+      "alignment": [],
+      "indentation": [],
+      "sr_script": [],
+      "list": ["bullist"],
+      "insert": ["link"],
+      "advanced": [],
+      "extensions": [],
+      "editor": []
     }
   },
   {

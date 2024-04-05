@@ -69,6 +69,18 @@
     ]
   },
   {
+    "id": "BMW-Text",
+    "fields": [
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "bmw-text",
+        "value": "",
+        "label": "BMW Text"
+      }
+    ]
+  },
+  {
     "id": "image",
     "fields": [
       {
@@ -142,7 +154,12 @@
         "valueType": "number",
         "name": "columns",
         "value": "",
-        "label": "Columns"
+        "label": "Columns",
+        "validation": {
+          "numberMin": 1,
+          "numberMax": 6,
+          "customErrorMsg": "Please enter a no. between 1 & 6 (both inclusive) only"
+        }
       },
       {
         "component": "text-input",
