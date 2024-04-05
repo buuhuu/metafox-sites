@@ -72,7 +72,7 @@
     }
   },
   {
-    "id": "Vertical-Link-Text",
+    "id": "vertical-link-text",
     "rte": {
       "format": ["bold"],
       "alignment": [],
@@ -86,7 +86,7 @@
     }
   },
   {
-    "id": "Horizontal-Link-Text",
+    "id": "horizontal-link-text",
     "rte": {
       "format": ["bold"],
       "alignment": [],
