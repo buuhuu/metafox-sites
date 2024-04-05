@@ -34,8 +34,8 @@
       "button",
       "title",
       "footer-text",
-      "Vertical-Link-Text",
-      "Horizontal-Link-Text"
+      "vertical-link-text",
+      "horizontal-link-text"
     ]
   },
   {
@@ -53,8 +53,8 @@
       "BMW-Iframe",
       "footer-text",
       "BMW-logo",
-      "Horizontal-Link-Text",
-      "Vertical-Link-Text"
+      "horizontal-link-text",
+      "vertical-link-text"
     ]
   },
   {
