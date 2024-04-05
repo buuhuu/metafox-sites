@@ -45,7 +45,7 @@
     ]
   },
   {
-    "id": "Horizontal-Link-Text",
+    "id": "horizontal-link-text",
     "fields": [
       {
         "component": "richtext",
@@ -57,7 +57,7 @@
     ]
   },
   {
-    "id": "Vertical-Link-Text",
+    "id": "vertical-link-text",
     "fields": [
       {
         "component": "richtext",

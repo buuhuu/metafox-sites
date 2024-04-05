@@ -35,8 +35,8 @@
       "button",
       "title",
       "footer-text",
-      "Vertical-Link-Text",
-      "Horizontal-Link-Text",
+      "vertical-link-text",
+      "horizontal-link-text",
       "BMW-Text"
     ]
   },
@@ -55,8 +55,8 @@
       "BMW-Iframe",
       "footer-text",
       "BMW-logo",
-      "Horizontal-Link-Text",
-      "Vertical-Link-Text",
+      "horizontal-link-text",
+      "vertical-link-text",
       "BMW-Text"
     ]
   },
@@ -75,7 +75,7 @@
     }
   },
   {
-    "id": "Vertical-Link-Text",
+    "id": "vertical-link-text",
     "rte": {
       "format": ["bold"],
       "alignment": [],
@@ -89,7 +89,7 @@
     }
   },
   {
-    "id": "Horizontal-Link-Text",
+    "id": "horizontal-link-text",
     "rte": {
       "format": ["bold"],
       "alignment": [],
