@@ -28,15 +28,7 @@
   },
   {
     "id": "column",
-    "components": [
-      "text",
-      "image",
-      "button",
-      "title",
-      "footer-text",
-      "Vertical-Link-Text",
-      "Horizontal-Link-Text"
-    ]
+    "components": ["text", "image", "button", "title", "footer-text", "vertical-link-text", "horizontal-link-text"]
   },
   {
     "id": "section",
@@ -53,12 +45,12 @@
       "BMW-Iframe",
       "footer-text",
       "BMW-logo",
-      "Horizontal-Link-Text",
-      "Vertical-Link-Text"
+      "horizontal-link-text",
+      "vertical-link-text"
     ]
   },
   {
-    "id": "Horizontal-Link-Text",
+    "id": "horizontal-link-text",
     "rte": {
       "format": ["bold"],
       "alignment": [],
@@ -72,7 +64,7 @@
     }
   },
   {
-    "id": "Vertical-Link-Text",
+    "id": "vertical-link-text",
     "rte": {
       "format": ["bold"],
       "alignment": [],
