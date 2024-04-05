@@ -69,6 +69,18 @@
     ]
   },
   {
+    "id": "BMW-Text",
+    "fields": [
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "bmw-text",
+        "value": "",
+        "label": "BMW Text"
+      }
+    ]
+  },
+  {
     "id": "image",
     "fields": [
       {
