@@ -45,6 +45,42 @@
     ]
   },
   {
+    "id": "Horizontal-Link-Text",
+    "fields": [
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "horizontal-link-text",
+        "value": "",
+        "label": "Horizontal Link Text"
+      }
+    ]
+  },
+  {
+    "id": "Vertical-Link-Text",
+    "fields": [
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "vertical-link-text",
+        "value": "",
+        "label": "Vertical Link Text"
+      }
+    ]
+  },
+  {
+    "id": "BMW-Text",
+    "fields": [
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "bmw-text",
+        "value": "",
+        "label": "BMW Text"
+      }
+    ]
+  },
+  {
     "id": "image",
     "fields": [
       {
@@ -383,21 +419,23 @@
         "valueType": "string",
         "name": "image",
         "label": "Image / Icon",
-        "multi": false
+        "multi": true
       },
       {
         "component": "text-input",
         "valueType": "string",
         "name": "label",
         "label": "Display text",
-        "value": ""
+        "value": "",
+        "multi": true
       },
       {
         "component": "text-input",
         "valueType": "string",
         "name": "link",
         "label": "Anchor link",
-        "value": ""
+        "value": "",
+        "multi": true
       }
     ]
   },
