@@ -58,6 +58,7 @@ header nav[aria-expanded="true"] {
   header nav .nav-tools .default-content-wrapper .icon-location {
     display: none;
   }
+
   header .nav-wrapper {
     position: relative;   
   }
@@ -81,10 +82,12 @@ header nav[aria-expanded="true"] {
     width: 36px;
     height: 36px;
   }
+
   header nav[aria-expanded="true"] .nav-sections {
     position: relative;
     top: 65px;
   }
+
   header nav[aria-expanded="false"] {
     border-bottom: 2px solid #666;
   }
@@ -95,11 +98,11 @@ header nav[aria-expanded="true"] {
   }
 
   header nav[aria-expanded="false"] .section.nav-tools .icon img {
-   
     position: relative;
     left: 125px;
     top: 3px;
   }
+
   header nav[aria-expanded="true"] .section.nav-tools .icon img {
     left: 125px;
     top: 3px;
