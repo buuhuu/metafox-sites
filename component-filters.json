@@ -37,7 +37,7 @@
       "footer-text",
       "vertical-link-text",
       "horizontal-link-text",
-      "icon"
+      "icon-link-list"
     ]
   },
   {
@@ -57,7 +57,7 @@
       "BMW-logo",
       "horizontal-link-text",
       "vertical-link-text",
-      "icon"
+      "icon-link-list"
     ]
   },
   {
@@ -106,6 +106,12 @@
     "id": "cards",
     "components": [
       "card"
+    ]
+  },
+  {
+    "id": "icon-link-list",
+    "components": [
+      "icon"
     ]
   }
 ]
