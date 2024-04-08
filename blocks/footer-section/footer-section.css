@@ -1,0 +1,21 @@
+[data-aue-label*="footer-section"].section {
+    position: relative;
+}
+
+.footer-white-bg{
+    background-color: var(--background-color);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+.footer-grey-bg{
+    background-color: var(--light-grey);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+}
