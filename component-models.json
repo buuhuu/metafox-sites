@@ -487,5 +487,25 @@
         "label": "Icon Link"
       }
     ]
-  }
+  },
+  {
+    "id": "section-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "name": "sectiontype",
+        "label": "Section Type"
+      }
+    ]
+  },
+  {
+    "id": "page-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "name": "pagetype",
+        "label": "Page Type"
+      }
+    ]
+  }  
 ]
