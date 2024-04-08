@@ -45,7 +45,7 @@
     ]
   },
   {
-    "id": "Horizontal-Link-Text",
+    "id": "horizontal-link-text",
     "fields": [
       {
         "component": "richtext",
@@ -57,7 +57,7 @@
     ]
   },
   {
-    "id": "Vertical-Link-Text",
+    "id": "vertical-link-text",
     "fields": [
       {
         "component": "richtext",
@@ -65,18 +65,6 @@
         "name": "vertical-link-text",
         "value": "",
         "label": "Vertical Link Text"
-      }
-    ]
-  },
-  {
-    "id": "BMW-Text",
-    "fields": [
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "bmw-text",
-        "value": "",
-        "label": "BMW Text"
       }
     ]
   },
@@ -154,7 +142,12 @@
         "valueType": "number",
         "name": "columns",
         "value": "",
-        "label": "Columns"
+        "label": "Columns",
+        "validation": {
+          "numberMin": 1,
+          "numberMax": 6,
+          "customErrorMsg": "Please enter a no. between 1 & 6 (both inclusive) only"
+        }
       },
       {
         "component": "text-input",
@@ -342,24 +335,9 @@
         "component": "text-input",
         "valueType": "string",
         "name": "iFrameUrl",
-        "label": "url",
+        "label": "IFrame URL",
         "value": ""
-      },
-      {
-        "component": "text-input",
-        "name": "iframeHeight",
-        "value": "",
-        "label": "iframeHeight",
-        "valueType": "string"
-      },
-      {
-        "component": "text-input",
-        "name": "iframeWidth",
-        "value": "",
-        "label": "iframeWidth",
-        "valueType": "string"
       }
-      
     ]
   },
   {
@@ -385,22 +363,15 @@
         ]
       },
       {
-        "component": "select",
-        "name": "order_direction",
-        "filter": "order_direction",
-        "value": "",
-        "label": "Direction",
+        "component": "radio-group",
+        "label": "Background Color",
+        "name": "radio",
         "valueType": "string",
         "options": [
-          {
-            "name": "Horizontal",
-            "value": "horizontal"
-          },
-          {
-            "name": "Vertical",
-            "value": "vertical"
-          }
-        ]
+          { "name": "White", "value": "white" },
+          { "name": "Grey", "value": "grey" }
+        ],
+        "defaultValue": "white"
       },
       {
         "component": "text-input",
@@ -464,5 +435,77 @@
         "value": ""
       }
     ]
-  }
+  },
+  {
+    "id": "icon",
+    "fields": [
+      {
+        "component": "select",
+        "name": "icon type",
+        "value": "",
+        "label": "Icon Type (dropdown)",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Facebook",
+            "value": "facebook"
+          },
+          {
+            "name": "Instagram",
+            "value": "instagram"
+          },
+          {
+            "name": "YouTube",
+            "value": "youtube"
+          },
+          {
+            "name": "X (former Twitter)",
+            "value": "twitter"
+          },
+          {
+            "name": "LinkedIn",
+            "value": "linkedin"
+          },
+          {
+            "name": "TikTok",
+            "value": "tiktok"
+          }
+        ]
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "alt text",
+        "label": "Alt Text",
+        "value": ""
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "icon link",
+        "value": "",
+        "label": "Icon Link"
+      }
+    ]
+  },
+  {
+    "id": "section-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "name": "sectiontype",
+        "label": "Section Type"
+      }
+    ]
+  },
+  {
+    "id": "page-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "name": "pagetype",
+        "label": "Page Type"
+      }
+    ]
+  }  
 ]
