@@ -23,7 +23,8 @@
     "components": [
       "footer-text",
       "text",
-      "columns"
+      "columns",
+      "icon"
     ]
   },
   {
@@ -35,7 +36,8 @@
       "title",
       "footer-text",
       "vertical-link-text",
-      "horizontal-link-text"
+      "horizontal-link-text",
+      "icon"
     ]
   },
   {
@@ -54,7 +56,8 @@
       "footer-text",
       "BMW-logo",
       "horizontal-link-text",
-      "vertical-link-text"
+      "vertical-link-text",
+      "icon"
     ]
   },
   {

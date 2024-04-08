@@ -450,5 +450,57 @@
         "value": ""
       }
     ]
+  },
+  {
+    "id": "icon",
+    "fields": [
+      {
+        "component": "select",
+        "name": "icon type",
+        "value": "",
+        "label": "Icon Type (dropdown)",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Facebook",
+            "value": "facebook"
+          },
+          {
+            "name": "Instagram",
+            "value": "instagram"
+          },
+          {
+            "name": "YouTube",
+            "value": "youtube"
+          },
+          {
+            "name": "X (former Twitter)",
+            "value": "twitter"
+          },
+          {
+            "name": "LinkedIn",
+            "value": "linkedin"
+          },
+          {
+            "name": "TikTok",
+            "value": "tiktok"
+          }
+        ]
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "alt text",
+        "label": "Alt Text",
+        "value": ""
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "icon link",
+        "value": "",
+        "label": "Icon Link"
+      }
+    ]
   }
 ]
