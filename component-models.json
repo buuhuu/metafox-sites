@@ -45,6 +45,30 @@
     ]
   },
   {
+    "id": "horizontal-link-text",
+    "fields": [
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "horizontal-link-text",
+        "value": "",
+        "label": "Horizontal Link Text"
+      }
+    ]
+  },
+  {
+    "id": "vertical-link-text",
+    "fields": [
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "vertical-link-text",
+        "value": "",
+        "label": "Vertical Link Text"
+      }
+    ]
+  },
+  {
     "id": "image",
     "fields": [
       {
@@ -118,7 +142,12 @@
         "valueType": "number",
         "name": "columns",
         "value": "",
-        "label": "Columns"
+        "label": "Columns",
+        "validation": {
+          "numberMin": 1,
+          "numberMax": 6,
+          "customErrorMsg": "Please enter a no. between 1 & 6 (both inclusive) only"
+        }
       },
       {
         "component": "text-input",
@@ -308,6 +337,154 @@
         "name": "iFrameUrl",
         "label": "IFrame URL",
         "value": ""
+      }
+    ]
+  },
+  {
+    "id": "footer-section",
+    "fields": [
+      {
+        "id": "link_count",
+        "fields": [
+          {
+            "component": "number",
+            "valueType": "number",
+            "name": "link_count",
+            "label": "No of Links",
+            "description": "This is a number field.",
+            "required": true,
+            "placeholder": null,
+            "validation": {
+              "numberMin": 1,
+              "numberMax": 10,
+              "customErrorMsg": "Please enter a no. between 1 & 10 (both inclusive) only"
+            }
+          }
+        ]
+      },
+      {
+        "component": "radio-group",
+        "label": "Background Color",
+        "name": "radio",
+        "valueType": "string",
+        "options": [
+          { "name": "White", "value": "white" },
+          { "name": "Grey", "value": "grey" }
+        ],
+        "defaultValue": "white"
+      },
+      {
+        "component": "text-input",
+        "name": "style",
+        "value": "",
+        "label": "Style",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "footer-text",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image / Icon",
+        "multi": true
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "label",
+        "label": "Display text",
+        "value": "",
+        "multi": true
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "link",
+        "label": "Anchor link",
+        "value": "",
+        "multi": true
+      }
+    ]
+  },
+  {
+    "id": "BMW-logo",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "fileReference",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "alt",
+        "value": "Default alt",
+        "label": "Alt Text"
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "link",
+        "label": "Anchor link",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "id": "icon",
+    "fields": [
+      {
+        "component": "select",
+        "name": "icon type",
+        "value": "",
+        "label": "Icon Type (dropdown)",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Facebook",
+            "value": "facebook"
+          },
+          {
+            "name": "Instagram",
+            "value": "instagram"
+          },
+          {
+            "name": "YouTube",
+            "value": "youtube"
+          },
+          {
+            "name": "X (former Twitter)",
+            "value": "twitter"
+          },
+          {
+            "name": "LinkedIn",
+            "value": "linkedin"
+          },
+          {
+            "name": "TikTok",
+            "value": "tiktok"
+          }
+        ]
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "alt text",
+        "label": "Alt Text",
+        "value": ""
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "icon link",
+        "value": "",
+        "label": "Icon Link"
       }
     ]
   }

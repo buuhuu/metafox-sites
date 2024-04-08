@@ -3,7 +3,8 @@
     "id": "main",
     "components": [
       "section",
-      "BMW UI Comps"
+      "bmw_main_section",
+      "footer-section"
     ]
   },
   {
@@ -11,10 +12,19 @@
     "components": []
   },
   {
-    "id": "BMW UI Comps",
+    "id": "bmw_main_section",
     "components": [
       "text-image",
       "section"
+    ]
+  },
+  {
+    "id": "footer-section",
+    "components": [
+      "footer-text",
+      "text",
+      "columns",
+      "icon"
     ]
   },
   {
@@ -23,7 +33,11 @@
       "text",
       "image",
       "button",
-      "title"
+      "title",
+      "footer-text",
+      "vertical-link-text",
+      "horizontal-link-text",
+      "icon"
     ]
   },
   {
@@ -38,8 +52,55 @@
       "columns",
       "text-image",
       "text-image-vertical",
-      "BMW-Iframe"
+      "BMW-Iframe",
+      "footer-text",
+      "BMW-logo",
+      "horizontal-link-text",
+      "vertical-link-text",
+      "icon"
     ]
+  },
+  {
+    "id": "text",
+    "rte": {
+      "format": ["bold"],
+      "alignment": [],
+      "indentation": [],
+      "sr_script": ["superscript", "subscript"],
+      "list": ["bullist", "numlist"],
+      "insert": ["link"],
+      "advanced": [],
+      "extensions": [],
+      "editor": ["removeformat"]
+    }
+  },
+  {
+    "id": "vertical-link-text",
+    "rte": {
+      "format": ["bold"],
+      "alignment": [],
+      "indentation": [],
+      "sr_script": [],
+      "list": ["bullist"],
+      "insert": ["link"],
+      "advanced": [],
+      "extensions": [],
+      "editor": []
+    }
+  },
+  {
+    "id": "horizontal-link-text",
+    "rte": {
+      "format": ["bold"],
+      "alignment": [],
+      "indentation": [],
+      "sr_script": [],
+      "list": ["bullist"],
+      "insert": ["link"],
+      "advanced": [],
+      "extensions": [],
+      "editor": []
+    }
   },
   {
     "id": "cards",
