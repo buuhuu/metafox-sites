@@ -25,6 +25,7 @@ header nav[aria-expanded="true"] {
     'tools tools' var(--nav-height) / auto 1fr;
   overflow-y: auto;
   min-height: 100vh;
+  align-items: baseline;
 }
 
 /* IPAD */
@@ -46,7 +47,9 @@ header nav[aria-expanded="true"] {
   header nav[aria-expanded="true"] {
     min-height: 0;
     overflow: visible;
+    align-items: center;
   }
+
 }
 
 /* Mobile */
@@ -54,6 +57,55 @@ header nav[aria-expanded="true"] {
 @media (width < 600px) {
   header nav .nav-tools .default-content-wrapper .icon-location {
     display: none;
+  }
+
+  header .nav-wrapper {
+    position: relative;   
+  }
+
+  header nav {
+    display: flex;
+    padding: 0 1.5rem;
+    justify-content: space-between;
+  }
+
+  .nav-hamburger {
+   order: 2;
+  }
+
+  header nav[aria-expanded="true"] .bmw-logo-wrapper {
+  position: relative;
+  top: 20px;
+  }
+
+  header nav .nav-brand img {
+    width: 36px;
+    height: 36px;
+  }
+
+  header nav[aria-expanded="true"] .nav-sections {
+    position: relative;
+    top: 65px;
+  }
+
+  header nav[aria-expanded="false"] {
+    border-bottom: 2px solid #666;
+  }
+
+  header .section.nav-tools .icon img {
+    height: 20px;
+    width: 20px;
+  }
+
+  header nav[aria-expanded="false"] .section.nav-tools .icon img {
+    position: relative;
+    left: 125px;
+    top: 3px;
+  }
+
+  header nav[aria-expanded="true"] .section.nav-tools .icon img {
+    left: 125px;
+    top: 3px;
   }
 }
 
@@ -156,10 +208,6 @@ header .nav-brand {
   line-height: 1;
 }
 
-header nav .nav-brand img {
-  width: 52px;
-  height: 52px;
-}
 
 /* sections */
 header nav .nav-sections {
@@ -197,6 +245,11 @@ header nav .nav-sections ul > li > ul > li {
 }
 
 @media (width >= 900px) {
+  header nav .nav-brand img {
+    width: 52px;
+    height: 52px;
+  }
+
   header nav .nav-sections {
     display: block;
     visibility: visible;
@@ -238,6 +291,36 @@ header nav .nav-sections ul > li > ul > li {
     margin: 0;
     font-size: var(--body-font-size-xs);
   }
+  
+  header nav .nav-sections .default-content-wrapper {
+    display: flex;
+  }
+  
+  header nav .nav-sections .default-content-wrapper .button-container a.button {
+    color:  var(--light-border-color);
+    background-color: transparent;
+    padding: 30px 10px;
+    margin: 0;
+  }
+  
+  header nav .nav-sections .default-content-wrapper .button-container a.button:hover {
+    border-bottom: .25rem solid var(--light-link-hover-color);
+    color: var( --light-text-color);
+    border-top: .25rem solid transparent;
+    border-radius: 0;
+    padding: 30px 10px;
+    margin: 0;
+  }
+
+  header nav .nav-sections .default-content-wrapper .button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul {
+   align-items: center;
+  }
 
   header nav .nav-sections .default-content-wrapper > ul > li {
     flex: 0 1 auto;
@@ -267,6 +350,8 @@ header nav .nav-sections ul > li > ul > li {
   header nav .nav-tools .default-content-wrapper .icon {
     cursor: pointer;
     padding: 30px 15px;
+    width: 20px;
+    height: 20px;
   }
 
   header nav .nav-tools .default-content-wrapper .icon:hover {

@@ -23,8 +23,7 @@
     "components": [
       "footer-text",
       "text",
-      "columns",
-      "BMW-Text"
+      "columns"
     ]
   },
   {
@@ -36,8 +35,7 @@
       "title",
       "footer-text",
       "vertical-link-text",
-      "horizontal-link-text",
-      "BMW-Text"
+      "horizontal-link-text"
     ]
   },
   {
@@ -56,20 +54,19 @@
       "footer-text",
       "BMW-logo",
       "horizontal-link-text",
-      "vertical-link-text",
-      "BMW-Text"
+      "vertical-link-text"
     ]
   },
   {
-    "id": "BMW-Text",
+    "id": "text",
     "rte": {
-      "format": ["bold", "italic"],
-      "alignment": ["left","centre","right"],
+      "format": ["bold"],
+      "alignment": [],
       "indentation": [],
       "sr_script": ["superscript", "subscript"],
       "list": ["bullist", "numlist"],
       "insert": ["link"],
-      "advanced": ["blockquote"],
+      "advanced": [],
       "extensions": [],
       "editor": ["removeformat"]
     }
