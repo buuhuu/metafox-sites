@@ -493,8 +493,18 @@
     "fields": [
       {
         "component": "text",
-        "name": "theme",
-        "label": "Theme"
+        "name": "sectiontype",
+        "label": "Section Type"
+      }
+    ]
+  },
+  {
+    "id": "page-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "name": "pagetype",
+        "label": "Page Type"
       }
     ]
   }  
