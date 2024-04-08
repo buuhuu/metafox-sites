@@ -487,5 +487,15 @@
         "label": "Icon Link"
       }
     ]
-  }
+  },
+  {
+    "id": "section-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "name": "theme",
+        "label": "Theme"
+      }
+    ]
+  }  
 ]
