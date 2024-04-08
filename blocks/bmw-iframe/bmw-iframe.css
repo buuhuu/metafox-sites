@@ -1,8 +1,8 @@
 main .bmw-iframe-container > div {
-   max-width: unset;
+  max-width: unset;
 }
-  
-.loading-overlay {
+
+/* .loading-overlay {
    position: fixed;
    top: 0;
    left: 0;
@@ -33,5 +33,37 @@ main .bmw-iframe-container > div {
    display: block;
    width: 100%;
    height: 100%;
- }
- 
+ } */
+
+.iframe-container {
+  position: relative;
+}
+
+.loader {
+  border: 10px solid #ccc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 50px;
+  width: 50px;
+  border-top-color: black;
+  border-bottom-color: black;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
