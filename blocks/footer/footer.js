@@ -18,4 +18,23 @@ export default async function decorate(block) {
   while (fragment.firstElementChild) footer.append(fragment.firstElementChild);
 
   block.append(footer);
+  function toggleClass(element) {
+    if (element.classList.contains('title--expanded-mobile')) {
+      element.classList.remove('title--expanded-mobile');
+    } else {
+      element.classList.add('title--expanded-mobile');
+    }
+  }
+  const accordionHeaders = document.querySelectorAll('.vertical-link-text h3');
+  accordionHeaders.forEach((header) => {
+    header.addEventListener('click', () => {
+      const listItem = header.nextElementSibling;
+      toggleClass(header);
+      if (listItem.style.display === 'none' || listItem.style.display === '') {
+        listItem.style.display = 'block';
+      } else {
+        listItem.style.display = 'none';
+      }
+    });
+  });
 }

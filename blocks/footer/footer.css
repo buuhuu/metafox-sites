@@ -1,6 +1,6 @@
 footer {
-  padding: 2rem;
-  background-color: var(--light-color);
+  /* padding: 2rem;  */
+  /* background-color: var(--light-color); */
   font-size: var(--body-font-size-s);
 }
 
@@ -25,6 +25,13 @@ footer .vertical-link-text-wrapper .vertical-link-text ul {
 
 footer .vertical-link-text-wrapper .vertical-link-text ul li:not(:last-child) {
   margin-bottom: .75rem;
+}
+footer .horizontal-link-text ul {
+  display: flex;
+  margin-bottom: 0;
+}
+footer .horizontal-link-text ul li:not(:last-child) {
+  margin-right: 2rem;
 }
 footer .vertical-link-text h3, .horizontal-link-text h3{
   display: block;
@@ -61,8 +68,8 @@ footer .vertical-link-text  ul li a, .horizontal-link-text ul li a {
   margin: 0;
   text-decoration: none;
 }
-footer .vertical-link-text-wrapper, .horizontal-link-text-wrapper {
-  padding: 0 .75rem;
+footer .vertical-link-text, .horizontal-link-text {
+  padding: 0 .5rem;
 }
 footer .horizontal-link-text-wrapper .horizontal-link-text > div > div{
     display: flex;
@@ -83,8 +90,28 @@ footer .vertical-link-text-wrapper .vertical-link-text h3 {
 }
 
 @media screen and (max-width: 767px) {
+  footer .vertical-link-text-wrapper .vertical-link-text ul {
+    display: none;
+  }
+  footer > div .horizontal-link-text-wrapper ul{
+    padding: 0;
+  }
+  footer > div .horizontal-link-text-wrapper {
+    margin-bottom: .25rem;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+  }
   footer .vertical-link-text-wrapper .vertical-link-text h3 {
     padding: 0 1.5rem 0 0;
+  }
+  footer .vertical-link-text-container {
+    padding-top: 3rem;
+    position: relative;
+  }
+  footer .default-content-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
   }
   footer .horizontal-link-text-wrapper .horizontal-link-text h3 {
     padding: 0 1.5rem 0 0;
@@ -94,14 +121,15 @@ footer .vertical-link-text-wrapper .vertical-link-text h3 {
     padding: 0;
     margin: 0;
   }
-  footer .vertical-link-text-wrapper .vertical-link-text h3::after,.horizontal-link-text-wrapper .horizontal-link-text h3:after  {
-    content: '';
+  footer .vertical-link-text-wrapper .vertical-link-text h3.title--expanded-mobile::after {
+    transform: translate(25%, -50%) rotate(-180deg);
+  }
+  footer .vertical-link-text-wrapper .vertical-link-text h3::after, h3.title--expanded-mobile::after {
     position: absolute;
     right: 0;
     top: .625rem;
     transform: translate(25%, -50%);
     transition: transform .5s ease-in-out;
-    transform: translate(25%, -50%) rotate(-180deg);
     word-wrap: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -133,7 +161,8 @@ footer .vertical-link-text-wrapper .vertical-link-text h3 {
     margin-top: -.5rem;
     overflow: hidden;
     padding: .5rem 0 0 1rem;
-    transition: max-height .25s ease
+    transition: max-height .25s ease;
+    
   }
 
   footer div>div:nth-child(2) ul {
@@ -142,6 +171,11 @@ footer .vertical-link-text-wrapper .vertical-link-text h3 {
     margin-bottom: .25rem;
     padding-bottom: 1rem;
     padding-top: 2rem;
+    justify-content: center;
+  }
+  footer div>div:nth-child(2) ul li{
+    margin-left: .375rem;
+    margin-right: .375rem;
   }
 
 }
@@ -158,5 +192,8 @@ footer .horizontal-link-text-container .default-content-wrapper p {
   font-size: .75rem;
   font-weight: 300;
   line-height: 1rem;
+}
+footer .background-white {
+  background-color: white;
 }
 
