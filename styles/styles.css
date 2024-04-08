@@ -47,6 +47,15 @@
 
   /* nav height */
   --nav-height: 64px;
+
+  /* breakpoints */
+  --breakpoint-mobile: 360px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1280px;
+  --breakpoint-large-desktop: 1920px;
+
+  /* maximum width */
+  --max-component-width:1920px;
 }
 
 
