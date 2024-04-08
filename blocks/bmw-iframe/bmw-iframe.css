@@ -7,7 +7,7 @@ main .bmw-iframe-container > div {
 }
 
 .loader {
-  border: 10px solid;
+  border: 10px solid transparent;
   position: absolute;
   top: 50%;
   left: 50%;
