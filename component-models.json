@@ -489,22 +489,27 @@
     ]
   },
   {
-    "id": "section-metadata",
-    "fields": [
-      {
-        "component": "text",
-        "name": "sectiontype",
-        "label": "Section Type"
-      }
-    ]
-  },
-  {
     "id": "page-metadata",
     "fields": [
       {
         "component": "text",
         "name": "pagetype",
         "label": "Page Type"
+      },
+      {
+        "component": "multiselect",
+        "name": "headingtype",
+        "label": "Heading Type",
+        "options": [
+          {
+            "name": "Transparent",
+            "value": "transparent"
+          },
+          {
+            "name": "White Background",
+            "value": "whitebackground"
+          }
+        ]
       }
     ]
   }  
