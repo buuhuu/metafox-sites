@@ -77,20 +77,6 @@
     }
   },
   {
-    "id": "copy-right-text",
-    "rte": {
-      "format": ["bold"],
-      "alignment": [],
-      "indentation": [],
-      "sr_script": ["superscript", "subscript"],
-      "list": ["bullist"],
-      "insert": ["link"],
-      "advanced": [],
-      "extensions": [],
-      "editor": []
-    }
-  },
-  {
     "id": "vertical-link-text",
     "rte": {
       "format": ["bold"],
