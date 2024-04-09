@@ -69,6 +69,18 @@
     ]
   },
   {
+    "id": "copyright",
+    "fields": [
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "Copyright",
+        "value": "",
+        "label": "Text"
+      }
+    ]
+  },
+  {
     "id": "image",
     "fields": [
       {
@@ -224,7 +236,7 @@
         "name": "fileReference",
         "label": "Image",
         "value": "",
-        "description": "Image path from AEM DAM - only choose from the dedicated asset folder", 
+        "description": "Image path from AEM DAM - only choose from the dedicated asset folder",
         "multi": false
       },
       {
@@ -232,7 +244,7 @@
         "valueType": "string",
         "name": "imageAlt",
         "label": "Alt text",
-        "description": "Image alt text - highly recommended for SEO", 
+        "description": "Image alt text - highly recommended for SEO",
         "value": ""
       },
       {
@@ -335,24 +347,9 @@
         "component": "text-input",
         "valueType": "string",
         "name": "iFrameUrl",
-        "label": "url",
+        "label": "IFrame URL",
         "value": ""
-      },
-      {
-        "component": "text-input",
-        "name": "iframeHeight",
-        "value": "",
-        "label": "iframeHeight",
-        "valueType": "string"
-      },
-      {
-        "component": "text-input",
-        "name": "iframeWidth",
-        "value": "",
-        "label": "iframeWidth",
-        "valueType": "string"
       }
-      
     ]
   },
   {
@@ -381,12 +378,12 @@
         "component": "radio-group",
         "label": "Background Color",
         "name": "radio",
+        "value": "white",
         "valueType": "string",
         "options": [
           { "name": "White", "value": "white" },
           { "name": "Grey", "value": "grey" }
-        ],
-        "defaultValue": "white"
+        ]
       },
       {
         "component": "text-input",
@@ -530,6 +527,31 @@
         "options": [
           { "name": "Sans Sarif", "value": "sans-serif" },
           { "name": "Arial", "value": "arial" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "page-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "name": "pagetype",
+        "label": "Page Type"
+      },
+      {
+        "component": "select",
+        "name": "headingtype",
+        "label": "Heading Type",
+        "options": [
+          {
+            "name": "Transparent",
+            "value": "transparent"
+          },
+          {
+            "name": "White Background",
+            "value": "whitebackground"
+          }
         ]
       }
     ]

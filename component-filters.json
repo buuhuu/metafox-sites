@@ -24,7 +24,8 @@
       "footer-text",
       "text",
       "columns",
-      "icon"
+      "icon",
+      "copyright"
     ]
   },
   {
@@ -37,7 +38,8 @@
       "footer-text",
       "vertical-link-text",
       "horizontal-link-text",
-      "icon"
+      "icon-link-list",
+      "copyright"
     ]
   },
   {
@@ -58,7 +60,9 @@
       "horizontal-link-text",
       "vertical-link-text",
       "icon",
-      "custom-text-area"
+      "custom-text-area",
+      "icon-link-list",
+      "copyright"
     ]
   },
   {
@@ -107,6 +111,12 @@
     "id": "cards",
     "components": [
       "card"
+    ]
+  },
+  {
+    "id": "icon-link-list",
+    "components": [
+      "icon"
     ]
   }
 ]
