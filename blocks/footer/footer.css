@@ -1,39 +1,60 @@
-footer {
-  /* padding: 2rem;  */
-  /* background-color: var(--light-color); */
-  font-size: var(--body-font-size-s);
-}
-
 footer .footer {
-  max-width: 1200px;
-  margin: auto;
+  padding: 30px;
+  ;
 }
 
 footer .footer p {
+  font-size: .75rem;
+  font-weight: 300;
+  line-height: 1rem;
+}
+
+footer .footer p, footer ul {
   margin: 0;
 }
 
-footer .vertical-link-text-wrapper .vertical-link-text ul, .horizontal-link-text ul,
-h3 {
-  margin: 0 0 3rem 0;
-  padding: 0;
-}
-footer .vertical-link-text-wrapper .vertical-link-text ul {
+footer .vertical-link-text ul {
   display: flex;
   flex-direction: column;
 }
 
-footer .vertical-link-text-wrapper .vertical-link-text ul li:not(:last-child) {
-  margin-bottom: .75rem;
+footer .columns-wrapper .columns>div {
+  gap: unset;
 }
+
 footer .horizontal-link-text ul {
   display: flex;
   margin-bottom: 0;
 }
-footer .horizontal-link-text ul li:not(:last-child) {
-  margin-right: 2rem;
+
+footer .horizontal-link-text-wrapper .horizontal-link-text>div>div,
+footer .horizontal-link-text .columns-wrapper ul {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  margin-bottom: .25rem;
+  padding: 2rem 0 1rem;
 }
-footer .vertical-link-text h3, .horizontal-link-text h3{
+
+footer .horizontal-link-text .horizontal-link-text-wrapper ul {
+  flex-wrap: nowrap;
+  margin: -.75rem;
+  overflow: auto;
+  padding: .75rem;
+  scrollbar-width: none;
+  width: 100%;
+}
+
+footer .horizontal-link-text .columns div>div {
+  display: flex;
+}
+
+footer .vertical-link-text .columns-wrapper .columns>div {
+  align-items: flex-start;
+}
+
+footer .vertical-link-text h3,
+footer .horizontal-link-text h3 {
   display: block;
   font-size: .625rem;
   font-weight: 300;
@@ -44,6 +65,7 @@ footer .vertical-link-text h3, .horizontal-link-text h3{
   text-transform: uppercase;
 
 }
+
 footer .horizontal-link-text h3 {
   padding-top: .25rem;
   margin-right: 2rem;
@@ -51,11 +73,38 @@ footer .horizontal-link-text h3 {
   white-space: nowrap;
   width: auto;
 }
+
+footer .vertical-link-text ul h3,
+footer .horizontal-link-text ul h3 {
+  margin: 0 0 var(--heading-font-size-xxl) 0;
+  padding: 0;
+}
+
 footer ul li {
   list-style: none;
 }
 
-footer .vertical-link-text  ul li a, .horizontal-link-text ul li a {
+footer .vertical-link-text ul li,
+footer .horizontal-link-text ul li {
+  list-style: none;
+}
+
+footer .vertical-link-text ul li:not(:last-child) {
+  margin-bottom: .75rem;
+}
+
+footer .horizontal-link-text ul li:not(:last-child) {
+  margin-right: 2rem;
+}
+
+footer .horizontal-link-text ul li a {
+  font-size: .75rem;
+  font-weight: 700;
+  line-height: 1rem;
+}
+
+footer .vertical-link-text ul li a,
+footer .horizontal-link-text-wrapper .horizontal-link-text ul li a {
   border: 0;
   background: transparent;
   color: #4d4d4d;
@@ -68,63 +117,116 @@ footer .vertical-link-text  ul li a, .horizontal-link-text ul li a {
   margin: 0;
   text-decoration: none;
 }
-footer .vertical-link-text, .horizontal-link-text {
-  padding: 0 .5rem;
-}
-footer .horizontal-link-text-wrapper .horizontal-link-text > div > div{
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: .25rem;
-    padding-bottom: 1rem;
-    padding-top: 2rem;
-}
-footer .vertical-link-text-wrapper .vertical-link-text h3 {
-  display: block;
-  font-size: .625rem;
-  font-weight: 300;
-  letter-spacing: var(--letter-spacing-eyebrow3);
-  line-height: .75rem;
-  margin-bottom: 1rem;
-  position: relative;
-  text-transform: uppercase;
+
+footer .horizontal-link-text ul li a:hover {
+  color: var(--light-link-hover-color);
 }
 
-@media screen and (max-width: 767px) {
-  footer .vertical-link-text-wrapper .vertical-link-text ul {
-    display: none;
+footer .vertical-link-text ul li a:hover {
+  color: var(--light-text-color);
+  background: transparent;
+}
+
+/* ipad */
+@media (width >= 600px) {
+  footer .columns-wrapper .columns>div {
+    align-items: flex-start;
   }
-  footer > div .horizontal-link-text-wrapper ul{
-    padding: 0;
+
+  footer .vertical-link-text .columns-wrapper .columns>div {
+    flex-direction: row;
   }
-  footer > div .horizontal-link-text-wrapper {
+
+  footer .vertical-link-text .columns-wrapper .columns>div>div {
+    width: 50%;
+  }
+
+}
+
+@media (width >= 900px) {
+  footer .columns-wrapper .columns>div {
+    align-items: center;
+  }
+}
+
+@media (width < 600px) {
+  footer>div {
     margin-bottom: .25rem;
     padding-bottom: 1rem;
     padding-top: 2rem;
   }
-  footer .vertical-link-text-wrapper .vertical-link-text h3 {
-    padding: 0 1.5rem 0 0;
+  
+  footer .horizontal-link-text>div>div {
+    display: block;
+    padding: 0;
+    margin: 0;
   }
-  footer .vertical-link-text-container {
-    padding-top: 3rem;
-    position: relative;
+
+  footer .columns-wrapper .columns>div {
+    align-items: center;
   }
+
+  footer .horizontal-link-text-wrapper .horizontal-link-text>div>div {
+    flex-direction: column;
+  }
+
+  footer>div ul {
+    padding: 0;
+  }
+
+  footer .vertical-link-text ul {
+    display: none;
+    margin-bottom: 2.5rem;
+    margin-top: -.5rem;
+    overflow: hidden;
+    padding: .5rem 0 .5rem 1rem;
+    transition: max-height .25s ease;
+  }
+
+  footer .horizontal-link-text .horizontal-link-text-wrapper ul {
+    padding-left: 0;
+  }
+
+  footer .vertical-link-text .columns>div>div {
+    width: 100%;
+  }
+
   footer .default-content-wrapper {
     display: flex;
     justify-content: center;
     padding-top: 2rem;
   }
-  footer .horizontal-link-text-wrapper .horizontal-link-text h3 {
-    padding: 0 1.5rem 0 0;
+  
+  footer .horizontal-link-text .columns-wrapper ul {
+    justify-content: center;
+    flex-wrap: wrap;
   }
-  footer .horizontal-link-text-wrapper .horizontal-link-text > div > div {
-    display: block;
-    padding: 0;
-    margin: 0;
+
+  footer>div li:not(:last-child) {
+    margin-bottom: 1.5rem;
   }
-  footer .vertical-link-text-wrapper .vertical-link-text h3.title--expanded-mobile::after {
-    transform: translate(25%, -50%) rotate(-180deg);
+
+  footer .horizontal-link-text ul li:not(:last-child) {
+    margin-left: .375rem;
+    margin-right: .375rem;
+    margin-bottom: .75rem;
   }
-  footer .vertical-link-text-wrapper .vertical-link-text h3::after, h3.title--expanded-mobile::after {
+
+  footer .vertical-link-text h3 {
+    cursor: pointer;
+    font-size: .875rem;
+    font-weight: 700;
+    letter-spacing: inherit;
+    line-height: 1.25rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    color: #4d4d4d;
+    text-transform: none;
+    width: 100%;
+  }
+
+  footer .vertical-link-text h3::after,
+  h3.title-expanded-mobile::after {
     position: absolute;
     right: 0;
     top: .625rem;
@@ -137,7 +239,7 @@ footer .vertical-link-text-wrapper .vertical-link-text h3 {
     content: "arrow_chevron_down";
     direction: ltr;
     display: block;
-    font-family: bmw_next_icons;
+    font-family: "bmw_next_icons",arial,helvetica,roboto,sans-serif;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
@@ -145,55 +247,24 @@ footer .vertical-link-text-wrapper .vertical-link-text h3 {
     line-height: 1;
     outline: 1px solid transparent;
     text-align: left;
-    text-rendering: optimizeLegibility;
+    text-rendering: optimizelegibility;
     text-transform: none;
     white-space: nowrap;
     width: auto;
   }
 
-  footer>div li:not(:last-child) {
-    margin-bottom: 1.5rem;
-  }
-
-  footer .vertical-link-text-wrapper .vertical-link-text ul, .horizontal-link-text ul {
-    margin-bottom: 2.5rem;
-    padding-bottom: .5rem;
-    margin-top: -.5rem;
-    overflow: hidden;
-    padding: .5rem 0 0 1rem;
-    transition: max-height .25s ease;
-    
-  }
-
-  footer div>div:nth-child(2) ul {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: .25rem;
-    padding-bottom: 1rem;
-    padding-top: 2rem;
-    justify-content: center;
-  }
-  footer div>div:nth-child(2) ul li{
-    margin-left: .375rem;
-    margin-right: .375rem;
+  footer .vertical-link-text h3.title-expanded-mobile::after {
+    transform: translate(25%, -50%) rotate(-180deg);
   }
 
 }
 
-footer .vertical-link-text, .horizontal-link-text ul li {
-  list-style: none;
-}
-
-footer .columns-wrapper .columns>div {
-  align-items: start;
-  padding: 0 .75rem;
-}
-footer .horizontal-link-text-container .default-content-wrapper p {
+footer .horizontal-link-text .default-content-wrapper p {
   font-size: .75rem;
   font-weight: 300;
   line-height: 1rem;
 }
-footer .background-white {
-  background-color: white;
-}
 
+footer .background-white {
+  background-color: var(--background-color);
+}
