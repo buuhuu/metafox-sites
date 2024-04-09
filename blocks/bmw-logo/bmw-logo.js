@@ -1,7 +1,8 @@
 export function generateLogoDOM(props) {
   const [image, alt, link] = props;
+  image.getElementsByTagName('img')[0].alt = alt.textContent;
   const logoDOM = document.createRange().createContextualFragment(`
-     <a href="${link.textContent}" alt="${alt}">
+     <a href="${link.textContent}" title="${alt.textContent}">
         ${image ? image.outerHTML : ''}
      </a>
     `);
