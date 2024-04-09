@@ -61,7 +61,7 @@
     ]
   },
   {
-    "id": "text",
+    "id": "copy_text",
     "rte": {
       "format": ["bold"],
       "alignment": [],
