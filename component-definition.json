@@ -267,15 +267,15 @@
           }
         },
         {
-          "title": "Copy Right Text",
-          "id": "copy-right-text",
+          "title": "copyright",
+          "id": "copyright",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
-                  "name": "copy-right-text",
-                  "model": "copy-right-text"
+                  "name": "copyright",
+                  "model": "copyright"
                 }
               }
             }

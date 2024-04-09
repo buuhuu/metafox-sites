@@ -69,7 +69,7 @@
     ]
   },
   {
-    "id": "copy-right-text",
+    "id": "copyright",
     "fields":[{
       "component": "text-input",
       "valueType": "string",

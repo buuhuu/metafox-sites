@@ -25,7 +25,7 @@
       "text",
       "columns",
       "icon",
-      "copy-right-text"
+      "copyright"
     ]
   },
   {
@@ -38,8 +38,7 @@
       "footer-text",
       "vertical-link-text",
       "horizontal-link-text",
-      "icon-link-list",
-      "copy-right-text"
+      "icon-link-list"
     ]
   },
   {
