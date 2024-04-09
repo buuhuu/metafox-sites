@@ -497,7 +497,7 @@
         "label": "Page Type"
       },
       {
-        "component": "multiselect",
+        "component": "select",
         "name": "headingtype",
         "label": "Heading Type",
         "options": [
