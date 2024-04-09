@@ -51,7 +51,8 @@ export default async function decorate(block) {
   });
 
   // window.onload = function () {
-  //   const copyRightText = document.querySelector('footer .horizontal-link-text strong').innerHTML;
+  //   const copyRightText = document.querySelector
+  // ('footer .horizontal-link-text strong').innerHTML;
   //   const copyRightyear = new Date();
   //   copyRightText.innerHTML = copyRightyear.getFullYear();
   // };
