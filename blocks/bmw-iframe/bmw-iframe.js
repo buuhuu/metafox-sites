@@ -18,7 +18,6 @@ function iframeLoader() {
   const loading = document.querySelector('.loader');
   iframeCont.addEventListener('load', () => {
     loading.style.display = 'none';
-
     iframeCont.style.opacity = 1;
   });
 }

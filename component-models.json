@@ -69,6 +69,16 @@
     ]
   },
   {
+    "id": "copyright",
+    "fields":[{
+      "component": "text-input",
+      "valueType": "string",
+      "name": "Copyright",
+      "value": "",
+      "label": "Text"
+  }]
+  },
+  {
     "id": "image",
     "fields": [
       {
@@ -366,12 +376,12 @@
         "component": "radio-group",
         "label": "Background Color",
         "name": "radio",
+        "value": "white",
         "valueType": "string",
         "options": [
           { "name": "White", "value": "white" },
           { "name": "Grey", "value": "grey" }
-        ],
-        "defaultValue": "white"
+        ]        
       },
       {
         "component": "text-input",
@@ -489,22 +499,27 @@
     ]
   },
   {
-    "id": "section-metadata",
-    "fields": [
-      {
-        "component": "text",
-        "name": "sectiontype",
-        "label": "Section Type"
-      }
-    ]
-  },
-  {
     "id": "page-metadata",
     "fields": [
       {
         "component": "text",
         "name": "pagetype",
         "label": "Page Type"
+      },
+      {
+        "component": "select",
+        "name": "headingtype",
+        "label": "Heading Type",
+        "options": [
+          {
+            "name": "Transparent",
+            "value": "transparent"
+          },
+          {
+            "name": "White Background",
+            "value": "whitebackground"
+          }
+        ]
       }
     ]
   }  
