@@ -366,12 +366,12 @@
         "component": "radio-group",
         "label": "Background Color",
         "name": "radio",
+        "value": "white",
         "valueType": "string",
         "options": [
           { "name": "White", "value": "white" },
           { "name": "Grey", "value": "grey" }
-        ],
-        "defaultValue": "white"
+        ]        
       },
       {
         "component": "text-input",
