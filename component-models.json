@@ -502,12 +502,12 @@
         "label": "Heading Type",
         "options": [
           {
-            "name": "Transparent",
-            "value": "transparent"
-          },
-          {
             "name": "White Background",
             "value": "whitebackground"
+          },
+          {
+            "name": "Transparent",
+            "value": "transparent"
           }
         ]
       }
