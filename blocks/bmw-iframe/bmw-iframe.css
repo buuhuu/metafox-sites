@@ -27,7 +27,7 @@ main .bmw-iframe-container > div {
 
 iframe {
   display: block;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   border: none;
 }
