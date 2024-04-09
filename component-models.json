@@ -73,7 +73,7 @@
     "fields":[{
       "component": "text-input",
       "valueType": "string",
-      "name": "jcr:title",
+      "name": "Copyright",
       "value": "",
       "label": "Text"
   }]
