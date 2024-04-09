@@ -335,24 +335,9 @@
         "component": "text-input",
         "valueType": "string",
         "name": "iFrameUrl",
-        "label": "url",
+        "label": "IFrame URL",
         "value": ""
-      },
-      {
-        "component": "text-input",
-        "name": "iframeHeight",
-        "value": "",
-        "label": "iframeHeight",
-        "valueType": "string"
-      },
-      {
-        "component": "text-input",
-        "name": "iframeWidth",
-        "value": "",
-        "label": "iframeWidth",
-        "valueType": "string"
       }
-      
     ]
   },
   {
@@ -381,12 +366,12 @@
         "component": "radio-group",
         "label": "Background Color",
         "name": "radio",
+        "value": "white",
         "valueType": "string",
         "options": [
           { "name": "White", "value": "white" },
           { "name": "Grey", "value": "grey" }
-        ],
-        "defaultValue": "white"
+        ]        
       },
       {
         "component": "text-input",
@@ -450,5 +435,77 @@
         "value": ""
       }
     ]
-  }
+  },
+  {
+    "id": "icon",
+    "fields": [
+      {
+        "component": "select",
+        "name": "icon type",
+        "value": "",
+        "label": "Icon Type (dropdown)",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Facebook",
+            "value": "facebook"
+          },
+          {
+            "name": "Instagram",
+            "value": "instagram"
+          },
+          {
+            "name": "YouTube",
+            "value": "youtube"
+          },
+          {
+            "name": "X (former Twitter)",
+            "value": "twitter"
+          },
+          {
+            "name": "LinkedIn",
+            "value": "linkedin"
+          },
+          {
+            "name": "TikTok",
+            "value": "tiktok"
+          }
+        ]
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "alt text",
+        "label": "Alt Text",
+        "value": ""
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "icon link",
+        "value": "",
+        "label": "Icon Link"
+      }
+    ]
+  },
+  {
+    "id": "section-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "name": "sectiontype",
+        "label": "Section Type"
+      }
+    ]
+  },
+  {
+    "id": "page-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "name": "pagetype",
+        "label": "Page Type"
+      }
+    ]
+  }  
 ]
