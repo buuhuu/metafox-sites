@@ -428,8 +428,15 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "fileReference",
-        "label": "Image",
+        "name": "greyimage",
+        "label": "Grey Image",
+        "multi": false
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "transparentimage",
+        "label": "Trasnparent Image",
         "multi": false
       },
       {
