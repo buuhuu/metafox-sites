@@ -59,7 +59,11 @@
       "BMW-logo",
       "horizontal-link-text",
       "vertical-link-text",
-      "icon-link-list"
+      "icon",
+      "custom-text-area",
+      "icon-link-list",
+      "copyright",
+      "bmw-video"
     ]
   },
   {

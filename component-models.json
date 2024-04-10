@@ -70,13 +70,15 @@
   },
   {
     "id": "copyright",
-    "fields":[{
-      "component": "text-input",
-      "valueType": "string",
-      "name": "Copyright",
-      "value": "",
-      "label": "Text"
-  }]
+    "fields": [
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "Copyright",
+        "value": "",
+        "label": "Text"
+      }
+    ]
   },
   {
     "id": "image",
@@ -234,7 +236,7 @@
         "name": "fileReference",
         "label": "Image",
         "value": "",
-        "description": "Image path from AEM DAM - only choose from the dedicated asset folder", 
+        "description": "Image path from AEM DAM - only choose from the dedicated asset folder",
         "multi": false
       },
       {
@@ -242,7 +244,7 @@
         "valueType": "string",
         "name": "imageAlt",
         "label": "Alt text",
-        "description": "Image alt text - highly recommended for SEO", 
+        "description": "Image alt text - highly recommended for SEO",
         "value": ""
       },
       {
@@ -381,7 +383,7 @@
         "options": [
           { "name": "White", "value": "white" },
           { "name": "Grey", "value": "grey" }
-        ]        
+        ]
       },
       {
         "component": "text-input",
@@ -506,6 +508,37 @@
     ]
   },
   {
+    "id": "custom-text-area",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "rte",
+        "label": "Text Area",
+        "valueType": "string"
+      },
+      {
+        "component": "multiselect",
+        "name": "multiselect",
+        "label": "Font Style",
+        "valueType": "string",
+        "options": [
+          { "name": "Bold", "value": "bold" },
+          { "name": "Italic", "value": "italic" }
+        ]
+      },
+      {
+        "component": "radio-group",
+        "label": "Font Family",
+        "name": "radio",
+        "valueType": "string",
+        "options": [
+          { "name": "Sans Sarif", "value": "sans-serif" },
+          { "name": "Arial", "value": "arial" }
+        ]
+      }
+    ]
+  },
+  {
     "id": "page-metadata",
     "fields": [
       {
@@ -519,15 +552,27 @@
         "label": "Header Variation",
         "options": [
           {
-            "name": "Transparent",
-            "value": "transparent"
-          },
-          {
             "name": "White Background",
             "value": "whitebackground"
+          },
+          {
+            "name": "Transparent",
+            "value": "transparent"
           }
         ]
       }
     ]
-  }  
+  },
+  {
+    "id": "bmw-video",
+    "fields": [
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "bmwVideo",
+        "label": "BMW Video",
+        "multi": false
+      }
+    ]
+  }
 ]
