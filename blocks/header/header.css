@@ -113,7 +113,10 @@ header nav[aria-expanded="true"] {
   header nav .nav-sections .default-content-wrapper ul li {
     padding: 12px 0;
     color: var(--light-border-color);
+    font-size: 16px;
   }
+
+  
 
   header nav .nav-sections .default-content-wrapper .button-container a.button {
     color:  var(--light-border-color);
@@ -131,16 +134,19 @@ header nav[aria-expanded="true"] {
     top: 80px;
     width: 100%;
     left: 0;
-    padding: 20px 50px;
-    border-top: 1px solid #ddd;
+    padding: 0 50px;
+    border-top: 1px solid var(--light-bbb);
+  }
+
+  header.white-background .claim-container{
+    display: none;
   }
 }
 
 /* IPAD */
 @media (width >= 600px ) {
   header nav {
-    margin: 0 3rem;
-    padding: 0;
+    padding: 0 3rem;
     display: flex;
     justify-content: space-between;
   }
@@ -203,8 +209,6 @@ header nav[aria-expanded="true"] {
     width: 20px;
     height: 20px;
   }
-
-
 }
 
 /* Desktop  */
@@ -212,7 +216,7 @@ header nav[aria-expanded="true"] {
   header nav {
     display: flex;
     justify-content: space-between;
-    margin: 0 6rem;
+    padding: 0 6rem;
     border-bottom: 1px solid var(--dark-color);
   }
 
@@ -247,6 +251,38 @@ header nav[aria-expanded="true"] {
     padding: 0 45px;
     border-top: none;
   } */
+
+  /** css for black background **/
+
+header.white-background nav[aria-expanded="true"] {
+  background-color: var(--text-color);
+}
+
+header.white-background nav[aria-expanded="true"] .section.nav-sections .default-content-wrapper ul li a {
+ color: var( --background-color);
+}
+
+header.white-background nav[aria-expanded="true"] .section.nav-sections .default-content-wrapper p.button-container a {
+  color: var( --background-color);
+ }
+
+ header.white-background .claim-container {
+  position: absolute;
+  top: 100px;
+  color: var( --background-color);
+  font-family: bmwTypeNextWeb,Arial,Helvetica,Roboto,sans-serif;
+  font-size: 16px;
+ }
+
+ header.white-background .claim-container b{
+  font-weight: 700;
+  
+ }
+
+ header.white-background .claim-container span{
+  font-weight: 200;
+ }
+ 
 }
 
 
