@@ -25,7 +25,8 @@
       "text",
       "columns",
       "icon",
-      "copyright"
+      "copyright",
+      "link-list"      
     ]
   },
   {
@@ -39,7 +40,8 @@
       "vertical-link-text",
       "horizontal-link-text",
       "icon-link-list",
-      "copyright"
+      "copyright",
+      "link-list"      
     ]
   },
   {
@@ -64,7 +66,8 @@
       "custom-text-box",
       "icon-link-list",
       "copyright",
-      "bmw-video"
+      "bmw-video",
+      "link-list"
     ]
   },
   {
@@ -120,5 +123,19 @@
     "components": [
       "icon"
     ]
+  },
+  {
+    "id":"link-list",    
+    "rte":{
+      "format": [],
+      "alignment": [],
+      "indentation": [],
+      "sr_script": [],
+      "list": ["bullist"],
+      "insert": ["link"],
+      "advanced": [],
+      "extensions": [],
+      "editor": []
+    }
   }
 ]

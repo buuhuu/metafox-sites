@@ -123,9 +123,6 @@ export default async function decorate(block) {
           const expanded = navSection.getAttribute('aria-expanded') === 'true';
           toggleAllNavSections(navSections);
           navSection.setAttribute('aria-expanded', expanded ? 'false' : 'true');
-          if (expanded) {
-            alert(expanded);
-          }
         }
       });
     });

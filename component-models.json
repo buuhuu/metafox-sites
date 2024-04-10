@@ -379,6 +379,7 @@
         "label": "Background Color",
         "name": "radio",
         "value": "white",
+        "required": true,
         "valueType": "string",
         "options": [
           { "name": "White", "value": "white" },
@@ -603,6 +604,43 @@
         "name": "bmwVideo",
         "label": "BMW Video",
         "multi": false
+      }
+    ]
+  },
+  {
+    "id": "link-list",
+    "fields": [
+      {
+        "component": "select",
+        "name": "link list",
+        "value": "vertical",
+        "label": "Orientation",
+        "valueType": "string",
+        "required": true,
+        "options": [
+          {
+            "name": "Vertical",
+            "value": "vertical"
+          },
+          {
+            "name": "Horizontal",
+            "value": "horizontal"
+          }
+        ]
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "link list title",
+        "label": "Link List Title",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "link-list",
+        "value": "",
+        "label": "Link List"
       }
     ]
   }
