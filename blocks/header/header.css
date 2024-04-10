@@ -28,6 +28,27 @@ header nav[aria-expanded="true"] {
   align-items: baseline;
 }
 
+header.transparent .nav-wrapper .bmw-logo-wrapper .white-image {
+  display: none;
+}
+
+header.white-background .nav-wrapper .bmw-logo-wrapper .white-image {
+  display: block;
+}
+
+header.transparent .nav-wrapper .bmw-logo-wrapper .grey-image {
+  display: block;
+}
+
+header.transparent .claim-container {
+  display: none;
+}
+
+header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
+  display: none;
+}
+
+
 /* Mobile */
 
 @media (width < 600px) {
@@ -116,8 +137,6 @@ header nav[aria-expanded="true"] {
     font-size: 16px;
   }
 
-  
-
   header nav .nav-sections .default-content-wrapper .button-container a.button {
     color:  var(--light-border-color);
     background-color: transparent;
@@ -152,8 +171,8 @@ header nav[aria-expanded="true"] {
   }
 
   header nav .nav-brand img {
-    width: 36px;
-    height: 36px;
+    width: 52px;
+    height: 52px;
   }
   
   header .nav-wrapper {
@@ -164,14 +183,31 @@ header nav[aria-expanded="true"] {
    order: 2;
   }
 
-  /* header nav[aria-expanded="true"] .section.nav-sections {
+  header nav[aria-expanded="true"] .section.nav-sections {
     position: absolute;
     top: 100px;
     width: 100%;
     left: 0;
     padding: 0 65px;
-    border-top: 1px solid #ddd;
-  } */
+    border-top: 2px solid #ddd;
+  }
+  
+  header nav .nav-sections .default-content-wrapper .button-container a.button {
+    color: var(--light-border-color);
+    background-color: transparent;
+    padding: 12px 0;
+    margin: 0;
+  }
+
+  header nav .nav-sections .default-content-wrapper ul li {
+    padding: 12px 0;
+    color: var(--light-border-color);
+    font-size: 16px;
+  }
+
+  header nav .nav-sections ul {
+    margin-bottom: 0;
+  }
 
   header nav[aria-expanded="false"] .nav-tools .default-content-wrapper .icon-search {
   position: absolute;
@@ -209,6 +245,10 @@ header nav[aria-expanded="true"] {
     width: 20px;
     height: 20px;
   }
+
+  header.white-background .claim-container{
+    display: none;
+  }
 }
 
 /* Desktop  */
@@ -216,8 +256,9 @@ header nav[aria-expanded="true"] {
   header nav {
     display: flex;
     justify-content: space-between;
-    padding: 0 6rem;
+    margin: 0 6rem;
     border-bottom: 1px solid var(--dark-color);
+    padding: 0;
   }
 
   header nav[aria-expanded="true"] {
@@ -242,15 +283,15 @@ header nav[aria-expanded="true"] {
     top: 0; 
   }
 
-  /* header nav[aria-expanded="true"] .section.nav-sections {
+  header nav[aria-expanded="true"] .section.nav-sections {
     position: absolute;
     top: 0;
     background-color: transparent;
-    width: 100%;
+    width: auto;
     left: 120px;
     padding: 0 45px;
     border-top: none;
-  } */
+  }
 
   /** css for black background **/
 
@@ -272,6 +313,7 @@ header.white-background nav[aria-expanded="true"] .section.nav-sections .default
   color: var( --background-color);
   font-family: bmwTypeNextWeb,Arial,Helvetica,Roboto,sans-serif;
   font-size: 16px;
+  display: block;
  }
 
  header.white-background .claim-container b{
@@ -477,8 +519,9 @@ header nav .nav-sections ul > li > ul > li {
   header nav .nav-sections .default-content-wrapper .button-container a.button {
     color:  var(--light-border-color);
     background-color: transparent;
-    padding: 30px 10px;
+    padding: 35px 10px;
     margin: 0;
+    font-weight: 700;
   }
   
   header nav .nav-sections .default-content-wrapper .button-container a.button:hover {

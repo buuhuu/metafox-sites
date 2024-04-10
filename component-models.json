@@ -548,8 +548,8 @@
       },
       {
         "component": "select",
-        "name": "headingtype",
-        "label": "Heading Type",
+        "name": "headertype",
+        "label": "Header Variation",
         "options": [
           {
             "name": "White Background",

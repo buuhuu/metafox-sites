@@ -123,6 +123,9 @@ export default async function decorate(block) {
           const expanded = navSection.getAttribute('aria-expanded') === 'true';
           toggleAllNavSections(navSections);
           navSection.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+          if (expanded) {
+            alert(expanded);
+          }
         }
       });
     });
@@ -146,18 +149,17 @@ export default async function decorate(block) {
   navWrapper.append(nav);
   block.append(navWrapper);
   // background related changes
-  const headerType = getMetadata('headingtype');
+  const headerType = getMetadata('headertype');
   const header = document.getElementsByTagName('header');
   const bmwLogoWrapperSelector = document.querySelector('.bmw-logo-wrapper');
   const claimContainer = document.createElement('div');
   claimContainer.innerHTML = '<div class="claim-container"><b>Zadovoljstvo</b> <span> u vožnji </span> </div>';
+  bmwLogoWrapperSelector.append(claimContainer);
   if (headerType && headerType === 'whitebackground') {
     header[0].classList.add('white-background');
-    bmwLogoWrapperSelector.append(claimContainer);
     if (isDesktop.matches) {
       document.querySelector('.section.nav-tools').getElementsByTagName('a')[0].getElementsByTagName('img')[0].setAttribute('src', '/icons/location-white.svg');
       document.querySelector('.section.nav-tools').getElementsByTagName('a')[1].getElementsByTagName('img')[0].setAttribute('src', '/icons/search-white.svg');
-      document.querySelector('.bmw-logo-wrapper').getElementsByTagName('picture')[0].getElementsByTagName('source')[0].setAttribute('srcset', '/icons/bmw-white.svg');
     }
   } else {
     header[0].classList.add('transparent');
