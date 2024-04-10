@@ -1,5 +1,4 @@
-export function generateVideoScript(props) {
-  
+export function generateVideoScript() {
   // Build DOM
   const videoScriptDOM = document.createRange().createContextualFragment(`
   <script type="application/ld+json">
