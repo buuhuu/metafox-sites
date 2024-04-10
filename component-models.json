@@ -141,8 +141,27 @@
           {
             "name": "secondary",
             "value": "secondary"
+          },
+          {
+            "name": "tertiary",
+            "value": "tertiary"
+          },
+          {
+            "name": "ghostdark",
+            "value": "ghost dark"
+          },
+          {
+            "name": "ghostlight",
+            "value": "ghost light"
           }
         ]
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "buttontype",
+        "value": "",
+        "label": "Button Type"
       }
     ]
   },

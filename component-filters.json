@@ -67,7 +67,8 @@
       "icon-link-list",
       "copyright",
       "bmw-video",
-      "link-list"
+      "link-list",
+      "copy_text"
     ]
   },
   {
@@ -79,7 +80,8 @@
       "sr_script": ["superscript", "subscript"],
       "list": ["bullist", "numlist"],
       "insert": ["link"],
-      "advanced": [],
+      "blocks": [],
+      "advanced": ["p"],
       "extensions": [],
       "editor": ["removeformat"]
     }
