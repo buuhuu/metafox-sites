@@ -562,5 +562,17 @@
         ]
       }
     ]
+  },
+  {
+    "id": "bmw-video",
+    "fields": [
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "bmwVideo",
+        "label": "BMW Video",
+        "multi": false
+      }
+    ]
   }
 ]
