@@ -69,6 +69,18 @@
               }
             }
           }
+        },
+        {
+          "title": "Copy Text",
+          "id": "copy_text",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/text/v1/text",
+                "template": {}
+              }
+            }
+          }
         }
       ]
     },
