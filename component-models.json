@@ -539,6 +539,37 @@
     ]
   },
   {
+    "id": "custom-text-box",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "rte",
+        "label": "Text Area",
+        "valueType": "string"
+      },
+      {
+        "component": "multiselect",
+        "name": "multiselect",
+        "label": "Font Style",
+        "valueType": "string",
+        "options": [
+          { "name": "Bold", "value": "bold" },
+          { "name": "Italic", "value": "italic" }
+        ]
+      },
+      {
+        "component": "radio-group",
+        "label": "Font Family",
+        "name": "radio",
+        "valueType": "string",
+        "options": [
+          { "name": "Sans Serif", "value": "sans-serif" },
+          { "name": "Arial", "value": "arial" }
+        ]
+      }
+    ]
+  },
+  {
     "id": "page-metadata",
     "fields": [
       {
