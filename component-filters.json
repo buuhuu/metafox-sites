@@ -77,7 +77,8 @@
       "sr_script": ["superscript", "subscript"],
       "list": ["bullist", "numlist"],
       "insert": ["link"],
-      "advanced": ["h1"],
+      "blocks": [],
+      "advanced": ["p"],
       "extensions": [],
       "editor": ["removeformat"]
     }
