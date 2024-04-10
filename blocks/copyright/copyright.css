@@ -5,10 +5,15 @@
     color: var(--light-text-color);
 }
 
+.copyright-wrapper .copyright .copy-right-content div {
+    display: flex;
+    gap: 4px;
+}
+
 .copyright-wrapper .copyright .copy-right-content {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
     width: 100%;
 }
 
