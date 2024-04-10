@@ -1,6 +1,27 @@
+.copyright-wrapper {
+    padding: 32px 48px;
+}
+
 .copyright-wrapper .copyright {
     font-size: .75rem;
     font-weight: 300;
     line-height: 1rem;
     color: var(--light-text-color);
+}
+
+.copyright-wrapper .copyright .copy-right-content {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.copyright-wrapper .copyright .copy-right-content::before{
+    position: relative;
+    top: 8px;
+    display: inline-block;
+    transform: translate(25%, -50%);
+    content: "©";
+    font-size: .75rem;
+    font-weight: 300;
 }

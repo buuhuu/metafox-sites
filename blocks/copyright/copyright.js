@@ -4,7 +4,7 @@ export function generateCopyRightTextDOM(props) {
   const copyRightyear = new Date();
   // Build DOM
   const copyRightTextDOM = document.createRange().createContextualFragment(`
-    <div>${textarea.textContent} <span class="copy-right-year">${copyRightyear.getFullYear()}</span></div>
+    <div class="copy-right-content"><div>${textarea.textContent}<span class="copy-right-year">${copyRightyear.getFullYear()}</span></div></div>
   `);
 
   // add final teaser DOM and classes if used as child component
