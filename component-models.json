@@ -141,8 +141,27 @@
           {
             "name": "secondary",
             "value": "secondary"
+          },
+          {
+            "name": "tertiary",
+            "value": "tertiary"
+          },
+          {
+            "name": "ghostdark",
+            "value": "ghost dark"
+          },
+          {
+            "name": "ghostlight",
+            "value": "ghost light"
           }
         ]
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "buttontype",
+        "value": "",
+        "label": "Button Type"
       }
     ]
   },
@@ -379,6 +398,7 @@
         "label": "Background Color",
         "name": "radio",
         "value": "white",
+        "required": true,
         "valueType": "string",
         "options": [
           { "name": "White", "value": "white" },
@@ -539,6 +559,68 @@
     ]
   },
   {
+    "id": "text-area",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "rte",
+        "label": "Text Area",
+        "valueType": "string"
+      },
+      {
+        "component": "multiselect",
+        "name": "multiselect",
+        "label": "Font Style",
+        "valueType": "string",
+        "options": [
+          { "name": "Bold", "value": "bold" },
+          { "name": "Italic", "value": "italic" }
+        ]
+      },
+      {
+        "component": "radio-group",
+        "label": "Font Family",
+        "name": "radio",
+        "valueType": "string",
+        "options": [
+          { "name": "Sans Sarif", "value": "sans-serif" },
+          { "name": "Arial", "value": "arial" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "custom-text-box",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "rte",
+        "label": "Text Area",
+        "valueType": "string"
+      },
+      {
+        "component": "multiselect",
+        "name": "multiselect",
+        "label": "Font Style",
+        "valueType": "string",
+        "options": [
+          { "name": "Bold", "value": "bold" },
+          { "name": "Italic", "value": "italic" }
+        ]
+      },
+      {
+        "component": "radio-group",
+        "label": "Font Family",
+        "name": "radio",
+        "valueType": "string",
+        "options": [
+          { "name": "Sans Serif", "value": "sans-serif" },
+          { "name": "Arial", "value": "arial" }
+        ]
+      }
+    ]
+  },
+  {
     "id": "page-metadata",
     "fields": [
       {
@@ -572,6 +654,43 @@
         "name": "bmwVideo",
         "label": "BMW Video",
         "multi": false
+      }
+    ]
+  },
+  {
+    "id": "link-list",
+    "fields": [
+      {
+        "component": "select",
+        "name": "link list",
+        "value": "vertical",
+        "label": "Orientation",
+        "valueType": "string",
+        "required": true,
+        "options": [
+          {
+            "name": "Vertical",
+            "value": "vertical"
+          },
+          {
+            "name": "Horizontal",
+            "value": "horizontal"
+          }
+        ]
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "link list title",
+        "label": "Link List Title",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "link-list",
+        "value": "",
+        "label": "Link List"
       }
     ]
   }

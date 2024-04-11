@@ -1,11 +1,7 @@
 [
   {
     "id": "main",
-    "components": [
-      "section",
-      "bmw_main_section",
-      "footer-section"
-    ]
+    "components": ["section", "bmw_main_section", "footer-section"]
   },
   {
     "id": "columns",
@@ -13,10 +9,7 @@
   },
   {
     "id": "bmw_main_section",
-    "components": [
-      "text-image",
-      "section"
-    ]
+    "components": ["text-image", "section"]
   },
   {
     "id": "footer-section",
@@ -25,7 +18,8 @@
       "text",
       "columns",
       "icon",
-      "copyright"
+      "copyright",
+      "link-list"
     ]
   },
   {
@@ -39,7 +33,8 @@
       "vertical-link-text",
       "horizontal-link-text",
       "icon-link-list",
-      "copyright"
+      "copyright",
+      "link-list"
     ]
   },
   {
@@ -61,13 +56,17 @@
       "vertical-link-text",
       "icon",
       "custom-text-area",
+      "custom-text-box",
+      "text-area",
       "icon-link-list",
       "copyright",
-      "bmw-video"
+      "bmw-video",
+      "link-list",
+      "copy_text"
     ]
   },
   {
-    "id": "text",
+    "id": "copy_text",
     "rte": {
       "format": ["bold"],
       "alignment": [],
@@ -75,7 +74,8 @@
       "sr_script": ["superscript", "subscript"],
       "list": ["bullist", "numlist"],
       "insert": ["link"],
-      "advanced": [],
+      "blocks": [],
+      "advanced": ["p"],
       "extensions": [],
       "editor": ["removeformat"]
     }
@@ -110,14 +110,24 @@
   },
   {
     "id": "cards",
-    "components": [
-      "card"
-    ]
+    "components": ["card"]
   },
   {
     "id": "icon-link-list",
-    "components": [
-      "icon"
-    ]
+    "components": ["icon"]
+  },
+  {
+    "id": "link-list",
+    "rte": {
+      "format": [],
+      "alignment": [],
+      "indentation": [],
+      "sr_script": [],
+      "list": ["bullist"],
+      "insert": ["link"],
+      "advanced": [],
+      "extensions": [],
+      "editor": []
+    }
   }
 ]
