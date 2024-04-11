@@ -662,5 +662,62 @@
         "label": "Link List"
       }
     ]
+  },
+  {
+    "id": "conditional-field",
+    "fields": [
+      {
+        "component": "select",
+        "name": "selectcountry",
+        "label": "Country",
+        "valueType": "string",
+        "options": [
+          { "name": "UK", "value": "uk" },
+          { "name": "US", "value": "us" },
+          { "name": "Germany", "value": "germany" }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "selectlang",
+        "label": "Language",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "English",
+            "value": "en"
+          },
+          { "name": "German", "value": "de" }
+        ],
+        "condition": {
+          "||": [
+            {
+              "var": "selectcountry"
+            },
+            "us"
+          ]
+        }
+      },
+      {
+        "component": "select",
+        "name": "selectlang",
+        "label": "Language",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "English",
+            "value": "en"
+          }
+        ],
+        "condition": {
+          "===": [
+            {
+              "var": "selectcountry"
+            },
+            "uk"
+          ]
+        }
+      }
+    ]
   }
 ]
