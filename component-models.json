@@ -690,11 +690,32 @@
           { "name": "German", "value": "de" }
         ],
         "condition": {
-          "||": [
+          "===": [
             {
               "var": "selectcountry"
             },
             "us"
+          ]
+        }
+      },
+      {
+        "component": "select",
+        "name": "selectlang",
+        "label": "Language",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "English",
+            "value": "en"
+          },
+          { "name": "German", "value": "de" }
+        ],
+        "condition": {
+          "===": [
+            {
+              "var": "selectcountry"
+            },
+            "germany"
           ]
         }
       },
