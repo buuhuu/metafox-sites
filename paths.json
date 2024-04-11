@@ -1,8 +1,7 @@
 {
   "mappings": [
     "/content/metafox/:/",
-    "/content/metafox/metadata:/metadata.json",
-    "/content/metafox/index/price-list:/price-list.json"
+    "/content/metafox/metadata:/metadata.json"
 ],
   "includes": ["/content/metafox/"]
 }
