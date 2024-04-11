@@ -60,42 +60,7 @@ export default function decorate(block) {
 function fetchPriceList() {
  try{
   const baseUrl = window.location.origin;
-  //   return [
-  //     {
-  //       "Sl. No.": "1",
-  //       ImageUrl:
-  //         "https://main--metafox-sites--bmw-importer.hlx.live/media_1653e03aa4c4ee96e47c14c8ea74bc8166a1f9b0e.jpeg",
-  //       Model: "BMW iX",
-  //       Price: "87,660",
-  //     },
-  //     {
-  //       "Sl. No.": "2",
-  //       ImageUrl:
-  //         "https://main--metafox-sites--bmw-importer.hlx.live/media_1653e03aa4c4ee96e47c14c8ea74bc8166a1f9b0e.jpeg",
-  //       Model: "BMW iX M60",
-  //       Price: "146,850",
-  //     },
-  //     {
-  //       "Sl. No.": "3",
-  //       ImageUrl:
-  //         "https://main--metafox-sites--bmw-importer.hlx.live/media_1653e03aa4c4ee96e47c14c8ea74bc8166a1f9b0e.jpeg",
-  //       Model: "BMW i7",
-  //       Price: "128,240",
-  //     },
-  //     {
-  //       "Sl. No.": "4",
-  //       ImageUrl:
-  //         "https://main--metafox-sites--bmw-importer.hlx.live/media_1653e03aa4c4ee96e47c14c8ea74bc8166a1f9b0e.jpeg",
-  //       Model: "BMW i7 M70 xDrive",
-  //       Price: "176,600",
-  //     },
-  //   ];
-  // $.get("http://localhost:3000/index/price-list",function(data) {
-  //     console.log(data)
-  // })
   return fetch(`${baseUrl}/index/price-list.json`);
-  //     const list = response.json();
-  //   console.log(list);
  } catch(err) {
     console.log(err)
  }
