@@ -586,6 +586,16 @@
           { "name": "Sans Sarif", "value": "sans-serif" },
           { "name": "Arial", "value": "arial" }
         ]
+      },
+      {
+        "component": "radio-group",
+        "label": "Font Size",
+        "name": "radio",
+        "valueType": "string",
+        "options": [
+          { "name": "large", "value": 30 },
+          { "name": "small", "value": 12 }
+        ]
       }
     ]
   },
