@@ -1,0 +1,13 @@
+.text-area {
+    font-weight: none;
+    font-style: normal;
+    font-family: inherit; 
+}
+
+.text-area.bold {
+    font-weight: bold;
+}
+
+.text-area.italic {
+    font-style: italic;
+}
