@@ -1,7 +1,8 @@
 {
   "mappings": [
     "/content/metafox/:/",
-    "/content/metafox/metadata:/metadata.json"
-],
+    "/content/metafox/metadata:/metadata.json",
+    "/contnent/metafox/index/custom-text/spreadsheet.json"
+    ],
   "includes": ["/content/metafox/"]
 }
