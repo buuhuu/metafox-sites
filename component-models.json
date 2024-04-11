@@ -710,7 +710,7 @@
       },
       {
         "component": "select",
-        "name": "selectlang",
+        "name": "selectlangus",
         "label": "Language",
         "valueType": "string",
         "options": [
@@ -731,7 +731,7 @@
       },
       {
         "component": "select",
-        "name": "selectlang",
+        "name": "selectlangde",
         "label": "Language",
         "valueType": "string",
         "options": [
@@ -752,7 +752,7 @@
       },
       {
         "component": "select",
-        "name": "selectlang",
+        "name": "selectlanguk",
         "label": "Language",
         "valueType": "string",
         "options": [
