@@ -569,7 +569,7 @@
       },
       {
         "component": "multiselect",
-        "name": "multiselect",
+        "name": "font_style",
         "label": "Font Style",
         "valueType": "string",
         "options": [
@@ -580,7 +580,7 @@
       {
         "component": "radio-group",
         "label": "Font Family",
-        "name": "radio",
+        "name": "font_family",
         "valueType": "string",
         "options": [
           { "name": "Sans Sarif", "value": "sans-serif" },
@@ -590,7 +590,7 @@
       {
         "component": "radio-group",
         "label": "Font Size",
-        "name": "radio",
+        "name": "font_size",
         "valueType": "string",
         "options": [
           { "name": "large", "value": 30 },
