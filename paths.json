@@ -1,8 +1,7 @@
 {
   "mappings": [
     "/content/metafox/:/",
-    "/content/metafox/metadata:/metadata.json",
-    "/contnent/metafox/index/text-area/spreadsheet.json"
-  ],
+    "/content/metafox/index/price-list:/auto-price-list.json"
+],
   "includes": ["/content/metafox/"]
 }
