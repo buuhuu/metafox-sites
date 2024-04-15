@@ -60,7 +60,6 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
   document.body.style.width = (expanded || isDesktop.matches) ? '' : '100%';
   document.body.style.position = (expanded || isDesktop.matches) ? '' : 'fixed';
   document.body.style.top = (expanded || isDesktop.matches) ? '' : '0';
-
   nav.setAttribute('aria-expanded', expanded ? 'false' : 'true');
   toggleAllNavSections(navSections, expanded || isDesktop.matches ? 'false' : 'true');
   button.setAttribute('aria-label', expanded ? 'Open navigation' : 'Close navigation');
