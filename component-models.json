@@ -721,7 +721,7 @@
           { "name": "German", "value": "de" }
         ],
         "condition": {
-          "and": [
+          "or": [
             {
               "===": [
                 {
