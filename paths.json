@@ -3,6 +3,8 @@
     "/content/metafox/:/",
     "/content/metafox/metadata:/metadata.json",
     "/content/metafox/index/table.json:/table.json"
-  ],
+    "/content/metafox/index/price-list:/auto-price-list.json",
+    "/content/metafox/index/placeholders:/placeholders.json"
+],
   "includes": ["/content/metafox/"]
 }
