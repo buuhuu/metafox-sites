@@ -252,7 +252,7 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "fileReference",
+        "name": "bg-fileReference",
         "label": "Image",
         "value": "",
         "description": "Image path from AEM DAM - only choose from the dedicated asset folder",
@@ -261,14 +261,14 @@
       {
         "component": "text-input",
         "valueType": "string",
-        "name": "imageAlt",
+        "name": "bg-imageAlt",
         "label": "Alt text",
         "description": "Image alt text - highly recommended for SEO",
         "value": ""
       },
       {
         "component": "text-area",
-        "name": "text",
+        "name": "fg-text",
         "value": "Kindly edit the content here !",
         "label": "Text",
         "description": "Optionaö text for the text image component",
@@ -277,7 +277,7 @@
       },
       {
         "component": "select",
-        "name": "imagePosition",
+        "name": "fg-imagePosition",
         "filter": "imagePosition",
         "value": "",
         "label": "Image Position",
@@ -296,13 +296,13 @@
       {
         "component": "boolean",
         "label": "Do you need to display meta text ?",
-        "name": "reveal",
+        "name": "fg-reveal",
         "valueType": "boolean"
       },
       {
         "component": "text-input",
         "label": "Meta text",
-        "name": "meta-text",
+        "name": "fg-meta-text",
         "valueType": "string",
         "condition": {
           "===": [
