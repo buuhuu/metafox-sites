@@ -10,8 +10,11 @@ import {
   waitForLCP,
   loadBlocks,
   loadCSS,
+  fetchPlaceholders,
 } from './aem.js';
 
+const placeholders = await fetchPlaceholders('en');
+console.log(`i18 sample ${placeholders.showmore}`);
 const LCP_BLOCKS = []; // add your LCP blocks to the list
 
 /**

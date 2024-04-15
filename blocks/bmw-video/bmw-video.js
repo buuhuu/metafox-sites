@@ -2,14 +2,17 @@ export function generateVideoScript() {
   // Build DOM
   const videoScriptDOM = document.createRange().createContextualFragment(`
   <div id="s7viewer" style="position:relative;width:640px;height:360px;"></div>
-  <script type="text/javascript" src="http://s7d1.scene7.com/s7viewers/html5/js/VideoViewer.js"></script>
+  <script type="text/javascript" src="http://bmw.scene7.com/s7viewers/html5/js/SmartCropVideoViewer.js"></script>
   <script type="text/javascript">
   console.log("Hello DM Video Player");
-  var videoViewer = new s7viewers.VideoViewer();
+  var videoViewer = new s7viewers.SmartCropVideoViewer();
 videoViewer.setContainerId("s7viewer");
-videoViewer.setParam("serverurl", "http://s7d1.scene7.com/is/image/");
-videoViewer.setParam("videoserverurl", "http://s7d1.scene7.com/is/content/");
-videoViewer.setAsset("Scene7SharedAssets/Glacier_Climber_MP4");
+videoViewer.setParam("serverurl", "http://bmw.scene7.com/is/image/");
+videoViewer.setParam("videoserverurl", "http://bmw.scene7.com/is/content/");
+videoViewer.setAsset("BMW/bmw-x-series-ix-onepager-gallery-charging-01-AVS");
+videoViewer.setParam("autoplay", "1");
+videoViewer.setParam("loop", "1");
+videoViewer.setParam("transition", "none");
 videoViewer.init();
    </script>
     `);
