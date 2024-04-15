@@ -51,7 +51,7 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
 
 /* Mobile */
 
-@media (width < 600px) {
+@media (width >= 360px) and (width < 768px) {
   header nav[aria-expanded="false"] .nav-tools .default-content-wrapper .icon-location {
     display: none;
   }
@@ -108,11 +108,11 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
     border-bottom: 1px solid var(--light-bbb);
   }
 
-  header nav[aria-expanded="true"] .icon.icon-search {
+  /* header nav[aria-expanded="true"] .icon.icon-search {
     position: absolute;
     right: 65px;
     top: 30px
-  }
+  } */
 
   header nav[aria-expanded="true"] .nav-hamburger {
     position: absolute;
@@ -171,7 +171,7 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
 }
 
 /* IPAD */
-@media (width >= 600px ) {
+@media (width >= 768px) and (width < 1280px) {
   header nav {
     padding: 0 3rem;
     display: flex;
@@ -272,7 +272,7 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
 }
 
 /* Desktop  */
-@media (width >= 900px) {
+@media (width >= 1280px)and (width <= 1980px) {
   header nav {
     display: flex;
     justify-content: space-between;
@@ -434,7 +434,7 @@ header nav[aria-expanded="true"] .nav-hamburger-icon::after {
   transform: rotate(-45deg);
 }
 
-@media (width >= 900px) {
+@media (width >= 1280px) and (width < 1980px) {
   header nav .nav-hamburger {
     display: none;
     visibility: hidden;
@@ -486,7 +486,7 @@ header nav .nav-sections ul > li > ul > li {
   font-weight: 500;
 }
 
-@media (width >= 900px) {
+@media (width >= 1280px) {
   header nav .nav-brand img {
     width: 52px;
     height: 52px;
