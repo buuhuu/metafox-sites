@@ -721,32 +721,23 @@
           { "name": "German", "value": "de" }
         ],
         "condition": {
-          "===": [
+          "and": [
             {
-              "var": "selectcountry"
+              "===": [
+                {
+                  "var": "selectcountry"
+                },
+                "us"
+              ]
             },
-            "us"
-          ]
-        }
-      },
-      {
-        "component": "select",
-        "name": "selectlangde",
-        "label": "Language",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "English",
-            "value": "en"
-          },
-          { "name": "German", "value": "de" }
-        ],
-        "condition": {
-          "===": [
             {
-              "var": "selectcountry"
-            },
-            "germany"
+              "===": [
+                {
+                  "var": "selectcountry"
+                },
+                "germany"
+              ]
+            }
           ]
         }
       },
