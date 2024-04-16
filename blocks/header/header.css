@@ -53,25 +53,23 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
 
 @media (width >= 360px) and (width < 768px) {
   header nav[aria-expanded="false"] .nav-tools .default-content-wrapper .icon-location {
-    display: none;
+    position: absolute;
+    right: 115px;
+    top: 33px;
   }
 
   header nav[aria-expanded="true"] .nav-tools .default-content-wrapper .icon-location {
-    position: absolute;
-    right: 85px;
-    top: 33px;
+    display: none;
   }
 
   header nav[aria-expanded="false"] .nav-tools .default-content-wrapper .icon-search {
     position: absolute;
-    right: 55px;
+    right: 70px;
     top: 33px;
   }
 
   header nav[aria-expanded="true"] .nav-tools .default-content-wrapper .icon-search {
-    position: absolute;
-    right: 55px;
-    top: 33px;
+    display: none;
   }
  
 
@@ -108,19 +106,12 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
     border-bottom: 1px solid var(--light-bbb);
   }
 
-  /* header nav[aria-expanded="true"] .icon.icon-search {
-    position: absolute;
-    right: 65px;
-    top: 30px
-  } */
-
   header nav[aria-expanded="true"] .nav-hamburger {
     position: absolute;
     right: 27px;
     top: 30px;
   }
  
-  
   header .section.nav-tools .icon img {
     height: 20px;
     width: 20px;
@@ -272,12 +263,12 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
 }
 
 /* Desktop  */
-@media (width >= 1280px)and (width <= 1980px) {
+@media (width >= 1280px) and (width <= 1980px) {
   header nav {
     display: flex;
     justify-content: space-between;
     margin: 0 6rem;
-    border-bottom: 1px solid var(--dark-color);
+    border-bottom: 1.5px solid var(--light-bbb);
     padding: 0;
   }
 
@@ -486,10 +477,16 @@ header nav .nav-sections ul > li > ul > li {
   font-weight: 500;
 }
 
-@media (width >= 1280px) {
-  header nav .nav-brand img {
+@media (width >= 1280px) and (width < 1980px) {
+  header nav .nav-brand picture {
     width: 52px;
     height: 52px;
+    display: block;
+  }
+  
+  header nav .nav-brand img {
+    width: auto;
+    height: auto;
   }
 
   header nav .nav-sections {
@@ -542,9 +539,10 @@ header nav .nav-sections ul > li > ul > li {
   header nav .nav-sections .default-content-wrapper .button-container a.button {
     color:  var(--light-border-color);
     background-color: transparent;
-    padding: 35px 10px;
-    margin: 0;
+    padding: 30px 0;
+    margin: 0 12px;
     font-weight: 700;
+    border: 0;
   }
   
   header nav .nav-sections .default-content-wrapper .button-container a.button:hover {
@@ -552,8 +550,7 @@ header nav .nav-sections ul > li > ul > li {
     color: var( --light-text-color);
     border-top: .25rem solid transparent;
     border-radius: 0;
-    padding: 30px 10px;
-    margin: 0;
+    margin: 0 12px;
   }
 
   header nav .nav-sections .default-content-wrapper .button-container{
@@ -576,8 +573,9 @@ header nav .nav-sections ul > li > ul > li {
   }
   
   header nav .nav-sections .default-content-wrapper > ul > li a {
-    padding: 30px 10px;
+    padding: 27px 0;
     text-decoration: none;
+    margin: 0 12px;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li a:hover {

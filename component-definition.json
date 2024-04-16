@@ -5,18 +5,6 @@
       "id": "default",
       "components": [
         {
-          "title": "Text",
-          "id": "text",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/text/v1/text",
-                "template": {}
-              }
-            }
-          }
-        },
-        {
           "title": "Title",
           "id": "title",
           "plugins": {
@@ -69,18 +57,6 @@
               }
             }
           }
-        },
-        {
-          "title": "Copy Text",
-          "id": "copy_text",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/text/v1/text",
-                "template": {}
-              }
-            }
-          }
         }
       ]
     },
@@ -99,6 +75,18 @@
                   "columns": "2",
                   "rows": "1"
                 }
+              }
+            }
+          }
+        },
+        {
+          "title": "Copy Text",
+          "id": "copy_text",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/text/v1/text",
+                "template": {}
               }
             }
           }
