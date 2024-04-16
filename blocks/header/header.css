@@ -274,6 +274,15 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
   header.white-background .claim-container{
     display: none;
   }
+
+  header nav[aria-expanded="true"] .nav-tools .default-content-wrapper .icon-search {
+    display: none;
+  }
+
+  header nav[aria-expanded="true"] .nav-tools .default-content-wrapper .icon-location {
+    display: none;
+  }
+
 }
 
 /* Desktop  */
@@ -378,12 +387,12 @@ header nav a:any-link {
 }
 
 /* hamburger */
-header nav .nav-hamburger {
+/* header nav .nav-hamburger {
   grid-area: hamburger;
   height: 22px;
   display: flex;
   align-items: center;
-}
+} */
 
 header nav .nav-hamburger button {
   height: 22px;
