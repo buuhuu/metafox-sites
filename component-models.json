@@ -528,5 +528,24 @@
         "label": "Link List"
       }
     ]
+  },
+  {
+    "id": "video",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "videoPoster",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "videoSource",
+        "label": "Video",
+        "multi": false
+      }
+    ]
   }
 ]
