@@ -173,6 +173,18 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
   header.header-wrapper.white-background .nav-wrapper {
     background-color: transparent;
   }
+
+  header.header-wrapper.white-background .nav-wrapper nav[aria-expanded="true"] {
+    background-color: white;    
+  }
+
+  header.header-wrapper.white-background nav[aria-expanded="true"] .bmw-logo-wrapper .grey-image {
+    display: block;
+  }
+
+  header.header-wrapper.white-background nav[aria-expanded="true"] .bmw-logo-wrapper .white-image {
+    display: none;
+  }
 }
 
 /* IPAD */
@@ -246,14 +258,6 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
    display: none;
   }
 
-  header nav[aria-expanded="true"] .nav-tools .default-content-wrapper .icon-location {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    right: 135px;
-    top: 30px;
-  }
-
   header nav[aria-expanded="true"] .bmw-logo-wrapper .bmw-logo img {
     position: absolute;
     top: 15px;
@@ -265,14 +269,6 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
     right: 15px;
   }
  
-  header nav[aria-expanded="true"] .nav-tools .default-content-wrapper .icon-search {
-    position: absolute;
-    right: 90px;
-    top: 30px;
-    width: 20px;
-    height: 20px;
-  }
-
   header.white-background .claim-container{
     display: none;
   }
@@ -282,6 +278,33 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
   }
 
   header nav[aria-expanded="true"] .nav-tools .default-content-wrapper .icon-location {
+    display: none;
+  }
+
+  header.header-wrapper.white-background {
+    position: absolute;
+    background: transparent;
+    width: 100%;
+  }
+
+  header.header-wrapper.white-background  nav[aria-expanded="false"] .nav-hamburger button {
+    background-color: transparent;
+    color: #fff;
+  }
+
+  header.header-wrapper.white-background .nav-wrapper {
+    background-color: transparent;
+  }
+
+  header.header-wrapper.white-background .nav-wrapper nav[aria-expanded="true"] {
+    background-color: white;    
+  }
+
+  header.header-wrapper.white-background nav[aria-expanded="true"] .bmw-logo-wrapper .grey-image {
+    display: block;
+  }
+
+  header.header-wrapper.white-background nav[aria-expanded="true"] .bmw-logo-wrapper .white-image {
     display: none;
   }
 
@@ -387,14 +410,6 @@ header nav p {
 header nav a:any-link {
   color: currentcolor;
 }
-
-/* hamburger */
-/* header nav .nav-hamburger {
-  grid-area: hamburger;
-  height: 22px;
-  display: flex;
-  align-items: center;
-} */
 
 header nav .nav-hamburger button {
   height: 22px;
