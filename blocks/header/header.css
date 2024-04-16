@@ -3,7 +3,6 @@ header .nav-wrapper {
   background-color: var(--background-color);
   width: 100%;
   z-index: 2;
-  position: fixed;
 }
 
 header nav {
@@ -159,6 +158,21 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
   header.white-background .claim-container{
     display: none;
   }
+
+  header.header-wrapper.white-background {
+    position: absolute;
+    background: transparent;
+    width: 100%;
+  }
+
+  header.header-wrapper.white-background  nav[aria-expanded="false"] .nav-hamburger button {
+    background-color: transparent;
+    color: #fff;
+  }
+
+  header.header-wrapper.white-background .nav-wrapper {
+    background-color: transparent;
+  }
 }
 
 /* IPAD */
@@ -306,41 +320,47 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
     border-top: none;
   }
 
-  /** css for black background **/
+  /** css for variation in header with white logo **/
+  header.header-wrapper.white-background {
+    position: absolute;
+    background: transparent;
+    width: 100%;
+  }
 
-header.white-background nav[aria-expanded="true"] {
-  background-color: var(--text-color);
-}
+  header.header-wrapper.white-background .nav-wrapper {
+    background-color: transparent;
+  }
 
-header.white-background nav[aria-expanded="true"] .section.nav-sections .default-content-wrapper ul li a {
- color: var( --background-color);
-}
-
-header.white-background nav[aria-expanded="true"] .section.nav-sections .default-content-wrapper p.button-container a {
+  header.white-background nav .section.nav-sections .default-content-wrapper ul li a {
   color: var( --background-color);
- }
+  }
 
- header.white-background .claim-container {
-  position: absolute;
-  top: 100px;
-  color: var( --background-color);
-  font-family: bmwTypeNextWeb,Arial,Helvetica,Roboto,sans-serif;
-  font-size: 16px;
-  display: block;
- }
+  header.white-background nav .section.nav-sections .default-content-wrapper p.button-container a {
+    color: var( --background-color);
+  }
 
- header.white-background .claim-container b{
-  font-weight: 700;
-  
- }
+  header.white-background .claim-container {
+    position: absolute;
+    top: 100px;
+    color: var( --background-color);
+    font-family: bmwTypeNextWeb,Arial,Helvetica,Roboto,sans-serif;
+    font-size: 16px;
+    display: block;
+  }
 
- header.white-background .claim-container span{
-  font-weight: 200;
- }
+  header.white-background .claim-container b{
+    font-weight: 700;
+    
+  }
+
+  header.white-background .claim-container span{
+    font-weight: 200;
+  }
+  header.white-background nav {
+    border-bottom: 1.5px solid var(--background-color)
+  }
  
 }
-
-
 
 header nav p {
   margin: 0;
