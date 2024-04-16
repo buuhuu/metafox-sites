@@ -1,0 +1,192 @@
+.link-list-wrapper ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.link-list-wrapper.vertical{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.link-list-wrapper.horizontal{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.link-list-wrapper.horizontal .link-list-title {
+    margin: 0px 32px 12px 0px;
+    font-family: var(--fixed-font-family);
+    color: var(--light-text-color);
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 12px;
+    letter-spacing: 2px;
+}
+
+.link-list-wrapper.vertical .link-list-title {
+    display: block;
+    position: relative;
+    font-family: var(--fixed-font-family);
+    padding-right: 24px;
+    margin: 0px 0px 24px 0px;
+    color: var(--medium-text-color);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: normal;
+    word-break: break-all;
+}
+
+.link-list-wrapper.vertical .link-list-title::after
+{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    content: "arrow_chevron_down";
+    direction: ltr;    
+    font-family: "bmw_next_icons",arial,helvetica,roboto,sans-serif;
+    transform: translate(25%, -50%);
+    transition: transform .5s ease-in-out;
+    font-size: 24px;
+    color: var(--medium-text-color);
+    font-style: normal;
+    font-weight: 400;
+    height: 24px;
+    line-height: 1;
+    outline: 1px solid transparent;
+}
+
+.link-list-wrapper.vertical .link-list-title.expand{
+    color: var(--light-text-color);
+}
+
+.link-list-wrapper.vertical .link-list-title.expand::after{
+    transform: translate(25%, -50%) rotate(-180deg);
+    color: var(--light-text-color);
+}
+
+.link-list-wrapper.horizontal .link-list-detail li,
+.link-list-wrapper.horizontal .link-list-detail li a {
+    font-family: var(--fixed-font-family);
+    font-size: 14px;
+    color: var(--light-text-color);
+    line-height: 20px;
+    font-weight: 700;
+    word-break: break-all;
+    text-decoration: none; 
+}
+.link-list-wrapper.horizontal .link-list-detail li a:hover{
+    color: var(--light-link-hover-color);
+}
+
+.link-list-wrapper.vertical .link-list-detail {   
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .25s ease;
+}
+
+.link-list-wrapper .link-list-detail a.button{    
+    display: inline-block;
+    box-sizing: border-box;
+    text-decoration: none;
+    border:none;
+    padding: 0;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--text-color);
+    background-color: transparent;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius:0;   
+}
+
+.link-list-wrapper.horizontal .link-list-detail {
+    display: inline-block;
+}
+
+.link-list-wrapper.horizontal .link-list-detail ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.link-list-wrapper.vertical .link-list-detail ul {
+    margin-bottom: 40px;
+    padding: 8px 0px 8px 16px;
+}
+
+.link-list-wrapper.vertical .link-list-detail li,
+.link-list-wrapper.vertical .link-list-detail li a {
+    font-family: var(--fixed-font-family);
+    font-size: 14px;
+    color: var(--medium-text-color);
+    line-height: 20px;
+    font-weight: 700;
+    word-break: break-all;
+    text-decoration: none; 
+}
+
+.link-list-wrapper.vertical .link-list-detail li{
+    margin-bottom: 24px;
+}
+
+.link-list-wrapper.vertical .link-list-detail li:last-child{
+    margin-bottom: 0px;
+}
+
+.link-list-wrapper.vertical .link-list-detail li a:hover{
+    color: var(--light-text-color);
+}
+
+/*mobile*/
+@media (width < 768px){
+    .link-list-wrapper.horizontal .link-list-title {
+        display: block;
+    }
+}
+
+/*tablet*/
+@media (width >= 768px){
+    .link-list-wrapper.vertical{
+        display: inline-flex;
+        flex-direction: row;
+        width: 50%;
+    }
+    .link-list-wrapper.horizontal .link-list-title {
+        display: inline-block;
+    }
+
+    .link-list-wrapper.vertical .link-list-title {       
+        padding-right: 0px;
+        margin: 0px 0px 16px 0px;
+        color: var(--medium-text-color);
+        font-size: 10px;
+        font-weight: 300;
+        line-height: 12px;
+        letter-spacing: 2px;
+        word-break: break-all;
+    }
+
+    .link-list-wrapper.vertical .link-list-title::after{
+        display: none;
+    }
+
+    .link-list-wrapper.vertical .link-list-detail {
+        display: block;
+        max-height: fit-content;
+        height: auto;
+    }
+    .link-list-wrapper.vertical .link-list-detail ul {
+        margin-bottom: 48px;
+        padding: 0px;
+    }
+    .link-list-wrapper.vertical .link-list-detail li{
+        margin-bottom: 12px;
+    }    
+}
