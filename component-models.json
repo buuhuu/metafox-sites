@@ -228,7 +228,7 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "fileReference",
+        "name": "bg-fileReference",
         "label": "Image",
         "value": "",
         "description": "Image path from AEM DAM - only choose from the dedicated asset folder",
@@ -237,14 +237,14 @@
       {
         "component": "text-input",
         "valueType": "string",
-        "name": "imageAlt",
+        "name": "bg-imageAlt",
         "label": "Alt text",
         "description": "Image alt text - highly recommended for SEO",
         "value": ""
       },
       {
         "component": "text-area",
-        "name": "text",
+        "name": "fg-text",
         "value": "Kindly edit the content here !",
         "label": "Text",
         "description": "Optionaö text for the text image component",
@@ -253,7 +253,7 @@
       },
       {
         "component": "select",
-        "name": "imagePosition",
+        "name": "fg-imagePosition",
         "filter": "imagePosition",
         "value": "",
         "label": "Image Position",
@@ -272,13 +272,13 @@
       {
         "component": "boolean",
         "label": "Do you need to display meta text ?",
-        "name": "reveal",
+        "name": "fg-reveal",
         "valueType": "boolean"
       },
       {
         "component": "text-input",
         "label": "Meta text",
-        "name": "meta-text",
+        "name": "fg-meta-text",
         "valueType": "string",
         "condition": {
           "===": [
@@ -288,50 +288,6 @@
             true
           ]
         }
-      }
-    ]
-  },
-  {
-    "id": "text-image-vertical",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "text-input",
-        "valueType": "string",
-        "name": "imageAlt",
-        "label": "Alt text",
-        "value": ""
-      },
-      {
-        "component": "text-area",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "imagePosition",
-        "filter": "imagePosition",
-        "value": "",
-        "label": "Image Position",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Top",
-            "value": "top"
-          },
-          {
-            "name": "Bottom",
-            "value": "bottom"
-          }
-        ]
       }
     ]
   },
@@ -496,99 +452,6 @@
         "name": "icon link",
         "value": "",
         "label": "Icon Link"
-      }
-    ]
-  },
-  {
-    "id": "custom-text-area",
-    "fields": [
-      {
-        "component": "richtext",
-        "name": "rte",
-        "label": "Text Area",
-        "valueType": "string"
-      },
-      {
-        "component": "multiselect",
-        "name": "multiselect",
-        "label": "Font Style",
-        "valueType": "string",
-        "options": [
-          { "name": "Bold", "value": "bold" },
-          { "name": "Italic", "value": "italic" }
-        ]
-      },
-      {
-        "component": "radio-group",
-        "label": "Font Family",
-        "name": "radio",
-        "valueType": "string",
-        "options": [
-          { "name": "Sans Sarif", "value": "sans-serif" },
-          { "name": "Arial", "value": "arial" }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "text-area",
-    "fields": [
-      {
-        "component": "richtext",
-        "name": "rte",
-        "label": "Text Area",
-        "valueType": "string"
-      },
-      {
-        "component": "multiselect",
-        "name": "multiselect",
-        "label": "Font Style",
-        "valueType": "string",
-        "options": [
-          { "name": "Bold", "value": "bold" },
-          { "name": "Italic", "value": "italic" }
-        ]
-      },
-      {
-        "component": "radio-group",
-        "label": "Font Family",
-        "name": "radio",
-        "valueType": "string",
-        "options": [
-          { "name": "Sans Sarif", "value": "sans-serif" },
-          { "name": "Arial", "value": "arial" }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "custom-text-box",
-    "fields": [
-      {
-        "component": "richtext",
-        "name": "rte",
-        "label": "Text Area",
-        "valueType": "string"
-      },
-      {
-        "component": "multiselect",
-        "name": "multiselect",
-        "label": "Font Style",
-        "valueType": "string",
-        "options": [
-          { "name": "Bold", "value": "bold" },
-          { "name": "Italic", "value": "italic" }
-        ]
-      },
-      {
-        "component": "radio-group",
-        "label": "Font Family",
-        "name": "radio",
-        "valueType": "string",
-        "options": [
-          { "name": "Sans Serif", "value": "sans-serif" },
-          { "name": "Arial", "value": "arial" }
-        ]
       }
     ]
   },
