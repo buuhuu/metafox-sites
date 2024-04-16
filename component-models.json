@@ -578,7 +578,6 @@
         "component": "select",
         "name": "videoControls",
         "label": "Video Controls",
-        "valueType": "string",
         "options": [
           {
             "name": "AutoPlay",
