@@ -360,7 +360,7 @@ footer .footer .section:nth-child(3) .link-list-wrapper.horizontal .link-list-ti
 /* large desktop */
 @media (width >= 1920px){
   footer .footer .section {
-    width: var(--max-component-width);
+    max-width: var(--max-component-width);
     padding-left: calc(100vw - (var(--max-component-width) - 96px));
     padding-right: calc(100vw - (var(--max-component-width) - 96px));
   }
