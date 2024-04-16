@@ -77,7 +77,9 @@ export default async function decorate(block) {
     wrapper.className = 'video-placeholder';
     wrapper.innerHTML = '<div class="video-placeholder-play"><button type="button" title="Play"></button></div>';
     wrapper.prepend(placeholder);
-    loadVideoEmbed(block, link, true);
+    wrapper.addEventListener('click', () => {
+      loadVideoEmbed(block, link, true);
+    });
     block.append(wrapper);
   } else {
     block.classList.add('lazy-loading');
