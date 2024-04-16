@@ -542,8 +542,8 @@ header nav .nav-sections ul > li > ul > li {
   header nav .nav-sections .default-content-wrapper .button-container a.button {
     color:  var(--light-border-color);
     background-color: transparent;
-    padding: 35px 10px;
-    margin: 0;
+    padding: 30px 0;
+    margin: 0 12px;
     font-weight: 700;
   }
   
@@ -552,8 +552,8 @@ header nav .nav-sections ul > li > ul > li {
     color: var( --light-text-color);
     border-top: .25rem solid transparent;
     border-radius: 0;
-    padding: 30px 10px;
-    margin: 0;
+    padding: 30px 0;
+    margin: 0 12px;
   }
 
   header nav .nav-sections .default-content-wrapper .button-container{
@@ -576,8 +576,9 @@ header nav .nav-sections ul > li > ul > li {
   }
   
   header nav .nav-sections .default-content-wrapper > ul > li a {
-    padding: 30px 10px;
+    padding: 30px 0;
     text-decoration: none;
+    margin: 0 12px;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li a:hover {
