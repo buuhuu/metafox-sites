@@ -256,11 +256,13 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
 
   header nav[aria-expanded="true"] .bmw-logo-wrapper .bmw-logo img {
     position: absolute;
+    top: 15px;
   }
 
   header nav[aria-expanded="true"] .nav-hamburger-icon {
-    top: 29px;
+    top: 33px;
     width: 20px;
+    right: 15px;
   }
  
   header nav[aria-expanded="true"] .nav-tools .default-content-wrapper .icon-search {
