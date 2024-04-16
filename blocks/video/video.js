@@ -49,7 +49,7 @@ const loadVideoEmbed = (block, link, autoplay) => {
   const isYoutube = link.includes('youtube') || link.includes('youtu.be');
   const isVimeo = link.includes('vimeo');
   const isMp4 = link.includes('.mp4');
-  const isM3U8 = link.include('.m3u8');
+  const isM3U8 = link.includes('.m3u8');
 
   if (isYoutube) {
     block.innerHTML = embedYoutube(url, autoplay);
