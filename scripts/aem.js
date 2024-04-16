@@ -382,7 +382,9 @@ function decorateButtons(element) {
           && twoup.tagName === 'P'
         ) {
           a.className = 'button primary';
-          twoup.classList.add('button-container');
+          twoup.classList.add('button-container')
+          const buttonWidth = a.textContent.length * 10 + 20; // Adjust multiplier and constant as needed
+          a.style.width = buttonWidth + 'px';
         }
         if (
           up.childNodes.length === 1
