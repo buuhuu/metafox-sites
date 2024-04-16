@@ -34,7 +34,7 @@ function getVideoElement(source, videoFormat, enableAutoplay, enableLoop, enable
     video.setAttribute('autoplay', '');
   }
   if (enableLoop) {
-    video.setAttribute('autoplay', '');
+    video.setAttribute('loop', '');
   }
   if (muted) {
     video.setAttribute('muted', '');
@@ -86,7 +86,7 @@ export default async function decorate(block) {
   const videoControlProperties = videoControls.innerText.split(',');
   const autoplay = !!videoControlProperties.includes('autoplay');
   const loop = !!videoControlProperties.includes('loop');
-  const enableControls = !!videoControlProperties.includes('enablecontrols');
+  const enableControls = !!videoControlProperties.includes('enableVideoControls');
   const muted = !!videoControlProperties.includes('muted');
 
   if (placeholder) {
@@ -94,10 +94,14 @@ export default async function decorate(block) {
     wrapper.className = 'video-placeholder';
     wrapper.innerHTML = '<div class="video-placeholder-play"><button type="button" title="Play"></button></div>';
     wrapper.prepend(placeholder);
-    wrapper.addEventListener('click', () => {
+    if (!autoplay) {
+      wrapper.addEventListener('click', () => {
+        loadVideoEmbed(block, link, autoplay, loop, enableControls, muted);
+      });
+      block.append(wrapper);
+    } else {
       loadVideoEmbed(block, link, autoplay, loop, enableControls, muted);
-    });
-    block.append(wrapper);
+    }
   } else {
     block.classList.add('lazy-loading');
     const observer = new IntersectionObserver((entries) => {
