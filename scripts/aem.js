@@ -395,7 +395,7 @@ function decorateButtons(element) {
         }
         if (
           up.childNodes.length === 1
-          && up.tagName === 'U'
+          && up.tagName === 'EM'
           && twoup.childNodes.length === 1
           && twoup.tagName === 'P'
         ) {
