@@ -575,9 +575,8 @@
         "multi": false
       },
       {
-        "component": "select",
+        "component": "multiselect",
         "name": "videoControls",
-        "value": "",
         "label": "Video Controls",
         "valueType": "string",
         "options": [
@@ -597,8 +596,7 @@
             "name": "Disable Video Controls",
             "value": "disableVideoControls"
           }
-        ],
-        "multi": true
+        ]
       }
     ]
   }
