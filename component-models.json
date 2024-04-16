@@ -573,6 +573,32 @@
         "name": "videoSource",
         "label": "Video",
         "multi": false
+      },
+      {
+        "component": "select",
+        "name": "videoControls",
+        "value": "",
+        "label": "Video Controls",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "AutoPlay",
+            "value": "autoplay"
+          },
+          {
+            "name": "Loop",
+            "value": "loop"
+          },
+          {
+            "name": "Play on Hover",
+            "value": "playOnHover"
+          },
+          {
+            "name": "Disable Video Controls",
+            "value": "disableVideoControls"
+          }
+        ],
+        "multi": true
       }
     ]
   }
