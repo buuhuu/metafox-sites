@@ -581,20 +581,24 @@
         "valueType": "string",
         "options": [
           {
-            "name": "AutoPlay",
+            "name": "AutoPlay Video",
             "value": "autoplay"
           },
           {
-            "name": "Loop",
+            "name": "Loop Video",
             "value": "loop"
           },
           {
-            "name": "Play on Hover",
+            "name": "Play video only on mouse hover",
             "value": "playOnHover"
           },
           {
-            "name": "Disable Video Controls",
-            "value": "disableVideoControls"
+            "name": "Enable Video Control",
+            "value": "enableVideoControls"
+          },
+          {
+            "name": "Video Muted On Load",
+            "value": "muted"
           }
         ]
       }

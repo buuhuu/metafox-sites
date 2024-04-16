@@ -23,12 +23,22 @@ function embedVimeo(url, autoplay) {
     </div>`;
 }
 
-function getVideoElement(source, autoplay, videoFormat) {
+function getVideoElement(source, videoFormat, enableAutoplay, enableLoop, enableControls, muted) {
   const video = document.createElement('video');
-  video.setAttribute('controls', '');
   video.dataset.loading = 'true';
   video.addEventListener('loadedmetadata', () => delete video.dataset.loading);
-  if (autoplay) video.setAttribute('autoplay', autoplay);
+  if (enableControls) {
+    video.setAttribute('controls', '');
+  }
+  if (enableAutoplay) {
+    video.setAttribute('autoplay', '');
+  }
+  if (enableLoop) {
+    video.setAttribute('autoplay', '');
+  }
+  if (muted) {
+    video.setAttribute('muted', '');
+  }
 
   const sourceEl = document.createElement('source');
   sourceEl.setAttribute('src', source);
@@ -40,7 +50,7 @@ function getVideoElement(source, autoplay, videoFormat) {
   return video;
 }
 
-const loadVideoEmbed = (block, link, autoplay) => {
+const loadVideoEmbed = (block, link, autoplay, loop, enableControls, muted) => {
   if (block.dataset.embedIsLoaded) {
     return;
   }
@@ -57,10 +67,10 @@ const loadVideoEmbed = (block, link, autoplay) => {
     block.innerHTML = embedVimeo(url, autoplay);
   } else if (isMp4) {
     block.textContent = '';
-    block.append(getVideoElement(link, autoplay, '.mp4'));
+    block.append(getVideoElement(link, '.mp4', autoplay, loop, enableControls, muted));
   } else if (isM3U8) {
     block.textContent = '';
-    block.append(getVideoElement(link, autoplay, '.m3u8'));
+    block.append(getVideoElement(link, '.m3u8', autoplay, loop, enableControls, muted));
   }
 
   block.dataset.embedIsLoaded = true;
@@ -68,9 +78,16 @@ const loadVideoEmbed = (block, link, autoplay) => {
 
 export default async function decorate(block) {
   // const placeholder = [...block.children].map((row) => row.firstElementChild);
+  const props = [...block.children].map((row) => row.firstElementChild);
+  const [, , videoControls] = props;
   const placeholder = block.querySelector('picture');
   const link = block.querySelector('a').href;
   block.textContent = '';
+  const videoControlProperties = videoControls.innerText.split(',');
+  const autoplay = !!videoControlProperties.includes('autoplay');
+  const loop = !!videoControlProperties.includes('loop');
+  const enableControls = !!videoControlProperties.includes('enablecontrols');
+  const muted = !!videoControlProperties.includes('muted');
 
   if (placeholder) {
     const wrapper = document.createElement('div');
@@ -78,7 +95,7 @@ export default async function decorate(block) {
     wrapper.innerHTML = '<div class="video-placeholder-play"><button type="button" title="Play"></button></div>';
     wrapper.prepend(placeholder);
     wrapper.addEventListener('click', () => {
-      loadVideoEmbed(block, link, true);
+      loadVideoEmbed(block, link, autoplay, loop, enableControls, muted);
     });
     block.append(wrapper);
   } else {
@@ -86,7 +103,7 @@ export default async function decorate(block) {
     const observer = new IntersectionObserver((entries) => {
       if (entries.some((e) => e.isIntersecting)) {
         observer.disconnect();
-        loadVideoEmbed(block, link, true);
+        loadVideoEmbed(block, link, autoplay, videoControls);
         block.classList.remove('lazy-loading');
       }
     });
