@@ -273,7 +273,7 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
     display: none;
   }
 
-  header nav[aria-expanded="true"] .nav-tools .default-content-wrapper .icon-search {
+  header nav[aria-expanded="true"] .nav-tools .default-content-wrapper .icon-search, header nav[aria-expanded="true"] .nav-tools .default-content-wrapper .icon-location {
     display: none;
   }
 
