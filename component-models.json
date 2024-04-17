@@ -170,6 +170,7 @@
         "label": "Button Size",
         "valueType": "string",
         "required": true,
+        "id": "button-size",
         "options": [
           {
             "name": "Grid",
