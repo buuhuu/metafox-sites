@@ -1,15 +1,16 @@
-.icon-link-list-container .icon{
+/* footer */
+footer .icon-link-list-container .icon{
     margin-right: 12px;
     width: 28px;
     height: 32px;
 }
 
-.icon-link-list-container .icon .icon-container
+footer .icon-link-list-container .icon .icon-container
 {
     display: inline-flex;
 }
 
-.icon-link-list-container .icon .icon-container img{
+footer .icon-link-list-container .icon .icon-container img{
     height: 28px;
     width: auto;
 }
