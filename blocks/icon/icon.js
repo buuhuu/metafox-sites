@@ -1,12 +1,12 @@
 const iconList = {
-  facebook: "/icons/facebook.png",
-  instagram: "/icons/instagram.png",
-  youtube: "/icons/youtube.png",
-  twitter: "/icons/X-Logo.png",
-  linkedin: "/icons/linkedin.png",
+  facebook: '/icons/facebook.png',
+  instagram: '/icons/instagram.png',
+  youtube: '/icons/youtube.png',
+  twitter: '/icons/X-Logo.png',
+  linkedin: '/icons/linkedin.png',
 };
 
-const iconListArray = ["location", "search"];
+const iconListArray = ['location', 'search'];
 
 export function generateIconDOM(props) {
   // Extract properties, always same order as in model, empty string if not set
@@ -35,6 +35,6 @@ export default function decorate(block) {
   // get the first and only cell from each row
   const props = [...block.children].map((row) => row.firstElementChild);
   const iconDOM = generateIconDOM(props);
-  block.textContent = "";
+  block.textContent = '';
   block.append(iconDOM);
 }
