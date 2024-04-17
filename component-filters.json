@@ -23,6 +23,16 @@
     ]
   },
   {
+    "id": "header-section",
+    "components": [
+      "logo",
+      "subnavigation-text",
+      "menu-link",
+      "menu-flyout",
+      "icon-link-list"
+    ]
+  },
+  {
     "id": "column",
     "components": [
       "text",
@@ -48,7 +58,6 @@
       "text-image",
       "BMW-Iframe",
       "footer-text",
-      "BMW-logo",
       "icon",
       "icon-link-list",
       "copyright",
