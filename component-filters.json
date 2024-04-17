@@ -5,7 +5,7 @@
   },
   {
     "id": "columns",
-    "components": []
+    "components": ["column"]
   },
   {
     "id": "bmw_main_section",
@@ -25,16 +25,14 @@
   {
     "id": "column",
     "components": [
-      "text",
       "image",
-      "button",
+      "icon",
+      "bmw-video",
       "title",
-      "footer-text",
-      "vertical-link-text",
+      "text",
+      "button",
       "horizontal-link-text",
-      "icon-link-list",
-      "copyright",
-      "link-list"
+      "vertical-link-text"
     ]
   },
   {
