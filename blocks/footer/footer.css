@@ -43,6 +43,10 @@ footer .footer .section:nth-child(3) .link-list-wrapper.horizontal .link-list-de
   font-size: 12px;
 }
 
+footer .footer .section:nth-child(3) .link-list-wrapper.horizontal .link-list-detail li:last-child {
+  margin-right: 0;
+}
+
 footer .footer .section:nth-child(3) .link-list-wrapper.horizontal .link-list-title{
   margin: 0;
 }
