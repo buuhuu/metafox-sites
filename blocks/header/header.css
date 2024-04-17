@@ -411,28 +411,26 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
     margin: 0;
   }
 
-  header nav .icon-link-list-container.nav-tools .icon-link-list-container .icon:hover,
-  header.header-wrapper.white-background nav .icon-link-list-container.nav-tools .icon-link-list-container .icon
-  {
+  header.header-wrapper.white-background nav .icon-link-list-container.nav-tools .icon-link-list-container .icon {
     border-bottom: .25rem solid var(--light-link-hover-color);
     border-top: .25rem solid transparent;
     color:transparent;
   }
 
-  header nav .icon-link-list-container.nav-tools .icon-container .location:before {
+  header nav .icon-link-list-container.nav-tools .icon-container .location::before {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-feature-settings: "liga";
     content: "location_pin";
     direction: ltr;
     display: block;
-    font-family: bmw_next_icons;
+    font-family: "bmw_next_icons", arial,helvetica,roboto,sans-serif;
     font-style: normal;
     height: 1em;
     line-height: 1;
     outline: 1px solid transparent;
     text-align: left;
-    text-rendering: optimizeLegibility;
+    text-rendering: optimizelegibility;
     text-transform: none;
     white-space: nowrap;
     width: auto;
@@ -441,20 +439,20 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
     font-weight: 400;
   }
  
-  header nav .icon-link-list-container.nav-tools .icon-container .search:before {    
+  header nav .icon-link-list-container.nav-tools .icon-container .search::before {    
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-feature-settings: "liga";
     content: "search";
     direction: ltr;
     display: block;
-    font-family: bmw_next_icons;
+    font-family: "bmw_next_icons", arial,helvetica,roboto,sans-serif;
     font-style: normal;
     height: 1em;
     line-height: 1;
     outline: 1px solid transparent;
     text-align: left;
-    text-rendering: optimizeLegibility;
+    text-rendering: optimizelegibility;
     text-transform: none;
     white-space: nowrap;
     width: auto;
@@ -463,20 +461,20 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
     font-weight: 400;
   } 
 
-  header.header-wrapper.white-background nav .icon-link-list-container.nav-tools .icon-container .location:before {
+  header.header-wrapper.white-background nav .icon-link-list-container.nav-tools .icon-container .location::before {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-feature-settings: "liga";
     content: "location_pin";
     direction: ltr;
     display: block;
-    font-family: bmw_next_icons;
+    font-family: "bmw_next_icons", arial,helvetica,roboto,sans-serif;
     font-style: normal;
     height: 1em;
     line-height: 1;
     outline: 1px solid transparent;
     text-align: left;
-    text-rendering: optimizeLegibility;
+    text-rendering: optimizelegibility;
     text-transform: none;
     white-space: nowrap;
     width: auto;
@@ -485,17 +483,17 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
     font-weight: 400;
   }
  
-  header.header-wrapper.white-background nav .icon-link-list-container.nav-tools .icon-container .search:before { 
+  header.header-wrapper.white-background nav .icon-link-list-container.nav-tools .icon-container .search::before { 
     content: "search";
     direction: ltr;
     display: block;
-    font-family: bmw_next_icons;
+    font-family: "bmw_next_icons", arial,helvetica,roboto,sans-serif;
     font-style: normal;
     height: 1em;
     line-height: 1;
     outline: 1px solid transparent;
     text-align: left;
-    text-rendering: optimizeLegibility;
+    text-rendering: optimizelegibility;
     text-transform: none;
     white-space: nowrap;
     width: auto;
