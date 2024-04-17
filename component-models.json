@@ -45,30 +45,6 @@
     ]
   },
   {
-    "id": "horizontal-link-text",
-    "fields": [
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "horizontal-link-text",
-        "value": "",
-        "label": "Horizontal Link Text"
-      }
-    ]
-  },
-  {
-    "id": "vertical-link-text",
-    "fields": [
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "vertical-link-text",
-        "value": "",
-        "label": "Vertical Link Text"
-      }
-    ]
-  },
-  {
     "id": "copyright",
     "fields": [
       {
@@ -438,7 +414,7 @@
         "component": "select",
         "name": "icon type",
         "value": "",
-        "label": "Icon Type (dropdown)",
+        "label": "Icon Type",
         "valueType": "string",
         "options": [
           {
@@ -460,10 +436,6 @@
           {
             "name": "LinkedIn",
             "value": "linkedin"
-          },
-          {
-            "name": "TikTok",
-            "value": "tiktok"
           }
         ]
       },

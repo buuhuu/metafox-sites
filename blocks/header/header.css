@@ -1,4 +1,8 @@
 /* header and nav layout */
+header {
+  min-width: 100%;
+}
+
 header .nav-wrapper {
   background-color: var(--background-color);
   width: 100%;
@@ -678,3 +682,41 @@ header nav .nav-sections ul > li > ul > li {
 header nav .nav-tools {
   grid-area: tools;
 }
+
+/* mobile */
+@media (width < 768px) {
+  header nav {
+    margin: 0 24px;
+    padding: 0;
+  } 
+}
+
+/* tablet */
+@media (width >= 768px){
+  header nav {
+    margin: 0 48px;
+    padding: 0;
+  } 
+}
+
+/* desktop */
+@media (width >= 1280px){
+  header nav {
+    margin: 0 96px;
+  } 
+}
+
+/* large desktop */
+@media (width >= 1920px){
+  header nav {
+    max-width: var(--max-component-width);
+    margin-left: calc(100vw - (var(--max-component-width) - 96px));
+    margin-right: calc(100vw - (var(--max-component-width) - 96px));
+  }
+
+  header nav[aria-expanded="true"] .section.nav-sections {
+    left: calc(100vw - (var(--max-component-width) - (45px + 96px)));
+  }
+}
+
+
