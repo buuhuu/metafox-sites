@@ -437,6 +437,14 @@
           {
             "name": "LinkedIn",
             "value": "linkedin"
+          },
+          {
+            "name": "Location",
+            "value": "location"
+          },
+          {
+            "name": "Search",
+            "value": "search"
           }
         ]
       },
