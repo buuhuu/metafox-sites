@@ -39,6 +39,7 @@
     line-height: 20px;
     letter-spacing: normal;
     word-break: break-all;
+    text-transform: none;
 }
 
 .link-list-wrapper.vertical .link-list-title::after
@@ -178,6 +179,7 @@
         line-height: 12px;
         letter-spacing: 2px;
         word-break: break-all;
+        text-transform: uppercase;
     }
 
     .link-list-wrapper.vertical .link-list-title::after{
