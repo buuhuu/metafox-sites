@@ -164,20 +164,21 @@
         "label": "Button Type"
       },
       {
-        "component": "select",
-        "name": "buttonwidth",
+        "component": "radio-group",
+        "name": "buttonsize",
         "value": "",
-        "label": "Button Width",
+        "label": "Button Size",
         "valueType": "string",
-        "id": "width-dropdown",
+        "required": true,
+        "id": "width-size",
         "options": [
           {
-            "name": "Fixed",
-            "value": "Fixed"
+            "name": "Grid",
+            "value": "Grid"
           },
           {
-            "name": "Full",
-            "value": "Full"
+            "name": "Flex",
+            "value": "Flex"
           }
     ]
   },
