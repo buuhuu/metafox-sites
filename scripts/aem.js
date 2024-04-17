@@ -365,7 +365,7 @@ function decorateTemplateAndTheme() {
  * @param {Element} element container element
  */
 function decorateButtons(element) {
-  const widthDropdown = document.getElementById('width-dropdown'); // Get the dropdown
+  const buttonsize = document.getElementById('button-size'); // Get the option
   element.querySelectorAll('a').forEach((a) => {
     a.title = a.title || a.textContent;
     if (a.href !== a.textContent) {
@@ -384,10 +384,12 @@ function decorateButtons(element) {
         ) {
           a.className = 'button primary';
           twoup.classList.add('button-container');
-          if (widthDropdown.value === 'fixed') { 
+          if (buttonsize.value === 'Grid') 
+          { 
             a.style.width = '200px'; 
             a.style.whiteSpace = 'normal';
-          } else {  
+          } else 
+          {  
             a.style.width = ''; 
             a.style.whiteSpace = '';
           }
@@ -400,8 +402,6 @@ function decorateButtons(element) {
         ) {
           a.className = 'button secondary';
           twoup.classList.add('button-container');
-          const buttonWidth = a.textContent.length;
-          a.style.width = buttonWidth ;
         }
         if (
           up.childNodes.length === 1
