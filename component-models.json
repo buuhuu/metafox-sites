@@ -166,11 +166,10 @@
       {
         "component": "radio-group",
         "name": "buttonsize",
-        "value": "",
+        "value": "Grid",
         "label": "Button Size",
         "valueType": "string",
         "required": true,
-        "id": "width-size",
         "options": [
           {
             "name": "Grid",
