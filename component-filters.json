@@ -14,10 +14,7 @@
   {
     "id": "footer-section",
     "components": [
-      "footer-text",
-      "text",
-      "columns",
-      "icon",
+      "icon-link-list",
       "copyright",
       "link-list"
     ]
@@ -83,6 +80,7 @@
   },
   {
     "id": "link-list",
+    "components":[],
     "rte": {
       "format": [],
       "alignment": [],
