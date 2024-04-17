@@ -567,11 +567,46 @@
     "id": "bmw-video",
     "fields": [
       {
-        "component": "text-input",
+        "component": "reference",
         "valueType": "string",
-        "name": "bmwVideo",
-        "label": "BMW Video",
+        "name": "videoPoster",
+        "label": "Image",
         "multi": false
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "videoSource",
+        "label": "Video",
+        "multi": false
+      },
+      {
+        "component": "multiselect",
+        "name": "videoControls",
+        "label": "Video Controls",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "AutoPlay Video",
+            "value": "autoplay"
+          },
+          {
+            "name": "Loop Video",
+            "value": "loop"
+          },
+          {
+            "name": "Play video only on mouse hover",
+            "value": "playOnHover"
+          },
+          {
+            "name": "Enable Video Control",
+            "value": "enableVideoControls"
+          },
+          {
+            "name": "Video Muted On Load",
+            "value": "muted"
+          }
+        ]
       }
     ]
   }
