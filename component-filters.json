@@ -1,7 +1,7 @@
 [
   {
     "id": "main",
-    "components": ["section", "bmw_main_section", "footer-section", "header-section"]
+    "components": ["section", "bmw_main_section", "footer-section"]
   },
   {
     "id": "columns",
