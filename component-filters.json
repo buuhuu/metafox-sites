@@ -8,6 +8,19 @@
     "components": ["column"]
   },
   {
+    "id": "column",
+    "components": [
+      "image",
+      "icon",
+      "video",
+      "title",
+      "text",
+      "button",
+      "horizontal-link-text",
+      "vertical-link-text"
+    ]
+  },
+  {
     "id": "bmw_main_section",
     "components": ["text-image", "section"]
   },
@@ -20,19 +33,6 @@
       "icon",
       "copyright",
       "link-list"
-    ]
-  },
-  {
-    "id": "column",
-    "components": [
-      "image",
-      "icon",
-      "bmw-video",
-      "title",
-      "text",
-      "button",
-      "horizontal-link-text",
-      "vertical-link-text"
     ]
   },
   {
