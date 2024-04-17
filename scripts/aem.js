@@ -365,6 +365,7 @@ function decorateTemplateAndTheme() {
  * @param {Element} element container element
  */
 function decorateButtons(element) {
+  const widthDropdown = document.getElementById('width-dropdown'); // Get the dropdown
   element.querySelectorAll('a').forEach((a) => {
     a.title = a.title || a.textContent;
     if (a.href !== a.textContent) {
@@ -382,9 +383,14 @@ function decorateButtons(element) {
           && twoup.tagName === 'P'
         ) {
           a.className = 'button primary';
-          twoup.classList.add('button-container')
-          const buttonWidth = a.textContent.length * 10 + 20; // Adjust multiplier and constant as needed
-          a.style.width = buttonWidth + 'px';
+          twoup.classList.add('button-container');
+          if (widthDropdown.value === 'fixed') { 
+            a.style.width = '200px'; 
+            a.style.whiteSpace = 'normal';
+          } else {  
+            a.style.width = ''; 
+            a.style.whiteSpace = '';
+          }
         }
         if (
           up.childNodes.length === 1
@@ -394,6 +400,8 @@ function decorateButtons(element) {
         ) {
           a.className = 'button secondary';
           twoup.classList.add('button-container');
+          const buttonWidth = a.textContent.length;
+          a.style.width = buttonWidth ;
         }
         if (
           up.childNodes.length === 1

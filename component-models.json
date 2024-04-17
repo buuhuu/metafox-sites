@@ -162,7 +162,23 @@
         "name": "buttontype",
         "value": "",
         "label": "Button Type"
-      }
+      },
+      {
+        "component": "select",
+        "name": "buttonwidth",
+        "value": "",
+        "label": "Button Width",
+        "valueType": "string",
+        "id": "width-dropdown",
+        "options": [
+          {
+            "name": "Fixed",
+            "value": "Fixed"
+          },
+          {
+            "name": "Full",
+            "value": "Full"
+          }
     ]
   },
   {
