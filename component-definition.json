@@ -344,7 +344,7 @@
         },
         {
           "title": "Subnavigation Text",
-          "id": "header-section",
+          "id": "subnavigation-text",
           "plugins": {
             "xwalk": {
               "page": {

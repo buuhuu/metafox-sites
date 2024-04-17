@@ -165,7 +165,7 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
 
   header.header-wrapper.white-background  nav[aria-expanded="false"] .nav-hamburger button {
     background-color: transparent;
-    color: #fff;
+    color : var(--background-color);
   }
 
   header.header-wrapper.white-background .nav-wrapper {
@@ -173,7 +173,7 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
   }
 
   header.header-wrapper.white-background .nav-wrapper nav[aria-expanded="true"] {
-    background-color: white;    
+    background-color: var(--background-color);   
   }
 
   header.header-wrapper.white-background nav[aria-expanded="true"] .bmw-logo-wrapper .grey-image {
@@ -291,7 +291,7 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
 
   header.header-wrapper.white-background  nav[aria-expanded="false"] .nav-hamburger button {
     background-color: transparent;
-    color: #fff;
+    color : var(--background-color);
   }
 
   header.header-wrapper.white-background .nav-wrapper {
@@ -299,7 +299,7 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
   }
 
   header.header-wrapper.white-background .nav-wrapper nav[aria-expanded="true"] {
-    background-color: white;    
+    background-color: var(--background-color);   
   }
 
   header.header-wrapper.white-background nav[aria-expanded="true"] .bmw-logo-wrapper .grey-image {
@@ -479,7 +479,7 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
     white-space: nowrap;
     width: auto;
     font-size: 1.25rem;
-    color: #fff;
+    color : var(--background-color);
     font-weight: 400;
   }
  
@@ -498,7 +498,7 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
     white-space: nowrap;
     width: auto;
     font-size: 1.25rem;
-    color: #fff;
+    color : var(--background-color);
     font-weight: 400;
   }
  

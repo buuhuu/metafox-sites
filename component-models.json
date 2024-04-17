@@ -633,7 +633,7 @@
         ]
       }
     ]
-  },
+  },  
   {
     "id": "menu-link",
     "fields": [
@@ -658,6 +658,19 @@
         "label": "Link",
         "value": ""
       }
+    ]
+  },
+  {
+    "id": "subnavigation-text",
+    "fields": [
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "Text",
+        "label": "text",
+        "value": ""
+      }
+      
     ]
   }
 ]
