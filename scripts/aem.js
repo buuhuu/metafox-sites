@@ -365,7 +365,6 @@ function decorateTemplateAndTheme() {
  * @param {Element} element container element
  */
 function decorateButtons(element) {
-  const buttonsize = document.getElementById('button-size'); // Get the option
   element.querySelectorAll('a').forEach((a) => {
     a.title = a.title || a.textContent;
     if (a.href !== a.textContent) {
@@ -384,12 +383,6 @@ function decorateButtons(element) {
         ) {
           a.className = 'button primary';
           twoup.classList.add('button-container');
-          if (buttonsize.value === 'Grid') {
-            a.style.width = '200px';
-            a.style.whiteSpace = 'normal';
-          } else {
-            a.style.width = '';
-            a.style.whiteSpace = '';
           }
         }
         if (
