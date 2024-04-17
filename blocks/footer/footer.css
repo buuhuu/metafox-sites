@@ -90,7 +90,7 @@ footer .footer .section:nth-child(3) .link-list-wrapper.horizontal .link-list-ti
 @media (width >= 1920px){
   footer .footer .section {
     max-width: var(--max-component-width);
-    padding-left: calc(100vw - (var(--max-component-width) - 96px));
-    padding-right: calc(100vw - (var(--max-component-width) - 96px));
+    padding-left: calc((100vw - (var(--max-component-width) - (var(--section-desktop-padding) * 2 )))/2);
+    padding-right: calc((100vw - (var(--max-component-width) - (var(--section-desktop-padding) * 2 )))/2);
   }
 }

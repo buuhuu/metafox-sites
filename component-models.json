@@ -52,7 +52,8 @@
         "valueType": "string",
         "name": "Copyright",
         "value": "",
-        "label": "Text"
+        "label": "Text",
+        "required": true
       }
     ]
   },
@@ -442,14 +443,16 @@
       {
         "component": "text-input",
         "valueType": "string",
-        "name": "alt text",
-        "label": "Alt Text",
+        "name": "icon label",
+        "label": "Icon Label",
+        "required": true,
         "value": ""
       },
       {
         "component": "text-input",
         "valueType": "string",
         "name": "icon link",
+        "required": true,
         "value": "",
         "label": "Icon Link"
       }
@@ -560,6 +563,7 @@
         "valueType": "string",
         "name": "link-list",
         "value": "",
+        "required": true,
         "label": "Link List"
       }
     ]
