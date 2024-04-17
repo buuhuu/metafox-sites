@@ -382,14 +382,14 @@ function decorateButtons(element) {
           && twoup.childNodes.length === 1
           && twoup.tagName === 'P'
         ) {
-          a.className = "button primary";
-          twoup.classList.add("button-container");
-          if (buttonsize.value === "Grid") {
-            a.style.width = "200px";
-            a.style.whiteSpace = "normal";
+          a.className = 'button primary';
+          twoup.classList.add('button-container');
+          if (buttonsize.value === 'Grid') {
+            a.style.width = '200px';
+            a.style.whiteSpace = 'normal';
           } else {
-            a.style.width = "";
-            a.style.whiteSpace = "";
+            a.style.width = '';
+            a.style.whiteSpace = '';
           }
         }
         if (
