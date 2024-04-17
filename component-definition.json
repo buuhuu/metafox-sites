@@ -201,21 +201,6 @@
           }
         },
         {
-          "title": "Custom Text Area",
-          "id": "custom-text-area",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "custom-text-area",
-                  "model": "custom-text-area"
-                }
-              }
-            }
-          }
-        },
-        {
           "title": "Text Area",
           "id": "text-area",
           "plugins": {
@@ -225,21 +210,6 @@
                 "template": {
                   "name": "text-area",
                   "model": "text-area"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Custom Text box",
-          "id": "custom-text-box",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "custom-text-box",
-                  "model": "custom-text-box"
                 }
               }
             }
