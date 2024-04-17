@@ -384,12 +384,10 @@ function decorateButtons(element) {
         ) {
           a.className = 'button primary';
           twoup.classList.add('button-container');
-          if (buttonsize.value === 'Grid') 
-          { 
+          if (buttonsize.value === 'Grid') { 
             a.style.width = '200px'; 
             a.style.whiteSpace = 'normal';
-          } else 
-          {  
+          } else {  
             a.style.width = ''; 
             a.style.whiteSpace = '';
           }
