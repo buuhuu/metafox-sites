@@ -17,7 +17,7 @@ export function generateIconDOM(props) {
     // Build DOM
     iconDom = document.createRange().createContextualFragment(`
       <a class="icon-container" href="${iconLink.textContent}">
-        <span class="${iconType.textContent}"><i></i></span>
+        <span class="${iconType.textContent}"></span>
       </a>`);
   } else {
     iconPath = iconList[iconType.textContent];
