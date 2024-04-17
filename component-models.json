@@ -139,6 +139,25 @@
         "name": "buttontype",
         "value": "",
         "label": "Button Type"
+      },
+      {
+        "component": "radio-group",
+        "name": "buttonsize",
+        "value": "Grid",
+        "label": "Button Size",
+        "valueType": "string",
+        "required": true,
+        "id": "button-size",
+        "options": [
+          {
+            "name": "Grid",
+            "value": "Grid"
+          },
+          {
+            "name": "Flex",
+            "value": "Flex"
+          }
+        ]
       }
     ]
   },
@@ -376,7 +395,7 @@
     ]
   },
   {
-    "id": "BMW-logo",
+    "id": "logo",
     "fields": [
       {
         "component": "reference",

@@ -55,12 +55,6 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
 /* Mobile */
 
 @media (width >= 360px) and (width < 768px) {
-  header nav[aria-expanded="false"] .nav-tools .default-content-wrapper .icon-location {
-    position: absolute;
-    right: 115px;
-    top: 33px;
-  }
-
   header nav[aria-expanded="true"] .nav-tools .default-content-wrapper .icon-location {
     display: none;
   }
@@ -189,6 +183,10 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
   header.header-wrapper.white-background nav[aria-expanded="true"] .bmw-logo-wrapper .white-image {
     display: none;
   }
+
+  header nav[aria-expanded="false"] .nav-tools .default-content-wrapper .icon-location {
+    display: none;
+   }
 }
 
 /* IPAD */
