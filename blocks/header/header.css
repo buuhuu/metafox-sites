@@ -710,8 +710,8 @@ header nav .nav-tools {
 @media (width >= 1920px){
   header nav {
     max-width: var(--max-component-width);
-    margin-left: calc(100vw - (var(--max-component-width) - 96px));
-    margin-right: calc(100vw - (var(--max-component-width) - 96px));
+    margin-left: calc((100vw - (var(--max-component-width) - (var(--section-desktop-padding) * 2 )))/2);
+    margin-right: calc((100vw - (var(--max-component-width) - (var(--section-desktop-padding) * 2 )))/2);
   }
 
   header nav[aria-expanded="true"] .section.nav-sections {

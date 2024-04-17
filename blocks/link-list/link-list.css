@@ -114,10 +114,6 @@
     margin-right: 10px;
 }
 
-.link-list-wrapper.horizontal .link-list-detail ul li:last-child{    
-    margin-right: 0;
-}
-
 .link-list-wrapper.vertical .link-list-detail ul {
     margin-bottom: 40px;
     padding: 8px 0 8px 16px;
@@ -136,6 +132,10 @@
 
 .link-list-wrapper.vertical .link-list-detail ul li{
     margin-bottom: 24px;
+}
+
+.link-list-wrapper.horizontal .link-list-detail ul li:last-child{    
+    margin-right: 0;
 }
 
 .link-list-wrapper.vertical .link-list-detail ul li:last-child{
