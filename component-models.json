@@ -633,5 +633,31 @@
         ]
       }
     ]
+  },
+  {
+    "id": "menu-link",
+    "fields": [
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "Link Label",
+        "label": "Link Label",
+        "value": ""
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "Link Title",
+        "label": "Link Title",
+        "value": ""
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "Link",
+        "label": "Link",
+        "value": ""
+      }
+    ]
   }
 ]
