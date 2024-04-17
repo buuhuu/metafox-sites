@@ -4,6 +4,8 @@ const iconList = {
   youtube: '/icons/youtube.png',
   twitter: '/icons/X-Logo.png',
   linkedin: '/icons/linkedin.png',
+  location:'/icons/location.svg',
+  search:'/icons/search.svg'
 };
 
 export function generateIconDOM(props) {
