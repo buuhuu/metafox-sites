@@ -170,10 +170,11 @@
         "name": "columns",
         "value": "",
         "label": "Columns",
+        "required": true,
         "validation": {
-          "numberMin": 1,
+          "numberMin": 2,
           "numberMax": 6,
-          "customErrorMsg": "Please enter a no. between 1 & 6 (both inclusive) only"
+          "customErrorMsg": "Please enter a no. between 2 & 6 (both inclusive) only"
         }
       },
       {
@@ -615,7 +616,7 @@
         ]
       }
     ]
-  },  
+  },
   {
     "id": "menu-link",
     "fields": [
@@ -652,7 +653,6 @@
         "label": "text",
         "value": ""
       }
-      
     ]
   }
 ]
