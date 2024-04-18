@@ -170,6 +170,7 @@
         "name": "columns",
         "value": "",
         "label": "Columns",
+        "required": true,
         "validation": {
           "numberMin": 2,
           "numberMax": 6,
@@ -641,7 +642,7 @@
         ]
       }
     ]
-  },  
+  },
   {
     "id": "menu-link",
     "fields": [
@@ -678,7 +679,6 @@
         "label": "text",
         "value": ""
       }
-      
     ]
   }
 ]
