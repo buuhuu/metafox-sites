@@ -106,18 +106,23 @@ h6 {
 h1 {
   font-size: var(--heading-font-size-xxl);
 }
+
 h2 {
   font-size: var(--heading-font-size-xl);
 }
+
 h3 {
   font-size: var(--heading-font-size-l);
 }
+
 h4 {
   font-size: var(--heading-font-size-m);
 }
+
 h5 {
   font-size: var(--heading-font-size-s);
 }
+
 h6 {
   font-size: var(--heading-font-size-xs);
 }
@@ -244,7 +249,7 @@ button:disabled:hover {
 
 a.button.ghost-dark,
 a.button.ghost-dark-flex {
-  background-color: unset;
+  background-color: rgb(242 242 242 / 100);
   border: 1px solid var(--text-color);
   color: var(--text-color);
   font-size: 16px;
@@ -252,12 +257,18 @@ a.button.ghost-dark-flex {
   font-weight: 700;
   font-family: bmwTypeNextWeb, Arial, Helvetica, Roboto, sans-serif;
   text-align: center;
-  padding: 10px;
+  padding: 4px 24px 4px 24px;
 }
 
 .button-fixed-width {
-  width: 120px;
+  width: auto;
+  min-width: auto;
   white-space: normal !important;
+}
+
+.button-flex-width {
+  max-width: 75vw;
+  width: auto;
 }
 
 a.button.ghost-dark:hover,
@@ -271,9 +282,14 @@ a.button.hyperlink {
   padding: 0 !important;
   font-size: 16px;
   line-height: 24px;
-  color: rgba(38, 38, 38, 1);
+  color: rgb(38 38 38 / 100%);
   font-weight: 700;
   font-family: bmwTypeNextWeb, Arial, Helvetica, Roboto, sans-serif;
+}
+
+.align-icon {
+  display: flex;
+  padding: 10px;
 }
 
 .align-icon:hover {
@@ -281,9 +297,8 @@ a.button.hyperlink {
   font-weight: bold;
 }
 
-.align-icon {
-  display: flex;
-  padding: 10px;
+.button-text {
+  word-break: break-all;
 }
 
 .icon-gt {
@@ -295,6 +310,7 @@ a.button.hyperlink {
   align-self: center;
   margin: 5px 0 0 5px;
 }
+
 .button-container.align-icon:hover {
   color: var(--link-hover-color) !important;
 }

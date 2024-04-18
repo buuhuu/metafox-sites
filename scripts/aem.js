@@ -382,7 +382,7 @@ function decorateButtons(element) {
           && twoup.childNodes.length === 1
           && twoup.tagName === 'P'
         ) {
-          a.className = 'button ghost-dark-flex';
+          a.className = 'button ghost-dark-flex button-flex-width';
           up.ariaLabel = up.textContent;
           twoup.classList.add('button-container');
         }
