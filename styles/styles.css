@@ -28,6 +28,9 @@
   --light-bbb: #bbb;  
   --fixed-font-family: bmwtypenextweb,arial,helvetica,roboto,sans-serif;
 
+  /* base font size */
+  --base-font-size: 16px;
+
   /* body sizes */
   --body-font-size-m: 22px;
   --body-font-size-s: 18px;
@@ -76,6 +79,7 @@ body.appear {
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
+  font-size: var(--base-font-size);
 }
 
 main {
