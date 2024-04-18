@@ -170,7 +170,7 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
     padding: 1.75rem 1.5rem 0;
   }
 
-  header.white-background .claim-container {
+  header.white-background .subnavigation-text-wrapper {
     display: none;
   }
 
@@ -234,6 +234,28 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
     width: auto;
     font-size: 1.25rem;
     color: var(--light-border-color);
+    font-weight: 400;
+  }
+
+  header.white-background nav .icon-link-list-container .icon-container .search::before {    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "liga";
+    content: "search";
+    direction: ltr;
+    display: block;
+    font-family: "bmw_next_icons", arial,helvetica,roboto,sans-serif;
+    font-style: normal;
+    height: 1em;
+    line-height: 1;
+    outline: 1px solid transparent;
+    text-align: left;
+    text-rendering: optimizelegibility;
+    text-transform: none;
+    white-space: nowrap;
+    width: auto;
+    font-size: 1.25rem;
+    color: var(--background-color);
     font-weight: 400;
   }
 }
@@ -309,11 +331,11 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
   }
 
   header nav[aria-expanded="false"] .nav-tools .default-content-wrapper .icon-search {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  right: 90px;
-  top: 33px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 90px;
+    top: 33px;
   }
 
   header nav[aria-expanded="false"] .nav-tools .default-content-wrapper .icon-location {
@@ -331,7 +353,7 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
     right: 0;
   }
  
-  header.white-background .claim-container{
+  header.white-background .subnavigation-text-wrapper{
     display: none;
   }
 
@@ -399,6 +421,28 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
     width: auto;
     font-size: 1.25rem;
     color: var(--light-border-color);
+    font-weight: 400;
+  }
+
+  header.white-background nav .icon-link-list-container .icon-container .search::before {    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "liga";
+    content: "search";
+    direction: ltr;
+    display: block;
+    font-family: "bmw_next_icons", arial,helvetica,roboto,sans-serif;
+    font-style: normal;
+    height: 1em;
+    line-height: 1;
+    outline: 1px solid transparent;
+    text-align: left;
+    text-rendering: optimizelegibility;
+    text-transform: none;
+    white-space: nowrap;
+    width: auto;
+    font-size: 1.25rem;
+    color: var(--background-color);
     font-weight: 400;
   }
   
@@ -479,7 +523,7 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
     font-family: bmwTypeNextWeb,Arial,Helvetica,Roboto,sans-serif;
     font-size: 16px;
     display: block;
-    left: 155px;
+    left: 100px;
   }
 
   header.white-background .subnavigation-text-wrapper b{
