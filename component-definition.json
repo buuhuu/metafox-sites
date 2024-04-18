@@ -349,7 +349,7 @@
                 "template": {
                   "name": "Footer Section",
                   "model": "footer-section",
-                  "fitler": "footer-section"
+                  "filter": "footer-section"
                 }
               }
             }
