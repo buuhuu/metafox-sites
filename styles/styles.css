@@ -78,6 +78,10 @@ body.appear {
   margin: 0;
 }
 
+body {
+  background-color: var(--background-color);
+}
+
 main {
   flex: 1;
 }

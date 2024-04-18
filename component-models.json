@@ -165,7 +165,7 @@
     "id": "columns",
     "fields": [
       {
-        "component": "text-input",
+        "component": "number",
         "valueType": "number",
         "name": "columns",
         "value": "",
@@ -177,7 +177,7 @@
         }
       },
       {
-        "component": "text-input",
+        "component": "number",
         "valueType": "number",
         "name": "rows",
         "value": "",
@@ -243,12 +243,12 @@
     ]
   },
   {
-    "id": "text-image",
+    "id": "text-image-v2",
     "fields": [
       {
         "component": "reference",
         "valueType": "string",
-        "name": "bg-fileReference",
+        "name": "bg_fileReference",
         "label": "Image",
         "value": "",
         "description": "Image path from AEM DAM - only choose from the dedicated asset folder",
@@ -257,14 +257,14 @@
       {
         "component": "text-input",
         "valueType": "string",
-        "name": "bg-imageAlt",
+        "name": "bg_imageAlt",
         "label": "Alt text",
         "description": "Image alt text - highly recommended for SEO",
         "value": ""
       },
       {
         "component": "text-area",
-        "name": "fg-text",
+        "name": "fg_text",
         "value": "Kindly edit the content here !",
         "label": "Text",
         "description": "Optionaö text for the text image component",
@@ -273,7 +273,7 @@
       },
       {
         "component": "select",
-        "name": "fg-imagePosition",
+        "name": "fg_imagePosition",
         "filter": "imagePosition",
         "value": "",
         "label": "Image Position",
@@ -288,26 +288,6 @@
             "value": "right"
           }
         ]
-      },
-      {
-        "component": "boolean",
-        "label": "Do you need to display meta text ?",
-        "name": "fg-reveal",
-        "valueType": "boolean"
-      },
-      {
-        "component": "text-input",
-        "label": "Meta text",
-        "name": "fg-meta-text",
-        "valueType": "string",
-        "condition": {
-          "===": [
-            {
-              "var": "reveal"
-            },
-            true
-          ]
-        }
       }
     ]
   },
