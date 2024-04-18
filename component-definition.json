@@ -3,9 +3,9 @@
     {
       "title": "Default Content",
       "id": "default",
-      "components": [        
+      "components": [
         {
-          "title": "Copy Text",
+          "title": "Text",
           "id": "copy_text",
           "plugins": {
             "xwalk": {
@@ -345,14 +345,14 @@
                 "template": {
                   "name": "Footer Section",
                   "model": "footer-section",
-                  "fitler":"footer-section"
+                  "fitler": "footer-section"
                 }
               }
             }
           }
         }
       ]
-    }, 
+    },
     {
       "title": "BMW Header",
       "id": "bmw_header_blocks",
