@@ -357,13 +357,6 @@
           { "name": "White", "value": "white" },
           { "name": "Grey", "value": "grey" }
         ]
-      },
-      {
-        "component": "text-input",
-        "name": "style",
-        "value": "",
-        "label": "Style",
-        "valueType": "string"
       }
     ]
   },

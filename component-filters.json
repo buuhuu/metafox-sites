@@ -57,8 +57,7 @@
       "BMW-Iframe",
       "footer-text",
       "icon",
-      "icon-link-list",
-      "copyright",
+      "icon-link-list",      
       "bmw-video",
       "link-list",
       "copy_text",
@@ -71,11 +70,11 @@
       "format": ["bold"],
       "alignment": [],
       "indentation": [],
-      "sr_script": ["superscript", "subscript"],
+      "sr_script": [],
       "list": ["bullist", "numlist"],
       "insert": ["link"],
       "blocks": [],
-      "advanced": ["p"],
+      "advanced": [],
       "extensions": [],
       "editor": ["removeformat"]
     }
