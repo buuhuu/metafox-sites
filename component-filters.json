@@ -82,7 +82,15 @@
   {
     "id": "subnavigation-text",
     "rte": {
-      "format": ["bold"]
+      "format": ["bold"],
+      "alignment": [],
+      "indentation": [],
+      "sr_script": [],
+      "list": [],
+      "insert": [],
+      "advanced": [],
+      "extensions": [],
+      "editor": []
     }
   },
   {
