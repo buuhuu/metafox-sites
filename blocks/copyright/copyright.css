@@ -8,6 +8,7 @@
 .copyright-wrapper .copyright .copy-right-content div {
     display: flex;
     gap: 4px;
+    white-space: nowrap;
 }
 
 .copyright-wrapper .copyright .copy-right-content {

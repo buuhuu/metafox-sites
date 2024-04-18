@@ -1,7 +1,7 @@
 [
   {
     "id": "main",
-    "components": ["section", "bmw_main_section", "footer-section"]
+    "components": ["section", "bmw_main_section", "footer-section", "header-section"]
   },
   {
     "id": "columns",
@@ -14,12 +14,19 @@
   {
     "id": "footer-section",
     "components": [
-      "footer-text",
-      "text",
-      "columns",
-      "icon",
+      "icon-link-list",
       "copyright",
       "link-list"
+    ]
+  },
+  {
+    "id": "header-section",
+    "components": [
+      "logo",
+      "subnavigation-text",
+      "menu-link",
+      "menu-flyout",
+      "icon-link-list"
     ]
   },
   {
@@ -30,10 +37,7 @@
       "button",
       "title",
       "footer-text",
-      "vertical-link-text",
-      "horizontal-link-text",
-      "icon-link-list",
-      "copyright",
+      "icon-link-list",      
       "link-list"
     ]
   },
@@ -50,12 +54,8 @@
       "text-image",
       "BMW-Iframe",
       "footer-text",
-      "BMW-logo",
-      "horizontal-link-text",
-      "vertical-link-text",
       "icon",
-      "icon-link-list",
-      "copyright",
+      "icon-link-list",      
       "bmw-video",
       "link-list",
       "copy_text",
@@ -68,41 +68,13 @@
       "format": ["bold"],
       "alignment": [],
       "indentation": [],
-      "sr_script": ["superscript", "subscript"],
+      "sr_script": [],
       "list": ["bullist", "numlist"],
       "insert": ["link"],
       "blocks": [],
-      "advanced": ["p"],
+      "advanced": [],
       "extensions": [],
       "editor": ["removeformat"]
-    }
-  },
-  {
-    "id": "vertical-link-text",
-    "rte": {
-      "format": ["bold"],
-      "alignment": [],
-      "indentation": [],
-      "sr_script": [],
-      "list": ["bullist"],
-      "insert": ["link"],
-      "advanced": [],
-      "extensions": [],
-      "editor": []
-    }
-  },
-  {
-    "id": "horizontal-link-text",
-    "rte": {
-      "format": ["bold"],
-      "alignment": [],
-      "indentation": [],
-      "sr_script": [],
-      "list": ["bullist"],
-      "insert": ["link"],
-      "advanced": [],
-      "extensions": [],
-      "editor": []
     }
   },
   {
@@ -115,6 +87,7 @@
   },
   {
     "id": "link-list",
+    "components":[],
     "rte": {
       "format": [],
       "alignment": [],
