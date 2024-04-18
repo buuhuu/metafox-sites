@@ -502,6 +502,7 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
     position: absolute;
     background: transparent;
     width: 100%;
+    z-index: 999;
   }
 
   header.header-wrapper.white-background .nav-wrapper {
@@ -542,7 +543,7 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
   header nav .icon-link-list-container .icon-link-list-container .icon .icon-container,
   header.header-wrapper.white-background nav .icon-link-list-container .icon-link-list-container .icon .icon-container
   {
-    padding: 25px .75rem;
+    padding: 27px .75rem;
     text-decoration: none;
     cursor: pointer;
     margin: 0;
@@ -647,9 +648,9 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
  
    
   header.header-wrapper nav .nav-brand .icon-link-list-wrapper {
-    position: relative;
-    left: 290px;
-    top: 2px;
+    position: absolute;
+    right: 96px;
+    top: 30px;
   }
 
   header.header-wrapper nav .nav-brand .icon-link-list-wrapper .icon-link-list-container .icon {
@@ -757,8 +758,8 @@ header nav .sections ul  {
   }
   
   header nav .nav-brand img {
-    width: auto;
-    height: auto;
+    width: 52px;
+    height: 52px;
   }
 
   header nav .section {
@@ -846,47 +847,19 @@ header nav .sections ul  {
   header nav .menu-link-wrapper .menu-link  a:hover {
     border-bottom: .25rem solid var(--light-link-hover-color);
     color: var( --light-text-color);
-    
   }
-  
+
+  .header-wrapper.white-background .menu-link-wrapper .menu-link a:hover {
+    border-bottom: .25rem solid var(--light-link-hover-color);
+    cursor: pointer;
+    color: var(--background-color);
+  }
+
   header nav .nav-tools .default-content-wrapper .icon {
     cursor: pointer;
     padding: 30px 15px;
     width: 20px;
     height: 20px;
-  }
-
-  /* ICON */
-  header nav .nav-tools .default-content-wrapper .icon:hover {
-    border-bottom: .25rem solid var(--light-link-hover-color);
-    border-top: .25rem solid transparent;
-  }
-  
-  header nav .section .default-content-wrapper > ul > li[aria-expanded="true"] > ul {
-    display: block;
-    position: absolute;
-    left: -1em;
-    width: 200px;
-    margin-top: 12px;
-    padding: 1em;
-    background-color: var(--light-color);
-    white-space: initial;
-  }
-
-  header nav .sections .default-content-wrapper > ul > li > ul::before {
-    content: '';
-    position: absolute;
-    top: -8px;
-    left: 8px;
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 8px solid var(--light-color);
-  }
-
-  header nav .section .default-content-wrapper > ul > li > ul > li {
-    padding: 8px 0;
   }
 }
 
