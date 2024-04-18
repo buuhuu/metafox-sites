@@ -50,7 +50,7 @@
       {
         "component": "text-input",
         "valueType": "string",
-        "name": "Copyright",
+        "name": "copyright",
         "value": "",
         "label": "Text",
         "required": true
@@ -158,10 +158,11 @@
         "name": "columns",
         "value": "",
         "label": "Columns",
+        "required": true,
         "validation": {
-          "numberMin": 1,
+          "numberMin": 2,
           "numberMax": 6,
-          "customErrorMsg": "Please enter a no. between 1 & 6 (both inclusive) only"
+          "customErrorMsg": "Please enter a no. between 2 & 6 (both inclusive) only"
         }
       },
       {
@@ -313,26 +314,7 @@
   },
   {
     "id": "footer-section",
-    "fields": [
-      {
-        "id": "link_count",
-        "fields": [
-          {
-            "component": "number",
-            "valueType": "number",
-            "name": "link_count",
-            "label": "No of Links",
-            "description": "This is a number field.",
-            "required": true,
-            "placeholder": null,
-            "validation": {
-              "numberMin": 1,
-              "numberMax": 10,
-              "customErrorMsg": "Please enter a no. between 1 & 10 (both inclusive) only"
-            }
-          }
-        ]
-      },
+    "fields": [      
       {
         "component": "radio-group",
         "label": "Background Color",
@@ -622,7 +604,7 @@
         ]
       }
     ]
-  },  
+  },
   {
     "id": "menu-link",
     "fields": [
@@ -659,7 +641,6 @@
         "label": "text",
         "value": ""
       }
-      
     ]
   }
 ]
