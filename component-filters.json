@@ -19,7 +19,7 @@
       "icon",
       "video",
       "title",
-      "text",
+      "copy_text",
       "button",
       "horizontal-link-text",
       "vertical-link-text"
@@ -31,7 +31,10 @@
   },
   {
     "id": "footer-section",
-    "components": ["icon-link-list", "copyright", "link-list"]
+    "components": [
+      "icon-link-list", 
+      "copyright", 
+      "link-list"]
   },
   {
     "id": "header-section",
@@ -41,19 +44,6 @@
       "menu-link",
       "menu-flyout",
       "icon-link-list"
-    ]
-  },
-  {
-    "id": "column",
-    "components": [
-      "copy_text",
-      "image",
-      "button",
-      "title",
-      "footer-text",
-      "icon-link-list",
-      "copyright",
-      "link-list"
     ]
   },
   {
