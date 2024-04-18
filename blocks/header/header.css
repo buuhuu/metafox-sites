@@ -31,23 +31,23 @@ header nav[aria-expanded="true"] {
   align-items: baseline;
 }
 
-header.transparent .nav-wrapper .bmw-logo-wrapper .white-image {
+header.transparent .nav-wrapper .logo-wrapper .white-image {
   display: none;
 }
 
-header.white-background .nav-wrapper .bmw-logo-wrapper .white-image {
+header.white-background .nav-wrapper .logo-wrapper .white-image {
   display: block;
 }
 
-header.transparent .nav-wrapper .bmw-logo-wrapper .grey-image {
+header.transparent .nav-wrapper .logo-wrapper .grey-image {
   display: block;
 }
 
-header.transparent .claim-container {
+header.transparent .subnavigation-text-wrapper {
   display: none;
 }
 
-header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
+header.white-background .nav-wrapper .logo-wrapper .grey-image {
   display: none;
 }
 
@@ -84,12 +84,12 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
    order: 2;
   }
 
-  header nav[aria-expanded="true"] .bmw-logo-wrapper {
+  header nav[aria-expanded="true"] .logo-wrapper {
   position: relative;
   top: 25px;
   }
 
-  header nav[aria-expanded="false"] .bmw-logo-wrapper {
+  header nav[aria-expanded="false"] .logo-wrapper {
     position: relative;
     top: 2px;
     }
@@ -139,7 +139,7 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
     margin: 0 auto;
   }
 
-  .section.nav-sections {
+  .section {
     height: calc(100vh - 69px);
     overflow: auto;
     position: absolute;
@@ -176,11 +176,11 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
     background-color: var(--background-color);   
   }
 
-  header.header-wrapper.white-background nav[aria-expanded="true"] .bmw-logo-wrapper .grey-image {
+  header.header-wrapper.white-background nav[aria-expanded="true"] .logo-wrapper .grey-image {
     display: block;
   }
 
-  header.header-wrapper.white-background nav[aria-expanded="true"] .bmw-logo-wrapper .white-image {
+  header.header-wrapper.white-background nav[aria-expanded="true"] .logo-wrapper .white-image {
     display: none;
   }
 
@@ -210,7 +210,7 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
    order: 2;
   }
 
-  header nav[aria-expanded="true"] .section.nav-sections {
+  header nav[aria-expanded="true"] .section {
     position: absolute;
     height: calc(100vh - 85px);
     overflow: auto;
@@ -233,7 +233,7 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
     line-height: 24px;
   }
 
-  header nav .nav-sections .default-content-wrapper ul li {
+  header nav .sections .menu-link-wrapper a {
     padding: 12px 0;
     color: var(--light-border-color);
     font-size: 16px;
@@ -260,7 +260,7 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
    display: none;
   }
 
-  header nav[aria-expanded="true"] .bmw-logo-wrapper .bmw-logo img {
+  header nav[aria-expanded="true"] .logo-wrapper .bmw-logo img {
     position: absolute;
     top: 15px;
   }
@@ -302,11 +302,11 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
     background-color: var(--background-color);   
   }
 
-  header.header-wrapper.white-background nav[aria-expanded="true"] .bmw-logo-wrapper .grey-image {
+  header.header-wrapper.white-background nav[aria-expanded="true"] .logo-wrapper .grey-image {
     display: block;
   }
 
-  header.header-wrapper.white-background nav[aria-expanded="true"] .bmw-logo-wrapper .white-image {
+  header.header-wrapper.white-background nav[aria-expanded="true"] .logo-wrapper .white-image {
     display: none;
   }
 
@@ -328,17 +328,17 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
     align-items: center;
   }
 
-  header nav[aria-expanded="true"] .nav-tools .default-content-wrapper .icon-location {
+  header nav[aria-expanded="true"] .icon-location {
     position: relative;
     right: 0;
     top: 0;
   }
 
-  header nav[aria-expanded="true"] .bmw-logo-wrapper .bmw-logo img {
+  header nav[aria-expanded="true"] .logo-wrapper .bmw-logo img {
     position: relative;
   }
 
-  header nav[aria-expanded="true"] .nav-tools .default-content-wrapper .icon-search {
+  header nav[aria-expanded="true"] .icon-search {
     position: relative;
     right: 0;
     top: 0; 
@@ -349,7 +349,7 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
     visibility: hidden;
   }
 
-  header nav[aria-expanded="true"] .section.nav-sections {
+  header nav[aria-expanded="true"] .section {
     position: absolute;
     top: 0;
     height: unset;
@@ -372,29 +372,30 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
     background-color: transparent;
   }
 
-  header.white-background nav .section.nav-sections .default-content-wrapper ul li a {
+  header.white-background nav .section .menu-link-wrapper a {
   color: var( --background-color);
   }
 
-  header.white-background nav .section.nav-sections .default-content-wrapper p.button-container a {
+  header.white-background nav .section .menu-link-wrapper p.button-container a {
     color: var( --background-color);
   }
 
-  header.white-background .claim-container {
+  header.white-background .subnavigation-text-wrapper {
     position: absolute;
     top: 100px;
     color: var( --background-color);
     font-family: bmwTypeNextWeb,Arial,Helvetica,Roboto,sans-serif;
     font-size: 16px;
     display: block;
+    left: 155px;
   }
 
-  header.white-background .claim-container b{
+  header.white-background .subnavigation-text-wrapper b{
     font-weight: 700;
     
   }
 
-  header.white-background .claim-container span{
+  header.white-background .subnavigation-text-wrapper span{
     font-weight: 200;
   }
   
@@ -402,22 +403,28 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
     border-bottom: 1.5px solid var(--background-color)
   }
 
-  header nav .icon-link-list-container.nav-tools .icon-link-list-container .icon,
-  header.header-wrapper.white-background nav .icon-link-list-container.nav-tools .icon-link-list-container .icon
+  header nav .icon-link-list-container .icon-link-list-container .icon .icon-container,
+  header.header-wrapper.white-background nav .icon-link-list-container .icon-link-list-container .icon .icon-container
   {
-    padding: 22px .75rem;
+    padding: 25px .75rem;
     text-decoration: none;
     cursor: pointer;
     margin: 0;
   }
 
-  header.header-wrapper.white-background nav .icon-link-list-container.nav-tools .icon-link-list-container .icon {
+  header.header-wrapper nav .icon-link-list-container .icon-link-list-container .icon .icon-container:hover{
     border-bottom: .25rem solid var(--light-link-hover-color);
     border-top: .25rem solid transparent;
     color:transparent;
   }
 
-  header nav .icon-link-list-container.nav-tools .icon-container .location::before {
+  header.header-wrapper.white-background nav .icon-link-list-container .icon-link-list-container .icon .icon-container:hover{
+    border-bottom: .25rem solid var(--light-link-hover-color);
+    border-top: .25rem solid transparent;
+    color:transparent;
+  }
+
+  header nav .icon-link-list-container .icon-container .location::before {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-feature-settings: "liga";
@@ -439,7 +446,7 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
     font-weight: 400;
   }
  
-  header nav .icon-link-list-container.nav-tools .icon-container .search::before {    
+  header nav .icon-link-list-container .icon-container .search::before {    
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-feature-settings: "liga";
@@ -461,7 +468,7 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
     font-weight: 400;
   } 
 
-  header.header-wrapper.white-background nav .icon-link-list-container.nav-tools .icon-container .location::before {
+  header.header-wrapper.white-background nav .icon-link-list-container .icon-container .location::before {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-feature-settings: "liga";
@@ -483,7 +490,7 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
     font-weight: 400;
   }
  
-  header.header-wrapper.white-background nav .icon-link-list-container.nav-tools .icon-container .search::before { 
+  header.header-wrapper.white-background nav .icon-link-list-container .icon-container .search::before { 
     content: "search";
     direction: ltr;
     display: block;
@@ -502,6 +509,19 @@ header.white-background .nav-wrapper .bmw-logo-wrapper .grey-image {
     font-weight: 400;
   }
  
+   
+  header.header-wrapper nav .nav-brand .icon-link-list-wrapper {
+    position: relative;
+    left: 290px;
+    top: 2px;
+  }
+
+  header.header-wrapper nav .nav-brand .icon-link-list-wrapper .icon-link-list-container .icon {
+    margin-right: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 header nav p {
@@ -580,13 +600,14 @@ header nav[aria-expanded="true"] .nav-hamburger-icon::after {
 }
 
 /* brand */
-header .nav-brand {
+
+/* header .nav-brand {
   grid-area: brand;
   flex-basis: 0;
   font-size: var(--heading-font-size-s);
   font-weight: 700;
   line-height: 1;
-}
+} */
 
 
 /* sections */
@@ -604,25 +625,13 @@ header nav[aria-expanded="true"] .nav-sections {
   align-self: start;
 }
 
-header nav .nav-sections ul  {
+header nav .sections ul  {
   list-style: none;
   padding-left: 0;
   font-size: var(--body-font-size-s);
   font-weight: 500;
 }
 
-header nav .nav-sections ul > li {
-  font-weight: 700;
-}
-
-header nav .nav-sections ul > li > ul {
-  margin-top: 0;
-  
-}
-
-header nav .nav-sections ul > li > ul > li {
-  font-weight: 500;
-}
 
 @media (width >= 1280px) {
   header nav .nav-brand picture {
@@ -672,12 +681,6 @@ header nav .nav-sections ul > li > ul > li {
     transform: rotate(315deg);
   }
 
-  header nav .nav-sections ul {
-    display: flex;
-    margin: 0;
-    font-size: var(--body-font-size-xs);
-  }
-  
   header nav .nav-sections .default-content-wrapper {
     display: flex;
     padding: 0;
@@ -700,17 +703,22 @@ header nav .nav-sections ul > li > ul > li {
     margin: 0 12px;
   }
 
-  header nav .nav-sections .default-content-wrapper .button-container{
+  header nav .nav-sections .default-content-wrapper .button-container,
+  header nav .menu-link-container {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
-  header nav .nav-sections .default-content-wrapper > ul {
-   align-items: center;
+ 
+  header nav .logo-wrapper{
+    margin-right: 24px;
   }
-
-  header nav .nav-sections .default-content-wrapper > ul > li {
+  
+  
+  header nav .menu-link-wrapper .menu-link a {
+    padding: 27px 0;
+    text-decoration: none;
+    margin: 0 12px;
     flex: 0 1 auto;
     position: relative;
     font-weight: 700;
@@ -718,24 +726,13 @@ header nav .nav-sections ul > li > ul > li {
     font-size: 1rem;
     cursor: pointer;
   }
-  
-  header nav .nav-sections .default-content-wrapper > ul > li a {
-    padding: 27px 0;
-    text-decoration: none;
-    margin: 0 12px;
-  }
 
-  header nav .nav-sections .default-content-wrapper > ul > li a:hover {
+  header nav .menu-link-wrapper .menu-link  a:hover {
     border-bottom: .25rem solid var(--light-link-hover-color);
     color: var( --light-text-color);
     
   }
   
-  header nav .nav-sections .default-content-wrapper > ul > li > ul {
-    display: none;
-    position: relative;
-  }
-
   header nav .nav-tools .default-content-wrapper .icon {
     cursor: pointer;
     padding: 30px 15px;
@@ -743,6 +740,7 @@ header nav .nav-sections ul > li > ul > li {
     height: 20px;
   }
 
+  /* ICON */
   header nav .nav-tools .default-content-wrapper .icon:hover {
     border-bottom: .25rem solid var(--light-link-hover-color);
     border-top: .25rem solid transparent;
@@ -759,7 +757,7 @@ header nav .nav-sections ul > li > ul > li {
     white-space: initial;
   }
 
-  header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
+  header nav .sections .default-content-wrapper > ul > li > ul::before {
     content: '';
     position: absolute;
     top: -8px;
@@ -776,10 +774,6 @@ header nav .nav-sections ul > li > ul > li {
   }
 }
 
-/* tools */
-header nav .nav-tools {
-  grid-area: tools;
-}
 
 /* mobile */
 @media (width < 768px) {
@@ -812,7 +806,7 @@ header nav .nav-tools {
     margin-right: calc((100vw - (var(--max-component-width) - (var(--section-desktop-padding) * 2 )))/2);
   }
 
-  header nav[aria-expanded="true"] .section.nav-sections {
+  header nav[aria-expanded="true"] .section {
     left: calc(100vw - (var(--max-component-width) - (45px + 96px)));
   }
 }

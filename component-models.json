@@ -648,14 +648,14 @@
       {
         "component": "text-input",
         "valueType": "string",
-        "name": "Link Label",
+        "name": "linkLabel",
         "label": "Link Label",
         "value": ""
       },
       {
         "component": "text-input",
         "valueType": "string",
-        "name": "Link Title",
+        "name": "linkTitle",
         "label": "Link Title",
         "value": ""
       },
