@@ -16,13 +16,10 @@
     "id": "column",
     "components": [
       "image",
-      "icon",
       "video",
       "title",
       "copy_text",
       "button",
-      "horizontal-link-text",
-      "vertical-link-text"
     ]
   },
   {
