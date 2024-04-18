@@ -68,11 +68,11 @@
       "format": ["bold"],
       "alignment": [],
       "indentation": [],
-      "sr_script": ["superscript", "subscript"],
+      "sr_script": [],
       "list": ["bullist", "numlist"],
       "insert": ["link"],
       "blocks": [],
-      "advanced": ["p"],
+      "advanced": [],
       "extensions": [],
       "editor": ["removeformat"]
     }

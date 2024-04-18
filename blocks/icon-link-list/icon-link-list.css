@@ -5,12 +5,22 @@ footer .icon-link-list-container .icon{
     height: 2rem;
 }
 
-footer .icon-link-list-container .icon .icon-container
-{
-    display: inline-flex;
+footer .icon-link-list-container {
+    padding-top: 32px;
+}
+
+footer .icon-link-list-container .icon .icon-container {
+    display: inline-flex;    
 }
 
 footer .icon-link-list-container .icon .icon-container img{
     height: 1.75rem;
     width: auto;
+}
+
+/* tablet */
+@media (width >= 768px){ 
+    footer .icon-link-list-container {
+        padding-top: 0;
+    }
 }
