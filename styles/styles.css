@@ -20,17 +20,12 @@
   --light-color: #eee;
   --dark-color: #ccc;
   --text-color: black;
+  --medium-text-color:#4d4d4d;
   --light-border-color: #666;
   --light-text-color: #262626;
   --light-link-hover-color: #1c69d4;
   --light-grey: #f6f6f6;
-  --light-bbb: #bbb;
-
-  /* fonts */
-
-  /* --body-font-family: roboto, roboto-fallback;
-  --heading-font-family: var(--body-font-family);
-  */
+  --light-bbb: #bbb;  
   --fixed-font-family: bmwtypenextweb,arial,helvetica,roboto,sans-serif;
 
   /* body sizes */
@@ -57,6 +52,11 @@
 
   /* maximum width */
   --max-component-width:1920px;
+
+  /* section padding */
+  --section-mobile-padding:24px;
+  --section-tablet-padding:48px;
+  --section-desktop-padding:96px;
 }
 
 
@@ -72,7 +72,14 @@
 }
 
 body.appear {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  flex: 1;
 }
 
 header {
@@ -220,15 +227,31 @@ main img {
 
 /* sections */
 main .section {
-  padding: 64px 16px;
+  max-width: var(--max-component-width);
+  padding: 20px var(--section-mobile-padding);
 }
 
-/* mobile */
-@media (width >= 600px) {
+/* tablet */
+@media (width >= 768px){
   main .section {
-    padding: 64px 32px;
+    padding: 20px var(--section-tablet-padding);
   }
-  
+}
+
+/* desktop */
+@media (width >= 1280px){
+  main .section {
+    padding: 20px var(--section-desktop-padding);
+  }
+}
+
+/* large-desktop */
+@media (width >= 1920px){
+  main .section {   
+    max-width: 100vw;
+    padding-left: calc((100vw - (var(--max-component-width) - (var(--section-desktop-padding) * 2 )))/2);
+    padding-right: calc((100vw - (var(--max-component-width) - (var(--section-desktop-padding) * 2 )))/2);
+  }
 }
 
 

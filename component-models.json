@@ -45,30 +45,6 @@
     ]
   },
   {
-    "id": "horizontal-link-text",
-    "fields": [
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "horizontal-link-text",
-        "value": "",
-        "label": "Horizontal Link Text"
-      }
-    ]
-  },
-  {
-    "id": "vertical-link-text",
-    "fields": [
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "vertical-link-text",
-        "value": "",
-        "label": "Vertical Link Text"
-      }
-    ]
-  },
-  {
     "id": "copyright",
     "fields": [
       {
@@ -76,7 +52,8 @@
         "valueType": "string",
         "name": "Copyright",
         "value": "",
-        "label": "Text"
+        "label": "Text",
+        "required": true
       }
     ]
   },
@@ -162,6 +139,25 @@
         "name": "buttontype",
         "value": "",
         "label": "Button Type"
+      },
+      {
+        "component": "radio-group",
+        "name": "buttonsize",
+        "value": "Grid",
+        "label": "Button Size",
+        "valueType": "string",
+        "required": true,
+        "id": "button-size",
+        "options": [
+          {
+            "name": "Grid",
+            "value": "Grid"
+          },
+          {
+            "name": "Flex",
+            "value": "Flex"
+          }
+        ]
       }
     ]
   },
@@ -399,7 +395,7 @@
     ]
   },
   {
-    "id": "BMW-logo",
+    "id": "logo",
     "fields": [
       {
         "component": "reference",
@@ -438,7 +434,7 @@
         "component": "select",
         "name": "icon type",
         "value": "",
-        "label": "Icon Type (dropdown)",
+        "label": "Icon Type",
         "valueType": "string",
         "options": [
           {
@@ -462,22 +458,28 @@
             "value": "linkedin"
           },
           {
-            "name": "TikTok",
-            "value": "tiktok"
+            "name": "Location",
+            "value": "location"
+          },
+          {
+            "name": "Search",
+            "value": "search"
           }
         ]
       },
       {
         "component": "text-input",
         "valueType": "string",
-        "name": "alt text",
-        "label": "Alt Text",
+        "name": "icon label",
+        "label": "Icon Label",
+        "required": true,
         "value": ""
       },
       {
         "component": "text-input",
         "valueType": "string",
         "name": "icon link",
+        "required": true,
         "value": "",
         "label": "Icon Link"
       }
@@ -512,11 +514,46 @@
     "id": "bmw-video",
     "fields": [
       {
-        "component": "text-input",
+        "component": "reference",
         "valueType": "string",
-        "name": "bmwVideo",
-        "label": "BMW Video",
+        "name": "videoPoster",
+        "label": "Image",
         "multi": false
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "videoSource",
+        "label": "Video",
+        "multi": false
+      },
+      {
+        "component": "multiselect",
+        "name": "videoControls",
+        "label": "Video Controls",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "AutoPlay Video",
+            "value": "autoplay"
+          },
+          {
+            "name": "Loop Video",
+            "value": "loop"
+          },
+          {
+            "name": "Play video only on mouse hover",
+            "value": "playOnHover"
+          },
+          {
+            "name": "Enable Video Control",
+            "value": "enableVideoControls"
+          },
+          {
+            "name": "Video Muted On Load",
+            "value": "muted"
+          }
+        ]
       }
     ]
   },
@@ -553,8 +590,95 @@
         "valueType": "string",
         "name": "link-list",
         "value": "",
+        "required": true,
         "label": "Link List"
       }
+    ]
+  },
+  {
+    "id": "video",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "videoPoster",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "videoSource",
+        "label": "Video",
+        "multi": false
+      },
+      {
+        "component": "multiselect",
+        "name": "videoControls",
+        "label": "Video Controls",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "AutoPlay Video",
+            "value": "autoplay"
+          },
+          {
+            "name": "Loop Video",
+            "value": "loop"
+          },
+          {
+            "name": "Play video only on mouse hover",
+            "value": "playOnHover"
+          },
+          {
+            "name": "Enable Video Control",
+            "value": "enableVideoControls"
+          },
+          {
+            "name": "Video Muted On Load",
+            "value": "muted"
+          }
+        ]
+      }
+    ]
+  },  
+  {
+    "id": "menu-link",
+    "fields": [
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "Link Label",
+        "label": "Link Label",
+        "value": ""
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "Link Title",
+        "label": "Link Title",
+        "value": ""
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "Link",
+        "label": "Link",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "id": "subnavigation-text",
+    "fields": [
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "Text",
+        "label": "text",
+        "value": ""
+      }
+      
     ]
   }
 ]
