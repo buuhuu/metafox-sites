@@ -6,15 +6,28 @@ const iconList = {
   linkedin: '/icons/linkedin.png',
 };
 
+const iconListArray = ['location', 'search'];
+
 export function generateIconDOM(props) {
   // Extract properties, always same order as in model, empty string if not set
   const [iconType, altText, iconLink] = props;
-  const iconPath = iconList[iconType.textContent];
-  // Build DOM
-  const iconDom = document.createRange().createContextualFragment(`
+  let iconPath;
+  let iconDom;
+  if (iconListArray.includes(iconType.textContent)) {
+    // Build DOM
+    iconDom = document.createRange().createContextualFragment(`
+      <a class="icon-container" href="${iconLink.textContent}">
+        <span class="${iconType.textContent}"></span>
+      </a>`);
+  } else {
+    iconPath = iconList[iconType.textContent];
+    // Build DOM
+    iconDom = document.createRange().createContextualFragment(`
     <a class="icon-container" href="${iconLink.textContent}">
     <img src="${iconPath}" alt="${altText.textContent}"/>
     </a>`);
+  }
+
   return iconDom;
 }
 
