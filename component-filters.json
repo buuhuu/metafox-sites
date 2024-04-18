@@ -43,6 +43,13 @@
     ]
   },
   {
+    "id": "menu-flyout",
+    "components": [
+      "link-list",
+      "menu-teaser"
+    ]
+  },
+  {
     "id": "section",
     "components": [
       "text",
