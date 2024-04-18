@@ -55,43 +55,59 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
 /* Mobile */
 
 @media (width >= 360px) and (width < 768px) {
-  header nav[aria-expanded="true"] .nav-tools .default-content-wrapper .icon-location {
+  .logo-wrapper img {
+    width: 36px;
+    height: 36px;
+  }
+  /* header nav {
+    display: flex;
+    padding: 0 1.5rem;
+    justify-content: space-between;
+  } */
+
+  header nav[aria-expanded="false"] .nav-hamburger button {
+    position: absolute;
+    right: 1.5rem;
+  }
+
+  header nav[aria-expanded="true"] .icon-location {
     display: none;
   }
 
-  header nav[aria-expanded="false"] .nav-tools .default-content-wrapper .icon-search {
+  header nav[aria-expanded="false"] .icon-search {
     position: absolute;
     right: 70px;
     top: 33px;
   }
 
-  header nav[aria-expanded="true"] .nav-tools .default-content-wrapper .icon-search {
+  header nav[aria-expanded="true"] .icon-search {
     display: none;
   }
- 
 
   header .nav-wrapper {
     position: relative;   
   }
 
-  header nav {
-    display: flex;
-    padding: 0 1.5rem;
-    justify-content: space-between;
+  
+
+  header nav[aria-expanded="false"] .logo-wrapper {
+    position: absolute;
+    top: 25px;
+    left: 22px;
   }
 
-  .nav-hamburger {
-   order: 2;
+  header nav[aria-expanded="false"] .menu-link-wrapper {
+    display: none;
+  }
+
+  header nav[aria-expanded="true"] .menu-link-wrapper {
+    display: block;
   }
 
   header nav[aria-expanded="true"] .logo-wrapper {
-  position: relative;
-  top: 25px;
-  }
-
-  header nav[aria-expanded="false"] .logo-wrapper {
-    position: relative;
-    top: 2px;
+    position: absolute;
+    top: 25px;
+    left: 22px;
     }
 
   header nav .nav-brand img {
@@ -119,13 +135,13 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
     top: 3px;
   }
 
-  header nav .nav-sections .default-content-wrapper ul li {
+  header nav .section .default-content-wrapper ul li {
     padding: 12px 0;
     color: var(--light-border-color);
     font-size: 16px;
   }
 
-  header nav .nav-sections .default-content-wrapper .button-container a.button {
+  header nav .section .default-content-wrapper .button-container a.button {
     color:  var(--light-border-color);
     background-color: transparent;
     padding: 12px 0;
@@ -134,12 +150,12 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
     line-height: 24px;
   }
 
-  header nav .nav-sections ul, header nav .nav-sections p {
+  header nav .section ul, header nav .section p {
     width: 83.3333%;
     margin: 0 auto;
   }
 
-  .section {
+  /* .section {
     height: calc(100vh - 69px);
     overflow: auto;
     position: absolute;
@@ -147,9 +163,9 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
     width: 100%;
     left: 0;
     border-top: 1px solid var(--light-bbb);
-  }
+  } */
 
-  .header nav .nav-sections .default-content-wrapper {
+  .header nav .section .default-content-wrapper {
     padding: 1.75rem 1.5rem 0;
   }
 
@@ -220,11 +236,11 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
     border-top: 2px solid #ddd;
   }
   
-  header nav .nav-sections .default-content-wrapper {
+  header nav .section .default-content-wrapper {
     padding: 1.75rem 3rem 0;
   }
   
-  header nav .nav-sections .default-content-wrapper .button-container a.button {
+  header nav .section .default-content-wrapper .button-container a.button {
     color: var(--light-border-color);
     background-color: transparent;
     padding: 12px 0;
@@ -239,11 +255,11 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
     font-size: 16px;
   }
 
-  header nav .nav-sections ul {
+  header nav .section ul {
     margin-bottom: 0;
   }
 
-  header nav .nav-sections ul, header nav .nav-sections p {
+  header nav .section ul, header nav .section p {
     width: 66.6667%;
     margin: 0 auto;
   }
@@ -611,15 +627,15 @@ header nav[aria-expanded="true"] .nav-hamburger-icon::after {
 
 
 /* sections */
-header nav .nav-sections {
+/* header nav .section {
   grid-area: sections;
   flex: 1 1 auto;
   display: none;
   visibility: hidden;
   background-color: var(--overlay-color);
-}
+} */
 
-header nav[aria-expanded="true"] .nav-sections {
+header nav[aria-expanded="true"] .section {
   display: block;
   visibility: visible;
   align-self: start;
@@ -645,23 +661,23 @@ header nav .sections ul  {
     height: auto;
   }
 
-  header nav .nav-sections {
+  header nav .section {
     display: block;
     visibility: visible;
     white-space: nowrap;
   }
 
-  header nav[aria-expanded="true"] .nav-sections {
+  header nav[aria-expanded="true"] .section {
     align-self: unset;
   }
 
-  header nav .nav-sections .nav-drop {
+  header nav .section .nav-drop {
     position: relative;
     padding-right: 16px;
     cursor: pointer;
   }
 
-  header nav .nav-sections .nav-drop::after {
+  header nav .section .nav-drop::after {
     content: '';
     display: inline-block;
     position: absolute;
@@ -675,18 +691,18 @@ header nav .sections ul  {
     border-width: 2px 2px 0 0;
   }
 
-  header nav .nav-sections .nav-drop[aria-expanded="true"]::after {
+  header nav .section .nav-drop[aria-expanded="true"]::after {
     top: unset;
     bottom: .5em;
     transform: rotate(315deg);
   }
 
-  header nav .nav-sections .default-content-wrapper {
+  header nav .section .default-content-wrapper {
     display: flex;
     padding: 0;
   }
   
-  header nav .nav-sections .default-content-wrapper .button-container a.button {
+  header nav .section .default-content-wrapper .button-container a.button {
     color:  var(--light-border-color);
     background-color: transparent;
     padding: 30px 0;
@@ -695,7 +711,7 @@ header nav .sections ul  {
     border: 0;
   }
   
-  header nav .nav-sections .default-content-wrapper .button-container a.button:hover {
+  header nav .section .default-content-wrapper .button-container a.button:hover {
     border-bottom: .25rem solid var(--light-link-hover-color);
     color: var( --light-text-color);
     border-top: .25rem solid transparent;
@@ -703,7 +719,7 @@ header nav .sections ul  {
     margin: 0 12px;
   }
 
-  header nav .nav-sections .default-content-wrapper .button-container,
+  header nav .section .default-content-wrapper .button-container,
   header nav .menu-link-container {
     display: flex;
     justify-content: center;
@@ -746,7 +762,7 @@ header nav .sections ul  {
     border-top: .25rem solid transparent;
   }
   
-  header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded="true"] > ul {
+  header nav .section .default-content-wrapper > ul > li[aria-expanded="true"] > ul {
     display: block;
     position: absolute;
     left: -1em;
@@ -769,7 +785,7 @@ header nav .sections ul  {
     border-bottom: 8px solid var(--light-color);
   }
 
-  header nav .nav-sections .default-content-wrapper > ul > li > ul > li {
+  header nav .section .default-content-wrapper > ul > li > ul > li {
     padding: 8px 0;
   }
 }
