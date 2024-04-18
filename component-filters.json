@@ -74,6 +74,7 @@
       "list": ["bullist", "numlist"],
       "insert": ["link"],
       "blocks": [],
+      "advanced": ["h3"],
       "extensions": [],
       "editor": ["removeformat"]
     }
