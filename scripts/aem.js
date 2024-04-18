@@ -372,8 +372,13 @@ function decorateButtons(element) {
       const twoup = a.parentElement.parentElement;
       if (!a.querySelector('img')) {
         if (up.childNodes.length === 1 && (up.tagName === 'P' || up.tagName === 'DIV')) {
-          a.className = 'button'; // default
+          a.className = 'button hyperlink'; // default
+          const iconSpan = document.createElement('span')
+          iconSpan.innerHTML = `<i class='icon-gt'>&#62</i>`
+          iconSpan.classList = 'align-center';
+          up.append(iconSpan)
           up.classList.add('button-container');
+          up.classList.add('align-icon');
         }
         if (
           up.childNodes.length === 1
