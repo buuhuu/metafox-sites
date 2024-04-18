@@ -249,7 +249,7 @@ button:disabled:hover {
 
 a.button.ghost-dark,
 a.button.ghost-dark-flex {
-  background-color: rgb(242 242 242 / 100);
+  background-color: rgb(242 242 242 / 100%);
   border: 1px solid var(--text-color);
   color: var(--text-color);
   font-size: 16px;
@@ -257,7 +257,7 @@ a.button.ghost-dark-flex {
   font-weight: 700;
   font-family: bmwTypeNextWeb, Arial, Helvetica, Roboto, sans-serif;
   text-align: center;
-  padding: 4px 24px 4px 24px;
+  padding: 4px 24px;
 }
 
 .button-fixed-width {
