@@ -393,10 +393,10 @@ function decorateButtons(element) {
           && twoup.tagName === 'P'
         ) {
           a.className = 'button hyperlink';
-          const iconSpan = document.createElement('span')
-          iconSpan.innerHTML = `<i class='icon-gt'>&#62</i>`
+          const iconSpan = document.createElement('span');
+          iconSpan.innerHTML = '<i class="icon-gt">&#62</i>';
           iconSpan.classList = 'align-center';
-          up.append(iconSpan)
+          up.append(iconSpan);
           up.ariaLabel = up.textContent;
           up.classList.add('button-container');
           up.classList.add('align-icon');
