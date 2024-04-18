@@ -80,6 +80,12 @@
     }
   },
   {
+    "id": "subnavigation-text",
+    "rte": {
+      "format": ["bold"]
+    }
+  },
+  {
     "id": "cards",
     "components": ["card"]
   },
