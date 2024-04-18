@@ -623,14 +623,14 @@
       {
         "component": "text-input",
         "valueType": "string",
-        "name": "Link Label",
+        "name": "linkLabel",
         "label": "Link Label",
         "value": ""
       },
       {
         "component": "text-input",
         "valueType": "string",
-        "name": "Link Title",
+        "name": "linkTitle",
         "label": "Link Title",
         "value": ""
       },
@@ -647,7 +647,7 @@
     "id": "subnavigation-text",
     "fields": [
       {
-        "component": "text-input",
+        "component": "richtext",
         "valueType": "string",
         "name": "Text",
         "label": "text",

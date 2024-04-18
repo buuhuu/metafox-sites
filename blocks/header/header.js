@@ -11,7 +11,7 @@ function closeOnEscape(e) {
     const navSectionExpanded = navSections.querySelector('[aria-expanded="true"]');
     if (navSectionExpanded && isDesktop.matches) {
       // eslint-disable-next-line no-use-before-define
-      toggleAllNavSections(navSections);
+      // // toggleAllNavSections(navSections);
       navSectionExpanded.focus();
     } else if (!isDesktop.matches) {
       // eslint-disable-next-line no-use-before-define
@@ -21,30 +21,31 @@ function closeOnEscape(e) {
   }
 }
 
-function openOnKeydown(e) {
-  const focused = document.activeElement;
-  const isNavDrop = focused.className === 'nav-drop';
-  if (isNavDrop && (e.code === 'Enter' || e.code === 'Space')) {
-    const dropExpanded = focused.getAttribute('aria-expanded') === 'true';
-    // eslint-disable-next-line no-use-before-define
-    toggleAllNavSections(focused.closest('.nav-sections'));
-    focused.setAttribute('aria-expanded', dropExpanded ? 'false' : 'true');
-  }
-}
+// function openOnKeydown(e) {
+//   const focused = document.activeElement;
+//   const isNavDrop = focused.className === 'nav-drop';
+//   if (isNavDrop && (e.code === 'Enter' || e.code === 'Space')) {
+//     const dropExpanded = focused.getAttribute('aria-expanded') === 'true';
+//     // eslint-disable-next-line no-use-before-define
+//     // toggleAllNavSections(focused.closest('.section'));
+//     focused.setAttribute('aria-expanded', dropExpanded ? 'false' : 'true');
+//   }
+// }
 
-function focusNavSection() {
-  document.activeElement.addEventListener('keydown', openOnKeydown);
-}
+// function focusNavSection() {
+//   document.activeElement.addEventListener('keydown', openOnKeydown);
+// }
 
 /**
  * Toggles all nav sections
  * @param {Element} sections The container element
  * @param {Boolean} expanded Whether the element should be expanded or collapsed
  */
+/*
 function toggleAllNavSections(sections, expanded = false) {
-  sections.querySelectorAll('.nav-sections .default-content-wrapper > ul > li').forEach((section) => {
-    section.setAttribute('aria-expanded', expanded);
-  });
+  // sections.querySelectorAll('.nav-wrapper .menu-link-wrapper').forEach((section) => {
+  //   section.setAttribute('aria-expanded', expanded);
+  // });
 }
 
 /**
@@ -61,25 +62,25 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
   document.body.style.position = (expanded || isDesktop.matches) ? '' : 'fixed';
   document.body.style.top = (expanded || isDesktop.matches) ? '' : '0';
   nav.setAttribute('aria-expanded', expanded ? 'false' : 'true');
-  toggleAllNavSections(navSections, expanded || isDesktop.matches ? 'false' : 'true');
+  // toggleAllNavSections(navSections, expanded || isDesktop.matches ? 'false' : 'true');
   button.setAttribute('aria-label', expanded ? 'Open navigation' : 'Close navigation');
   // enable nav dropdown keyboard accessibility
-  const navDrops = navSections.querySelectorAll('.nav-drop');
-  if (isDesktop.matches) {
-    navDrops.forEach((drop) => {
-      if (!drop.hasAttribute('tabindex')) {
-        drop.setAttribute('role', 'button');
-        drop.setAttribute('tabindex', 0);
-        drop.addEventListener('focus', focusNavSection);
-      }
-    });
-  } else {
-    navDrops.forEach((drop) => {
-      drop.removeAttribute('role');
-      drop.removeAttribute('tabindex');
-      drop.removeEventListener('focus', focusNavSection);
-    });
-  }
+  // const navDrops = navSections.querySelectorAll('.nav-drop');
+  // if (isDesktop.matches) {
+  //   navDrops.forEach((drop) => {
+  //     if (!drop.hasAttribute('tabindex')) {
+  //       drop.setAttribute('role', 'button');
+  //       drop.setAttribute('tabindex', 0);
+  //       drop.addEventListener('focus', focusNavSection);
+  //     }
+  //   });
+  // } else {
+  //   navDrops.forEach((drop) => {
+  //     drop.removeAttribute('role');
+  //     drop.removeAttribute('tabindex');
+  //     drop.removeEventListener('focus', focusNavSection);
+  //   });
+  // }
   // enable menu collapse on escape keypress
   if (!expanded || isDesktop.matches) {
     // collapse menu on escape press
@@ -124,7 +125,7 @@ export default async function decorate(block) {
       navSection.addEventListener('click', () => {
         if (isDesktop.matches) {
           const expanded = navSection.getAttribute('aria-expanded') === 'true';
-          toggleAllNavSections(navSections);
+          // toggleAllNavSections(navSections);
           navSection.setAttribute('aria-expanded', expanded ? 'false' : 'true');
         }
       });
@@ -151,16 +152,8 @@ export default async function decorate(block) {
   // background related changes
   const headerType = getMetadata('headertype');
   const header = document.getElementsByTagName('header');
-  const bmwLogoWrapperSelector = document.querySelector('.bmw-logo-wrapper');
-  const claimContainer = document.createElement('div');
-  claimContainer.innerHTML = '<div class="claim-container"><b>Zadovoljstvo</b> <span> u vožnji </span> </div>';
-  bmwLogoWrapperSelector.append(claimContainer);
   if (headerType && headerType === 'whitebackground') {
     header[0].classList.add('white-background');
-    if (isDesktop.matches) {
-      document.querySelector('.section.nav-tools').getElementsByTagName('a')[0].getElementsByTagName('img')[0].setAttribute('src', '/icons/location-white.svg');
-      document.querySelector('.section.nav-tools').getElementsByTagName('a')[1].getElementsByTagName('img')[0].setAttribute('src', '/icons/search-white.svg');
-    }
   } else {
     header[0].classList.add('transparent');
   }
