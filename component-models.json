@@ -707,6 +707,20 @@
         "name": "alt",
         "value": "Default alt",
         "label": "Alt Text"
+      },
+      {
+        "component": "rte",
+        "valueType": "string",
+        "name": "copy-text",
+        "value": "",
+        "label": "Copy Text"
+      },
+      {
+        "component": "button",
+        "valueType": "string",
+        "name": "buttontype",
+        "value": "",
+        "label": "Button Type"
       }
     ]
   }
