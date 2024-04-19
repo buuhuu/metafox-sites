@@ -27,6 +27,8 @@ footer .footer .section:nth-child(3) {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 footer .footer .section:nth-child(3) .link-list-wrapper.horizontal{
