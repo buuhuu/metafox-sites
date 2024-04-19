@@ -690,6 +690,16 @@
         "name": "alt",
         "value": "Default alt",
         "label": "Alt Text"
+      },
+      {
+        "component": "copy-text",
+        "valueType": "string",
+        "name": "copy-text",
+        "value": "",
+        "label": "Copy Text"
+      },
+      {
+        "component": "button"
       }
     ]
   }
