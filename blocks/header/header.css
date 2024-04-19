@@ -280,18 +280,18 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
     left: -5%;
     border-top: 1px solid var(--light-bbb);
     content: " ";
-    top: -22px;
+    top: -35px;
   }
 
   header nav[aria-expanded="false"] .logo-wrapper,
   header nav[aria-expanded="true"] .logo-wrapper {
     position: absolute;
-    top: 25px;
-    left: 22px;
+    top: 0;
+    left: 45px;
   }
   
   header nav[aria-expanded="false"] {
-    height: 95px;
+    height: 85px;
   }
 
   header nav[aria-expanded="true"] {
@@ -340,9 +340,9 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
     padding: .55rem 7rem;
   }
 
-  header nav .sections .menu-link-wrapper a {
-    padding: 12px 0;
+  header nav[aria-expanded="true"] .menu-link-wrapper a {
     color: var(--light-border-color);
+    padding: 12px 0;
     font-size: 16px;
   }
 
