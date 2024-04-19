@@ -692,14 +692,18 @@
         "label": "Alt Text"
       },
       {
-        "component": "copy-text",
+        "component": "rte",
         "valueType": "string",
         "name": "copy-text",
         "value": "",
         "label": "Copy Text"
       },
       {
-        "component": "button"
+        "component": "button",
+        "valueType": "string",
+        "name": "buttontype",
+        "value": "",
+        "label": "Button Type"
       }
     ]
   }
