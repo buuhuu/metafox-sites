@@ -156,7 +156,7 @@
         "component": "number",
         "valueType": "number",
         "name": "columns",
-        "value": "",
+        "value": 2,
         "label": "Columns",
         "required": true,
         "validation": {
@@ -169,9 +169,27 @@
         "component": "number",
         "valueType": "number",
         "name": "rows",
-        "value": "",
-        "label": "Rows"
-      }
+        "value": 1,
+        "label": "Rows",
+        "required": true,
+        "validation": {
+          "numberMin": 1,
+          "customErrorMsg": "Please enter a no. greater or equal to 1"
+        }
+      },
+{
+  "component": "radio-group",
+  "label": "Alignment",
+  "name": "radio",
+  "value": "center",
+  "required": true,
+  "valueType": "string",
+  "options": [
+    { "name": "Center", "value": "center" },
+    { "name": "Left", "value": "left" },
+    { "name": "Right", "value": "right" }
+  ]
+}
     ]
   },
   {

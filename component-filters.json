@@ -14,13 +14,11 @@
       "column"
     ]
   },
-  {
+    {
     "id": "column",
     "components": [
-      "image",
-      "video",
-      "title",
-      "copy_text",
+      "copy_text", 
+      "image", 
       "button"
     ]
   },
@@ -48,19 +46,6 @@
       "menu-link",
       "menu-flyout",
       "icon-link-list"
-    ]
-  },
-  {
-    "id": "column",
-    "components": [
-      "text",
-      "image",
-      "button",
-      "title",
-      "footer-text",
-      "icon-link-list",
-      "copyright",
-      "link-list"
     ]
   },
   {
