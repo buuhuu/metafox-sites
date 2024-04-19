@@ -9,7 +9,7 @@
   },
   {
     "id": "bmw_main_section",
-    "components": ["text-image-v2", "section"]
+    "components": ["text-image","text-image-v2", "section"]
   },
   {
     "id": "footer-section",
@@ -52,6 +52,7 @@
       "hero",
       "cards",
       "columns",
+      "text-image",
       "text-image-v2",
       "BMW-Iframe",
       "footer-text",

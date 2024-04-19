@@ -243,6 +243,55 @@
     ]
   },
   {
+    "id": "text-image",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "bg_fileReference",
+        "label": "Image",
+        "value": "",
+        "description": "Image path from AEM DAM - only choose from the dedicated asset folder",
+        "multi": false
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "bg_imageAlt",
+        "label": "Alt text",
+        "description": "Image alt text - highly recommended for SEO",
+        "value": ""
+      },
+      {
+        "component": "text-area",
+        "name": "fg_text",
+        "value": "Kindly edit the content here !",
+        "label": "Text",
+        "description": "Optionaö text for the text image component",
+        "placeholder": "Please provide some text of your choice here!",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "fg_imagePosition",
+        "filter": "imagePosition",
+        "value": "",
+        "label": "Image Position",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Left",
+            "value": "left"
+          },
+          {
+            "name": "Right",
+            "value": "right"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "text-image-v2",
     "fields": [
       {
