@@ -1,15 +1,36 @@
 [
   {
     "id": "main",
-    "components": ["section", "bmw_main_section", "footer-section", "header-section"]
+    "components": [
+      "section",
+      "bmw_main_section",
+      "footer-section",
+      "header-section"
+    ]
   },
   {
     "id": "columns",
-    "components": []
+    "components": [
+      "column"
+    ]
+  },
+  {
+    "id": "column",
+    "components": [
+      "image",
+      "video",
+      "title",
+      "copy_text",
+      "button"
+    ]
   },
   {
     "id": "bmw_main_section",
-    "components": ["text-image","text-image-v2", "section"]
+    "components": [
+      "text-image",
+      "text-image-v2",
+      "section"
+    ]
   },
   {
     "id": "footer-section",
@@ -43,6 +64,20 @@
     ]
   },
   {
+    "id": "menu-flyout",
+    "components": [
+      "link-list",
+      "menu-teaser"
+    ]
+  },
+  {
+    "id": "menu-teaser",
+    "components": [
+      "copy_text",
+      "button"
+    ]
+  },
+  {
     "id": "section",
     "components": [
       "text",
@@ -58,7 +93,6 @@
       "footer-text",
       "icon",
       "icon-link-list",
-      "copyright",
       "bmw-video",
       "link-list",
       "copy_text",
@@ -68,36 +102,71 @@
   {
     "id": "copy_text",
     "rte": {
-      "format": ["bold"],
+      "format": [
+        "bold"
+      ],
       "alignment": [],
       "indentation": [],
-      "sr_script": ["superscript", "subscript"],
-      "list": ["bullist", "numlist"],
-      "insert": ["link"],
+      "sr_script": [],
+      "list": [
+        "bullist",
+        "numlist"
+      ],
+      "insert": [
+        "link"
+      ],
       "blocks": [],
-      "advanced": ["p"],
+      "advanced": [
+        "h3"
+      ],
       "extensions": [],
-      "editor": ["removeformat"]
+      "editor": [
+        "removeformat"
+      ]
+    }
+  },
+  {
+    "id": "subnavigation-text",
+    "rte": {
+      "format": [
+        "bold"
+      ],
+      "alignment": [],
+      "indentation": [],
+      "sr_script": [],
+      "list": [],
+      "insert": [],
+      "advanced": [],
+      "extensions": [],
+      "editor": []
     }
   },
   {
     "id": "cards",
-    "components": ["card"]
+    "components": [
+      "card"
+    ]
   },
   {
     "id": "icon-link-list",
-    "components": ["icon"]
+    "components": [
+      "icon"
+    ]
   },
   {
     "id": "link-list",
-    "components":[],
+    "components": [],
     "rte": {
       "format": [],
       "alignment": [],
       "indentation": [],
       "sr_script": [],
-      "list": ["bullist"],
-      "insert": ["link"],
+      "list": [
+        "bullist"
+      ],
+      "insert": [
+        "link"
+      ],
       "advanced": [],
       "extensions": [],
       "editor": []

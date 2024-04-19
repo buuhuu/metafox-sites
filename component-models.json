@@ -50,7 +50,7 @@
       {
         "component": "text-input",
         "valueType": "string",
-        "name": "Copyright",
+        "name": "copyright",
         "value": "",
         "label": "Text",
         "required": true
@@ -108,28 +108,16 @@
         "valueType": "string",
         "options": [
           {
-            "name": "default",
+            "name": "Ghost Dark",
             "value": ""
           },
           {
-            "name": "primary",
+            "name": "Ghost Dark Flex",
             "value": "primary"
           },
           {
-            "name": "secondary",
+            "name": "Link Button",
             "value": "secondary"
-          },
-          {
-            "name": "tertiary",
-            "value": "tertiary"
-          },
-          {
-            "name": "ghostdark",
-            "value": "ghost dark"
-          },
-          {
-            "name": "ghostlight",
-            "value": "ghost light"
           }
         ]
       },
@@ -170,10 +158,11 @@
         "name": "columns",
         "value": "",
         "label": "Columns",
+        "required": true,
         "validation": {
-          "numberMin": 1,
+          "numberMin": 2,
           "numberMax": 6,
-          "customErrorMsg": "Please enter a no. between 1 & 6 (both inclusive) only"
+          "customErrorMsg": "Please enter a no. between 2 & 6 (both inclusive) only"
         }
       },
       {
@@ -354,26 +343,7 @@
   },
   {
     "id": "footer-section",
-    "fields": [
-      {
-        "id": "link_count",
-        "fields": [
-          {
-            "component": "number",
-            "valueType": "number",
-            "name": "link_count",
-            "label": "No of Links",
-            "description": "This is a number field.",
-            "required": true,
-            "placeholder": null,
-            "validation": {
-              "numberMin": 1,
-              "numberMax": 10,
-              "customErrorMsg": "Please enter a no. between 1 & 10 (both inclusive) only"
-            }
-          }
-        ]
-      },
+    "fields": [      
       {
         "component": "radio-group",
         "label": "Background Color",
@@ -385,13 +355,6 @@
           { "name": "White", "value": "white" },
           { "name": "Grey", "value": "grey" }
         ]
-      },
-      {
-        "component": "text-input",
-        "name": "style",
-        "value": "",
-        "label": "Style",
-        "valueType": "string"
       }
     ]
   },
@@ -670,21 +633,21 @@
         ]
       }
     ]
-  },  
+  },
   {
     "id": "menu-link",
     "fields": [
       {
         "component": "text-input",
         "valueType": "string",
-        "name": "Link Label",
+        "name": "linkLabel",
         "label": "Link Label",
         "value": ""
       },
       {
         "component": "text-input",
         "valueType": "string",
-        "name": "Link Title",
+        "name": "linkTitle",
         "label": "Link Title",
         "value": ""
       },
@@ -701,13 +664,50 @@
     "id": "subnavigation-text",
     "fields": [
       {
-        "component": "text-input",
+        "component": "richtext",
         "valueType": "string",
         "name": "Text",
         "label": "text",
         "value": ""
       }
-      
+    ]
+  },
+  {
+    "id": "menu-flyout",
+    "fields": [
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "Link Text",
+        "label": "Link Text",
+        "value": ""
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "Link Title",
+        "label": "Link Title",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "id": "menu-teaser",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "alt",
+        "value": "Default alt",
+        "label": "Alt Text"
+      }
     ]
   }
 ]

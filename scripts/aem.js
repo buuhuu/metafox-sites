@@ -372,8 +372,9 @@ function decorateButtons(element) {
       const twoup = a.parentElement.parentElement;
       if (!a.querySelector('img')) {
         if (up.childNodes.length === 1 && (up.tagName === 'P' || up.tagName === 'DIV')) {
-          a.className = 'button'; // default
-          up.classList.add('button-container');
+          a.className = 'button ghost-dark button-fixed-width'; // default
+          up.ariaLabel = up.textContent;
+          twoup.classList.add('button-container');
         }
         if (
           up.childNodes.length === 1
@@ -381,7 +382,8 @@ function decorateButtons(element) {
           && twoup.childNodes.length === 1
           && twoup.tagName === 'P'
         ) {
-          a.className = 'button primary';
+          a.className = 'button ghost-dark-flex button-flex-width';
+          up.ariaLabel = up.textContent;
           twoup.classList.add('button-container');
         }
         if (
@@ -390,8 +392,15 @@ function decorateButtons(element) {
           && twoup.childNodes.length === 1
           && twoup.tagName === 'P'
         ) {
-          a.className = 'button secondary';
-          twoup.classList.add('button-container');
+          a.className = 'button hyperlink';
+          a.id = 'hyperlink-button';
+          up.ariaLabel = up.textContent;
+          const iconSpan = document.createElement('span');
+          iconSpan.innerHTML = '<i class="icon-gt" aria-hidden="true" data-icon="arrow_chevron_right"></i>';
+          iconSpan.classList = 'align-center';
+          up.append(iconSpan);
+          up.classList.add('button-container');
+          up.classList.add('align-icon');
         }
       }
     }
