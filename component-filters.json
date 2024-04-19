@@ -14,15 +14,27 @@
   },
   {
     "id": "column",
-    "components": ["copy_text", "image", "button"]
+    "components": [
+      "copy_text",
+      "image",
+      "button"
+    ]
   },
   {
     "id": "bmw_main_section",
-    "components": ["text-image", "text-image-v2", "section"]
+    "components": [
+      "text-image",
+      "text-image-v2",
+      "section"
+    ]
   },
   {
     "id": "footer-section",
-    "components": ["icon-link-list", "copyright", "link-list"]
+    "components": [
+      "icon-link-list",
+      "copyright",
+      "link-list"
+    ]
   },
   {
     "id": "header-section",
@@ -36,11 +48,17 @@
   },
   {
     "id": "menu-flyout",
-    "components": ["link-list", "menu-teaser"]
+    "components": [
+      "link-list",
+      "menu-teaser"
+    ]
   },
   {
     "id": "menu-teaser",
-    "components": ["copy_text", "button"]
+    "components": [
+      "copy_text",
+      "button"
+    ]
   },
   {
     "id": "section",
