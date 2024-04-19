@@ -264,10 +264,11 @@ a.button.hyperlink:hover {
   font-weight: 500;
   word-wrap: normal;
   font-feature-settings: "liga";
-  content: ">";
+  content: attr(data-icon);
   direction: ltr;
   display: block;
   font-style: normal;
+  font-family: "bmw_next_icons", arial,helvetica,roboto,sans-serif;
   height: 1em;
   line-height: 1;
   outline: 1px solid transparent;
