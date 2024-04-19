@@ -375,6 +375,7 @@ function decorateButtons(element) {
           a.className = 'button ghost-dark button-fixed-width'; // default
           up.ariaLabel = up.textContent;
           twoup.classList.add('button-container');
+          twoup.classList.add('button-align-center');
         }
         if (
           up.childNodes.length === 1
@@ -385,6 +386,7 @@ function decorateButtons(element) {
           a.className = 'button ghost-dark-flex button-flex-width';
           up.ariaLabel = up.textContent;
           twoup.classList.add('button-container');
+          twoup.classList.add('button-align-center');
         }
         if (
           up.childNodes.length === 1
@@ -401,6 +403,7 @@ function decorateButtons(element) {
           up.append(iconSpan);
           up.classList.add('button-container');
           up.classList.add('align-icon');
+          twoup.classList.add('button-align-center');
         }
       }
     }

@@ -208,7 +208,7 @@ button:disabled, button:disabled:hover {
 
 a.button.ghost-dark,
 a.button.ghost-dark-flex {
-  background-color: rgb(242 242 242 / 100%);
+  background-color: transparent;
   border: 1px solid var(--text-color);
   color: var(--text-color);
   font-size: 16px;
@@ -217,6 +217,8 @@ a.button.ghost-dark-flex {
   font-family: var(--fixed-font-family);
   text-align: center;
   padding: 4px 24px;
+  min-height: 3.25rem;
+  align-content: center;
 }
 
 a.button.ghost-dark.button-fixed-width {
@@ -262,7 +264,7 @@ a.button.hyperlink:hover {
   font-weight: 500;
   word-wrap: normal;
   font-feature-settings: "liga";
-  content: attr(data-icon);
+  content: ">";
   direction: ltr;
   display: block;
   font-style: normal;
@@ -279,6 +281,11 @@ a.button.hyperlink:hover {
 .align-icon > .align-center {
   align-self: center;
   margin: 3px 0 0 3px;
+}
+
+.button-align-center {
+  display: flex;
+  justify-content: center;
 }
 
 main img {

@@ -45,7 +45,7 @@
           }
         },
         {
-          "title": "Button",
+          "title": "Button/Link",
           "id": "button",
           "plugins": {
             "xwalk": {
