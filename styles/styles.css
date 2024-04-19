@@ -12,7 +12,7 @@
  * governing permissions and limitations under the License.
  */
 
-:root {
+ :root {
   /* colors */
   --link-color: #035fe6;
   --link-hover-color: #136ff6;
@@ -20,13 +20,13 @@
   --light-color: #eee;
   --dark-color: #ccc;
   --text-color: black;
-  --medium-text-color: #4d4d4d;
+  --medium-text-color:#4d4d4d;
   --light-border-color: #666;
   --light-text-color: #262626;
   --light-link-hover-color: #1c69d4;
   --light-grey: #f6f6f6;
-  --light-bbb: #bbb;
-  --fixed-font-family: bmwtypenextweb, arial, helvetica, roboto, sans-serif;
+  --light-bbb: #bbb;  
+  --fixed-font-family: bmwtypenextweb,arial,helvetica,roboto,sans-serif;
 
   /* base font size */
   --base-font-size: 16px;
@@ -54,16 +54,16 @@
   --breakpoint-large-desktop: 1920px;
 
   /* maximum width */
-  --max-component-width: 1920px;
+  --max-component-width:1920px;
 
   /* section padding */
-  --section-mobile-padding: 24px;
-  --section-tablet-padding: 48px;
-  --section-desktop-padding: 96px;
+  --section-mobile-padding:24px;
+  --section-tablet-padding:48px;
+  --section-desktop-padding:96px;
 }
 
 
-@media (width >=900px) {
+@media (width >= 900px) {
   :root {
     --heading-font-size-xxl: 60px;
     --heading-font-size-xl: 48px;
@@ -90,12 +90,8 @@ header {
   height: var(--nav-height);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3,
+h4, h5, h6 {
   font-family: var(--fixed-font-family);
   font-weight: 300;
   line-height: 1.25;
@@ -104,42 +100,19 @@ h6 {
   scroll-margin: calc(var(--nav-height) + 1em);
 }
 
-h1 {
-  font-size: var(--heading-font-size-xxl)
-}
+h1 { font-size: var(--heading-font-size-xxl) }
+h2 { font-size: var(--heading-font-size-xl) }
+h3 { font-size: var(--heading-font-size-l) }
+h4 { font-size: var(--heading-font-size-m) }
+h5 { font-size: var(--heading-font-size-s) }
+h6 { font-size: var(--heading-font-size-xs) }
 
-h2 {
-  font-size: var(--heading-font-size-xl)
-}
-
-h3 {
-  font-size: var(--heading-font-size-l)
-}
-
-h4 {
-  font-size: var(--heading-font-size-m)
-}
-
-h5 {
-  font-size: var(--heading-font-size-s)
-}
-
-h6 {
-  font-size: var(--heading-font-size-xs)
-}
-
-p,
-dl,
-ol,
-ul,
-pre,
-blockquote {
+p, dl, ol, ul, pre, blockquote {
   margin-top: 1em;
   margin-bottom: 1em;
 }
 
-code,
-pre {
+code, pre {
   font-size: var(--body-font-size-s);
 }
 
@@ -160,9 +133,7 @@ main pre {
 }
 
 /* links */
-a,
-b,
-strong {
+a,b,strong {
   font-weight: 700;
 }
 
@@ -177,8 +148,7 @@ a:hover {
 }
 
 /* buttons */
-a.button:any-link,
-button {
+a.button:any-link, button {
   font-family: var(--fixed-font-family);
   display: inline-block;
   box-sizing: border-box;
@@ -198,52 +168,36 @@ button {
   border-radius: 5px;
 }
 
-button,
-input {
-  overflow: visible
+button,input{
+  overflow:visible
 }
 
-button,
-select {
-  text-transform: none
+button,select{
+  text-transform:none
 }
 
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+button,[type="button"],[type="reset"],[type="submit"]{
   -webkit-appearance: button;
 }
 
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0
+button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{
+  border-style:none;
+  padding:0
 }
 
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0
+button,input,optgroup,select,textarea{
+  font-family:inherit;
+  font-size:100%;
+  line-height:1.15;
+  margin:0
 }
 
-a.button:hover,
-a.button:focus,
-button:hover,
-button:focus {
+a.button:hover, a.button:focus, button:hover, button:focus  {
   background-color: var(--link-hover-color);
   cursor: pointer;
 }
 
-button:disabled,
-button:disabled:hover {
+button:disabled, button:disabled:hover {
   background-color: var(--light-color);
   cursor: unset;
 }
@@ -293,7 +247,7 @@ a.button.hyperlink {
   padding: 10px;
 }
 
-.button-container:hover,
+.button-container.align-icon:hover,
 a.button.hyperlink:hover {
   color: var(--link-hover-color);
   font-weight: bold;
@@ -347,25 +301,25 @@ main .section {
 }
 
 /* tablet */
-@media (width >=768px) {
+@media (width >= 768px){
   main .section {
     padding: 20px var(--section-tablet-padding);
   }
 }
 
 /* desktop */
-@media (width >=1280px) {
+@media (width >= 1280px){
   main .section {
     padding: 20px var(--section-desktop-padding);
   }
 }
 
 /* large-desktop */
-@media (width >=1920px) {
-  main .section {
+@media (width >= 1920px){
+  main .section {   
     max-width: 100vw;
-    padding-left: calc((100vw - (var(--max-component-width) - (var(--section-desktop-padding) * 2)))/2);
-    padding-right: calc((100vw - (var(--max-component-width) - (var(--section-desktop-padding) * 2)))/2);
+    padding-left: calc((100vw - (var(--max-component-width) - (var(--section-desktop-padding) * 2 )))/2);
+    padding-right: calc((100vw - (var(--max-component-width) - (var(--section-desktop-padding) * 2 )))/2);
   }
 }
 
@@ -377,52 +331,50 @@ main .section.highlight {
   background-color: var(--light-color);
 }
 
-fieldset {
-  padding: .35em .75em .625em
+fieldset{
+  padding:.35em .75em .625em
 }
 
-legend {
-  box-sizing: border-box;
-  color: inherit;
-  display: table;
-  max-width: 100%;
-  padding: 0;
-  white-space: normal;
+legend{
+  box-sizing:border-box;
+  color:inherit;
+  display:table;
+  max-width:100%;
+  padding:0;
+  white-space:normal;
 }
 
-progress {
-  vertical-align: baseline
+progress{
+  vertical-align:baseline
 }
 
-textarea {
-  overflow: auto
+textarea{
+  overflow:auto
 }
 
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box;
-  padding: 0
+[type="checkbox"],[type="radio"]{
+  box-sizing:border-box;
+  padding:0
 }
 
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto
+[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{
+  height:auto
 }
 
-[type="search"] {
+[type="search"]{
   -webkit-appearance: textfield;
-  outline-offset: -2px
+  outline-offset:-2px
 }
 
-[type="search"]::-webkit-search-decoration {
+[type="search"]::-webkit-search-decoration{
   -webkit-appearance: none;
 }
 
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  font: inherit
+::-webkit-file-upload-button{
+  -webkit-appearance:button;
+  font:inherit
 }
 
-[hidden] {
-  display: none
+[hidden]{
+  display:none
 }
