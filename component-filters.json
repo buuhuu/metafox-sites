@@ -53,14 +53,10 @@
   {
     "id": "column",
     "components": [
-      "text",
+      "copy_text",
       "image",
       "button",
-      "title",
-      "footer-text",
-      "icon-link-list",
-      "copyright",
-      "link-list"
+      "title"
     ]
   },
   {
@@ -80,7 +76,7 @@
   {
     "id": "section",
     "components": [
-      "text",
+      "copy_text",
       "image",
       "button",
       "title",
