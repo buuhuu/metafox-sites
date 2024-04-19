@@ -10,7 +10,9 @@
   },
   {
     "id": "columns",
-    "components": ["column"]
+    "components": [
+      "column"
+    ]
   },
   {
     "id": "column",
@@ -24,14 +26,18 @@
   },
   {
     "id": "bmw_main_section",
-    "components": ["text-image", "section"]
+    "components": [
+      "text-image",
+      "section"
+    ]
   },
   {
     "id": "footer-section",
     "components": [
-      "icon-link-list", 
-      "copyright", 
-      "link-list"]
+      "icon-link-list",
+      "copyright",
+      "link-list"
+    ]
   },
   {
     "id": "header-section",
@@ -41,6 +47,33 @@
       "menu-link",
       "menu-flyout",
       "icon-link-list"
+    ]
+  },
+  {
+    "id": "column",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title",
+      "footer-text",
+      "icon-link-list",
+      "copyright",
+      "link-list"
+    ]
+  },
+  {
+    "id": "menu-flyout",
+    "components": [
+      "link-list",
+      "menu-teaser"
+    ]
+  },
+  {
+    "id": "menu-teaser",
+    "components": [
+      "copy_text",
+      "button"
     ]
   },
   {
@@ -57,7 +90,7 @@
       "BMW-Iframe",
       "footer-text",
       "icon",
-      "icon-link-list",      
+      "icon-link-list",
       "bmw-video",
       "link-list",
       "copy_text",
@@ -67,22 +100,35 @@
   {
     "id": "copy_text",
     "rte": {
-      "format": ["bold"],
+      "format": [
+        "bold"
+      ],
       "alignment": [],
       "indentation": [],
       "sr_script": [],
-      "list": ["bullist", "numlist"],
-      "insert": ["link"],
+      "list": [
+        "bullist",
+        "numlist"
+      ],
+      "insert": [
+        "link"
+      ],
       "blocks": [],
-      "advanced": ["h3"],
+      "advanced": [
+        "h3"
+      ],
       "extensions": [],
-      "editor": ["removeformat"]
+      "editor": [
+        "removeformat"
+      ]
     }
   },
   {
     "id": "subnavigation-text",
     "rte": {
-      "format": ["bold"],
+      "format": [
+        "bold"
+      ],
       "alignment": [],
       "indentation": [],
       "sr_script": [],
@@ -95,11 +141,15 @@
   },
   {
     "id": "cards",
-    "components": ["card"]
+    "components": [
+      "card"
+    ]
   },
   {
     "id": "icon-link-list",
-    "components": ["icon"]
+    "components": [
+      "icon"
+    ]
   },
   {
     "id": "link-list",
@@ -109,8 +159,12 @@
       "alignment": [],
       "indentation": [],
       "sr_script": [],
-      "list": ["bullist"],
-      "insert": ["link"],
+      "list": [
+        "bullist"
+      ],
+      "insert": [
+        "link"
+      ],
       "advanced": [],
       "extensions": [],
       "editor": []
