@@ -692,7 +692,7 @@
         "label": "Alt Text"
       },
       {
-        "component": "rte",
+        "component": "richtext",
         "valueType": "string",
         "name": "copy-text",
         "value": "",
