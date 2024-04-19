@@ -654,5 +654,43 @@
         "value": ""
       }
     ]
+  },
+  {
+    "id": "menu-flyout",
+    "fields": [
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "Link Text",
+        "label": "Link Text",
+        "value": ""
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "Link Title",
+        "label": "Link Title",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "id": "menu-teaser",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "alt",
+        "value": "Default alt",
+        "label": "Alt Text"
+      }
+    ]
   }
 ]

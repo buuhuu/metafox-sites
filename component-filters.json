@@ -50,6 +50,33 @@
     ]
   },
   {
+    "id": "column",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title",
+      "footer-text",
+      "icon-link-list",
+      "copyright",
+      "link-list"
+    ]
+  },
+  {
+    "id": "menu-flyout",
+    "components": [
+      "link-list",
+      "menu-teaser"
+    ]
+  },
+  {
+    "id": "menu-teaser",
+    "components": [
+      "copy_text",
+      "button"
+    ]
+  },
+  {
     "id": "section",
     "components": [
       "text",
