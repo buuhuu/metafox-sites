@@ -307,13 +307,12 @@ a.button.hyperlink:hover {
   content: attr(data-icon);
   direction: ltr;
   display: block;
-  font-family: bmw_next_icons;
   font-style: normal;
   height: 1em;
   line-height: 1;
   outline: 1px solid transparent;
   text-align: left;
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizelegibility;
   text-transform: none;
   white-space: nowrap;
   width: auto;
