@@ -171,7 +171,9 @@
                 "template": {
                   "name": "text-image",
                   "model": "text-image",
-                  "fileReference": "/content/dam/metafox/placeholder_image.png"
+                  "fileReference": "/content/dam/metafox/placeholder_image.png",
+                  "text": "Kindly edit the content here !",
+                  "imagePosition": "left"
                 }
               }
             }
