@@ -70,6 +70,13 @@
     ]
   },
   {
+    "id": "menu-teaser",
+    "components": [
+      "copy_text",
+      "button"
+    ]
+  },
+  {
     "id": "section",
     "components": [
       "text",

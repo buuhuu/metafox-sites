@@ -682,7 +682,7 @@
         "valueType": "string",
         "name": "image",
         "label": "Image",
-        "multi": "false"
+        "multi": false
       },
       {
         "component": "text-input",
@@ -690,13 +690,6 @@
         "name": "alt",
         "value": "Default alt",
         "label": "Alt Text"
-      },
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "teaser-text",
-        "value": "",
-        "label": "Teaser Text"
       }
     ]
   }
