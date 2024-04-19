@@ -28,6 +28,7 @@
     "id": "bmw_main_section",
     "components": [
       "text-image",
+      "text-image-v2",
       "section"
     ]
   },
@@ -87,6 +88,7 @@
       "cards",
       "columns",
       "text-image",
+      "text-image-v2",
       "BMW-Iframe",
       "footer-text",
       "icon",

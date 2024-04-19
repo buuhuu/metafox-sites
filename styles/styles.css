@@ -82,6 +82,10 @@ body.appear {
   font-size: var(--base-font-size);
 }
 
+body {
+  background-color: var(--background-color);
+}
+
 main {
   flex: 1;
 }
@@ -202,14 +206,79 @@ button:disabled, button:disabled:hover {
   cursor: unset;
 }
 
-a.button.secondary, button.secondary {
-  background-color: unset;
-  border: 1px solid currentcolor;
-  color: var(--text-color)
+a.button.ghost-dark,
+a.button.ghost-dark-flex {
+  background-color: rgb(242 242 242 / 100%);
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: var(--fixed-font-family);
+  text-align: center;
+  padding: 4px 24px;
 }
 
-a.button.secondary:hover {
-  border: 2px solid currentcolor;
+a.button.ghost-dark.button-fixed-width {
+  width: auto;
+  min-width: auto;
+  white-space: normal;
+}
+
+a.button.ghost-dark-flex.button-flex-width {
+  max-width: 75vw;
+  width: auto;
+}
+
+a.button.ghost-dark:hover,
+a.button.ghost-dark-flex:hover {
+  border: 2px solid var(--text-color);
+  font-weight: bold;
+}
+
+a.button.hyperlink {
+  background: transparent;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(38 38 38 / 100%);
+  font-weight: 700;
+  font-family: var(--fixed-font-family);
+}
+
+.align-icon {
+  display: flex;
+  padding: 10px;
+}
+
+.button-container.align-icon:hover,
+a.button.hyperlink:hover {
+  color: var(--link-hover-color);
+  font-weight: bold;
+}
+
+.icon-gt::after {
+  font-size: 24px;
+  font-weight: 500;
+  word-wrap: normal;
+  font-feature-settings: "liga";
+  content: attr(data-icon);
+  direction: ltr;
+  display: block;
+  font-style: normal;
+  height: 1em;
+  line-height: 1;
+  outline: 1px solid transparent;
+  text-align: left;
+  text-rendering: optimizelegibility;
+  text-transform: none;
+  white-space: nowrap;
+  width: auto;
+}
+
+.align-icon > .align-center {
+  align-self: center;
+  margin: 3px 0 0 3px;
 }
 
 main img {
