@@ -82,6 +82,10 @@ body.appear {
   font-size: var(--base-font-size);
 }
 
+body {
+  background-color: var(--background-color);
+}
+
 main {
   flex: 1;
 }
