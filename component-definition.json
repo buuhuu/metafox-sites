@@ -346,7 +346,11 @@
                 "template": {
                   "name": "Menu Teaser",
                   "model": "menu-teaser",
-                  "filter": "menu-teaser"
+                  "filter": "menu-teaser",
+                  "copy_text": {
+                    "name": "Copy Text",
+                    "model": "copy_text"
+                  }
                 }
               }
             }
