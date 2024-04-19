@@ -169,5 +169,12 @@
       "extensions": [],
       "editor": []
     }
+  },
+  {
+    "id": "multicontent-gallery",
+    "components": [
+      "video-slide",
+      "image-slide"
+    ]
   }
 ]

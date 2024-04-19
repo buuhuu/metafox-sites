@@ -692,5 +692,17 @@
         "label": "Alt Text"
       }
     ]
+  },
+  {
+    "id":"video-slide",
+    "fields": [      
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "headline",
+        "value": "",
+        "label": "Headline"
+      }
+    ]
   }
 ]
