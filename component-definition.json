@@ -13,7 +13,8 @@
                 "resourceType": "core/franklin/components/text/v1/text",
                 "template": {
                   "name": "Copy Text",
-                  "model": "copy_text"
+                  "model": "copy_text",
+                  "filter": "copy_text"
                 }
               }
             }
@@ -349,7 +350,7 @@
                 "template": {
                   "name": "Footer Section",
                   "model": "footer-section",
-                  "fitler": "footer-section"
+                  "filter": "footer-section"
                 }
               }
             }
