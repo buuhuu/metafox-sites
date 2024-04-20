@@ -330,7 +330,7 @@
     ]
   },
   {
-    "id": "iFrame",
+    "id": "iframe",
     "fields": [
       {
         "component": "text-input",
@@ -725,7 +725,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "linkTitle",
+        "name": "LinkTitle",
         "value": "",
         "label": "Link Title"
       },
