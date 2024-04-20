@@ -8,8 +8,7 @@ export function generateIFrameDOM(props) {
     <iframe src="${iFrameUrl.textContent}" id="bmwIframe">
     </iframe>
     <div class="loader"></div>
-    
-    </div>
+     </div>
   `);
   return iFrameDOM;
 }
