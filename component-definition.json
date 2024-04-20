@@ -147,15 +147,15 @@
       "id": "bmw_blocks",
       "components": [
         {
-          "title": "BMW-Iframe",
-          "id": "BMW-Iframe",
+          "title": "iFrame",
+          "id": "iFrame",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
-                  "name": "BMW-Iframe",
-                  "model": "BMW-Iframe"
+                  "name": "iFrame",
+                  "model": "iFrame"
                 }
               }
             }
