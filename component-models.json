@@ -699,11 +699,47 @@
         "label": "Copy Text"
       },
       {
-        "component": "button",
+        "component": "text",
         "valueType": "string",
-        "name": "buttontype",
+        "name": "LinkLabel",
         "value": "",
-        "label": "Button Type"
+        "label": "Link Label",
+        "description": "Text to be shown inside button."
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "linkTitle",
+        "value": "",
+        "label": "link Title",
+        "description": "What link to open when clicking the button."
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "Link",
+        "value": "",
+        "label": "Link",
+        "description": "What link to open when clicking the button."
+      },
+      {
+        "component": "select",
+        "name": "LinkType",
+        "value": "primary",
+        "label": "Second CTA Type",
+        "description": "'Primary' will render button filled, 'Secondary' with an outline.",
+        "valueType": "string",
+        "hidden": true,
+        "options": [
+          {
+            "name": "Primary",
+            "value": "primary"
+          },
+          {
+            "name": "Secondary",
+            "value": "secondary"
+          }
+        ]
       }
     ]
   }
