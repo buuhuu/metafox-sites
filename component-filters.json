@@ -28,6 +28,7 @@
     "id": "bmw_main_section",
     "components": [
       "text-image",
+      "text-image-v2",
       "section"
     ]
   },
@@ -52,14 +53,10 @@
   {
     "id": "column",
     "components": [
-      "text",
+      "copy_text",
       "image",
       "button",
-      "title",
-      "footer-text",
-      "icon-link-list",
-      "copyright",
-      "link-list"
+      "title"
     ]
   },
   {
@@ -79,7 +76,7 @@
   {
     "id": "section",
     "components": [
-      "text",
+      "copy_text",
       "image",
       "button",
       "title",
@@ -87,7 +84,8 @@
       "cards",
       "columns",
       "text-image",
-      "iFrame",
+      "text-image-v2",
+      "iframe",
       "footer-text",
       "icon",
       "icon-link-list",

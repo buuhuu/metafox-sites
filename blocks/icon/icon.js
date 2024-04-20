@@ -16,7 +16,7 @@ export function generateIconDOM(props) {
   if (iconListArray.includes(iconType.textContent)) {
     // Build DOM
     iconDom = document.createRange().createContextualFragment(`
-      <a class="icon-container" href="${iconLink.textContent}">
+      <a class="icon-container" href="${iconLink.textContent}" alt="${altText.textContent}">
         <span class="${iconType.textContent}"></span>
       </a>`);
   } else {
