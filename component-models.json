@@ -330,7 +330,7 @@
     ]
   },
   {
-    "id": "BMW-Iframe",
+    "id": "iFrame",
     "fields": [
       {
         "component": "text-input",
@@ -716,11 +716,47 @@
         "label": "Copy Text"
       },
       {
-        "component": "button",
+        "component": "text",
         "valueType": "string",
-        "name": "buttontype",
+        "name": "LinkLabel",
         "value": "",
-        "label": "Button Type"
+        "label": "Link Label"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "linkTitle",
+        "value": "",
+        "label": "Link Title"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "Link",
+        "value": "",
+        "label": "Link"
+      },
+      {
+        "component": "select",
+        "name": "LinkType",
+        "value": "",
+        "label": "Second CTA Type",
+        "valueType": "string",
+        "hidden": true,
+        "options": [
+          {
+            "name": "default",
+            "value": ""
+          },
+          {
+            "name": "Primary",
+            "value": "primary"
+          },
+          {
+            "name": "Secondary",
+            "value": "secondary"
+          }
+        ]
       }
     ]
   }
