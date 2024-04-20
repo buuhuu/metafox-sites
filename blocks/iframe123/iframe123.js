@@ -4,12 +4,12 @@ export function generateIFrameDOM(props) {
 
   // Build DOM
   const iFrameDOM = document.createRange().createContextualFragment(`
-    <div class="iframe-container">
-    <iframe src="${iFrameUrl.textContent}" id="bmwIframe">
-    </iframe>
-    <div class="loader"></div>
-     </div>
-  `);
+      <div class="iframe-container">
+      <iframe src="${iFrameUrl.textContent}" id="bmwIframe">
+      </iframe>
+      <div class="loader"></div>
+       </div>
+    `);
   return iFrameDOM;
 }
 function iframeLoader() {
