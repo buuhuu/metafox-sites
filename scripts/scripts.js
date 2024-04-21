@@ -2,7 +2,6 @@ import {
   sampleRUM,
   loadHeader,
   loadFooter,
-  decorateButtons,
   decorateIcons,
   decorateSections,
   decorateBlocks,
@@ -11,6 +10,8 @@ import {
   loadBlocks,
   loadCSS,
 } from './aem.js';
+
+import { decorateBMWButtons } from './bmw-util.js';
 
 const LCP_BLOCKS = []; // add your LCP blocks to the list
 
@@ -80,7 +81,7 @@ function buildAutoBlocks() {
 // eslint-disable-next-line import/prefer-default-export
 export function decorateMain(main) {
   // hopefully forward compatible button decoration
-  decorateButtons(main);
+  decorateBMWButtons(main);
   decorateIcons(main);
   buildAutoBlocks(main);
   decorateSections(main);

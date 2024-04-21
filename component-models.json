@@ -82,6 +82,7 @@
       {
         "component": "text-input",
         "valueType": "string",
+        "description":"URL for redirection",
         "name": "href",
         "value": "",
         "label": "Link"
@@ -89,20 +90,15 @@
       {
         "component": "text-input",
         "valueType": "string",
+        "description":"Name of the button or hyperlink",
         "name": "text",
         "value": "",
         "label": "Text"
       },
       {
-        "component": "text-input",
-        "valueType": "string",
-        "name": "title",
-        "value": "",
-        "label": "Title"
-      },
-      {
         "component": "select",
         "name": "type",
+        "description":"Types of the button",
         "value": "",
         "label": "Type",
         "valueType": "string",
@@ -118,32 +114,6 @@
           {
             "name": "Link Button",
             "value": "secondary"
-          }
-        ]
-      },
-      {
-        "component": "text-input",
-        "valueType": "string",
-        "name": "buttontype",
-        "value": "",
-        "label": "Button Type"
-      },
-      {
-        "component": "radio-group",
-        "name": "buttonsize",
-        "value": "Grid",
-        "label": "Button Size",
-        "valueType": "string",
-        "required": true,
-        "id": "button-size",
-        "options": [
-          {
-            "name": "Grid",
-            "value": "Grid"
-          },
-          {
-            "name": "Flex",
-            "value": "Flex"
           }
         ]
       }

@@ -45,13 +45,16 @@
           }
         },
         {
-          "title": "Button",
+          "title": "Button/Link",
           "id": "button",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/button/v1/button",
-                "template": {}
+                "template": {
+                  "name": "Button/Link",
+                  "model": "button"
+                }
               }
             }
           }
