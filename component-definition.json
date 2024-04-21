@@ -366,7 +366,17 @@
                 "template": {
                   "name": "Multicontent Gallery",
                   "model": "multicontent-gallery",
-                  "filter": "multicontent-gallery"
+                  "filter": "multicontent-gallery",
+                  "video-slide": {
+                    "name": "Video Slide",
+                    "model": "video-slide",
+                    "filter": "video-slide"
+                  },
+                  "image-slide": {
+                    "name": "Image Slide",
+                    "model": "image-slide",
+                    "filter": "image-slide"
+                  }
                 }
               }
             }
