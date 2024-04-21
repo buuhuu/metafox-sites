@@ -729,5 +729,213 @@
         ]
       }
     ]
+  },
+  {
+    "id":"video-slide",
+    "fields": [
+      {
+        "component": "tab",
+        "label": "General Tab",
+        "name": "videoSlideTab1"
+      },     
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "videoSlideHeadline",
+        "value": "",
+        "label": "Headline"
+      },
+      {
+        "component": "select",
+        "label": "Headline Type",
+        "name": "videoSlideHeadlineType",
+        "valueType": "string",
+        "value":"h4",
+        "hidden":true,
+        "options": [
+          { "name": "H4", "value": "h4" }
+        ]
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "videoSlideCopyText",
+        "value": "",
+        "label": "Copy Text"
+      },
+      {
+        "component": "tab",
+        "label": "Video Tab",
+        "name": "videoSlideTab2"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "videoSlideTitle",
+        "value": "",
+        "label": "Video Title",
+        "required":true
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "videoSlideDescription",
+        "value": "",
+        "label": "Video Description",
+        "required":true
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "videoSlideDesktopVideoRef",
+        "label": "Desktop Video Path",
+        "multi": false,
+        "required":true
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "videoSlideMobileVideoRef",
+        "label": "Mobile Video Path",
+        "multi": false
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "videoSlideDesktopPosterImgRef",
+        "label": "Desktop Poster Image Path",
+        "multi": false,
+        "required":true
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "videoSlideMobilePosterImgRef",
+        "label": "Mobile Poster Image Path",
+        "multi": false
+      },
+      {
+        "component": "boolean",
+        "label": "Loop Video",
+        "name": "videoSlideLoopVideo",
+        "valueType": "boolean"
+      },
+      {
+        "component": "boolean",
+        "label": "Autoplay",
+        "name": "videoSlideAutoplay",
+        "valueType": "boolean"
+      },
+      {
+        "component": "tab",
+        "label": "Button/Link Tab",
+        "name": "videoSlideTab3"
+      },
+      {
+        "component":"text",
+        "name":"videoSlideLinkLabel",
+        "label":"Link Label",
+        "valueType":"string"
+      },
+      {
+        "component":"text",
+        "name":"videoSlideLink",
+        "label":"Link",
+        "valueType":"string"
+      },
+      {
+        "component": "select",
+        "label": "Button Styling",
+        "name": "videoSlideButtonStyling",
+        "valueType": "string",
+        "value":"linkButton",
+        "hidden":true,
+        "options": [
+          { "name": "Link Button", "value": "linkButton" }
+        ]
+      }
+    ]
+  },
+  {
+    "id":"image-slide",
+    "fields": [
+      {
+        "component": "tab",
+        "label": "General Tab",
+        "name": "imageSlideTab1"
+      },     
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageSlideHeadline",
+        "value": "",
+        "label": "Headline"
+      },
+      {
+        "component": "select",
+        "label": "Headline Type",
+        "name": "imageSlideHeadlineType",
+        "valueType": "string",
+        "value":"h4",
+        "hidden":true,
+        "options": [
+          { "name": "H4", "value": "h4" }
+        ]
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "imageSlideCopyText",
+        "value": "",
+        "label": "Copy Text"
+      },
+      {
+        "component": "tab",
+        "label": "Image Tab",
+        "name": "imageSlideTab2"
+      },      
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "imageSlideImgRef",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageSlideAltText",
+        "value": "",
+        "label": "Alt Text"
+      },
+      {
+        "component": "tab",
+        "label": "Button/Link Tab",
+        "name": "imageSlideTab3"
+      },
+      {
+        "component":"text",
+        "name":"imageSlideLinkLabel",
+        "label":"Link Label",
+        "valueType":"string"
+      },
+      {
+        "component":"text",
+        "name":"imageSlideLink",
+        "label":"Link",
+        "valueType":"string"
+      },
+      {
+        "component": "select",
+        "label": "Button Styling",
+        "name": "imageSlideButtonStyling",
+        "valueType": "string",
+        "value":"linkButton",
+        "hidden":true,
+        "options": [
+          { "name": "Link Button", "value": "linkButton" }
+        ]
+      }
+    ]
   }
 ]

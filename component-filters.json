@@ -167,5 +167,20 @@
       "extensions": [],
       "editor": []
     }
+  },
+  {
+    "id": "multicontent-gallery",
+    "components": [
+      "video-slide",
+      "image-slide"
+    ]
+  },
+  {
+    "id": "video-slide",
+    "components": []
+  },
+  {
+    "id": "image-slide",
+    "components": []
   }
 ]
