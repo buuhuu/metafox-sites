@@ -31,8 +31,8 @@ export function generateTextImageDOM(props) {
 export default function decorate(block) {
   // get the first and only cell from each row
   [...block.children].forEach((column) => {
-    const [ ImageWrapper, TextWrapper] = column.children;
+    const [ImageWrapper, TextWrapper] = column.children;
     ImageWrapper.classList.add('tiv2-image');
     TextWrapper.classList.add('tiv2-text');
+})
 }
-  )}
