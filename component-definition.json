@@ -91,8 +91,8 @@
               "page": {
                 "resourceType": "core/franklin/components/columns/v1/columns",
                 "template": {
-                  "columns": "2",
-                  "rows": "1"
+                  "columns": 2,
+                  "rows": 1
                 }
               }
             }
@@ -375,12 +375,18 @@
                   "video-slide": {
                     "name": "Video Slide",
                     "model": "video-slide",
-                    "filter": "video-slide"
+                    "filter": "video-slide",
+                    "videoSlideClassname":"video-slide",
+                    "videoSlideHeadlineType":"h4",
+                    "videoSlideButtonStyling":"linkButton"
                   },
                   "image-slide": {
                     "name": "Image Slide",
                     "model": "image-slide",
-                    "filter": "image-slide"
+                    "filter": "image-slide",
+                    "videoSlideClassname":"image-slide",
+                    "imageSlideHeadlineType":"h4",
+                    "imageSlideButtonStyling":"linkButton"
                   }
                 }
               }
