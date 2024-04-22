@@ -910,7 +910,7 @@
       {
         "component":"text",
         "label":"Image Slide Classname",
-        "name":"image",
+        "name":"imageSlideClassname",
         "value":"image-slide",
         "valueType":"string",
         "hidden":true
