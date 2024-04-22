@@ -648,8 +648,6 @@ function decorateBlock(block) {
         cell.replaceChildren(paragraph);
       }
     });
-    // eslint-disable-next-line no-use-before-define
-    decorateButtons(block);
   }
 }
 

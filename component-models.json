@@ -82,7 +82,7 @@
       {
         "component": "text-input",
         "valueType": "string",
-        "description":"URL for redirection",
+        "description":"Defines the page to which the user will be directed to. Please add the full URL including https://",
         "name": "href",
         "value": "",
         "label": "Link"
@@ -90,7 +90,7 @@
       {
         "component": "text-input",
         "valueType": "string",
-        "description":"Name of the button or hyperlink",
+        "description":"Defines the text to be displayed in the button or as the link.",
         "name": "text",
         "value": "",
         "label": "Text"
@@ -98,7 +98,7 @@
       {
         "component": "select",
         "name": "type",
-        "description":"Types of the button",
+        "description":"Defines the styling applied to the button or if the button will displayed as a link. Ghost Dark has a fixed width and Ghost Dark Flex's size varies based on the length of the link label.",
         "value": "",
         "label": "Type",
         "valueType": "string",
@@ -197,6 +197,7 @@
     "fields": [
       {
         "component": "text-input",
+        "description": "Defines the styling applied to the content within this section.If an alignment is needed on a copy text or a button , please specify the alignment of your choice - alignment-right, alignment-left or alignment-centre.",
         "name": "style",
         "value": "",
         "label": "Style",

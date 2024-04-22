@@ -253,7 +253,7 @@ a.button.hyperlink {
   padding: 10px;
 }
 
-.button-container.align-icon:hover,
+.button-container > .align-icon:hover,
 a.button.hyperlink:hover {
   color: var(--link-hover-color);
   font-weight: bold;
@@ -284,9 +284,40 @@ a.button.hyperlink:hover {
   margin: 3px 0 0 3px;
 }
 
-.button-align-center {
+.section.alignment-center > div.default-content-wrapper > .button-container.button-align-center,
+.section.alignment-center > .columns-wrapper > .columns > .button-container.button-align-center > em.align-icon
+ {
   display: flex;
   justify-content: center;
+};
+
+.section.alignment-right > div.default-content-wrapper > .button-container.button-align-right,
+.section.alignment-right > .columns-wrapper > .columns > .button-container.button-align-right 
+{
+  display: flex;
+  justify-content: end;
+}
+
+.section.alignment-left > div.default-content-wrapper > .button-container.button-align-left,
+.section.alignment-left > .columns-wrapper > .columns > .button-container.button-align-left
+{
+  display: flex;
+  justify-content: left;
+}
+
+.section.alignment-right > div.default-content-wrapper,
+.section.alignment-right > .columns-wrapper > .columns > .button-container.button-align-right {
+  text-align: right;
+}
+
+.section.alignment-center > div.default-content-wrapper,
+.section.alignment-right > .columns-wrapper > .columns > .button-container.button-align-center {
+  text-align: center;
+}
+
+.section.alignment-left > div.default-content-wrapper,
+.section.alignment-right > .columns-wrapper > .columns > .button-container.button-align-left {
+  text-align: left;
 }
 
 main img {
