@@ -128,6 +128,7 @@
         "name": "columns",
         "value": 2,
         "label": "Columns",
+        "description": "Defines the number of columns. The maximum allowed columns are 6.",
         "required": true,
         "validation": {
           "numberMin": 2,
@@ -141,6 +142,7 @@
         "name": "rows",
         "value": 1,
         "label": "Rows",
+        "description": "Defines number of rows of columns. There is no limit to the number of rows that can be set.",
         "required": true,
         "validation": {
           "numberMin": 1,
@@ -148,16 +150,25 @@
         }
       },
       {
-        "component": "radio-group",
-        "label": "Alignment",
-        "name": "radio",
+        "component": "select",
+        "name": "classes",
+        "description":"Defines the alignment of the elements added to the Columns.",
         "value": "centre",
-        "required": true,
+        "label": "alignment",
         "valueType": "string",
         "options": [
-          { "name": "Centre", "value": "centre" },
-          { "name": "Left", "value": "left" },
-          { "name": "Right", "value": "right" }
+          {
+            "name": "Centre",
+            "value": "centre"
+          },
+          {
+            "name": "Left",
+            "value": "left"
+          },
+          {
+            "name": "Right",
+            "value": "right"
+          }
         ]
       }
     ]
