@@ -697,48 +697,48 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "image",
+        "name": "menuTeaserImage",
         "label": "Image",
         "multi": false
       },
       {
         "component": "text-input",
         "valueType": "string",
-        "name": "alt",
+        "name": "menuTeaserImageAlt",
         "value": "Default alt",
         "label": "Alt Text"
       },
       {
         "component": "richtext",
         "valueType": "string",
-        "name": "copy-text",
+        "name": "menuTeaserImageCopyText",
         "value": "",
         "label": "Copy Text"
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "LinkLabel",
+        "name": "menuTeaserLinkLabel",
         "value": "",
         "label": "Link Label"
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "LinkTitle",
+        "name": "menuTeaserLinkTitle",
         "value": "",
         "label": "Link Title"
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "Link",
+        "name": "menuTeaserLink",
         "value": "",
         "label": "Link"
       },
       {
         "component": "select",
-        "name": "LinkType",
+        "name": "menuTeaserLinkType",
         "value": "",
         "label": "Second CTA Type",
         "valueType": "string",

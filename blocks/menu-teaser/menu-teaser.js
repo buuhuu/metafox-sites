@@ -1,18 +1,16 @@
 export function generateMenuTeaserDOM(props) {
   // Extract properties, always same order as in model, empty string if not set
-  const [tesaserimage, altText, richtext, LinkLabel, LinkTitle, Link, LinkType] = props;
+  const [menuTeaserImage, altText, richtext, LinkLabel, LinkTitle, Link, LinkType] = props;
   //   const picture = pictureContainer.querySelector('picture');
   //   const image = picture.querySelector('image');
   //   if (Boolean(image) && Boolean(altText)) {
   //     image.alt = altText;
   //   }
 
-  console.log('all values coming in menu teaser', props);
-  debugger;
   // Build DOM
   const menuteaserDOM = document.createRange().createContextualFragment(`
       <div>
-          ${tesaserimage},
+          ${menuTeaserImage},
            ${altText}, 
            ${richtext}, 
            ${LinkLabel.textContent}, ${LinkTitle.textContent}, ${Link.altText}, ${LinkType.textContent}
