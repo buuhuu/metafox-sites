@@ -313,24 +313,32 @@
       {
         "component": "text-input",
         "valueType": "string",
-        "name": "bg_imageAlt",
+        "name": "bg_fileReferenceAlt",
         "label": "Alt text",
         "description": "Image alt text - highly recommended for SEO",
         "value": ""
       },
       {
+        "component": "text",
+        "name": "fg_details",
+        "value": "Kindly edit the Summary here !",
+        "label": "Summary",
+        "description": "Optional text for the text image component",
+        "placeholder": "Please provide some text for summary!",
+        "valueType": "string"
+      },
+      {
         "component": "text-area",
-        "name": "fg_text",
+        "name": "fg_detailsText",
         "value": "Kindly edit the content here !",
         "label": "Text",
-        "description": "Optionaö text for the text image component",
+        "description": "Optional text for the text image component",
         "placeholder": "Please provide some text of your choice here!",
         "valueType": "string"
       },
       {
         "component": "select",
-        "name": "fg_imagePosition",
-        "filter": "imagePosition",
+        "name": "bg_fileReferenceType",
         "value": "",
         "label": "Image Position",
         "valueType": "string",
