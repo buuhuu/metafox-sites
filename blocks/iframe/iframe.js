@@ -12,19 +12,19 @@ export function generateIFrameDOM(props) {
     `);
   return iFrameDOM;
 }
-// function iframeLoader() {
-//   const iframeCont = document.getElementById('bmwIframe');
-//   const loading = document.querySelector('.loader');
-//   iframeCont.addEventListener('load', () => {
-//     loading.style.display = 'none';
-//     iframeCont.style.opacity = 1;
-//   });
-// }
+function iframeLoader() {
+  const iframeCont = document.getElementById('bmwIframe');
+  const loading = document.querySelector('.loader');
+  iframeCont.addEventListener('load', () => {
+    loading.style.display = 'none';
+    iframeCont.style.opacity = 1;
+  });
+}
 export default function decorate(block) {
   // get the first and only cell from each row
   const props = [...block.children].map((row) => row.firstElementChild);
   const iFrameDOM = generateIFrameDOM(props);
   block.textContent = '';
   block.append(iFrameDOM);
-  // iframeLoader();
+  iframeLoader();
 }
