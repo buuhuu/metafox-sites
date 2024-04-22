@@ -126,7 +126,7 @@
         "component": "number",
         "valueType": "number",
         "name": "columns",
-        "value": "",
+        "value": 2,
         "label": "Columns",
         "required": true,
         "validation": {
@@ -139,8 +139,26 @@
         "component": "number",
         "valueType": "number",
         "name": "rows",
-        "value": "",
-        "label": "Rows"
+        "value": 1,
+        "label": "Rows",
+        "required": true,
+        "validation": {
+          "numberMin": 1,
+          "customErrorMsg": "Please enter a no. greater or equal to 1"
+        }
+      },
+      {
+        "component": "radio-group",
+        "label": "Alignment",
+        "name": "radio",
+        "value": "centre",
+        "required": true,
+        "valueType": "string",
+        "options": [
+          { "name": "Centre", "value": "centre" },
+          { "name": "Left", "value": "left" },
+          { "name": "Right", "value": "right" }
+        ]
       }
     ]
   },
@@ -333,7 +351,7 @@
   },
   {
     "id": "footer-section",
-    "fields": [      
+    "fields": [
       {
         "component": "radio-group",
         "label": "Background Color",
@@ -755,13 +773,15 @@
     "fields": [
       {
         "component":"text",
-        "valueType":"string",
+        "label":"Video Slide Classname",
+        "name":"videoSlideClassname",
         "value":"video-slide",
+        "valueType":"string",
         "hidden":true
       },
       {
         "component": "tab",
-        "label": "General Tab",
+        "label": "General",
         "name": "videoSlideTab1"
       },     
       {
@@ -791,7 +811,7 @@
       },
       {
         "component": "tab",
-        "label": "Video Tab",
+        "label": "Video",
         "name": "videoSlideTab2"
       },
       {
@@ -844,17 +864,19 @@
         "component": "boolean",
         "label": "Loop Video",
         "name": "videoSlideLoopVideo",
-        "valueType": "boolean"
+        "valueType": "boolean",
+        "value":true
       },
       {
         "component": "boolean",
         "label": "Autoplay",
         "name": "videoSlideAutoplay",
-        "valueType": "boolean"
+        "valueType": "boolean",
+        "value":true
       },
       {
         "component": "tab",
-        "label": "Button/Link Tab",
+        "label": "Button/Link",
         "name": "videoSlideTab3"
       },
       {
@@ -887,13 +909,15 @@
     "fields": [
       {
         "component":"text",
-        "valueType":"string",
+        "label":"Image Slide Classname",
+        "name":"image",
         "value":"image-slide",
+        "valueType":"string",
         "hidden":true
       },
       {
         "component": "tab",
-        "label": "General Tab",
+        "label": "General",
         "name": "imageSlideTab1"
       },     
       {
@@ -923,7 +947,7 @@
       },
       {
         "component": "tab",
-        "label": "Image Tab",
+        "label": "Image",
         "name": "imageSlideTab2"
       },      
       {
@@ -942,7 +966,7 @@
       },
       {
         "component": "tab",
-        "label": "Button/Link Tab",
+        "label": "Button/Link",
         "name": "imageSlideTab3"
       },
       {

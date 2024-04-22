@@ -1,3 +1,7 @@
+.columns {
+margin-bottom: 48px;
+}
+
 .columns > div {
   display: flex;
   flex-direction: column;
@@ -23,6 +27,14 @@
   text-align: center;
 }
 
+.columns .image {
+    margin-bottom: 24px;
+}
+
+.columns .button {
+    margin-top: 32px;
+}
+
 @media (width >= 900px) {
   .columns > div {
     align-items: center;
@@ -34,4 +46,13 @@
     flex: 1;
     order: unset;
   }
+
+  .columns .image {
+    margin-bottom: 20px;
+  }
+
+  .columns .button {
+    margin-top: 24px;
+  }
+
 }
