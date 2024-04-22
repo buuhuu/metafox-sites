@@ -284,40 +284,39 @@ a.button.hyperlink:hover {
   margin: 3px 0 0 3px;
 }
 
-.section.alignment-right > div.default-content-wrapper > .button-container.button-align-center,
-.columns-wrapper > .columns > p.button-container.button-align-center > em.align-icon
+.section.alignment-center > div.default-content-wrapper > .button-container.button-align-center,
+.section.alignment-center > .columns-wrapper > .columns > .button-container.button-align-center > em.align-icon
  {
   display: flex;
   justify-content: center;
 };
 
 .section.alignment-right > div.default-content-wrapper > .button-container.button-align-right,
-.section.alignment-right > div.default-content-wrapper > p.button-container.button-align-right > em.align-icon 
-.columns-wrapper > .columns > p.button-container.button-align-center > em.align-icon
+.section.alignment-right > .columns-wrapper > .columns > .button-container.button-align-right 
 {
   display: flex;
-  justify-content: center;
+  justify-content: end;
 }
 
-.section.alignment-right > div.default-content-wrapper > .button-container.button-align-left,
-.columns-wrapper > .columns > p.button-container.button-align-center > em.align-icon
+.section.alignment-left > div.default-content-wrapper > .button-container.button-align-left,
+.section.alignment-left > .columns-wrapper > .columns > .button-container.button-align-left
 {
   display: flex;
-  justify-content: center;
+  justify-content: left;
 }
 
 .section.alignment-right > div.default-content-wrapper,
-.columns-wrapper > .columns > .button-container.button-align-right {
+.section.alignment-right > .columns-wrapper > .columns > .button-container.button-align-right {
   text-align: right;
 }
 
 .section.alignment-center > div.default-content-wrapper,
-.columns-wrapper > .columns > .button-container.button-align-center {
+.section.alignment-right > .columns-wrapper > .columns > .button-container.button-align-center {
   text-align: center;
 }
 
 .section.alignment-left > div.default-content-wrapper,
-.columns-wrapper > .columns > .button-container.button-align-left {
+.section.alignment-right > .columns-wrapper > .columns > .button-container.button-align-left {
   text-align: left;
 }
 
