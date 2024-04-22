@@ -5,7 +5,7 @@ on:
     - cron: '*/2 * * * *'
 
 permissions: write-all
-
+ 
 jobs:
   make_api_call:
     runs-on: ubuntu-latest
@@ -35,6 +35,7 @@ jobs:
         run: cat response_new.json
 
       - name: Check if response has changed
+        id: file_check
         if: steps.api_call.outputs.status == '200'
         run: |
          if ! cmp -s response_new.json response.json; then
@@ -49,7 +50,7 @@ jobs:
          fi
          
       - name: Commit and Push if changes
-        if: steps.api_call.outputs.modified == 'true'
+        if: steps.file_check.outputs.modified == 'true'
         run: |
           git add response.json
           git commit -m "Updates response.json with new API data"
