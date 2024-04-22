@@ -300,8 +300,8 @@ a.button.hyperlink:hover {
 }
 
 .section.alignment-right > div.default-content-wrapper > .button-container.button-align-left,
-.columns-wrapper > .columns > p.button-container.button-align-center > em.align-icon,
-#hyperlink-button {
+.columns-wrapper > .columns > p.button-container.button-align-center > em.align-icon
+{
   display: flex;
   justify-content: center;
 }
