@@ -148,6 +148,28 @@
           "numberMin": 1,
           "customErrorMsg": "Please enter a no. greater or equal to 1"
         }
+      },
+      {
+        "component": "select",
+        "name": "classes",
+        "description":"Defines the alignment of the elements added to the Columns.",
+        "value": "centre",
+        "label": "alignment",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Centre",
+            "value": "centre"
+          },
+          {
+            "name": "Left",
+            "value": "left"
+          },
+          {
+            "name": "Right",
+            "value": "right"
+          }
+        ]
       }
     ]
   },
