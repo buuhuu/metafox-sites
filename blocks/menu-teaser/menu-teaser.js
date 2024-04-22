@@ -7,12 +7,15 @@ export function generateMenuTeaserDOM(props) {
   //     image.alt = altText;
   //   }
 
-  console.log('all values coming in menu teaser', tesaserimage, altText, richtext, LinkLabel, LinkTitle, Link, LinkType);
-
+  console.log('all values coming in menu teaser', props);
+  debugger;
   // Build DOM
   const menuteaserDOM = document.createRange().createContextualFragment(`
       <div>
-          ${tesaserimage}, ${altText}, ${richtext}, ${LinkLabel}, ${LinkTitle}, ${Link}, ${LinkType}
+          ${tesaserimage},
+           ${altText}, 
+           ${richtext}, 
+           ${LinkLabel.textContent}, ${LinkTitle.textContent}, ${Link.altText}, ${LinkType.textContent}
       </div>
     `);
 
