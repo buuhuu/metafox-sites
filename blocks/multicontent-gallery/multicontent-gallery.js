@@ -1,24 +1,27 @@
-// import { generateIconDOM } from '../video-slide/video-slide.js';
-// import { generateIconDOM } from '../image-slide/image-slide.js';
+export default function decorate(block) {
+debugger;
+  const panelContainer = document.createElement('div');
+  panelContainer.classList.add('multigallery-content-container');
+  // get all children elements
+  const panels = [...block.children];
 
-// export default function decorate(block) {
-//   const panelContainer = document.createElement('div');
-//   panelContainer.classList.add('icon-link-list-container');
-
-//   // get all children elements
-//   const panels = [...block.children];
-
-//   // loop through all children blocks
-//   [...panels].forEach((panel) => {
-//     // generate the  panel
-//     const [iconType, ...rest] = panel.children;
-//     const classesText = iconType.textContent.trim();
-//     const iconDOM = generateIconDOM([iconType, ...rest]);
-//     panel.textContent = '';
-//     panel.classList.add('icon', 'block', classesText || 'empty');
-//     panel.append(iconDOM);
-//     panelContainer.append(panel);
-//   });
-//   block.textContent = '';
-//   block.append(panelContainer);
-// }
+  // loop through all children blocks
+  [...panels].forEach((panel) => {    
+    const [classList,...rest] = panel.children;
+    const classesText = classList.textContent.trim();
+    const classes = (classesText ? classesText.split(',') : []).map((c) => c && c.trim()).filter((c) => !!c);
+    let domElement;
+    if([...classes].includes('video-slide')) {
+        //call function for generating video slide UI
+    }
+    else if([...classes].includes('image-slide')){
+        //call function for generating image slide UI
+    }    
+    
+    panel.textContent = '';    
+    panel.append(domElement);
+    panelContainer.append(panel);
+  });
+  block.textContent = '';
+  block.append(panelContainer);
+}

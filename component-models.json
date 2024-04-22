@@ -754,6 +754,12 @@
     "id":"video-slide",
     "fields": [
       {
+        "component":"text",
+        "valueType":"string",
+        "value":"video-slide",
+        "hidden":true
+      },
+      {
         "component": "tab",
         "label": "General Tab",
         "name": "videoSlideTab1"
@@ -879,6 +885,12 @@
   {
     "id":"image-slide",
     "fields": [
+      {
+        "component":"text",
+        "valueType":"string",
+        "value":"image-slide",
+        "hidden":true
+      },
       {
         "component": "tab",
         "label": "General Tab",
