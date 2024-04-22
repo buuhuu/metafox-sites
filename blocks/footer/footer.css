@@ -26,13 +26,14 @@ footer .footer .section:nth-child(3) {
   gap: 2rem;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 2rem;
+  padding-bottom: 2.25rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-footer .footer .section:nth-child(3) .link-list-wrapper.horizontal{
+footer .footer .section:nth-child(3) .link-list-wrapper.horizontal {
   width: auto;
+  padding: 0 0.5rem;
 }
 
 footer .footer .section:nth-child(3) .link-list-wrapper.horizontal .link-list-title{
@@ -93,11 +94,14 @@ footer .footer .section:nth-child(3) .link-list-wrapper.horizontal .link-list-de
 
   footer .footer .section:nth-child(3) {
     display: flex;
-    gap: 2rem;
+    gap: 0;
     justify-content: space-between;
     flex-flow: row wrap;
-    padding-left: 2.25rem;
-    padding-right: 2.25rem;
+    padding: 0 2.25rem;
+  }
+
+  footer .footer .section:nth-child(3) .link-list-wrapper.horizontal {   
+    padding: 2rem 0.75rem;
   }
 
   footer .footer .section:nth-child(3) .link-list-wrapper.horizontal .link-list-detail {
@@ -112,8 +116,12 @@ footer .footer .section:nth-child(3) .link-list-wrapper.horizontal .link-list-de
   footer .footer .section:nth-child(3) .link-list-wrapper.horizontal .link-list-detail ul li {  
     margin:0;    
     margin-right: 2rem;
+    margin-left: 4px;
+  }
+
+  footer .footer .section:nth-child(3) .link-list-wrapper.horizontal .link-list-detail ul li:not(:first-child){
     margin-left: -5px;
-  }  
+  }
 }
 
 /* desktop */
@@ -128,8 +136,12 @@ footer .footer .section:nth-child(3) .link-list-wrapper.horizontal .link-list-de
   }
 
   footer .footer .section:nth-child(3) {
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding: 2rem 6rem;
+    gap: 2rem;
+  }
+
+  footer .footer .section:nth-child(3) .link-list-wrapper.horizontal {   
+    padding: 0;
   }
   
   footer .footer .section:nth-child(3) .link-list-wrapper.horizontal .link-list-detail ul
@@ -153,8 +165,12 @@ footer .footer .section:nth-child(3) .link-list-wrapper.horizontal .link-list-de
   }
 
   footer .footer .section:nth-child(3) {
-    padding-left: calc((100vw - (var(--max-component-width) - (var(--section-desktop-padding) * 2 )))/2);
-    padding-right: calc((100vw - (var(--max-component-width) - (var(--section-desktop-padding) * 2 )))/2);
+    gap: 2rem;
+    padding: 2rem calc((100vw - (var(--max-component-width) - (var(--section-desktop-padding) * 2 )))/2);
+  }
+
+  footer .footer .section:nth-child(3) .link-list-wrapper.horizontal {   
+    padding: 0 0.75rem;
   }
 
   footer .footer .section:nth-child(3) .link-list-wrapper.horizontal .link-list-detail ul
