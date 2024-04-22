@@ -123,29 +123,28 @@
     "id": "columns",
     "fields": [
       {
-        "component": "number",
+        "component": "text",
         "valueType": "number",
         "name": "columns",
-        "value": 2,
+        "value": "2",
         "label": "Columns",
         "description": "Defines the number of columns. The maximum allowed columns are 6.",
         "required": true,
         "validation": {
-          "numberMin": 2,
-          "numberMax": 6,
+          "regExp": "^[2-6]$",
           "customErrorMsg": "Please enter a no. between 2 & 6 (both inclusive) only"
         }
       },
       {
-        "component": "number",
+        "component": "text",
         "valueType": "number",
         "name": "rows",
-        "value": 1,
+        "value": "1",
         "label": "Rows",
         "description": "Defines number of rows of columns. There is no limit to the number of rows that can be set.",
         "required": true,
         "validation": {
-          "numberMin": 1,
+          "regExp": "([1-9]{1,2})",
           "customErrorMsg": "Please enter a no. greater or equal to 1"
         }
       },
@@ -154,7 +153,7 @@
         "name": "classes",
         "description":"Defines the alignment of the elements added to the Columns.",
         "value": "centre",
-        "label": "alignment",
+        "label": "Alignment",
         "valueType": "string",
         "options": [
           {
