@@ -284,40 +284,43 @@ a.button.hyperlink:hover {
   margin: 3px 0 0 3px;
 }
 
-.section.alignment-center > div.default-content-wrapper > .button-container.button-align-center,
-.section.alignment-center > .columns-wrapper > .columns > .button-container.button-align-center > em.align-icon
- {
-  display: flex;
-  justify-content: center;
-};
-
-.section.alignment-right > div.default-content-wrapper > .button-container.button-align-right,
-.section.alignment-right > .columns-wrapper > .columns > .button-container.button-align-right 
-{
-  display: flex;
+.button-container.button-align-right > .align-icon {
   justify-content: end;
 }
 
-.section.alignment-left > div.default-content-wrapper > .button-container.button-align-left,
-.section.alignment-left > .columns-wrapper > .columns > .button-container.button-align-left
-{
-  display: flex;
+.button-container.button-align-left > .align-icon {
   justify-content: left;
 }
 
-.section.alignment-right > div.default-content-wrapper,
-.section.alignment-right > .columns-wrapper > .columns > .button-container.button-align-right {
-  text-align: right;
+.button-container.button-align-center > .align-icon {
+  justify-content: center;
 }
 
-.section.alignment-center > div.default-content-wrapper,
-.section.alignment-right > .columns-wrapper > .columns > .button-container.button-align-center {
+.section.alignment-center > div.default-content-wrapper > p {
   text-align: center;
 }
 
-.section.alignment-left > div.default-content-wrapper,
-.section.alignment-right > .columns-wrapper > .columns > .button-container.button-align-left {
+.section.alignment-left > div.default-content > p {
   text-align: left;
+}
+
+.section.alignment-right > div.default-content-wrapper > p {
+  text-align: right;
+}
+
+.section.alignment-center > .columns-wrapper > .columns > div > div > p,
+.section.alignment-center > .columns-wrapper > .columns > .button-container.button-align-center {
+  text-align: center;
+}
+
+.section.alignment-left > .columns-wrapper > .columns > div > div > p,
+.section.alignment-left > .columns-wrapper > .columns > .button-container.button-align-left {
+  text-align: left;
+}
+
+.section.alignment-right > .columns-wrapper > .columns > div > div > p,
+.section.alignment-right > .columns-wrapper > .columns > .button-container.button-align-right {
+  text-align: right;
 }
 
 main img {

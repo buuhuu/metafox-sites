@@ -18,6 +18,15 @@ function setAlignmentStyle(style, element) {
   }
 }
 
+function addIcon(element, iconType, className = '') {
+  if (iconType === 'arrow_chevron_right') {
+    const iconSpan = document.createElement('span');
+    iconSpan.innerHTML = '<i class="icon-gt" aria-hidden="true" data-icon="arrow_chevron_right"></i>';
+    iconSpan.classList = className;
+    element.append(iconSpan);
+  }
+}
+
 export function decorateBMWButtons(element) {
   element.querySelectorAll('a').forEach((a) => {
     a.title = a.title || a.textContent;
@@ -30,9 +39,9 @@ export function decorateBMWButtons(element) {
         ) {
           a.className = 'button ghost-dark button-fixed-width'; // default
           up.ariaLabel = up.textContent;
-          twoup.classList.add('button-container');
+          up.classList.add('button-container');
           const alignment = getAlignmentStyle(element);
-          setAlignmentStyle(alignment, twoup);
+          setAlignmentStyle(alignment, up);
         }
         if (
           up.childNodes.length === 1 && up.tagName === 'STRONG' && twoup.childNodes.length === 1 && twoup.tagName === 'P'
@@ -47,16 +56,12 @@ export function decorateBMWButtons(element) {
           up.childNodes.length === 1 && up.tagName === 'EM' && twoup.childNodes.length === 1 && (twoup.tagName === 'P' || twoup.tagName === 'DIV')
         ) {
           a.className = 'button hyperlink';
-          a.id = 'hyperlink-button';
-          up.ariaLabel = up.textContent;
-          const iconSpan = document.createElement('span');
-          iconSpan.innerHTML = '<i class="icon-gt" aria-hidden="true" data-icon="arrow_chevron_right"></i>';
-          iconSpan.classList = 'align-center';
-          up.append(iconSpan);
+          twoup.ariaLabel = up.textContent;
           twoup.classList.add('button-container');
           up.classList.add('align-icon');
           const alignment = getAlignmentStyle(element);
           setAlignmentStyle(alignment, twoup);
+          addIcon(up, 'arrow_chevron_right', 'align-center');
         }
       }
     }
