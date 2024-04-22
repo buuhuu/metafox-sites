@@ -772,8 +772,15 @@
     "id":"video-slide",
     "fields": [
       {
+        "component":"text",
+        "label":"Video Slide Classname",
+        "name":"videoSlideClassname",
+        "value":"video-slide",
+        "valueType":"string"
+      },
+      {
         "component": "tab",
-        "label": "General Tab",
+        "label": "General",
         "name": "videoSlideTab1"
       },     
       {
@@ -803,7 +810,7 @@
       },
       {
         "component": "tab",
-        "label": "Video Tab",
+        "label": "Video",
         "name": "videoSlideTab2"
       },
       {
@@ -866,7 +873,7 @@
       },
       {
         "component": "tab",
-        "label": "Button/Link Tab",
+        "label": "Button/Link",
         "name": "videoSlideTab3"
       },
       {
@@ -898,8 +905,15 @@
     "id":"image-slide",
     "fields": [
       {
+        "component":"text",
+        "label":"Image Slide Classname",
+        "name":"image",
+        "value":"image-slide",
+        "valueType":"string"
+      },
+      {
         "component": "tab",
-        "label": "General Tab",
+        "label": "General",
         "name": "imageSlideTab1"
       },     
       {
@@ -929,7 +943,7 @@
       },
       {
         "component": "tab",
-        "label": "Image Tab",
+        "label": "Image",
         "name": "imageSlideTab2"
       },      
       {
@@ -948,7 +962,7 @@
       },
       {
         "component": "tab",
-        "label": "Button/Link Tab",
+        "label": "Button/Link",
         "name": "imageSlideTab3"
       },
       {
