@@ -2,8 +2,8 @@ const alignClassList = { center: 'alignment-center', right: 'alignment-right', l
 
 function getAlignmentStyle(element) {
   let alignClass = '';
-  element.querySelectorAll('div.section-metadata').forEach((ele) => {
-    alignClass = ele.innerText.split('\n');
+  element.querySelectorAll('div.section-metadata').forEach((childElemet) => {
+    alignClass = childElemet.innerText.split('\n');
   });
   return alignClass[1];
 }
