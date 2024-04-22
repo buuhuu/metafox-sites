@@ -123,28 +123,27 @@
     "id": "columns",
     "fields": [
       {
-        "component": "text",
+        "component": "number",
         "valueType": "number",
         "name": "columns",
-        "value": "2",
+        "value": 2,
         "label": "Columns",
         "description": "Defines the number of columns. The maximum allowed columns are 6.",
-        "required": true,
         "validation": {
-          "regExp": "^[2-6]$",
+          "numberMin": 2,
+          "numberMax": 6,
           "customErrorMsg": "Please enter a no. between 2 & 6 (both inclusive) only"
         }
       },
       {
-        "component": "text",
+        "component": "number",
         "valueType": "number",
         "name": "rows",
-        "value": "1",
+        "value": 1,
         "label": "Rows",
         "description": "Defines number of rows of columns. There is no limit to the number of rows that can be set.",
-        "required": true,
         "validation": {
-          "regExp": "([1-9]{1,2})",
+          "numberMin": 1,
           "customErrorMsg": "Please enter a no. greater or equal to 1"
         }
       },
