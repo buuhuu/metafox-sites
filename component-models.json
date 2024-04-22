@@ -776,7 +776,8 @@
         "label":"Video Slide Classname",
         "name":"videoSlideClassname",
         "value":"video-slide",
-        "valueType":"string"
+        "valueType":"string",
+        "hidden":true
       },
       {
         "component": "tab",
@@ -863,13 +864,15 @@
         "component": "boolean",
         "label": "Loop Video",
         "name": "videoSlideLoopVideo",
-        "valueType": "boolean"
+        "valueType": "boolean",
+        "value":true
       },
       {
         "component": "boolean",
         "label": "Autoplay",
         "name": "videoSlideAutoplay",
-        "valueType": "boolean"
+        "valueType": "boolean",
+        "value":true
       },
       {
         "component": "tab",
@@ -909,7 +912,8 @@
         "label":"Image Slide Classname",
         "name":"image",
         "value":"image-slide",
-        "valueType":"string"
+        "valueType":"string",
+        "hidden":true
       },
       {
         "component": "tab",
