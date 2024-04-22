@@ -34,5 +34,5 @@ export default function decorate(block) {
     const [ImageWrapper, TextWrapper] = column.children;
     ImageWrapper.classList.add('tiv2-image');
     TextWrapper.classList.add('tiv2-text');
-});
+  });
 }
