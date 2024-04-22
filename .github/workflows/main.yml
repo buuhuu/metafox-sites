@@ -3,7 +3,9 @@ name: Call WDH API
 on:
   schedule:
     - cron: '*/2 * * * *'
- 
+
+permissions: write-all
+
 jobs:
   make_api_call:
     runs-on: ubuntu-latest
