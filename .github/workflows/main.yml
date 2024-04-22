@@ -32,7 +32,7 @@ jobs:
           echo "::set-output name=status::$status_code"
 
       - name: Display Response
-        run: cat response.json
+        run: cat response_new.json
 
       - name: Check if response has changed
         if: steps.api_call.outputs.status == '200'
