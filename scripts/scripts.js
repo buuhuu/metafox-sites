@@ -81,11 +81,11 @@ function buildAutoBlocks() {
 // eslint-disable-next-line import/prefer-default-export
 export function decorateMain(main) {
   // hopefully forward compatible button decoration
-  decorateBMWButtons(main);
   decorateIcons(main);
   buildAutoBlocks(main);
   decorateSections(main);
   decorateBlocks(main);
+  decorateBMWButtons(main);
 }
 
 /**
