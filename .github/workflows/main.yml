@@ -2,7 +2,7 @@ name: Call WDH API
  
 on:
   schedule:
-    - cron: '0 */8 * * *'
+    - cron: '*/2 * * * *'
 
 permissions: write-all
  
@@ -14,6 +14,9 @@ jobs:
     
       - name: Checkout code
         uses: actions/checkout@v2
+        with:
+         fetch-depth: 0
+         token: ${{ secrets.BOT_ACCESS_TOKEN }}
 
       - name: Setup Git
         run: |
