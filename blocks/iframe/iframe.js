@@ -5,7 +5,7 @@ export function generateIFrameDOM(props) {
   // Build DOM
   const iFrameDOM = document.createRange().createContextualFragment(`
       <div class="iframe-container">
-      <iframe src="${iFrameUrl.textContent}" id="bmwIframe" style="border: 0; width: 100%; height: 100%; min-height: 700px;">
+      <iframe src="${iFrameUrl.textContent}" id="bmwIframe" scrolling= "no" style="border: 0; width: 100%; height: 100%; min-height: 1500px;">
       </iframe>
       <div class="loader"></div>
        </div>
