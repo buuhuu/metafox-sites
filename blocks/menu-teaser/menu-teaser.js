@@ -1,6 +1,5 @@
 export function generateMenuTeaserDOM(props) {
   const [menuTeaserImage] = props;
-  console.log(props);
   const menuteaserDOM = document.createRange().createContextualFragment(`
       <div class="menu-teaser">${menuTeaserImage.textContent}
        </div>

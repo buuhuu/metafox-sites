@@ -82,6 +82,7 @@
       {
         "component": "text-input",
         "valueType": "string",
+        "description":"Defines the page to which the user will be directed to. Please add the full URL including https://",
         "name": "href",
         "value": "",
         "label": "Link"
@@ -89,20 +90,15 @@
       {
         "component": "text-input",
         "valueType": "string",
+        "description":"Defines the text to be displayed in the button or as the link.",
         "name": "text",
         "value": "",
         "label": "Text"
       },
       {
-        "component": "text-input",
-        "valueType": "string",
-        "name": "title",
-        "value": "",
-        "label": "Title"
-      },
-      {
         "component": "select",
         "name": "type",
+        "description":"Defines the styling applied to the button or if the button will displayed as a link. Ghost Dark has a fixed width and Ghost Dark Flex's size varies based on the length of the link label.",
         "value": "",
         "label": "Type",
         "valueType": "string",
@@ -120,32 +116,6 @@
             "value": "secondary"
           }
         ]
-      },
-      {
-        "component": "text-input",
-        "valueType": "string",
-        "name": "buttontype",
-        "value": "",
-        "label": "Button Type"
-      },
-      {
-        "component": "radio-group",
-        "name": "buttonsize",
-        "value": "Grid",
-        "label": "Button Size",
-        "valueType": "string",
-        "required": true,
-        "id": "button-size",
-        "options": [
-          {
-            "name": "Grid",
-            "value": "Grid"
-          },
-          {
-            "name": "Flex",
-            "value": "Flex"
-          }
-        ]
       }
     ]
   },
@@ -156,9 +126,9 @@
         "component": "number",
         "valueType": "number",
         "name": "columns",
-        "value": "",
+        "value": 2,
         "label": "Columns",
-        "required": true,
+        "description": "Defines the number of columns. The maximum allowed columns are 6.",
         "validation": {
           "numberMin": 2,
           "numberMax": 6,
@@ -169,8 +139,35 @@
         "component": "number",
         "valueType": "number",
         "name": "rows",
-        "value": "",
-        "label": "Rows"
+        "value": 1,
+        "label": "Rows",
+        "description": "Defines number of rows of columns. There is no limit to the number of rows that can be set.",
+        "validation": {
+          "numberMin": 1,
+          "customErrorMsg": "Please enter a no. greater or equal to 1"
+        }
+      },
+      {
+        "component": "select",
+        "name": "classes",
+        "description":"Defines the alignment of the elements added to the Columns.",
+        "value": "centre",
+        "label": "Alignment",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Centre",
+            "value": "centre"
+          },
+          {
+            "name": "Left",
+            "value": "left"
+          },
+          {
+            "name": "Right",
+            "value": "right"
+          }
+        ]
       }
     ]
   },
@@ -198,6 +195,7 @@
     "fields": [
       {
         "component": "text-input",
+        "description": "Defines the styling applied to the content within this section.If an alignment is needed on a copy text or a button , please specify the alignment of your choice - alignment-right, alignment-left or alignment-centre.",
         "name": "style",
         "value": "",
         "label": "Style",
@@ -237,7 +235,7 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "bg_fileReference",
+        "name": "fileReference",
         "label": "Image",
         "value": "",
         "description": "Image path from AEM DAM - only choose from the dedicated asset folder",
@@ -246,14 +244,14 @@
       {
         "component": "text-input",
         "valueType": "string",
-        "name": "bg_imageAlt",
+        "name": "imageAlt",
         "label": "Alt text",
         "description": "Image alt text - highly recommended for SEO",
         "value": ""
       },
       {
         "component": "text-area",
-        "name": "fg_text",
+        "name": "text",
         "value": "Kindly edit the content here !",
         "label": "Text",
         "description": "Optionaö text for the text image component",
@@ -262,7 +260,7 @@
       },
       {
         "component": "select",
-        "name": "fg_imagePosition",
+        "name": "imagePosition",
         "filter": "imagePosition",
         "value": "",
         "label": "Image Position",
@@ -277,6 +275,26 @@
             "value": "right"
           }
         ]
+      },
+      {
+        "component": "boolean",
+        "label": "Do you need to display meta text ?",
+        "name": "reveal",
+        "valueType": "boolean"
+      },
+      {
+        "component": "text-input",
+        "label": "Meta text",
+        "name": "meta-text",
+        "valueType": "string",
+        "condition": {
+          "===": [
+            {
+              "var": "reveal"
+            },
+            true
+          ]
+        }
       }
     ]
   },
@@ -295,24 +313,32 @@
       {
         "component": "text-input",
         "valueType": "string",
-        "name": "bg_imageAlt",
+        "name": "bg_fileReferenceAlt",
         "label": "Alt text",
         "description": "Image alt text - highly recommended for SEO",
         "value": ""
       },
       {
+        "component": "text",
+        "name": "fg_details",
+        "value": "Kindly edit the Summary here !",
+        "label": "Summary",
+        "description": "Optional text for the text image component",
+        "placeholder": "Please provide some text for summary!",
+        "valueType": "string"
+      },
+      {
         "component": "text-area",
-        "name": "fg_text",
+        "name": "fg_detailsText",
         "value": "Kindly edit the content here !",
         "label": "Text",
-        "description": "Optionaö text for the text image component",
+        "description": "Optional text for the text image component",
         "placeholder": "Please provide some text of your choice here!",
         "valueType": "string"
       },
       {
         "component": "select",
-        "name": "fg_imagePosition",
-        "filter": "imagePosition",
+        "name": "bg_fileReferenceType",
         "value": "",
         "label": "Image Position",
         "valueType": "string",
@@ -343,7 +369,7 @@
   },
   {
     "id": "footer-section",
-    "fields": [      
+    "fields": [
       {
         "component": "radio-group",
         "label": "Background Color",
@@ -759,5 +785,231 @@
           ]
         }
       ]
-    }
+    },
+  {
+    "id":"video-slide",
+    "fields": [
+      {
+        "component":"text",
+        "label":"Video Slide Classname",
+        "name":"videoSlideClassname",
+        "value":"video-slide",
+        "valueType":"string",
+        "hidden":true
+      },
+      {
+        "component": "tab",
+        "label": "General",
+        "name": "videoSlideTab1"
+      },     
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "videoSlideHeadline",
+        "value": "",
+        "label": "Headline"
+      },
+      {
+        "component": "select",
+        "label": "Headline Type",
+        "name": "videoSlideHeadlineType",
+        "valueType": "string",
+        "value":"h4",
+        "hidden":true,
+        "options": [
+          { "name": "H4", "value": "h4" }
+        ]
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "videoSlideCopyText",
+        "value": "",
+        "label": "Copy Text"
+      },
+      {
+        "component": "tab",
+        "label": "Video",
+        "name": "videoSlideTab2"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "videoSlideTitle",
+        "value": "",
+        "label": "Video Title",
+        "required":true
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "videoSlideDescription",
+        "value": "",
+        "label": "Video Description",
+        "required":true
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "videoSlideDesktopVideoRef",
+        "label": "Desktop Video Path",
+        "multi": false,
+        "required":true
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "videoSlideMobileVideoRef",
+        "label": "Mobile Video Path",
+        "multi": false
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "videoSlideDesktopPosterImgRef",
+        "label": "Desktop Poster Image Path",
+        "multi": false,
+        "required":true
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "videoSlideMobilePosterImgRef",
+        "label": "Mobile Poster Image Path",
+        "multi": false
+      },
+      {
+        "component": "boolean",
+        "label": "Loop Video",
+        "name": "videoSlideLoopVideo",
+        "valueType": "boolean",
+        "value":true
+      },
+      {
+        "component": "boolean",
+        "label": "Autoplay",
+        "name": "videoSlideAutoplay",
+        "valueType": "boolean",
+        "value":true
+      },
+      {
+        "component": "tab",
+        "label": "Button/Link",
+        "name": "videoSlideTab3"
+      },
+      {
+        "component":"text",
+        "name":"videoSlideLinkLabel",
+        "label":"Link Label",
+        "valueType":"string"
+      },
+      {
+        "component":"text",
+        "name":"videoSlideLink",
+        "label":"Link",
+        "valueType":"string"
+      },
+      {
+        "component": "select",
+        "label": "Button Styling",
+        "name": "videoSlideButtonStyling",
+        "valueType": "string",
+        "value":"linkButton",
+        "hidden":true,
+        "options": [
+          { "name": "Link Button", "value": "linkButton" }
+        ]
+      }
+    ]
+  },
+  {
+    "id":"image-slide",
+    "fields": [
+      {
+        "component":"text",
+        "label":"Image Slide Classname",
+        "name":"imageSlideClassname",
+        "value":"image-slide",
+        "valueType":"string",
+        "hidden":true
+      },
+      {
+        "component": "tab",
+        "label": "General",
+        "name": "imageSlideTab1"
+      },     
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageSlideHeadline",
+        "value": "",
+        "label": "Headline"
+      },
+      {
+        "component": "select",
+        "label": "Headline Type",
+        "name": "imageSlideHeadlineType",
+        "valueType": "string",
+        "value":"h4",
+        "hidden":true,
+        "options": [
+          { "name": "H4", "value": "h4" }
+        ]
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "imageSlideCopyText",
+        "value": "",
+        "label": "Copy Text"
+      },
+      {
+        "component": "tab",
+        "label": "Image",
+        "name": "imageSlideTab2"
+      },      
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "imageSlideImgRef",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageSlideAltText",
+        "value": "",
+        "label": "Alt Text"
+      },
+      {
+        "component": "tab",
+        "label": "Button/Link",
+        "name": "imageSlideTab3"
+      },
+      {
+        "component":"text",
+        "name":"imageSlideLinkLabel",
+        "label":"Link Label",
+        "valueType":"string"
+      },
+      {
+        "component":"text",
+        "name":"imageSlideLink",
+        "label":"Link",
+        "valueType":"string"
+      },
+      {
+        "component": "select",
+        "label": "Button Styling",
+        "name": "imageSlideButtonStyling",
+        "valueType": "string",
+        "value":"linkButton",
+        "hidden":true,
+        "options": [
+          { "name": "Link Button", "value": "linkButton" }
+        ]
+      }
+    ]
+  }
 ]
