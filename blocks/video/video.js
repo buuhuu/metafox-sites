@@ -23,7 +23,7 @@ function embedVimeo(url, autoplay) {
     </div>`;
 }
 
-function getVideoElement(source, videoFormat, autoplay, enableLoop, enableControls, muted, poster) {
+export function getVideoElement(source, videoFormat, autoplay, enableLoop, enableControls, muted, poster) {
   const video = document.createElement('video');
   video.dataset.loading = 'true';
   video.addEventListener('loadedmetadata', () => delete video.dataset.loading);
@@ -57,11 +57,25 @@ function getVideoElement(source, videoFormat, autoplay, enableLoop, enableContro
   return video;
 }
 
-const loadVideoEmbed = (block, link, autoplay, loop, enableControls, muted, placeholder) => {
+// function to check given url is absolute or relative
+function isAbsoluteUrl(url) {
+  return /^(https?:)?\/\//i.test(url);
+}
+
+export function loadVideoEmbed(block, link, autoplay, loop, enableControls, muted, placeholder) {
   if (block.dataset.embedIsLoaded) {
     return;
   }
-  const url = new URL(link);
+  const baseUrl = window.location.origin;
+  let url;
+
+  if(isAbsoluteUrl(link)){
+    url = new URL(link);
+  }
+  else{
+    url = new URL(link,baseUrl);
+  }
+ 
 
   const isYoutube = link.includes('youtube') || link.includes('youtu.be');
   const isVimeo = link.includes('vimeo');
@@ -84,10 +98,9 @@ const loadVideoEmbed = (block, link, autoplay, loop, enableControls, muted, plac
   }
 
   block.dataset.embedIsLoaded = true;
-};
+}
 
 export default async function decorate(block) {
-  // const placeholder = [...block.children].map((row) => row.firstElementChild);
   const props = [...block.children].map((row) => row.firstElementChild);
   const [videoPoster, , videoControls] = props;
   const placeholder = block.querySelector('picture');
