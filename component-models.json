@@ -426,7 +426,7 @@
         "component": "reference",
         "valueType": "string",
         "name": "transparentimage",
-        "label": "Trasnparent Image",
+        "label": "Transparent Image",
         "multi": false
       },
       {
