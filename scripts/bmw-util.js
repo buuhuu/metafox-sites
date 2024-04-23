@@ -45,7 +45,6 @@ function removeEvent(callElement, bindElemet, eventName, className) {
 }
 
 export function decorateBMWButtons(element) {
-  console.log(element);
   element.querySelectorAll('a').forEach((a) => {
     a.title = a.title || a.textContent;
     if (a.href !== a.textContent) {
@@ -57,7 +56,7 @@ export function decorateBMWButtons(element) {
         ) {
           // default
           up.ariaLabel = up.textContent;
-          // up.classList.add('button-container');
+          a.className = '';
           const alignment = getAlignmentStyle(element);
           setAlignmentStyle(alignment, up);
         }

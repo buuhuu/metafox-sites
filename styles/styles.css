@@ -206,8 +206,7 @@ button:disabled, button:disabled:hover {
   cursor: unset;
 }
 
-a.button.ghost-dark,
-a.button.ghost-dark-flex {
+a.button.ghost-dark {
   background-color: transparent;
   border: 1px solid var(--light-text-color);
   color: var(--light-text-color);
@@ -216,8 +215,8 @@ a.button.ghost-dark-flex {
   font-weight: 700;
   font-family: var(--fixed-font-family);
   text-align: center;
-  padding: 4px 24px;
-  min-height: 3.25rem;
+  padding: 4px;
+  min-height: 3.334rem;
   align-content: center;
   text-rendering: optimizespeed;
 }
