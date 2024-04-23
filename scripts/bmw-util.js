@@ -3,7 +3,6 @@ const alignClassList = { center: 'alignment-center', right: 'alignment-right', l
 function getAlignmentStyle(element) {
   let alignClass = '';
   element.querySelectorAll('div.section').forEach((childElemet) => {
-    alignClass = childElemet.innerText.split('\n');
     childElemet.classList.forEach((className) => {
       if (className.includes('alignment-')) {
         alignClass = className;
@@ -63,10 +62,7 @@ export function decorateBMWButtons(element) {
         if (
           up.childNodes.length === 1 && up.tagName === 'STRONG' && twoup.childNodes.length === 1 && (twoup.tagName === 'P' || twoup.tagName === 'DIV')
         ) {
-          const iconSpan = document.createElement('span');
-          iconSpan.innerText = a.textContent;
           a.className = 'button ghost-dark button-fixed-width';
-          a.innerHTML = iconSpan.innerHTML;
           up.ariaLabel = up.textContent;
           twoup.classList.add('button-container');
           const alignment = getAlignmentStyle(element);
