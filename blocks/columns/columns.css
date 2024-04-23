@@ -23,9 +23,33 @@ margin-bottom: 48px;
   display: block;
 }
 
-.columns .button-container {
+.columns.left .button-container,
+.columns.left > div > div > p {
+  text-align: left;
+}
+
+.columns.right .button-container,
+.columns.right > div > div > p {
+  text-align: right;
+}
+
+.columns.center .button-container,
+.columns.center > div > div > p {
   text-align: center;
 }
+
+.columns.left .button-container> .align-icon {
+  justify-content: left;
+}
+
+.columns.right .button-container > .align-icon {
+  justify-content: right;
+}
+
+.columns.center .button-container > .align-icon {
+  justify-content: center;
+}
+
 
 .columns .image {
     margin-bottom: 24px;
