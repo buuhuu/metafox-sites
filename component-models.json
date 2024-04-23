@@ -610,6 +610,14 @@
         "value": "",
         "required": true,
         "label": "Link List"
+      },
+      {
+        "component":"text",
+        "label":"Link List Classname",
+        "name":"linkListClassname",
+        "value":"link-list",
+        "valueType":"string",
+        "hidden":true
       }
     ]
   },
@@ -783,6 +791,14 @@
               "value": "secondary"
             }
           ]
+        },
+        {
+          "component":"text",
+          "label":"Menu Teaser Classname",
+          "name":"menuTeaserClassname",
+          "value":"menu-teaser",
+          "valueType":"string",
+          "hidden":true
         }
       ]
     },
