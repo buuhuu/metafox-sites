@@ -319,6 +319,23 @@
         "value": ""
       },
       {
+        "component": "select",
+        "name": "bg_fileReferenceType",
+        "value": "",
+        "label": "Image Position",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Left",
+            "value": "left"
+          },
+          {
+            "name": "Right",
+            "value": "right"
+          }
+        ]
+      },
+      {
         "component": "text",
         "name": "fg_details",
         "value": "Kindly edit the Summary here !",
@@ -335,23 +352,6 @@
         "description": "Optional text for the text image component",
         "placeholder": "Please provide some text of your choice here!",
         "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "bg_fileReferenceType",
-        "value": "",
-        "label": "Image Position",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Left",
-            "value": "left"
-          },
-          {
-            "name": "Right",
-            "value": "right"
-          }
-        ]
       }
     ]
   },
