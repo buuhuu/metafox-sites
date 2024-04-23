@@ -93,14 +93,14 @@
         "description":"Defines the text to be displayed in the button or as the link.",
         "name": "text",
         "value": "",
-        "label": "Text"
+        "label": "Link Label"
       },
       {
         "component": "select",
         "name": "type",
         "description":"Defines the styling applied to the button or if the button will displayed as a link. Ghost Dark has a fixed width and Ghost Dark Flex's size varies based on the length of the link label.",
         "value": "",
-        "label": "Type",
+        "label": "Button Styling",
         "valueType": "string",
         "options": [
           {
