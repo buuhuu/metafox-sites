@@ -678,86 +678,86 @@
       {
         "component": "text-input",
         "valueType": "string",
-        "name": "Link Text",
+        "name": "menuflyoutText",
         "label": "Link Text",
         "value": ""
       },
       {
         "component": "text-input",
         "valueType": "string",
-        "name": "Link Title",
+        "name": "menuflyoutTitle",
         "label": "Link Title",
         "value": ""
       }
     ]
   },
   {
-    "id": "menu-teaser",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "menuTeaserImage",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "text-input",
-        "valueType": "string",
-        "name": "menuTeaserImageAlt",
-        "value": "Default alt",
-        "label": "Alt Text"
-      },
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "menuTeaserImageCopyText",
-        "value": "",
-        "label": "Copy Text"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "menuTeaserLinkLabel",
-        "value": "",
-        "label": "Link Label"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "menuTeaserLinkTitle",
-        "value": "",
-        "label": "Link Title"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "menuTeaserLink",
-        "value": "",
-        "label": "Link"
-      },
-      {
-        "component": "select",
-        "name": "menuTeaserLinkType",
-        "value": "",
-        "label": "Second CTA Type",
-        "valueType": "string",
-        "hidden": true,
-        "options": [
-          {
-            "name": "default",
-            "value": ""
-          },
-          {
-            "name": "Primary",
-            "value": "primary"
-          },
-          {
-            "name": "Secondary",
-            "value": "secondary"
-          }
-        ]
-      }
-    ]
-  }
+      "id": "menu-teaser",
+      "fields": [
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "img_image",
+          "label": "Image",
+          "multi": false
+        },
+        {
+          "component": "text-input",
+          "valueType": "string",
+          "name": "img_imageAlt",
+          "value": "Default alt",
+          "label": "Alt Text"
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "text_CopyText",
+          "value": "",
+          "label": "Copy Text"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "link_",
+          "value": "",
+          "label": "Link Label"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "link_Title",
+          "value": "",
+          "label": "Link Title"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "link_Text",
+          "value": "",
+          "label": "Link"
+        },
+        {
+          "component": "select",
+          "name": "Link_Type",
+          "value": "",
+          "label": "Second CTA Type",
+          "valueType": "string",
+          "hidden": true,
+          "options": [
+            {
+              "name": "default",
+              "value": ""
+            },
+            {
+              "name": "Primary",
+              "value": "primary"
+            },
+            {
+              "name": "Secondary",
+              "value": "secondary"
+            }
+          ]
+        }
+      ]
+    }
 ]

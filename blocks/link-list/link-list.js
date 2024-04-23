@@ -11,24 +11,27 @@ function toggleLinkListDetail(e) {
   }
 }
 
-export default function decorate(block) {
+export function generateLinkListDom(block) {
   const props = [...block.children].map((row) => row.firstElementChild);
   const [linkListOrientation, linkListTitle, linkListDetail] = props;
   const orientationClassName = linkListOrientation.textContent || 'vertical';
   block.parentElement.classList.add(orientationClassName);
+
   const linkListTitleElem = document.createElement('h3');
   linkListTitleElem.classList.add('link-list-title');
   linkListTitleElem.textContent = linkListTitle.textContent;
+  linkListTitleElem.addEventListener('click', toggleLinkListDetail);
+
   const linkListRTEElem = document.createElement('div');
   linkListRTEElem.classList.add('link-list-detail');
   linkListRTEElem.innerHTML = linkListDetail.innerHTML;
 
+  return [linkListTitleElem, linkListRTEElem];
+}
+
+export default function decorate(block) {
+  const [linkListTitleElem, linkListRTEElem] = generateLinkListDom(block);
   block.textContent = '';
   block.append(linkListTitleElem);
   block.append(linkListRTEElem);
-  // initiating click event for title
-  const linkListTitleForEvent = block.querySelectorAll('.link-list-title');
-  linkListTitleForEvent.forEach((title) => {
-    title.addEventListener('click', toggleLinkListDetail);
-  });
 }
