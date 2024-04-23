@@ -336,7 +336,17 @@
                   "name": "Menu Flyout",
                   "model": "menu-flyout",
                   "filter": "menu-flyout"
-                }
+                },
+                "link-list" : {
+                  "name": "Link List",
+                  "model": "link-list",
+                  "filter": "lint-list"
+                  },
+                  "menu-teaser" : {
+                    "name": "Menu Teaser",
+                    "model": "menu-teaser",
+                    "filter": "menu-teaser"
+                  }
               }
             }
           }
@@ -351,11 +361,7 @@
                 "template": {
                   "name": "Menu Teaser",
                   "model": "menu-teaser",
-                  "filter": "menu-teaser",
-                  "copy_text": {
-                    "name": "Copy Text",
-                    "model": "copy_text"
-                  }
+                  "filter": "menu-teaser"
                 }
               }
             }
