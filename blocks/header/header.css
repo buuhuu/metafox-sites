@@ -697,7 +697,7 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
 
   /* css for flyout */
 
-  .menu-teaser-container {
+  .menu-teaser-container,.flyout-menu-teaser {
    background-color: var(--background-color);
    position: absolute;
    left: 0;
@@ -706,7 +706,7 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
    display: none;
   }
   
-  .menu-flyout-wrapper.showfly .menu-teaser-container {
+  .menu-flyout-wrapper.showfly .menu-teaser-container,.menu-flyout-wrapper.showfly .flyout-menu-teaser {
     display: block;
   }
 

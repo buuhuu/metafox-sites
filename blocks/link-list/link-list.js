@@ -29,6 +29,18 @@ export function generateLinkListDom(block) {
   return [linkListTitleElem, linkListRTEElem];
 }
 
+export function genreateHeaderLinkList(props) {
+  const [a, b, ulList] = props;
+  console.log(a);
+  console.log(b);
+  console.log(ulList);
+  const menuteaserDOM = document.createRange().createContextualFragment(`
+      <div class="flyout-link-list flyout-menu-teaser">${ulList.innerHTML}
+       </div>
+    `);
+  return menuteaserDOM;
+}
+
 export default function decorate(block) {
   const [linkListTitleElem, linkListRTEElem] = generateLinkListDom(block);
   block.textContent = '';
