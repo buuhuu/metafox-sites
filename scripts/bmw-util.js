@@ -2,10 +2,15 @@ const alignClassList = { center: 'alignment-center', right: 'alignment-right', l
 
 function getAlignmentStyle(element) {
   let alignClass = '';
-  element.querySelectorAll('div.section-metadata').forEach((childElemet) => {
+  element.querySelectorAll('div.section').forEach((childElemet) => {
     alignClass = childElemet.innerText.split('\n');
+    childElemet.classList.forEach((className) => {
+      if (className.includes('alignment-')) {
+        alignClass = className;
+      }
+    });
   });
-  return alignClass[1];
+  return alignClass;
 }
 
 function setAlignmentStyle(style, element) {
@@ -40,6 +45,7 @@ function removeEvent(callElement, bindElemet, eventName, className) {
 }
 
 export function decorateBMWButtons(element) {
+  console.log(element);
   element.querySelectorAll('a').forEach((a) => {
     a.title = a.title || a.textContent;
     if (a.href !== a.textContent) {
@@ -49,16 +55,19 @@ export function decorateBMWButtons(element) {
         if (
           up.childNodes.length === 1 && (up.tagName === 'P' || up.tagName === 'DIV')
         ) {
-          a.className = 'button ghost-dark button-fixed-width'; // default
+          // default
           up.ariaLabel = up.textContent;
-          up.classList.add('button-container');
+          // up.classList.add('button-container');
           const alignment = getAlignmentStyle(element);
           setAlignmentStyle(alignment, up);
         }
         if (
-          up.childNodes.length === 1 && up.tagName === 'STRONG' && twoup.childNodes.length === 1 && twoup.tagName === 'P'
+          up.childNodes.length === 1 && up.tagName === 'STRONG' && twoup.childNodes.length === 1 && (twoup.tagName === 'P' || twoup.tagName === 'DIV')
         ) {
-          a.className = 'button ghost-dark-flex button-flex-width';
+          const iconSpan = document.createElement('span');
+          iconSpan.innerText = a.textContent;
+          a.className = 'button ghost-dark button-fixed-width';
+          a.innerHTML = iconSpan.innerHTML;
           up.ariaLabel = up.textContent;
           twoup.classList.add('button-container');
           const alignment = getAlignmentStyle(element);
