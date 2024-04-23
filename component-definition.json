@@ -340,13 +340,15 @@
                 "link-list" : {
                   "name": "Link List",
                   "model": "link-list",
-                  "filter": "lint-list"
-                  },
-                  "menu-teaser" : {
-                    "name": "Menu Teaser",
-                    "model": "menu-teaser",
-                    "filter": "menu-teaser"
-                  }
+                  "filter": "lint-list",
+                  "linkListClassname":"link-list"
+                },
+                "menu-teaser" : {
+                  "name": "Menu Teaser",
+                  "model": "menu-teaser",
+                  "filter": "menu-teaser",
+                  "menuTeaserClassname":"menu-teaser"
+                }
               }
             }
           }

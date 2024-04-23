@@ -736,6 +736,14 @@
           "multi": false
         },
         {
+          "component":"text",
+          "label":"Menu Teaser Classname",
+          "name":"menuTeaserClassname",
+          "value":"menu-teaser",
+          "valueType":"string",
+          "hidden":true
+        },
+        {
           "component": "text-input",
           "valueType": "string",
           "name": "img_imageAlt",
@@ -791,15 +799,7 @@
               "value": "secondary"
             }
           ]
-        },
-        {
-          "component":"text",
-          "label":"Menu Teaser Classname",
-          "name":"menuTeaserClassname",
-          "value":"menu-teaser",
-          "valueType":"string",
-          "hidden":true
-        }
+        }        
       ]
     },
   {
