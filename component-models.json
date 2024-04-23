@@ -82,7 +82,7 @@
       {
         "component": "text-input",
         "valueType": "string",
-        "description":"Defines the page to which the user will be directed to. Please add the full URL including https://",
+        "description": "Defines the page to which the user will be directed to. Please add the full URL including https://",
         "name": "href",
         "value": "",
         "label": "Link"
@@ -90,7 +90,7 @@
       {
         "component": "text-input",
         "valueType": "string",
-        "description":"Defines the text to be displayed in the button or as the link.",
+        "description": "Defines the text to be displayed in the button or as the link.",
         "name": "text",
         "value": "",
         "label": "Text"
@@ -98,7 +98,7 @@
       {
         "component": "select",
         "name": "type",
-        "description":"Defines the styling applied to the button or if the button will displayed as a link. Ghost Dark has a fixed width and Ghost Dark Flex's size varies based on the length of the link label.",
+        "description": "Defines the styling applied to the button or if the button will displayed as a link. Ghost Dark has a fixed width and Ghost Dark Flex's size varies based on the length of the link label.",
         "value": "",
         "label": "Type",
         "valueType": "string",
@@ -150,7 +150,7 @@
       {
         "component": "select",
         "name": "classes",
-        "description":"Defines the alignment of the elements added to the Columns.",
+        "description": "Defines the alignment of the elements added to the Columns.",
         "value": "centre",
         "label": "Alignment",
         "valueType": "string",
@@ -319,6 +319,23 @@
         "value": ""
       },
       {
+        "component": "select",
+        "name": "bg_fileReferenceType",
+        "value": "",
+        "label": "Image Position",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Left",
+            "value": "left"
+          },
+          {
+            "name": "Right",
+            "value": "right"
+          }
+        ]
+      },
+      {
         "component": "text",
         "name": "fg_details",
         "value": "Kindly edit the Summary here !",
@@ -335,23 +352,6 @@
         "description": "Optional text for the text image component",
         "placeholder": "Please provide some text of your choice here!",
         "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "bg_fileReferenceType",
-        "value": "",
-        "label": "Image Position",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Left",
-            "value": "left"
-          },
-          {
-            "name": "Right",
-            "value": "right"
-          }
-        ]
       }
     ]
   },
@@ -612,12 +612,12 @@
         "label": "Link List"
       },
       {
-        "component":"text",
-        "label":"Link List Classname",
-        "name":"linkListClassname",
-        "value":"link-list",
-        "valueType":"string",
-        "hidden":true
+        "component": "text",
+        "label": "Link List Classname",
+        "name": "linkListClassname",
+        "value": "link-list",
+        "valueType": "string",
+        "hidden": true
       }
     ]
   },
@@ -726,98 +726,98 @@
     ]
   },
   {
-      "id": "menu-teaser",
-      "fields": [
-        {
-          "component": "reference",
-          "valueType": "string",
-          "name": "img_image",
-          "label": "Image",
-          "multi": false
-        },
-        {
-          "component": "text-input",
-          "valueType": "string",
-          "name": "img_imageAlt",
-          "value": "Default alt",
-          "label": "Alt Text"
-        },
-        {
-          "component": "richtext",
-          "valueType": "string",
-          "name": "text_CopyText",
-          "value": "",
-          "label": "Copy Text"
-        },
-        {
-          "component": "text",
-          "valueType": "string",
-          "name": "link_",
-          "value": "",
-          "label": "Link Label"
-        },
-        {
-          "component": "text",
-          "valueType": "string",
-          "name": "link_Title",
-          "value": "",
-          "label": "Link Title"
-        },
-        {
-          "component": "text",
-          "valueType": "string",
-          "name": "link_Text",
-          "value": "",
-          "label": "Link"
-        },
-        {
-          "component": "select",
-          "name": "Link_Type",
-          "value": "",
-          "label": "Second CTA Type",
-          "valueType": "string",
-          "hidden": true,
-          "options": [
-            {
-              "name": "default",
-              "value": ""
-            },
-            {
-              "name": "Primary",
-              "value": "primary"
-            },
-            {
-              "name": "Secondary",
-              "value": "secondary"
-            }
-          ]
-        },
-        {
-          "component":"text",
-          "label":"Menu Teaser Classname",
-          "name":"menuTeaserClassname",
-          "value":"menu-teaser",
-          "valueType":"string",
-          "hidden":true
-        }
-      ]
-    },
-  {
-    "id":"video-slide",
+    "id": "menu-teaser",
     "fields": [
       {
-        "component":"text",
-        "label":"Video Slide Classname",
-        "name":"videoSlideClassname",
-        "value":"video-slide",
-        "valueType":"string",
-        "hidden":true
+        "component": "reference",
+        "valueType": "string",
+        "name": "img_image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "img_imageAlt",
+        "value": "Default alt",
+        "label": "Alt Text"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "text_CopyText",
+        "value": "",
+        "label": "Copy Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "link_",
+        "value": "",
+        "label": "Link Label"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "link_Title",
+        "value": "",
+        "label": "Link Title"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "link_Text",
+        "value": "",
+        "label": "Link"
+      },
+      {
+        "component": "select",
+        "name": "Link_Type",
+        "value": "",
+        "label": "Second CTA Type",
+        "valueType": "string",
+        "hidden": true,
+        "options": [
+          {
+            "name": "default",
+            "value": ""
+          },
+          {
+            "name": "Primary",
+            "value": "primary"
+          },
+          {
+            "name": "Secondary",
+            "value": "secondary"
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "label": "Menu Teaser Classname",
+        "name": "menuTeaserClassname",
+        "value": "menu-teaser",
+        "valueType": "string",
+        "hidden": true
+      }
+    ]
+  },
+  {
+    "id": "video-slide",
+    "fields": [
+      {
+        "component": "text",
+        "label": "Video Slide Classname",
+        "name": "videoSlideClassname",
+        "value": "video-slide",
+        "valueType": "string",
+        "hidden": true
       },
       {
         "component": "tab",
         "label": "General",
         "name": "videoSlideTab1"
-      },     
+      },
       {
         "component": "text",
         "valueType": "string",
@@ -830,11 +830,9 @@
         "label": "Headline Type",
         "name": "videoSlideHeadlineType",
         "valueType": "string",
-        "value":"h4",
-        "hidden":true,
-        "options": [
-          { "name": "H4", "value": "h4" }
-        ]
+        "value": "h4",
+        "hidden": true,
+        "options": [{ "name": "H4", "value": "h4" }]
       },
       {
         "component": "richtext",
@@ -854,7 +852,7 @@
         "name": "videoSlideTitle",
         "value": "",
         "label": "Video Title",
-        "required":true
+        "required": true
       },
       {
         "component": "text",
@@ -862,7 +860,7 @@
         "name": "videoSlideDescription",
         "value": "",
         "label": "Video Description",
-        "required":true
+        "required": true
       },
       {
         "component": "reference",
@@ -870,7 +868,7 @@
         "name": "videoSlideDesktopVideoRef",
         "label": "Desktop Video Path",
         "multi": false,
-        "required":true
+        "required": true
       },
       {
         "component": "reference",
@@ -885,7 +883,7 @@
         "name": "videoSlideDesktopPosterImgRef",
         "label": "Desktop Poster Image Path",
         "multi": false,
-        "required":true
+        "required": true
       },
       {
         "component": "reference",
@@ -899,14 +897,14 @@
         "label": "Loop Video",
         "name": "videoSlideLoopVideo",
         "valueType": "boolean",
-        "value":true
+        "value": true
       },
       {
         "component": "boolean",
         "label": "Autoplay",
         "name": "videoSlideAutoplay",
         "valueType": "boolean",
-        "value":true
+        "value": true
       },
       {
         "component": "tab",
@@ -914,46 +912,44 @@
         "name": "videoSlideTab3"
       },
       {
-        "component":"text",
-        "name":"videoSlideLinkLabel",
-        "label":"Link Label",
-        "valueType":"string"
+        "component": "text",
+        "name": "videoSlideLinkLabel",
+        "label": "Link Label",
+        "valueType": "string"
       },
       {
-        "component":"text",
-        "name":"videoSlideLink",
-        "label":"Link",
-        "valueType":"string"
+        "component": "text",
+        "name": "videoSlideLink",
+        "label": "Link",
+        "valueType": "string"
       },
       {
         "component": "select",
         "label": "Button Styling",
         "name": "videoSlideButtonStyling",
         "valueType": "string",
-        "value":"linkButton",
-        "hidden":true,
-        "options": [
-          { "name": "Link Button", "value": "linkButton" }
-        ]
+        "value": "linkButton",
+        "hidden": true,
+        "options": [{ "name": "Link Button", "value": "linkButton" }]
       }
     ]
   },
   {
-    "id":"image-slide",
+    "id": "image-slide",
     "fields": [
       {
-        "component":"text",
-        "label":"Image Slide Classname",
-        "name":"imageSlideClassname",
-        "value":"image-slide",
-        "valueType":"string",
-        "hidden":true
+        "component": "text",
+        "label": "Image Slide Classname",
+        "name": "imageSlideClassname",
+        "value": "image-slide",
+        "valueType": "string",
+        "hidden": true
       },
       {
         "component": "tab",
         "label": "General",
         "name": "imageSlideTab1"
-      },     
+      },
       {
         "component": "text",
         "valueType": "string",
@@ -966,11 +962,9 @@
         "label": "Headline Type",
         "name": "imageSlideHeadlineType",
         "valueType": "string",
-        "value":"h4",
-        "hidden":true,
-        "options": [
-          { "name": "H4", "value": "h4" }
-        ]
+        "value": "h4",
+        "hidden": true,
+        "options": [{ "name": "H4", "value": "h4" }]
       },
       {
         "component": "richtext",
@@ -983,7 +977,7 @@
         "component": "tab",
         "label": "Image",
         "name": "imageSlideTab2"
-      },      
+      },
       {
         "component": "reference",
         "valueType": "string",
@@ -1004,27 +998,25 @@
         "name": "imageSlideTab3"
       },
       {
-        "component":"text",
-        "name":"imageSlideLinkLabel",
-        "label":"Link Label",
-        "valueType":"string"
+        "component": "text",
+        "name": "imageSlideLinkLabel",
+        "label": "Link Label",
+        "valueType": "string"
       },
       {
-        "component":"text",
-        "name":"imageSlideLink",
-        "label":"Link",
-        "valueType":"string"
+        "component": "text",
+        "name": "imageSlideLink",
+        "label": "Link",
+        "valueType": "string"
       },
       {
         "component": "select",
         "label": "Button Styling",
         "name": "imageSlideButtonStyling",
         "valueType": "string",
-        "value":"linkButton",
-        "hidden":true,
-        "options": [
-          { "name": "Link Button", "value": "linkButton" }
-        ]
+        "value": "linkButton",
+        "hidden": true,
+        "options": [{ "name": "Link Button", "value": "linkButton" }]
       }
     ]
   }
