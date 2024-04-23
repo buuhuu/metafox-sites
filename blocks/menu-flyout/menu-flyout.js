@@ -4,7 +4,7 @@
 // export function generateMenuFlyoutLink(props) {
 //   const [menuflyoutText] = props;
 //   const menuFlyoutLinkDOM = document.createRange().createContextualFragment(`
-//     <span id="${menuflyoutText.textContent}" 
+//     <span id="${menuflyoutText.textContent}"
 //      class="${menuflyoutText.textContent} menu-flyout-link">
 //       ${menuflyoutText.textContent}
 //     </span>
