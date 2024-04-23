@@ -115,14 +115,18 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
     display: none;
   }
 
-  header nav[aria-expanded="true"] .menu-link-wrapper {
+  header nav[aria-expanded="true"] .menu-link-wrapper,
+  header nav[aria-expanded="true"] .menu-flyout-wrapper
+  {
     display: block;
     position: relative;
     top: 100px;
     padding: .55rem 3.5rem;
+    font-weight: 700;
   }
 
-  header nav[aria-expanded="true"] .menu-link-wrapper a{
+  header nav[aria-expanded="true"] .menu-link-wrapper a,  
+  header nav[aria-expanded="true"] .menu-flyout-wrapper{
    color: var(--light-border-color);
    text-decoration: none;
   }
@@ -329,15 +333,18 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
     line-height: 24px;
   }
 
-  header nav[aria-expanded="false"] .menu-link-wrapper {
+  header nav[aria-expanded="false"] .menu-link-wrapper{
     display: none;
   }
   
-  header nav[aria-expanded="true"] .menu-link-wrapper {
+  header nav[aria-expanded="true"] .menu-link-wrapper,
+  header nav[aria-expanded="true"] .menu-flyout-wrapper {
     display: block;
     position: relative;
     top: 120px;
     padding: .55rem 7rem;
+    font-weight: 700;
+    color: var(--light-border-color);
   }
 
   header nav[aria-expanded="true"] .menu-link-wrapper a {
@@ -531,7 +538,8 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
     background-color: transparent;
   }
 
-  header.white-background nav .section .menu-link-wrapper a {
+  header.white-background nav .section .menu-link-wrapper a,
+  header.white-background nav .section .menu-flyout-wrapper span{
   color: var( --background-color);
   }
 
@@ -558,10 +566,6 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
     
   }
 
-  header.white-background .subnavigation-text-wrapper span{
-    font-weight: 200;
-  }
-  
   header.white-background nav {
     border-bottom: 1.5px solid var(--background-color)
   }
@@ -689,6 +693,21 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
   header.header-wrapper nav .nav-brand .icon-link-list-wrapper .icon-link-list-container .icon .search {
    position: relative;
    left: 5px;
+  }
+
+  /* css for flyout */
+
+  .menu-teaser-container {
+   background-color: var(--background-color);
+   position: absolute;
+   left: 0;
+   right: 0;
+   top: 80px;
+   display: none;
+  }
+  
+  .menu-flyout-wrapper.showfly .menu-teaser-container {
+    display: block;
   }
 
 }
@@ -826,7 +845,8 @@ header nav[aria-expanded="true"] .section {
   }
   
   
-  header nav .menu-link-wrapper .menu-link a {
+  header nav .menu-link-wrapper .menu-link a,
+  header nav .menu-flyout-wrapper .menu-flyout-link {
     padding: 27px 0;
     text-decoration: none;
     margin: 0 12px;
@@ -838,7 +858,8 @@ header nav[aria-expanded="true"] .section {
     cursor: pointer;
   }
 
-  header nav .menu-link-wrapper .menu-link  a:hover {
+  header nav .menu-link-wrapper .menu-link  a:hover,
+  header nav .menu-flyout-wrapper .menu-flyout-link:hover {
     border-bottom: .25rem solid var(--light-link-hover-color);
     color: var( --light-text-color);
   }

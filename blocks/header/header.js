@@ -157,4 +157,12 @@ export default async function decorate(block) {
   } else {
     header[0].classList.add('transparent');
   }
+
+  const menuFlyout = document.querySelectorAll('.menu-flyout-wrapper');
+  menuFlyout.forEach((anchor) => {
+    anchor.addEventListener('click', (event) => {
+      event.preventDefault();
+      event.target.parentNode.parentElement.classList.toggle('showfly');
+    });
+  });
 }
