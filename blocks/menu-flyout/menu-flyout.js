@@ -24,32 +24,23 @@ export default function decorate(block) {
   // Append menu flyout link and panels to the wrapper div
   block.appendChild(menuFlyoutLinkDOM);
   [...panels].forEach((panel) => {
-    const [field1, field2, field3, field4] = panel.children;
-    console.log(field1);
-    console.log(field2);
-    console.log(field3);
-    console.log(field4);
-    const classesText = field2?.textContent.trim();
-    const classes = (classesText ? classesText.split(',') : []).map((c) => c && c.trim()).filter((c) => !!c);
-    if ([...classes].includes('menu-teaser')) {
-      const props = [...panel.children].map((row) => row.firstElementChild);
-      panel.textContent = '';
-      wrapperDiv.appendChild(generateMenuTeaserDOM(props));
-    }
-  });
-
-  [...panels].forEach((panel) => {
-    const [field1, field2, field3, field4] = panel.children;
-    console.log(field1);
-    console.log(field2);
-    console.log(field3);
-    console.log(field4);
+    const [, , , field4] = panel.children;
     const classesText = field4?.textContent.trim();
     const classes = (classesText ? classesText.split(',') : []).map((c) => c && c.trim()).filter((c) => !!c);
     if ([...classes].includes('link-list')) {
       const props = [...panel.children].map((row) => row.firstElementChild);
       panel.textContent = '';
       wrapperDiv.appendChild(genreateHeaderLinkList(props));
+    }
+  });
+  [...panels].forEach((panel) => {
+    const [, field2, ,] = panel.children;
+    const classesText = field2?.textContent.trim();
+    const classes = (classesText ? classesText.split(',') : []).map((c) => c && c.trim()).filter((c) => !!c);
+    if ([...classes].includes('menu-teaser')) {
+      const props = [...panel.children].map((row) => row.firstElementChild);
+      panel.textContent = '';
+      wrapperDiv.appendChild(generateMenuTeaserDOM(props));
     }
   });
 
