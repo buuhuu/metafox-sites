@@ -15,7 +15,6 @@ export default function decorate(block) {
   const panels = [...block.children];
   const menuProps = [...block.children].map((row) => row.firstElementChild);
   const menuFlyoutLinkDOM = generateMenuFlyoutLink(menuProps);
-  // Create a wrapper div with id "flyout-main-container"
   const wrapperDiv = document.createElement('div');
   wrapperDiv.classList.add('flyout-main-container');
 
@@ -43,7 +42,9 @@ export default function decorate(block) {
       wrapperDiv.appendChild(generateMenuTeaserDOM(props));
     }
   });
+  const flyoutWrapperDiv = document.createElement('div');
+  flyoutWrapperDiv.classList.add('flyout-wrapper');
 
-  // Append the wrapper div containing all elements to the block
-  block.appendChild(wrapperDiv);
+  flyoutWrapperDiv.appendChild(wrapperDiv);
+  block.appendChild(flyoutWrapperDiv);
 }
