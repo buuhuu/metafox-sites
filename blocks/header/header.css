@@ -705,18 +705,20 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
    top: 80px;
    display: none;
    padding: 3.125rem 0;
+   transition: top 0.65s ease;
   }
 
   .showfly .flyout-main-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-height: calc(100vh - 69px);
+    /* max-height: calc(100vh - 69px); */
     overflow: hidden;
     position: absolute;
     top: 5.25rem;
     width: 100vw;
     left: -6rem;
+    transition: top 0.65s ease;
   }
 
 }
