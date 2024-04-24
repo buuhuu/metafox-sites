@@ -1,73 +1,70 @@
 /* menu-flyout css */
-
-/* header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container {
-    padding-bottom: 2rem;
-    padding-top: 2.5rem;
-} */
-
 header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-link-list{
     order: 1;
     margin-left: 25%;
     display: block;
     width: 50%;
-    padding: 0px 0.75rem;
+    padding: 0 0.75rem;
 }
+
 header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-menu-teaser{
     order: 2;
     margin-right: 25%;
     display: block;
     width: 50%;
-    padding: 0px 0.75rem;
+    padding: 0 0.75rem;
 }
 
-header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-menu-teaser .menu-teaser__image {
+header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-menu-teaser .menu-teaser-image {
     margin-bottom: 0.75rem;
 }
 
-header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-menu-teaser .menu-teaser__image picture,
-header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-menu-teaser .menu-teaser__image img {
+header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-menu-teaser .menu-teaser-image picture,
+header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-menu-teaser .menu-teaser-image img {
     width: 100%;
     height: 165px;
     object-fit: cover;
     vertical-align: middle;
 }
 
-header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-menu-teaser .copy-Text{
+header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-menu-teaser .copy-text {
     font-size: 1rem;
     font-weight: 300;
     line-height: 1.5rem;
     font-family: bmwTypeNextWeb, Arial, Helvetica, Roboto, sans-serif;
 }
 
-header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-menu-teaser .link-label a {
-    align-items: center;
-    display: inline-flex;
-}
-header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-menu-teaser .link-label a:hover,
-header.header-wrapper .nav-brand .menu-flyout-wrapper .link-list-wrapper.vertical .link-list-detail li a:hover  {
+header.header-wrapper .nav-brand .menu-flyout-wrapper .link-list-wrapper.vertical .link-list-detail li a:hover,
+header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-menu-teaser .link-label a:hover
+  {
     text-decoration: none;
     color: var(--link-hover-color);
 }
 
+header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-menu-teaser .link-label a {
+    align-items: center;
+    display: inline-flex;
+}
+
 header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-menu-teaser .link-label a::after{
-        overflow-wrap: normal;
-        font-size: 1.25rem;
-        font-weight: 400;
-        -webkit-font-smoothing: antialiased;
-        font-feature-settings: "liga";
-        content: "arrow_chevron_right";
-        direction: ltr;
-        display: block;
-        font-family: "bmw_next_icons",arial,helvetica,roboto,sans-serif;
-        font-style: normal;
-        height: 1em;
-        line-height: 1;
-        text-align: left;
-        text-rendering: optimizelegibility;
-        text-transform: none;
-        width: auto;
-        outline: transparent solid 1px;
-        white-space: nowrap;
+    overflow-wrap: normal;
+    font-size: 1.25rem;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "liga";
+    content: "arrow_chevron_right";
+    direction: ltr;
+    display: block;
+    font-family: "bmw_next_icons",arial,helvetica,roboto,sans-serif;
+    font-style: normal;
+    height: 1em;
+    line-height: 1;
+    text-align: left;
+    text-rendering: optimizelegibility;
+    text-transform: none;
+    width: auto;
+    outline: transparent solid 1px;
+    white-space: nowrap;
 }
 
 header.header-wrapper .nav-brand .menu-flyout-wrapper .link-list-wrapper.vertical .link-list-title {
@@ -81,13 +78,16 @@ header.header-wrapper .nav-brand .menu-flyout-wrapper .link-list-wrapper.vertica
     word-break: break-all;
     text-transform: uppercase;
 }
+
 header.header-wrapper .nav-brand .menu-flyout-wrapper .link-list-wrapper.vertical .link-list-detail{
     list-style-type: none;
 }
+
 header.header-wrapper .nav-brand .menu-flyout-wrapper .link-list-wrapper.vertical li {
     margin-bottom: 0.75rem;
     display: flex;
 }
+
 header.header-wrapper .nav-brand .menu-flyout-wrapper .link-list-wrapper.vertical .link-list-detail li a{
     font-family: var(--fixed-font-family);
     font-size: 0.875rem;
@@ -99,6 +99,7 @@ header.header-wrapper .nav-brand .menu-flyout-wrapper .link-list-wrapper.vertica
     align-items: center;
     display: inline-flex;
 }
+
 header.header-wrapper .nav-brand .menu-flyout-wrapper .link-list-wrapper.vertical .link-list-detail li:not(:first-child) a::after {
     overflow-wrap: normal;
     -webkit-font-smoothing: antialiased;
@@ -106,7 +107,7 @@ header.header-wrapper .nav-brand .menu-flyout-wrapper .link-list-wrapper.vertica
     content: "arrow_up_right";
     direction: ltr;
     display: block;
-    font-family: bmw_next_icons;
+    font-family: "bmw_next_icons", arial,helvetica,roboto,sans-serif;
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 400;
@@ -119,6 +120,7 @@ header.header-wrapper .nav-brand .menu-flyout-wrapper .link-list-wrapper.vertica
     outline: transparent solid 1px;
     white-space: nowrap;
 }
+
 .flyout-menu-teaser p {
     margin: 0;
 }
