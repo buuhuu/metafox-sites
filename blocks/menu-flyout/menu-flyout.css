@@ -1,5 +1,5 @@
 /* menu-flyout css */
-header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-link-list{
+header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-link-list {
     order: 1;
     margin-left: 25%;
     display: block;
@@ -7,7 +7,7 @@ header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-
     padding: 0 0.75rem;
 }
 
-header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-menu-teaser{
+header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-menu-teaser {
     order: 2;
     margin-right: 25%;
     display: block;
@@ -34,11 +34,16 @@ header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-
     font-family: bmwTypeNextWeb, Arial, Helvetica, Roboto, sans-serif;
 }
 
-header.header-wrapper .nav-brand .menu-flyout-wrapper .link-list-wrapper.vertical .link-list-detail li a:hover,
-header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-menu-teaser .link-label a:hover
-  {
+header.header-wrapper .nav-brand .menu-flyout-wrapper .link-list-wrapper.vertical .link-list-detail li a {
+    font-family: var(--fixed-font-family);
+    font-size: 0.875rem;
+    color: var(--medium-text-color);
+    line-height: 1.25rem;
+    font-weight: 700;
+    word-break: break-all;
     text-decoration: none;
-    color: var(--link-hover-color);
+    align-items: center;
+    display: inline-flex;
 }
 
 header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-menu-teaser .link-label a {
@@ -46,7 +51,14 @@ header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-
     display: inline-flex;
 }
 
-header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-menu-teaser .link-label a::after{
+header.header-wrapper .nav-brand .menu-flyout-wrapper .link-list-wrapper.vertical .link-list-detail li a:hover,
+header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-menu-teaser .link-label a:hover
+  {
+    text-decoration: none;
+    color: var(--link-hover-color);
+}
+
+header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-menu-teaser .link-label a::after {
     overflow-wrap: normal;
     font-size: 1.25rem;
     font-weight: 400;
@@ -79,25 +91,13 @@ header.header-wrapper .nav-brand .menu-flyout-wrapper .link-list-wrapper.vertica
     text-transform: uppercase;
 }
 
-header.header-wrapper .nav-brand .menu-flyout-wrapper .link-list-wrapper.vertical .link-list-detail{
+header.header-wrapper .nav-brand .menu-flyout-wrapper .link-list-wrapper.vertical .link-list-detail {
     list-style-type: none;
 }
 
 header.header-wrapper .nav-brand .menu-flyout-wrapper .link-list-wrapper.vertical li {
     margin-bottom: 0.75rem;
     display: flex;
-}
-
-header.header-wrapper .nav-brand .menu-flyout-wrapper .link-list-wrapper.vertical .link-list-detail li a{
-    font-family: var(--fixed-font-family);
-    font-size: 0.875rem;
-    color: var(--medium-text-color);
-    line-height: 1.25rem;
-    font-weight: 700;
-    word-break: break-all;
-    text-decoration: none;
-    align-items: center;
-    display: inline-flex;
 }
 
 header.header-wrapper .nav-brand .menu-flyout-wrapper .link-list-wrapper.vertical .link-list-detail li:not(:first-child) a::after {
