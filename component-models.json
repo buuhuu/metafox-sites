@@ -200,6 +200,28 @@
         "value": "",
         "label": "Style",
         "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "classes",
+        "description":"Defines the alignment of the elements added to the Columns.",
+        "value": "centre",
+        "label": "Alignment",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Centre",
+            "value": "centre"
+          },
+          {
+            "name": "Left",
+            "value": "left"
+          },
+          {
+            "name": "Right",
+            "value": "right"
+          }
+        ]
       }
     ]
   },
