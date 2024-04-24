@@ -104,10 +104,6 @@
         "valueType": "string",
         "options": [
           {
-            "name": "Default",
-            "value": ""
-          },
-          {
             "name": "Ghost Dark",
             "value": "primary"
           },
