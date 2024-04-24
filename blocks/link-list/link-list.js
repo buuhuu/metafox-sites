@@ -30,12 +30,9 @@ export function generateLinkListDom(block) {
 }
 
 export function genreateHeaderLinkList(props) {
-  const [a, b, ulList] = props;
-  console.log(a);
-  console.log(b);
-  console.log(ulList);
+  const [, b, ulList] = props;
   const menuteaserDOM = document.createRange().createContextualFragment(`
-      <div class="flyout-link-list flyout-menu-teaser">     
+      <div class="flyout-link-list">     
         <div class ="link-list-wrapper vertical">
           <div class="link-list block" data-block-name="link-list" data-block-status="loaded">
             <h3 class="link-list-title">${b.textContent}</h3>

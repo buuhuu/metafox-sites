@@ -704,12 +704,14 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
    right: 0;
    top: 80px;
    display: none;
+   padding: 50px 0;
   }
   
   .showfly .flyout-main-container{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 5rem;
   }
 
 }
