@@ -711,6 +711,19 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 1;
+    transform: scaleY(1);
+    transition-delay: 0s, 0s;
+  }
+  .showfly .flyout-main-container{
+    max-height: calc(100vh - 69px);
+    overflow: hidden;
+    position: absolute;
+    top: 69px;
+    transition: left .15s cubic-bezier(0,.5,.5,1);
+    width: 100vw;
+    display: flex;
+    left: -96px;
   }
 
 }

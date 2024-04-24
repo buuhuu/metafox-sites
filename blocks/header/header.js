@@ -163,6 +163,13 @@ export default async function decorate(block) {
     anchor.addEventListener('click', (event) => {
       event.preventDefault();
       event.target.parentNode.parentElement.classList.toggle('showfly');
+      if (headerType && headerType === 'whitebackground' && event.target.parentNode.parentElement.classList.contains('showfly')) {
+        header[0].classList.remove('white-background');
+        header[0].classList.add('transparent');
+      } else {
+        header[0].classList.add('white-background');
+        header[0].classList.remove('transparent');
+      }
     });
   });
 }
