@@ -4,8 +4,7 @@ import { genreateHeaderLinkList } from '../link-list/link-list.js';
 export function generateMenuFlyoutLink(props) {
   const [menuflyoutText] = props;
   const menuFlyoutLinkDOM = document.createRange().createContextualFragment(`
-    <span id="${menuflyoutText.textContent}"
-     class="${menuflyoutText.textContent} menu-flyout-link">
+    <span id="${menuflyoutText.textContent}" class="${menuflyoutText.textContent} menu-flyout-link">
       ${menuflyoutText.textContent}
     </span>
   `);
@@ -16,10 +15,14 @@ export default function decorate(block) {
   const panels = [...block.children];
   const menuProps = [...block.children].map((row) => row.firstElementChild);
   const menuFlyoutLinkDOM = generateMenuFlyoutLink(menuProps);
-  const menuTeaserDom = document.createElement('div');
-  menuTeaserDom.classList.add('menu-teaser-container');
+  // Create a wrapper div with id "flyout-main-container"
+  const wrapperDiv = document.createElement('div');
+  wrapperDiv.classList.add('flyout-main-container');
+
   block.textContent = '';
-  block.append(menuFlyoutLinkDOM);
+
+  // Append menu flyout link and panels to the wrapper div
+  block.appendChild(menuFlyoutLinkDOM);
   [...panels].forEach((panel) => {
     const [field1, field2, field3, field4] = panel.children;
     console.log(field1);
@@ -31,7 +34,7 @@ export default function decorate(block) {
     if ([...classes].includes('menu-teaser')) {
       const props = [...panel.children].map((row) => row.firstElementChild);
       panel.textContent = '';
-      block.append(generateMenuTeaserDOM(props));
+      wrapperDiv.appendChild(generateMenuTeaserDOM(props));
     }
   });
 
@@ -46,8 +49,10 @@ export default function decorate(block) {
     if ([...classes].includes('link-list')) {
       const props = [...panel.children].map((row) => row.firstElementChild);
       panel.textContent = '';
-      // block.append(generateLinkListDom(props));
-      block.append(genreateHeaderLinkList(props));
+      wrapperDiv.appendChild(genreateHeaderLinkList(props));
     }
   });
+
+  // Append the wrapper div containing all elements to the block
+  block.appendChild(wrapperDiv);
 }
