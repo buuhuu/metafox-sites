@@ -104,11 +104,11 @@
         "valueType": "string",
         "options": [
           {
-            "name": "Ghost Dark",
+            "name": "Default",
             "value": ""
           },
           {
-            "name": "Ghost Dark Flex",
+            "name": "Ghost Dark",
             "value": "primary"
           },
           {
