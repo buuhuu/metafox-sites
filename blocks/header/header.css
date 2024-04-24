@@ -684,7 +684,7 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
   }
 
   header.header-wrapper nav .nav-brand .icon-link-list-wrapper .icon-link-list-container .icon {
-    margin-right: 19px;
+    margin-right: 1.88rem;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -704,7 +704,7 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
    right: 0;
    top: 80px;
    display: none;
-   padding: 50px 0;
+   padding: 3.125rem 0;
   }
 
   .showfly .flyout-main-container {
@@ -714,9 +714,9 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
     max-height: calc(100vh - 69px);
     overflow: hidden;
     position: absolute;
-    top: 69px;
+    top: 5.25rem;
     width: 100vw;
-    left: -96px;
+    left: -6rem;
   }
 
 }
