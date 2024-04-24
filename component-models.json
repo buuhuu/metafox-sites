@@ -156,8 +156,8 @@
         "valueType": "string",
         "options": [
           {
-            "name": "Centre",
-            "value": "centre"
+            "name": "Center",
+            "value": "center"
           },
           {
             "name": "Left",
@@ -195,33 +195,11 @@
     "fields": [
       {
         "component": "text-input",
-        "description": "Defines the styling applied to the content within this section.If an alignment is needed on a copy text or a button , please specify the alignment of your choice - alignment-right, alignment-left or alignment-centre.",
+        "description": "Defines the styling applied to the content within this section.If an alignment is needed on a copy text or a button , please specify the alignment of your choice - alignment-right, alignment-left or alignment-center.",
         "name": "style",
         "value": "",
         "label": "Style",
         "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "classes",
-        "description":"Defines the alignment of the elements added to the Columns.",
-        "value": "centre",
-        "label": "Alignment",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Centre",
-            "value": "centre"
-          },
-          {
-            "name": "Left",
-            "value": "left"
-          },
-          {
-            "name": "Right",
-            "value": "right"
-          }
-        ]
       }
     ]
   },

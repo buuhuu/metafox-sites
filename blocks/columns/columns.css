@@ -50,6 +50,32 @@ margin-bottom: 48px;
   justify-content: center;
 }
 
+.columns-wrapper > .columns.right > div > div > h1, 
+.columns-wrapper > .columns.right > div > div > h2, 
+.columns-wrapper > .columns.right > div > div > h3, 
+.columns-wrapper > .columns.right > div > div > h4, 
+.columns-wrapper > .columns.right > div > div > h5, 
+.columns-wrapper > .columns.right > div > div > h6 {
+  text-align: right;
+}
+
+.columns-wrapper > .columns.left > div > div > h1, 
+.columns-wrapper > .columns.left > div > div > h2, 
+.columns-wrapper > .columns.left > div > div > h3, 
+.columns-wrapper > .columns.left > div > div > h4, 
+.columns-wrapper > .columns.left > div > div > h5, 
+.columns-wrapper > .columns.left > div > div > h6 {
+  text-align: left;
+}
+
+.columns-wrapper > .columns.center > div > div > h1, 
+.columns-wrapper > .columns.center > div > div > h2, 
+.columns-wrapper > .columns.center > div > div > h3, 
+.columns-wrapper > .columns.center > div > div > h4, 
+.columns-wrapper > .columns.center > div > div > h5, 
+.columns-wrapper > .columns.center > div > div > h6 {
+  text-align: center;
+}
 
 .columns .image {
     margin-bottom: 24px;
