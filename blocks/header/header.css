@@ -684,7 +684,7 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
   }
 
   header.header-wrapper nav .nav-brand .icon-link-list-wrapper .icon-link-list-container .icon {
-    margin-right: 19px;
+    margin-right: 1.88rem;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -697,17 +697,26 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
 
   /* css for flyout */
 
-  .menu-teaser-container {
+  .flyout-main-container {
    background-color: var(--background-color);
    position: absolute;
    left: 0;
    right: 0;
    top: 80px;
    display: none;
+   padding: 3.125rem 0;
   }
-  
-  .menu-flyout-wrapper.showfly .menu-teaser-container {
-    display: block;
+
+  .showfly .flyout-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: calc(100vh - 69px);
+    overflow: hidden;
+    position: absolute;
+    top: 5.25rem;
+    width: 100vw;
+    left: -6rem;
   }
 
 }
