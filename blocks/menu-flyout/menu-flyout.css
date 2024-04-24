@@ -1,22 +1,20 @@
 /* menu-flyout css */
 
-header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container {
+/* header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container {
     padding-bottom: 2rem;
     padding-top: 2.5rem;
-}
+} */
 
-header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-link-list.flyout-menu-teaser{
+header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-link-list{
     order: 1;
     margin-left: 25%;
     display: block;
     width: 50%;
-    margin-right: 0;
     padding: 0px 0.75rem;
 }
 header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-menu-teaser{
     order: 2;
     margin-right: 25%;
-    margin-left: 0;
     display: block;
     width: 50%;
     padding: 0px 0.75rem;
