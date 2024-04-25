@@ -1,4 +1,4 @@
-export function generateVideoDetailMarkUp(props){
+export function generateVideoDetailMarkUp(props){  
     const [videoSlideHeadline,videoSlideCopyText,videoSlideTitle,
       videoSlideDescription,videoSlideLinkLabel,videoSlideLink,videoSlideButtonStyling,index] = props;
   
@@ -30,17 +30,26 @@ export function generateVideoDetailMarkUp(props){
   
       const vidImgDetailExpandDesp = document.createElement('p');
       vidImgDetailExpandDesp.classList.add('vid-img-slide-expand-descp');
-      vidImgDetailExpandDesp.textContent = videoSlideCopyText;
+      vidImgDetailExpandDesp.innerHTML = videoSlideCopyText;
   
       const vidImgDetailLinkBtn = document.createElement('a');
       vidImgDetailLinkBtn.classList.add('vid-img-slide-link-btn');
       vidImgDetailLinkBtn.classList.add(videoSlideButtonStyling);
       vidImgDetailLinkBtn.href = videoSlideLink;
       vidImgDetailLinkBtn.textContent = videoSlideLinkLabel;
+
+      const showMoreShowLessBtnContainer = document.createElement('div');
+      showMoreShowLessBtnContainer.classList.add('vid-img-slide-showmore-btn','hidden');      
+
+      const showMoreShowLessBtn = document.createElement('button');
+      showMoreShowLessBtn.textContent = "Prikaži manje";
+      showMoreShowLessBtn.classList.add('vid-img-slide-showmore-btn-link');
+      showMoreShowLessBtnContainer.append(showMoreShowLessBtn);
   
       vidImgDetailExpandedCover.append(vidImgDetailExpandTitle);
       vidImgDetailExpandedCover.append(vidImgDetailExpandDesp);
       vidImgDetailExpandedCover.append(vidImgDetailLinkBtn);
+      vidImgDetailExpandedCover.append(showMoreShowLessBtnContainer);
   
       videoImgDetailDOMContainer.append(vidImgDetailCover);
       videoImgDetailDOMContainer.append(vidImgDetailExpandedCover);

@@ -4,8 +4,8 @@
 }
 
 .block.multicontent-gallery {
-    height: calc(((528 / 945) * 100vw) + 100vw);
-    min-height: 528px;
+    height: calc(((401 / 945) * 100vw) + 100vw);
+    min-height: 586px;
     max-height: 945px;
     position: relative;
     display: flex;
@@ -14,15 +14,104 @@
     justify-content: end;
 }
 
+.block.multicontent-gallery .vid-img-slide-cover-title {
+    font-family: bmwTypeNextWeb, Arial, Helvetica, Roboto, sans-serif;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    padding: 0;
+    text-align: center;
+    text-align: left;
+}
+
 .block.multicontent-gallery .vid-img-slide-expand-title {
     font-size: 1rem;
     font-weight: 700;
     line-height: 1.5rem;
     font-family: bmwTypeNextWeb,Arial,Helvetica,Roboto,sans-serif;
+    color: var(--light-text-color);
+    margin: 0;
+    margin-bottom: 0.75rem;
+}
+
+.block.multicontent-gallery .vid-img-slide-expand-descp {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    color: var(--light-text-color);
+    margin: 0;
+    margin-bottom: 0.75rem;
+}
+
+.block.multicontent-gallery .overlay-effect {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.block.multicontent-gallery .vid-img-slide-showmore-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--background-color);
+    /* padding-bottom: 24px; */
+    box-shadow: 0px -20px 19px white;
+}
+
+.block.multicontent-gallery .vid-img-slide-showmore-btn-link {
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    text-align: left;
+    text-decoration: none;
+    background-color: transparent;
+    color: var(--text-color);
+    padding: 0 1.5rem;
+    margin-left: 13px;
+    padding-bottom: 24px;
+    position: relative;
+    /* background-image: linear-gradient(45deg, black, transparent); */
+}
+
+.block.multicontent-gallery .vid-img-slide-showmore-btn-link::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "arrow_chevron_down";
+    direction: ltr;
+    font-family: "bmw_next_icons",arial,helvetica,roboto,sans-serif;
+    transform: translate(25%, -50%);
+    transition: transform .5s ease-in-out;
+    font-size: 1.5rem;
+    color: var(--medium-text-color);
+    font-style: normal;
+    font-weight: 400;
+    height: 1.5rem;
+    line-height: 1;
+    outline: 1px solid transparent;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: black;
+    top: 14px;
+    margin-left: -8px;
+}
+
+.block.multicontent-gallery .vid-img-slide-showmore-btn.showless {
+    position: relative;
+    display: block;
+    box-shadow: unset;
 }
 
 .block.multicontent-gallery .video-image-slide-conatiner{
-    height: 68%;
+    height: 78%;
     max-width: var(--max-component-width);
     position: absolute;
     top: 0;
@@ -33,18 +122,12 @@
 }
 
 .block.multicontent-gallery .video-image-detail-container {
-    height: auto;
-    display: flex;
-    width: auto;
-    flex-direction: row;
     z-index: 2;
-    padding: 0 32px;
-    flex: 1;
-    align-items: flex-end;
-    overflow-y: auto;
-    position: relative;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+    padding: 0 24px;
+    display: block;
+    white-space: nowrap;
+    overflow-x: auto;
+    height: auto;
 }
 
 .block.multicontent-gallery .video-image-detail-container::-webkit-scrollbar {
@@ -57,21 +140,33 @@
     width: 100%;
 }
 
-.block.multicontent-gallery .video-image-detail-container .detail {    
+.block.multicontent-gallery .video-image-detail-container .detail {
     flex: 0 0 auto;
     width: 85%;
-    margin-right: 18px;
-    background-color: var(--background-color);
-}c
+    margin: 0 8px;
+    display: inline-block;
+    white-space: break-spaces;
+    overflow-y: hidden;
+}
 
 .block.multicontent-gallery .video-image-detail-container .detail .vid-img-slide-cover {
-    display: none;
+    display: none;    
+    gap: .5rem;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    background-color: transparent;
+    color:var(--text-color);    
+    width: 100%;
+    flex-direction: column;
 }
 
 .block.multicontent-gallery .video-image-detail-container .detail .vid-img-slide-expand-cover {
     height: 212px;
     padding: 24px 12px 12px;
+    position: relative;    
+    background-color: var(--background-color);
 }
+
 
 .block.multicontent-gallery .video-image-slide-conatiner .video-image-slide {
     display: none;
@@ -82,8 +177,23 @@
 }
 
 .block.multicontent-gallery .video-image-slide-conatiner .video-image-slide.media div {
-    height: 100%;
+    height: inherit !important;
+    width: 100% !important;
+    padding: 0 !important;
+}
+
+.block.multicontent-gallery .video-image-slide-conatiner .video-image-slide.media picture {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.block.multicontent-gallery .video-image-slide-conatiner .video-image-slide.media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .block.multicontent-gallery .video-image-slide-conatiner .video-image-slide.media div video {
@@ -103,8 +213,8 @@
         height: 87%;
     }
     
-    .block.multicontent-gallery .video-image-detail-container{   
-        height: 13%; 
+    .block.multicontent-gallery .video-image-detail-container{
+        height: auto;
     }
 
     .block.multicontent-gallery .video-image-detail-container .detail .vid-img-slide-expand-cover {
@@ -120,39 +230,72 @@
         max-height: 712px;
     }
 
-    .block.multicontent-gallery .video-image-slide-conatiner{       
+    .block.multicontent-gallery .video-image-slide-conatiner {       
         height: 80%;
     }
     
-    .block.multicontent-gallery .video-image-detail-container{   
-        height: 20%; 
+    .block.multicontent-gallery .video-image-detail-container { 
+        height: auto;
     }
     
     .block.multicontent-gallery .video-image-detail-container .detail {
         width: 23%;
     }
 
+    .block.multicontent-gallery .video-image-detail-container .detail .vid-img-slide-cover {
+        display: flex;
+    }
+
     .block.multicontent-gallery .video-image-detail-container .detail .vid-img-slide-expand-cover {
         height: 192px;
+        display: none;
     }
+
+    .block.multicontent-gallery .video-image-detail-container .detail .vid-img-slide-cover.clicked {
+        display: none;
+    }
+
+    .block.multicontent-gallery .video-image-detail-container .detail .vid-img-slide-cover.clicked + .vid-img-slide-expand-cover {
+        display: block;
+    }    
 }
 
 /* large desktop */
 @media (width >= 1920px) { 
     .block.multicontent-gallery {
-        min-width: 720px;
-        max-width: 720px;
+        max-width: var(--max-component-width);
+        padding-left: calc((100vw - (var(--max-component-width) - (var(--section-desktop-padding) * 2 )))/2);
+        padding-right: calc((100vw - (var(--max-component-width) - (var(--section-desktop-padding) * 2 )))/2);
     }
 
     .block.multicontent-gallery .video-image-slide-conatiner{       
         height: 88%;
+        padding-left: calc((100vw - (var(--max-component-width) - (var(--section-desktop-padding) * 2 )))/2);
+        padding-right: calc((100vw - (var(--max-component-width) - (var(--section-desktop-padding) * 2 )))/2);
     }
     
-    .block.multicontent-gallery .video-image-detail-container{   
-        height: 22%; 
+    .block.multicontent-gallery .video-image-detail-container{ 
+        height: auto;
+    }
+
+    .block.multicontent-gallery .video-image-detail-container .detail {
+        width: 23%;
+    }
+
+    .block.multicontent-gallery .video-image-detail-container .detail .vid-img-slide-cover {
+        display: flex;
     }
 
     .block.multicontent-gallery .video-image-detail-container .detail .vid-img-slide-expand-cover {
         height: 162px;
+        display: none;
     }
+
+    .block.multicontent-gallery .video-image-detail-container .detail .vid-img-slide-cover.clicked {
+        display: none;
+    }
+
+    .block.multicontent-gallery .video-image-detail-container .detail .vid-img-slide-cover.clicked + .vid-img-slide-expand-cover {
+        display: block;
+    } 
 }
