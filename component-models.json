@@ -316,7 +316,7 @@
       },
       {
         "component": "select",
-        "name": "bg_fileReferenceType",
+        "name": "classes",
         "value": "",
         "label": "Image Position",
         "valueType": "string",
@@ -333,7 +333,7 @@
       },
       {
         "component": "text",
-        "name": "fg_details",
+        "name": "fg_summary",
         "value": "",
         "label": "Summary",
         "description": "Optional text for the text image component",
@@ -342,7 +342,7 @@
       },
       {
         "component": "text-area",
-        "name": "fg_detailsText",
+        "name": "fg_details",
         "value": "",
         "label": "Text",
         "description": "Optional text for the text image component",
