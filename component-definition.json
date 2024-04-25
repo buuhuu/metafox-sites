@@ -390,13 +390,15 @@
                     "filter": "video-slide",
                     "videoSlideClassname":"video-slide",
                     "videoSlideHeadlineType":"h4",
+                    "videoSlideLoopVideo":true,
+                    "videoSlideAutoplay":true,
                     "videoSlideButtonStyling":"linkButton"
                   },
                   "image-slide": {
                     "name": "Image Slide",
                     "model": "image-slide",
                     "filter": "image-slide",
-                    "videoSlideClassname":"image-slide",
+                    "imageSlideClassname":"image-slide",
                     "imageSlideHeadlineType":"h4",
                     "imageSlideButtonStyling":"linkButton"
                   }
