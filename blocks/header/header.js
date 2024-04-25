@@ -163,6 +163,7 @@ export default async function decorate(block) {
     anchor.addEventListener('click', (event) => {
       event.preventDefault();
       const parentMenu = event.target.parentNode.parentElement;
+      const mainParentMenu = event.target.parentNode.parentElement.parentElement;
       const isOpen = parentMenu.classList.contains('showfly');
       document.querySelectorAll('.menu-flyout-wrapper').forEach((item) => {
         if (item !== parentMenu && item.classList.contains('showfly')) {
@@ -174,6 +175,7 @@ export default async function decorate(block) {
         }
       });
       parentMenu.classList.toggle('showfly', !isOpen);
+      mainParentMenu.classList.toggle('mobile-flyout', !isOpen);
       if (headerType && headerType === 'whitebackground' && event.target.parentNode.parentElement.classList.contains('showfly')) {
         header[0].classList.remove('white-background');
         header[0].classList.add('transparent');

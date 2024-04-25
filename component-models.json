@@ -576,7 +576,7 @@
     "fields": [
       {
         "component": "select",
-        "name": "link list",
+        "name": "link_list_type",
         "value": "vertical",
         "label": "Orientation",
         "valueType": "string",
@@ -595,14 +595,14 @@
       {
         "component": "text-input",
         "valueType": "string",
-        "name": "link list title",
+        "name": "link_list_title",
         "label": "Link List Title",
         "value": ""
       },
       {
         "component": "richtext",
         "valueType": "string",
-        "name": "link-list",
+        "name": "link_list_text",
         "value": "",
         "required": true,
         "label": "Link List"
@@ -708,14 +708,14 @@
       {
         "component": "text-input",
         "valueType": "string",
-        "name": "menuflyoutText",
+        "name": "menuflyout_text",
         "label": "Link Text",
         "value": ""
       },
       {
         "component": "text-input",
         "valueType": "string",
-        "name": "menuflyoutTitle",
+        "name": "menuflyout_title",
         "label": "Link Title",
         "value": ""
       }
@@ -756,27 +756,27 @@
         {
           "component": "text",
           "valueType": "string",
-          "name": "link_",
+          "name": "menulink_prop",
           "value": "",
           "label": "Link Label"
         },
         {
           "component": "text",
           "valueType": "string",
-          "name": "link_Title",
+          "name": "menulink_propTitle",
           "value": "",
           "label": "Link Title"
         },
         {
           "component": "text",
           "valueType": "string",
-          "name": "link_Text",
+          "name": "menulink_propText",
           "value": "",
           "label": "Link"
         },
         {
           "component": "select",
-          "name": "Link_Type",
+          "name": "menulink_propType",
           "value": "",
           "label": "Second CTA Type",
           "valueType": "string",
