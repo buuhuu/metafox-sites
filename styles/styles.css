@@ -299,15 +299,33 @@ a.button.hyperlink:hover,
   justify-content: center;
 }
 
-.section.alignment-center > div.default-content-wrapper > p {
+.section.alignment-center > div.default-content-wrapper > p,
+.section.alignment-center > div.default-content-wrapper > h1,
+.section.alignment-center > div.default-content-wrapper > h2,
+.section.alignment-center > div.default-content-wrapper > h3,
+.section.alignment-center > div.default-content-wrapper > h4,
+.section.alignment-center > div.default-content-wrapper > h5,
+.section.alignment-center > div.default-content-wrapper > h6 {
   text-align: center;
 }
 
-.section.alignment-left > div.default-content > p {
+.section.alignment-left > div.default-content > p,
+.section.alignment-left > div.default-content-wrapper > h1,
+.section.alignment-left > div.default-content-wrapper > h2,
+.section.alignment-left > div.default-content-wrapper > h3,
+.section.alignment-left > div.default-content-wrapper > h4,
+.section.alignment-left > div.default-content-wrapper > h5,
+.section.alignment-left > div.default-content-wrapper > h6 {
   text-align: left;
 }
 
-.section.alignment-right > div.default-content-wrapper > p {
+.section.alignment-right > div.default-content-wrapper > p,
+.section.alignment-right > div.default-content-wrapper > h1,
+.section.alignment-right > div.default-content-wrapper > h2,
+.section.alignment-right > div.default-content-wrapper > h3,
+.section.alignment-right > div.default-content-wrapper > h4,
+.section.alignment-right > div.default-content-wrapper > h5,
+.section.alignment-right > div.default-content-wrapper > h6 {
   text-align: right;
 }
 
