@@ -99,7 +99,11 @@ function attachEventListners(main) {
   ].forEach((eventType) => main?.addEventListener(eventType, async (event) => {
     event.stopPropagation();
     const applied = await applyChanges(event);
-    if (!applied) window.location.reload();
+    if (!applied) {
+       window.location.reload();
+    } else {
+      decorateBMWButtons(document.querySelector('main'));
+    }
   }));
 }
 
