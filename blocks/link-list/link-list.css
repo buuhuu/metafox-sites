@@ -157,6 +157,41 @@ footer .link-list-wrapper.vertical .link-list-detail ul li a:hover{
     footer .link-list-wrapper.horizontal .link-list-title {
         display: block;
     }
+   
+    header nav[aria-expanded="false"] .menu-flyout-wrapper {
+        display: none;
+    }
+    
+    header nav[aria-expanded="true"] .menu-flyout-wrapper .flyout-wrapper {
+        display: none;
+    }
+
+    header nav[aria-expanded="true"] .menu-flyout-wrapper::after {       
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-feature-settings: "liga";
+        content: " arrow_chevron_right";
+        direction: ltr;
+        display: block;
+        font-family: "bmw_next_icons", arial,helvetica,roboto,sans-serif;
+        font-style: normal;
+        height: 1em;
+        line-height: 1;
+        outline: 1px solid transparent;
+        text-align: left;
+        text-rendering: optimizelegibility;
+        text-transform: none;
+        white-space: nowrap;
+        width: auto;
+        font-size: 1.25rem;
+        color: var(--light-border-color);
+        font-weight: 400;
+        position: absolute;
+        right: 50px;
+        top: 12px;
+    }
+    
+
 }
 
 /* tablet */
@@ -202,3 +237,5 @@ footer .link-list-wrapper.vertical .link-list-detail ul li a:hover{
         margin-bottom: 0.75rem;
     }    
 }
+
+/* header link list css */ 
