@@ -15,6 +15,7 @@
   {
     "id": "column",
     "components": [
+      "title",
       "copy_text",
       "image",
       "button"

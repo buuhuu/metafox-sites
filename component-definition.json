@@ -192,7 +192,11 @@
                 "template": {
                   "name": "text-image-v2",
                   "model": "text-image-v2",
-                  "bg_fileReference": "/content/dam/metafox/placeholder_image.png"
+                  "bg_fileReference": "/content/dam/metafox/placeholder_image.png",
+                  "bg_fileReferenceAlt": "Alt text",
+                  "bg_fileReferenceType": "Left",
+                  "fg_details": "Kindly edit the Summary here !",
+                  "fg_detailsText": "Kindly edit the content here !"
                 }
               }
             }

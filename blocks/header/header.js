@@ -162,7 +162,21 @@ export default async function decorate(block) {
   menuFlyout.forEach((anchor) => {
     anchor.addEventListener('click', (event) => {
       event.preventDefault();
-      event.target.parentNode.parentElement.classList.toggle('showfly');
+      const parentMenu = event.target.parentNode.parentElement;
+      const isOpen = parentMenu.classList.contains('showfly');
+      document.querySelectorAll('.menu-flyout-wrapper').forEach((item) => {
+        if (item !== parentMenu && item.classList.contains('showfly')) {
+          item.classList.remove('showfly');
+        }
+      });
+      parentMenu.classList.toggle('showfly', !isOpen);
+      if (headerType && headerType === 'whitebackground' && event.target.parentNode.parentElement.classList.contains('showfly')) {
+        header[0].classList.remove('white-background');
+        header[0].classList.add('transparent');
+      } else {
+        header[0].classList.add('white-background');
+        header[0].classList.remove('transparent');
+      }
     });
   });
 }

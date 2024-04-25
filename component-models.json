@@ -93,22 +93,18 @@
         "description":"Defines the text to be displayed in the button or as the link.",
         "name": "text",
         "value": "",
-        "label": "Text"
+        "label": "Link Label"
       },
       {
         "component": "select",
         "name": "type",
         "description":"Defines the styling applied to the button or if the button will displayed as a link. Ghost Dark has a fixed width and Ghost Dark Flex's size varies based on the length of the link label.",
         "value": "",
-        "label": "Type",
+        "label": "Button Styling",
         "valueType": "string",
         "options": [
           {
             "name": "Ghost Dark",
-            "value": ""
-          },
-          {
-            "name": "Ghost Dark Flex",
             "value": "primary"
           },
           {
@@ -319,24 +315,6 @@
         "value": ""
       },
       {
-        "component": "text",
-        "name": "fg_details",
-        "value": "Kindly edit the Summary here !",
-        "label": "Summary",
-        "description": "Optional text for the text image component",
-        "placeholder": "Please provide some text for summary!",
-        "valueType": "string"
-      },
-      {
-        "component": "text-area",
-        "name": "fg_detailsText",
-        "value": "Kindly edit the content here !",
-        "label": "Text",
-        "description": "Optional text for the text image component",
-        "placeholder": "Please provide some text of your choice here!",
-        "valueType": "string"
-      },
-      {
         "component": "select",
         "name": "bg_fileReferenceType",
         "value": "",
@@ -352,6 +330,24 @@
             "value": "right"
           }
         ]
+      },
+      {
+        "component": "text",
+        "name": "fg_details",
+        "value": "",
+        "label": "Summary",
+        "description": "Optional text for the text image component",
+        "placeholder": "Please provide some text for summary!",
+        "valueType": "string"
+      },
+      {
+        "component": "text-area",
+        "name": "fg_detailsText",
+        "value": "",
+        "label": "Text",
+        "description": "Optional text for the text image component",
+        "placeholder": "Please provide some text of your choice here!",
+        "valueType": "string"
       }
     ]
   },

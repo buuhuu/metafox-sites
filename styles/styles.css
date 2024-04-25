@@ -206,19 +206,19 @@ button:disabled, button:disabled:hover {
   cursor: unset;
 }
 
-a.button.ghost-dark,
-a.button.ghost-dark-flex {
+a.button.ghost-dark {
   background-color: transparent;
-  border: 1px solid var(--text-color);
-  color: var(--text-color);
-  font-size: 16px;
-  line-height: 24px;
+  border: 1px solid var(--light-text-color);
+  color: var(--light-text-color);
+  font-size: 1rem;
+  line-height: 1.25rem;
   font-weight: 700;
   font-family: var(--fixed-font-family);
   text-align: center;
-  padding: 4px 24px;
-  min-height: 3.25rem;
+  padding: .25rem;
+  min-height: 3.334rem;
   align-content: center;
+  text-rendering: optimizespeed;
 }
 
 a.button.ghost-dark.button-fixed-width {
@@ -241,8 +241,8 @@ a.button.ghost-dark-flex:hover {
 a.button.hyperlink {
   background: transparent;
   padding: 0;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   color: rgb(38 38 38 / 100%);
   font-weight: 700;
   font-family: var(--fixed-font-family);
@@ -250,17 +250,18 @@ a.button.hyperlink {
 
 .align-icon {
   display: flex;
-  padding: 10px;
+  padding: .625rem;
 }
 
-.button-container > .align-icon:hover,
-a.button.hyperlink:hover {
+a.button.hyperlink:hover,
+.align-icon-hover{
   color: var(--link-hover-color);
   font-weight: bold;
+  cursor: pointer;
 }
 
-.icon-gt::after {
-  font-size: 24px;
+.icon-gt::before {
+  font-size: 1.5rem;
   font-weight: 500;
   word-wrap: normal;
   font-feature-settings: "liga";
@@ -277,6 +278,8 @@ a.button.hyperlink:hover {
   text-transform: none;
   white-space: nowrap;
   width: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .align-icon > .align-center {
@@ -305,21 +308,6 @@ a.button.hyperlink:hover {
 }
 
 .section.alignment-right > div.default-content-wrapper > p {
-  text-align: right;
-}
-
-.section.alignment-center > .columns-wrapper > .columns > div > div > p,
-.section.alignment-center > .columns-wrapper > .columns > .button-container.button-align-center {
-  text-align: center;
-}
-
-.section.alignment-left > .columns-wrapper > .columns > div > div > p,
-.section.alignment-left > .columns-wrapper > .columns > .button-container.button-align-left {
-  text-align: left;
-}
-
-.section.alignment-right > .columns-wrapper > .columns > div > div > p,
-.section.alignment-right > .columns-wrapper > .columns > .button-container.button-align-right {
   text-align: right;
 }
 
