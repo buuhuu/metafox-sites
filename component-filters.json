@@ -5,7 +5,8 @@
       "section",
       "bmw_main_section",
       "footer-section",
-      "header-section"
+      "header-section",
+      "flexible_width_section"
     ]
   },
   {
@@ -82,6 +83,16 @@
       "copy_text",
       "video",
       "multicontent-gallery"
+    ]
+  },
+  {
+    "id":"flexible_width_section",
+    "components":[
+      "copy_text",
+      "button",
+      "title",
+      "image",
+      "bmw-video"
     ]
   },
   {
