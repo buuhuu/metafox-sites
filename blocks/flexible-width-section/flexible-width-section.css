@@ -1,4 +1,4 @@
-.section .flexible-width-section {
+.section.flexible-width-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -7,23 +7,23 @@
   box-sizing: border-box;
 }
 
-.section.grid-10 {
+.section.flexible-width-section.grid-10 {
   flex: 0 0 83.33%;  /* 10/12 = 83.33% */
   max-width: 83.33%;
 }
 
-.section.grid-8 {
+.section.flexible-width-section.grid-8 {
   flex: 0 0 66.66%;  /* 8/12 = 66.66% */
   max-width: 66.66%;
 }
 
-.section.grid-6 {
+.section.flexible-width-section.grid-6 {
   flex: 0 0 50%;  /* 6/12 = 50% */
   max-width: 50%;
 }
 
 @media (width >=768px) and (width < 1280px) {
-  .section .flexible-width-section {
+  .section.flexible-width-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -32,26 +32,26 @@
     box-sizing: border-box;
   }
 
-  .section.grid-10 {
+  .section.flexible-width-section.grid-10 {
     flex: 0 0 83.33%;  /* 10/12 = 83.33% */
     max-width: 83.33%;
   }
 
-  .section.grid-8 {
+  .section.flexible-width-section.grid-8 {
     flex: 0 0 66.66%;  /* 8/12 = 66.66% */
     max-width: 66.66%;
   }
 
-  .section.grid-6 {
+  .section.flexible-width-section.grid-6 {
     flex: 0 0 50%;  /* 6/12 = 50% */
     max-width: 50%;
   }
 }
 
 @media (width >=360px) and (width < 768px) {
-  .section.grid-10,
-  .section.grid-8,
-  .section.grid-6 {
+  .section.flexible-width-section.grid-10,
+  .section.flexible-width-section.grid-8,
+  .section.flexible-width-section.grid-6 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
