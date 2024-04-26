@@ -81,18 +81,18 @@
     },
     {
       "title": "Flexible Width Sections",
-      "id": "flexible_width_sections",
+      "id": "flexible-width-sections",
       "components": [
         {
           "title": "Flexible Width Section",
-          "id": "flexible_width_section",
+          "id": "flexible-width-section",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/section/v1/section",
                 "template": {
                   "name":"Flexible Width Section",
-                  "model":"flexible_width_section"
+                  "model":"flexible-width-section"
                 }
               }
             }

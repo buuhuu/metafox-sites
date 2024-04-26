@@ -6,7 +6,7 @@
       "bmw_main_section",
       "footer-section",
       "header-section",
-      "flexible_width_section"
+      "flexible-width-section"
     ]
   },
   {
@@ -86,7 +86,7 @@
     ]
   },
   {
-    "id":"flexible_width_section",
+    "id":"flexible-width-section",
     "components":[
       "copy_text",
       "button",
