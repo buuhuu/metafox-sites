@@ -1,4 +1,4 @@
-main .flexible_width_section {
+main .flexible-width-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -7,17 +7,17 @@ main .flexible_width_section {
   box-sizing: border-box;
 }
 
-.flexible_width_section .grid-10 {
+.flexible-width-section .grid-10 {
   flex: 0 0 83.33%; /* 10/12 = 83.33% */
   max-width: 83.33%;
 }
 
-.flexible_width_section .grid-8 {
+.flexible-width-section .grid-8 {
   flex: 0 0 66.66%; /* 8/12 = 66.66% */
   max-width: 66.66%;
 }
 
-.flexible_width_section .grid-6 {
+.flexible-width-section .grid-6 {
   flex: 0 0 50%; /* 6/12 = 50% */
   max-width: 50%;
 }
