@@ -200,13 +200,13 @@
     ]
   },
   {
-    "id": "flexible_width_section",
+    "id": "flexible-width-section",
     "fields": [
       {
         "component": "select",
         "name": "style",
         "description":"Defines the grid size of the page the content added within the section will occupy and the alignment of the Default Content added within the Section.",
-        "value": "centre",
+        "value": "",
         "label": "Width",
         "valueType": "string",
         "options": [
@@ -227,8 +227,8 @@
       {
         "component": "select",
         "name": "classes",
-        "description":"Defines the alignment of the elements added to the Section.",
-        "value": "centre",
+        "description":"Defines the alignment of the Default Content added within the Section.",
+        "value": "",
         "label": "Alignment",
         "valueType": "string",
         "options": [
