@@ -154,6 +154,7 @@ function launchVariables() {
 }
 
 function analyticsTracking() {
+  console.log('checking analytics tracking');
   if (window.adobeDataLayer) {
     console.log(window.adobeDataLayer.version);
   }
