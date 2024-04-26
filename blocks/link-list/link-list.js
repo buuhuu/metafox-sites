@@ -1,4 +1,4 @@
-function toggleLinkListDetail(e) {
+export function toggleLinkListDetail(e) {
   const { target } = e;
   if (window.innerWidth < 768) {
     if (target.classList.contains('expand')) {
@@ -27,22 +27,6 @@ export function generateLinkListDom(block) {
   linkListRTEElem.innerHTML = linkListDetail.innerHTML;
 
   return [linkListTitleElem, linkListRTEElem];
-}
-
-export function genreateHeaderLinkList(props) {
-  const [, b, ulList] = props;
-  const menuteaserDOM = document.createRange().createContextualFragment(`
-      <div class="flyout-link-list">     
-        <div class ="link-list-wrapper vertical">
-          <div class="link-list block" data-block-name="link-list" data-block-status="loaded">
-            <h3 class="link-list-title">${b.textContent}</h3>
-              <div class="link-list-detail">
-               ${ulList.innerHTML}
-              </div>
-        </div>
-      </div>
-    `);
-  return menuteaserDOM;
 }
 
 export default function decorate(block) {

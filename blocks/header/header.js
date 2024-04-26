@@ -21,6 +21,19 @@ function closeOnEscape(e) {
   }
 }
 
+function handleHeaderLinkList(e) {
+  const { target } = e;
+  if (!isDesktop.matches) {
+    if (target.classList.contains('expand')) {
+      target.nextElementSibling.style.maxHeight = null;
+      target.classList.remove('expand');
+    } else {
+      target.nextElementSibling.style.maxHeight = `${target.nextElementSibling.scrollHeight}px`;
+      target.classList.add('expand');
+    }
+  }
+}
+
 // function openOnKeydown(e) {
 //   const focused = document.activeElement;
 //   const isNavDrop = focused.className === 'nav-drop';
@@ -158,7 +171,7 @@ export default async function decorate(block) {
     header[0].classList.add('transparent');
   }
 
-  const menuFlyout = document.querySelectorAll('.menu-flyout-wrapper');
+  const menuFlyout = document.querySelectorAll('.menu-flyout-wrapper .menu-flyout-link');
   menuFlyout.forEach((anchor) => {
     anchor.addEventListener('click', (event) => {
       event.preventDefault();
@@ -185,4 +198,7 @@ export default async function decorate(block) {
       }
     });
   });
+
+  const linkListSelector = document.querySelector('.menu-flyout-wrapper .link-list-title');
+  linkListSelector?.addEventListener('click', handleHeaderLinkList);
 }
