@@ -80,6 +80,27 @@
       ]
     },
     {
+      "title": "Flexible Width Sections",
+      "id": "flexible-width-sections",
+      "components": [
+        {
+          "title": "Flexible Width Section",
+          "id": "flexible-width-section",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/section/v1/section",
+                "template": {
+                  "name":"Flexible Width Section",
+                  "model":"flexible-width-section"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
       "title": "Default Blocks",
       "id": "default_blocks",
       "components": [
