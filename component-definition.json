@@ -303,7 +303,7 @@
                   "link-list" : {
                     "name": "Link List",
                     "model": "link-list",
-                    "filter": "lint-list",
+                    "filter": "link-list",
                     "linkListClassname":"link-list"
                   },
                   "menu-teaser" : {
