@@ -56,7 +56,7 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
 
 @media (width >= 360px) and (width < 768px) {
   header nav { 
-    height: 69px;
+    height: 68px;
     display: block;
   }
 
