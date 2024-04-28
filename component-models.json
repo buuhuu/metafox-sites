@@ -644,14 +644,14 @@
       {
         "component": "text-input",
         "valueType": "string",
-        "name": "link_list_title",
+        "name": "linkListTitle",
         "label": "Link List Title",
         "value": ""
       },
       {
         "component": "richtext",
         "valueType": "string",
-        "name": "link_list_text",
+        "name": "linklistText",
         "value": "",
         "required": true,
         "label": "Link List"
@@ -791,41 +791,41 @@
         {
           "component": "text-input",
           "valueType": "string",
-          "name": "img_imageAlt",
+          "name": "menuTeaserImgAlt",
           "value": "Default alt",
           "label": "Alt Text"
         },
         {
           "component": "richtext",
           "valueType": "string",
-          "name": "text_CopyText",
+          "name": "menuTeaserCopyText",
           "value": "",
           "label": "Copy Text"
         },
         {
           "component": "text",
           "valueType": "string",
-          "name": "menulink_prop",
+          "name": "menuTeaserprop",
           "value": "",
           "label": "Link Label"
         },
         {
           "component": "text",
           "valueType": "string",
-          "name": "menulink_propTitle",
+          "name": "menuTeaserpropTitle",
           "value": "",
           "label": "Link Title"
         },
         {
           "component": "text",
           "valueType": "string",
-          "name": "menulink_propText",
+          "name": "menuTeaserpropText",
           "value": "",
           "label": "Link"
         },
         {
           "component": "select",
-          "name": "menulink_propType",
+          "name": "menuTeaserpropType",
           "value": "",
           "label": "Second CTA Type",
           "valueType": "string",
