@@ -625,7 +625,7 @@
     "fields": [
       {
         "component": "select",
-        "name": "link-list-select",
+        "name": "linkListSelect",
         "value": "vertical",
         "label": "Orientation",
         "valueType": "string",
@@ -644,14 +644,14 @@
       {
         "component": "text-input",
         "valueType": "string",
-        "name": "link-list-title",
+        "name": "linkListTitle",
         "label": "Link List Title",
         "value": ""
       },
       {
         "component": "richtext",
         "valueType": "string",
-        "name": "link-list",
+        "name": "linkListRichText",
         "value": "",
         "required": true,
         "label": "Link List"
@@ -757,14 +757,14 @@
       {
         "component": "text-input",
         "valueType": "string",
-        "name": "menuflyout_text",
+        "name": "menuFlyoutText",
         "label": "Link Text",
         "value": ""
       },
       {
         "component": "text-input",
         "valueType": "string",
-        "name": "menuflyout_title",
+        "name": "menuFlyoutTitle",
         "label": "Link Title",
         "value": ""
       }
