@@ -625,7 +625,7 @@
     "fields": [
       {
         "component": "select",
-        "name": "link_list_type",
+        "name": "link-list-select",
         "value": "vertical",
         "label": "Orientation",
         "valueType": "string",
@@ -644,14 +644,14 @@
       {
         "component": "text-input",
         "valueType": "string",
-        "name": "linkListTitle",
+        "name": "link-list-title",
         "label": "Link List Title",
         "value": ""
       },
       {
         "component": "richtext",
         "valueType": "string",
-        "name": "linklistText",
+        "name": "link-list",
         "value": "",
         "required": true,
         "label": "Link List"
