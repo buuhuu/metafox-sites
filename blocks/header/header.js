@@ -199,6 +199,8 @@ export default async function decorate(block) {
     });
   });
 
-  const linkListSelector = document.querySelector('.menu-flyout-wrapper .link-list-title');
-  linkListSelector?.addEventListener('click', handleHeaderLinkList);
+  const linkListSelector = document.querySelectorAll('.menu-flyout-wrapper .link-list-title');
+  linkListSelector.forEach((anchor) => {
+    anchor.addEventListener('click', (handleHeaderLinkList));
+  });
 }
