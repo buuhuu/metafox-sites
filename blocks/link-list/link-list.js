@@ -38,8 +38,11 @@ export function generateLinkListDom(block) {
   return [linkListTitleElem, linkListRTEElem];
 }
 
-export function genreateHeaderLinkList(props) {
-  const [, b, ulList] = props;
+export function generateHeaderLinkList(props) {
+  const [a, b, ulList] = props;
+  console.log(a);
+  console.log(b);
+  console.log(ulList);
   const menuteaserDOM = document.createRange().createContextualFragment(`
       <div class="flyout-link-list">     
         <div class ="link-list-wrapper vertical">
