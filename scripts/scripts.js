@@ -146,26 +146,18 @@ function loadDelayed() {
 }
 
 function launchVariables() {
-  const header = document.querySelector('head');
-  const script = document.createElement('script');
-  script.src = 'https://assets.adobedtm.com/413a8cbe910e/2a9212d4511b/launch-6ca074b36c7e-development.min.js';
-  header.appendChild(script);
-  console.log(window.adobeDataLayer);
-}
-
-function analyticsTracking() {
-  console.log('checking analytics tracking');
-  if (window.adobeDataLayer) {
-    console.log(window.adobeDataLayer.version);
-  }
+  const headElement = document.querySelector('head');
+  const scriptElement1 = document.createElement('script');
+  scriptElement1.setAttribute('src', 'https://assets.adobedtm.com/5eef5b667374/31ec2769917a/launch-50aa95111531-development.min.js');
+  headElement.appendChild(scriptElement1);
 }
 
 async function loadPage() {
   await loadEager(document);
   await loadLazy(document);
-  launchVariables();
+  await launchVariables();
   loadDelayed();
-  analyticsTracking();
+  // analyticsTracking();
 }
 
 loadPage();
