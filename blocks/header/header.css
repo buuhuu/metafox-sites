@@ -735,8 +735,7 @@ header nav[aria-expanded="true"] .nav-brand.mobile-flyout .menu-flyout-wrapper.s
 }
 
 /* Desktop  */
-@media (width >= 1280px) {
- 
+@media (width >= 1280px) { 
   header nav {
     display: flex;
     justify-content: space-between;
