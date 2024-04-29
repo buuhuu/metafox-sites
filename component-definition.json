@@ -80,6 +80,27 @@
       ]
     },
     {
+      "title": "Flexible Width Sections",
+      "id": "flexible-width-sections",
+      "components": [
+        {
+          "title": "Flexible Width Section",
+          "id": "flexible-width-section",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/section/v1/section",
+                "template": {
+                  "name":"Flexible Width Section",
+                  "model":"flexible-width-section"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
       "title": "Default Blocks",
       "id": "default_blocks",
       "components": [
@@ -92,7 +113,8 @@
                 "resourceType": "core/franklin/components/columns/v1/columns",
                 "template": {
                   "columns": 2,
-                  "rows": 1
+                  "rows": 1,
+                  "classes":"center"
                 }
               }
             }
@@ -194,9 +216,9 @@
                   "model": "text-image-v2",
                   "bg_fileReference": "/content/dam/metafox/placeholder_image.png",
                   "bg_fileReferenceAlt": "Alt text",
-                  "bg_fileReferenceType": "Left",
-                  "fg_details": "Kindly edit the Summary here !",
-                  "fg_detailsText": "Kindly edit the content here !"
+                  "classes": "Left",
+                  "fg_summary": "Kindly edit the Summary here !",
+                  "fg_details": "Kindly edit the content here !"
                 }
               }
             }
@@ -281,7 +303,7 @@
                   "link-list" : {
                     "name": "Link List",
                     "model": "link-list",
-                    "filter": "lint-list",
+                    "filter": "link-list",
                     "linkListClassname":"link-list"
                   },
                   "menu-teaser" : {
@@ -390,6 +412,8 @@
                     "filter": "video-slide",
                     "videoSlideClassname":"video-slide",
                     "videoSlideHeadlineType":"h4",
+                    "videoSlideLoopVideo":true,
+                    "videoSlideAutoplay":true,
                     "videoSlideButtonStyling":"linkButton"
                   },
                   "image-slide": {
@@ -415,7 +439,12 @@
                 "template": {
                   "name": "Video Slide",
                   "model": "video-slide",
-                  "filter": "video-slide"
+                  "filter": "video-slide",
+                  "videoSlideClassname":"video-slide",
+                  "videoSlideHeadlineType":"h4",
+                  "videoSlideLoopVideo":true,
+                  "videoSlideAutoplay":true,
+                  "videoSlideButtonStyling":"linkButton"
                 }
               }
             }
@@ -431,7 +460,10 @@
                 "template": {
                   "name": "Image Slide",
                   "model": "image-slide",
-                  "filter": "image-slide"
+                  "filter": "image-slide",
+                  "imageSlideClassname":"image-slide",
+                  "imageSlideHeadlineType":"h4",
+                  "imageSlideButtonStyling":"linkButton"
                 }
               }
             }
